@@ -9,7 +9,7 @@ on:
       state:
         description: 'State to sample (manual runs only)'
         type: choice
-        options: [VA, WV, NC, TN, PA, NY, CO, MT, ID, WA]
+        options: [AL, AK, AZ, AR, CA, CO, CT, DE, FL, GA, HI, ID, IL, IN, IA, KS, KY, LA, ME, MD, MA, MI, MN, MS, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VT, VA, WA, WV, WI, WY]
         required: true
         default: VA
 
@@ -29,10 +29,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Run classification and rotation tests
+      - name: Run discovery tests
         run: |
-          node --test scripts/lib/classify-cabin.test.mjs
-          node --test scripts/lib/discovery-schedule.test.mjs
+          node --test scripts/lib/classify-cabin.test.mjs scripts/lib/discovery-schedule.test.mjs scripts/lib/discover.test.mjs
       - name: Choose state
         id: state
         env:

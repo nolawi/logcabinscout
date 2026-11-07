@@ -29,7 +29,10 @@ The feed never includes API keys. See [freshness behavior](listings-feed.md).
 ## Costs and controls
 
 The discovery workflow runs weekly and can also be triggered manually, with one listing search and at
-most three individual property-record lookups (maximum four requests) per run.
+most three individual property-record lookups (maximum four attempts, including
+failures, with no retries) per run. All 50 states rotate over 50 weeks;
+weekly sampling and duplicate-address filtering are described in
+[scheduled discovery](scheduled-discovery.md).
 It is not a daily crawler or a nationwide coverage mechanism.
 
 RentCast alone is insufficient to supply photos or original listing URLs.

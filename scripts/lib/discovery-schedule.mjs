@@ -1,6 +1,6 @@
-// Weekly rotation spreads a limited API budget across a small set of states.
+// Weekly rotation spreads a limited API budget across all 50 US states.
 // This is sampling, NOT complete national coverage.
-export const STATES = Object.freeze(['VA', 'WV', 'NC', 'TN', 'PA', 'NY', 'CO', 'MT', 'ID', 'WA']);
+export const STATES = Object.freeze(['AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY']);
 
 export function weekIndex(date) {
   const stamp = date instanceof Date ? date.getTime() : new Date(date).getTime();

@@ -5,10 +5,10 @@ runs every **Monday at 12:17 UTC** and can also be triggered manually.
 
 ## Cost controls
 
-- Each run issues at most **4 successful RentCast requests** (one sale search,
+- Each run issues at most **4 attempted RentCast requests** (one sale search,
   up to three property-record lookups).
 - A Monday-only schedule gives **4–5 runs per calendar month**, or
-  approximately **16–20 successful requests/month** if all lookups are made.
+  approximately **16–20 attempted requests/month** if all lookups are made. Failures consume the run budget, with no automatic retries.
 - This is deliberately below the advertised free Developer allowance
   (50 requests/month) but is NOT a strict account-wide quota guarantee.
   Manual executions, other apps/scripts, re-runs, and billable usage
@@ -18,11 +18,17 @@ runs every **Monday at 12:17 UTC** and can also be triggered manually.
 
 ## Geographic sampling
 
-For scheduled runs, the workflow rotates through Virginia, West Virginia,
-North Carolina, Tennessee, Pennsylvania, New York, Colorado, Montana, Idaho,
-and Washington. Manual runs can choose one of these states.
+Scheduled runs rotate through all 50 US states, one state per UTC week.
+Manual runs can select any of those states. At the current weekly rate, a full
+rotation takes **50 weeks**. Only listings from the last seven days are sampled:
+this leaves large coverage gaps and is not a nationwide listing inventory.
 
-**Caution:** Sampling the first three results in a state is unlikely to find
+From at most 100 returned sale listings, the script removes duplicate/empty
+addresses and deterministically selects at most three for property enrichment.
+Weekly hashing varies selection instead of always checking the first three;
+it does not favor cabin construction or increase the provider's search coverage.
+
+**Caution:** Sampling only three properties in a state is unlikely to find
 a log cabin. This does not establish nationwide coverage or a production-ready
 discovery system. The next research milestone is finding a suitable listings
 source with architectural-style/description search and permitted photos.
@@ -39,3 +45,14 @@ Never use an API key in the frontend or commit it to the repository.
 Configure the `RENTCAST_API_KEY` GitHub Actions secret if enabling live discovery.
 
 Docs: https://developers.rentcast.io/reference/billing-and-pricing
+
+## Local validation without API charges
+
+Run `node --test scripts/lib/discover.test.mjs scripts/lib/discovery-schedule.test.mjs`.
+These tests inject simulated provider responses and never use network or API keys.
+They cover weekly selection, duplicate addresses, all-state rotation, request
+failures, concurrent budget enforcement, response validation, and review-only output.
+
+The four-attempt limit is per script process. It is not an account-wide spending
+cap: the separate probe, manual reruns, and other consumers use their own budget.
+Cross-run enrichment caching and provider-level cabin search remain future work.
