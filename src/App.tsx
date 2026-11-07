@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import ArrowIcon from './components/ArrowIcon';
 import CabinGrid from './components/CabinGrid';
 import { useListings } from './hooks/useListings';
 
@@ -33,7 +34,7 @@ export default function App() {
   return <>
     <header className="header"><a className="brand" href="#home" aria-label="Log Cabin Scout home"><img src={import.meta.env.BASE_URL + "logo-mark.svg"} alt="" width="58" height="58" /><span className="brand-wordmark">LOG CABIN <strong>SCOUT</strong></span></a><nav aria-label="Main navigation"><a href="#cabins">Browse Cabins</a><a href="#about">Our Story</a></nav></header>
     <main id="home">
-      <section className="hero" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}hero-landscape.svg)` }}><div className="hero-inner"><p className="eyebrow">AN INDEPENDENT GUIDE TO LOG HOMES FOR SALE</p><h1>Cabins worth<br/><em>the hunt.</em></h1><p>A carefully curated collection of log cabins for sale, from mountain hideaways to woodland retreats.</p><a className="cta" href="#cabins">Explore the collection <span aria-hidden="true">↗</span></a></div></section>
+      <section className="hero" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}hero-landscape.svg)` }}><div className="hero-inner"><p className="eyebrow">AN INDEPENDENT GUIDE TO LOG HOMES FOR SALE</p><h1>Cabins worth<br/><em>the hunt.</em></h1><p>A carefully curated collection of log cabins for sale, from mountain hideaways to woodland retreats.</p><a className="cta" href="#cabins">Explore the collection <ArrowIcon /></a></div></section>
       <section className="content" id="cabins">
         <div className="section-title">
           <div><p className="eyebrow">THE SCOUTED COLLECTION</p><h2>Find a cabin to call your own.</h2>

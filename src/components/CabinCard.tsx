@@ -1,3 +1,5 @@
+import ArrowIcon from './ArrowIcon';
+import CabinPhoto from './CabinPhoto';
 import type { Cabin } from '../types/cabin';
 
 type CabinCardProps = { cabin: Cabin; variant?: number };
@@ -16,10 +18,7 @@ export default function CabinCard({ cabin, variant = 1 }: CabinCardProps) {
 
   return (
     <article className="card">
-      <div className={`placeholder placeholder-${variant}`}>
-        {cabin.imageUrl ? <img className="cabin-image" src={cabin.imageUrl} alt={cabin.title} loading="lazy" /> : <span className="mountains" aria-hidden="true">⌂</span>}
-        {cabin.isSample && <span className="sample-badge">Sample listing</span>}
-      </div>
+      <CabinPhoto key={cabin.imageUrl ?? 'no-photo'} imageUrl={cabin.imageUrl} title={cabin.title} variant={variant} isSample={cabin.isSample} />
       <div className="details">
         <small>{cabin.location}</small>
         <h3>{cabin.title}</h3>
@@ -28,7 +27,7 @@ export default function CabinCard({ cabin, variant = 1 }: CabinCardProps) {
         {cabin.lastCheckedAt && <p className="listing-checked">Last checked <time dateTime={cabin.lastCheckedAt}>{new Date(cabin.lastCheckedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time></p>}
         {cabin.listingUrl && (
           <a className="listing-link" href={cabin.listingUrl} target="_blank" rel="noopener noreferrer">
-            View original listing <span aria-hidden="true">↗</span>
+            View original listing <ArrowIcon />
           </a>
         )}
       </div>

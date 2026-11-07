@@ -39,3 +39,16 @@ the actual home.
 All core color and type tokens are CSS custom properties in
 `src/styles/main.scss`. Existing state/price filters and original listing links
 are preserved. GitHub Pages base URL is respected for brand assets.
+
+## Card presentation and accessibility
+
+- Muted parchment, sage, and pine-tinted photo panels reuse the original logo.
+  Visible text identifies missing or unavailable photos; artwork never depicts a property.
+- Loading photos keep the panel in place. Failed images are removed and replaced
+  with the branded fallback. Changing the image URL resets photo loading.
+- Inline SVG arrows use the surrounding text color and are hidden from assistive
+  technology; link text supplies their accessible names.
+- Secondary text uses darker ink for contrast. Listing links and filter-reset
+  controls have 44px minimum touch heights; cards align links along the bottom.
+- Heading wrapping, a stacked header below 360px, and reduced-motion support keep
+  the layout readable on narrow screens and with fallback fonts.
