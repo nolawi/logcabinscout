@@ -1,0 +1,29 @@
+name: RentCast connection test
+
+# Manual only until provider coverage and cabin detection have been validated.
+on:
+  workflow_dispatch:
+    inputs:
+      state:
+        description: 'Two-letter state code to sample'
+        required: true
+        default: VA
+        type: choice
+        options: [VA, WV, NC, TN, PA, NY, CO, MT, ID, WA]
+
+permissions:
+  contents: read
+
+jobs:
+  rentcast-probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Probe RentCast (one API call)
+        env:
+          RENTCAST_API_KEY: ${{ secrets.RENTCAST_API_KEY }}
+          RENTCAST_STATE: ${{ inputs.state }}
+        run: node scripts/rentcast-probe.mjs
