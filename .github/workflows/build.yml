@@ -25,6 +25,7 @@ jobs:
         run: |
           node --test scripts/lib/build-feed.test.mjs
           node --test scripts/lib/classify-cabin.test.mjs
+          node --test scripts/lib/discovery-schedule.test.mjs
           node scripts/build-listing-feed.mjs
           git diff --exit-code -- public/listings.json
       - name: Build production site
