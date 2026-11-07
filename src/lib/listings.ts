@@ -18,8 +18,10 @@ function safeUrl(value: unknown): string | undefined {
 }
 
 /** Validates data before it reaches the public listing UI. */
-export function parseListings(input: unknown): Cabin[] {
-  if (!Array.isArray(input)) return [];
+export const MAX_LISTING_AGE_MS = 30 * 24 * 60 * 60 * 1000;
+
+export function parseListings(input: unknown, now = Date.now()): Cabin[] {
+  if (!Array.isArray(input)) throw new Error('Expected a listing array');
   const seen = new Set<string>();
   const listings: Cabin[] = [];
 
@@ -31,6 +33,14 @@ export function parseListings(input: unknown): Cabin[] {
     const location = string(item.location);
     const price = number(item.price);
     const listingUrl = safeUrl(item.listingUrl);
+
+    const lastCheckedAt = string(item.lastCheckedAt);
+    const checked = Date.parse(lastCheckedAt);
+    const age = now - checked;
+    if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z$/.test(lastCheckedAt) ||
+        !Number.isFinite(checked) ||
+        new Date(checked).toISOString().replace('.000Z', 'Z') !== lastCheckedAt.replace('.000Z', 'Z') ||
+        age < 0 || age >= MAX_LISTING_AGE_MS) continue;
 
     // Never publish unverified, unsourced, or duplicate records.
     if (!id || seen.has(id) || !title || !location || price === null ||
@@ -44,6 +54,7 @@ export function parseListings(input: unknown): Cabin[] {
       listingUrl,
       imageUrl: safeUrl(item.imageUrl),
       isSample: false,
+      lastCheckedAt: new Date(checked).toISOString(),
     });
   }
 

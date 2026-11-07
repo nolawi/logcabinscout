@@ -19,13 +19,15 @@ Each reviewed record must have:
   **and** that the property is for sale.
 - `status: "active"` and a recent ISO timestamp `lastCheckedAt`.
 
-Only reviewed, active listings checked in the last 30 days are published;
-older/sold entries can remain in the source for history but are excluded
-from the site. The published feed never includes API keys.
+The generated feed includes reviewed, active records with valid UTC ISO review dates.
+Generation is deterministic, including for old records. The browser displays only
+records younger than 30 days and excludes future dates. Sold entries are excluded
+at generation. Review dates must reflect actual source checks, never automatic renewal.
+The feed never includes API keys. See [freshness behavior](listings-feed.md).
 
 ## Costs and controls
 
-The discovery workflow is **manual only**, with one listing search and at
+The discovery workflow runs weekly and can also be triggered manually, with one listing search and at
 most three individual property-record lookups (maximum four requests) per run.
 It is not a daily crawler or a nationwide coverage mechanism.
 
@@ -33,4 +35,4 @@ RentCast alone is insufficient to supply photos or original listing URLs.
 Do not create fake direct-listing links; obtain links and image permissions
 from a legitimate source before marking an item reviewed.
 
-The sample UI remains until at least one valid reviewed listing is added.
+An empty or expired collection shows no current listings; production never falls back to fictional properties.

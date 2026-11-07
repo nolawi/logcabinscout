@@ -25,6 +25,7 @@ export default function CabinCard({ cabin, variant = 1 }: CabinCardProps) {
         <h3>{cabin.title}</h3>
         <strong>{dollars.format(cabin.price)}</strong>
         <p>{details}</p>
+        {cabin.lastCheckedAt && <p className="listing-checked">Last checked <time dateTime={cabin.lastCheckedAt}>{new Date(cabin.lastCheckedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time></p>}
         {cabin.listingUrl && (
           <a className="listing-link" href={cabin.listingUrl} target="_blank" rel="noopener noreferrer">
             View original listing <span aria-hidden="true">↗</span>

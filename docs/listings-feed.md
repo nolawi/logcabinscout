@@ -3,10 +3,20 @@
 The frontend fetches `public/listings.json` through Vite's `BASE_URL` (so it also
 works under a GitHub Pages project path).
 
-Currently this file is `[]`. The home page therefore displays **fictional preview**
-listings with a clear label. No real properties are included or implied.
+The feed initially contains three manually reviewed Virginia listings. Their review
+is not continuous status verification; original listing pages remain authoritative.
 
-## Future feed format
+The generator retains valid review dates, even for old records, so its output and
+CI consistency checks do not change with the build date. The browser rejects
+future dates and hides listings at age **30 days or older**, using the visitor's
+clock. It recalculates every minute and on tab visibility/focus changes, so an open
+page also expires records. Review dates appear on each card in UTC.
+
+A successful empty feed (including all-expired records) shows “No current listings.”
+A failed request or malformed feed envelope shows a refresh message. Loading never
+shows sample properties. Fictional examples are not used as a production fallback.
+
+## Feed format
 
 Only verified, active, authorized listing records should be included:
 
@@ -21,7 +31,8 @@ Only verified, active, authorized listing records should be included:
     "propertyType": "Log cabin",
     "listingUrl": "https://example.com/original-listing",
     "imageUrl": "https://example.com/authorized-photo.jpg",
-    "verified": true
+    "verified": true,
+    "lastCheckedAt": "2026-11-07T12:00:00.000Z"
   }
 ]
 ```
@@ -32,6 +43,7 @@ original listing links and photo use are permitted.
 
 The browser-side parser rejects records without `verified: true`, a valid HTTPS
 listing URL, a title, location, nonnegative numeric price, and unique ID.
+A valid UTC ISO `lastCheckedAt` timestamp is required; missing, invalid, future, and expired dates are excluded.
 Missing/invalid photos do not prevent inclusion. In future, an automated server-side
 job can generate this JSON from Supabase or a licensed source. Do not expose
 RentCast or Supabase service-role credentials in this file or client bundle.

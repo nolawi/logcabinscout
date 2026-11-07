@@ -1,6 +1,5 @@
 import { useMemo, useState } from 'react';
 import CabinGrid from './components/CabinGrid';
-import { sampleCabins } from './data/sampleCabins';
 import { useListings } from './hooks/useListings';
 
 type SortOrder = 'featured' | 'price-asc' | 'price-desc' | 'acreage-desc';
@@ -12,14 +11,13 @@ export default function App() {
   const [sortBy, setSortBy] = useState<SortOrder>('featured');
   const { listings, isLoading, error } = useListings();
 
-  const isPreview = listings.length === 0;
-  const source = isPreview ? sampleCabins : listings;
+  const source = listings;
   const states = useMemo(() => [...new Set(source.map(cabin => cabin.location.split(',').at(-1)?.trim()).filter((value): value is string => Boolean(value)))].sort(), [source]);
   const visible = useMemo(() => {
     const search = query.trim().toLowerCase();
     const filtered = source.filter(cabin => {
       const matchesSearch = `${cabin.title} ${cabin.location}`.toLowerCase().includes(search);
-      const matchesState = state === 'all' || cabin.location.split(',').at(-1)?.trim() === state;
+      const matchesState = state === 'all' || !states.includes(state) || cabin.location.split(',').at(-1)?.trim() === state;
       const matchesPrice = maxPrice === 'all' || cabin.price <= Number(maxPrice);
       return matchesSearch && matchesState && matchesPrice;
     });
@@ -27,7 +25,7 @@ export default function App() {
     if (sortBy === 'price-desc') return filtered.sort((a, b) => b.price - a.price);
     if (sortBy === 'acreage-desc') return filtered.sort((a, b) => (b.acreage ?? -1) - (a.acreage ?? -1));
     return filtered;
-  }, [source, query, state, maxPrice, sortBy]);
+  }, [source, query, state, maxPrice, sortBy, states]);
 
   const resetFilters = () => { setQuery(''); setState('all'); setMaxPrice('all'); setSortBy('featured'); };
   const hasFilters = query !== '' || state !== 'all' || maxPrice !== 'all' || sortBy !== 'featured';
@@ -39,14 +37,13 @@ export default function App() {
       <section className="content" id="cabins">
         <div className="section-title">
           <div><p className="eyebrow">THE SCOUTED COLLECTION</p><h2>Find a cabin to call your own.</h2>
-            <p>{isLoading ? 'Checking available listings…' : isPreview
-              ? 'Illustrative preview listings. Real properties are coming next.'
-              : `${listings.length} sourced cabin listings in our collection.`}</p>
+            <p>{isLoading ? 'Checking available listings…' : error ? 'The collection is temporarily unavailable.'
+              : `${listings.length} sourced cabin ${listings.length === 1 ? 'listing' : 'listings'} checked in the last 30 days.`}</p>
           </div>
         </div>
-        {error && <p className="feed-notice" role="status">Live listings are unavailable. Showing sample properties instead.</p>}
-        {isPreview && !error && !isLoading && <p className="feed-notice">Preview only — these are fictional listings, not properties currently for sale.</p>}
-        <div className="listing-filters" role="search" aria-label="Filter cabin listings">
+        {error && <p className="feed-notice" role="status">We couldn’t load the listings. Please refresh the page to try again.</p>}
+        {!isLoading && !error && listings.length > 0 && <p className="feed-notice">Listings are shown for 30 days after review. Prices and availability can change; confirm details with the original listing.</p>}
+        {!isLoading && !error && listings.length > 0 && <><div className="listing-filters" role="search" aria-label="Filter cabin listings">
           <label className="filter-search">Search
             <input type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="City, state, or cabin..." />
           </label>
@@ -75,10 +72,11 @@ export default function App() {
           </label>
         </div>
         <div className="results-bar" aria-live="polite">
-          <span>{visible.length} {visible.length === 1 ? 'cabin' : 'cabins'} found{isPreview ? ' (sample data)' : ''}</span>
+          <span>{visible.length} {visible.length === 1 ? 'cabin' : 'cabins'} found</span>
           {hasFilters && <button type="button" className="reset-filters" onClick={resetFilters}>Clear filters</button>}
         </div>
-        <CabinGrid cabins={visible} />
+        <CabinGrid cabins={visible} /></>}
+        {!isLoading && !error && listings.length === 0 && <p className="empty-state" role="status">No current listings. We’re scouting more cabins; check back soon.</p>}
       </section>
       <section className="about" id="about"><p className="eyebrow">A NOTE FROM THE SCOUT</p><h2>For the love of log cabins.</h2><p>There's something special about a home built of logs. We scout distinctive cabins across the country and point you to their original sale listings. No endless scrolling. Just places worth a closer look.</p></section>
     </main>

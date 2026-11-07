@@ -13,8 +13,8 @@ authoritative destination for visitors.
 Source links and display fields are stored in
 `data/reviewed-listings.json`. No listing photos are copied or embedded.
 
-The site has no ongoing status verification yet. Records older than thirty
-days will be excluded when the feed is regenerated, but the static deployed
-JSON will not age itself out without a new build.
+The site has no ongoing status verification yet. Review timestamps are preserved
+in the feed. The browser hides records at thirty days, including on static
+deployments, without advancing their review timestamps.
 
 Do not imply these listings are nationwide coverage or originated from RentCast.

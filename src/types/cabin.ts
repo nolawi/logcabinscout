@@ -6,6 +6,7 @@ export type Cabin = {
   price: number;
   acreage: number | null;
   propertyType: string;
+  lastCheckedAt?: string;
   imageUrl?: string;
   listingUrl?: string;
   /** Preview records must never be represented as real for-sale listings. */

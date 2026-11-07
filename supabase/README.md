@@ -25,4 +25,4 @@ trusted server-side service credential, never a frontend environment variable.
 4. Build a server-side ingestion job with upsert/deduplication.
 5. Connect the React UI with the Supabase public URL and publishable key.
 
-There is **no live database connected** at this stage. All UI cards remain fictional.
+There is **no live database connected** at this stage. The UI currently reads manually reviewed real listings from a static JSON feed.
