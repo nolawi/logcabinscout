@@ -1,0 +1,41 @@
+# Log Cabin Scout — Brand Guide v1
+
+## Creative direction
+An independent American cabin-scouting field guide: warm, considered,
+slightly nostalgic and editorial. Inspired by vintage nature guides and
+historic real-estate publications, not a reproduction of another site's branding.
+
+## Brand assets
+- `public/logo-mark.svg` — illustrated circular log cabin / forest emblem.
+- `public/favicon.svg` — simplified, high-contrast mark for small tabs.
+- `public/hero-landscape.svg` — original mountain-and-pine illustration.
+- These are original vector assets; no stock listing photos are included.
+
+## Palette
+| Token | HEX | Usage |
+| --- | --- | --- |
+| Pine | `#243E32` | Headings, navigation, footer |
+| Paper | `#F6F0E4` | Warm page background |
+| Rust | `#A75139` | Calls-to-action, asking prices |
+| Goldenrod | `#C7A86B` | Accent / cabin illustration |
+| Charcoal | `#252821` | Primary body text |
+
+## Typography
+- Display: Playfair Display, with Georgia as offline fallback.
+- UI and body: DM Sans, with Arial/system fallback.
+- Fonts load from Google Fonts when online; app remains readable when offline.
+
+## Voice
+Grounded, warm, curated. Use “Cabins worth the hunt,” “The scouted collection,”
+and “Find your place in the woods.” Avoid claiming nationwide completeness.
+
+## Listing imagery
+The hero uses original branded vector art; real listing cards continue to use
+neutral placeholders until we obtain property photos with appropriate usage rights.
+Do not replace placeholders with unrelated pictures or imply stock photos depict
+the actual home.
+
+## Implementation
+All core color and type tokens are CSS custom properties in
+`src/styles/main.scss`. Existing state/price filters and original listing links
+are preserved. GitHub Pages base URL is respected for brand assets.

@@ -33,12 +33,12 @@ export default function App() {
   const hasFilters = query !== '' || state !== 'all' || maxPrice !== 'all' || sortBy !== 'featured';
 
   return <>
-    <header className="header"><a className="brand" href="#home">⌂ Log Cabin <strong>Scout</strong></a><nav aria-label="Main navigation"><a href="#cabins">Explore</a><a href="#about">About</a></nav></header>
+    <header className="header"><a className="brand" href="#home" aria-label="Log Cabin Scout home"><img src={import.meta.env.BASE_URL + "logo-mark.svg"} alt="" width="58" height="58" /><span className="brand-wordmark">LOG CABIN <strong>SCOUT</strong></span></a><nav aria-label="Main navigation"><a href="#cabins">Browse Cabins</a><a href="#about">Our Story</a></nav></header>
     <main id="home">
-      <section className="hero"><p className="eyebrow">DISCOVER SOMETHING DIFFERENT</p><h1>Find your place<br/><em>in the woods.</em></h1><p>Explore log cabins for sale across the United States.</p><a className="cta" href="#cabins">Explore cabins ↗</a></section>
+      <section className="hero" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}hero-landscape.svg)` }}><div className="hero-inner"><p className="eyebrow">AN INDEPENDENT GUIDE TO LOG HOMES FOR SALE</p><h1>Cabins worth<br/><em>the hunt.</em></h1><p>A carefully curated collection of log cabins for sale, from mountain hideaways to woodland retreats.</p><a className="cta" href="#cabins">Explore the collection <span aria-hidden="true">↗</span></a></div></section>
       <section className="content" id="cabins">
         <div className="section-title">
-          <div><p className="eyebrow">DISCOVER</p><h2>Cabins worth exploring</h2>
+          <div><p className="eyebrow">THE SCOUTED COLLECTION</p><h2>Find a cabin to call your own.</h2>
             <p>{isLoading ? 'Checking available listings…' : isPreview
               ? 'Illustrative preview listings. Real properties are coming next.'
               : `${listings.length} sourced cabin listings in our collection.`}</p>
@@ -80,8 +80,8 @@ export default function App() {
         </div>
         <CabinGrid cabins={visible} />
       </section>
-      <section className="about" id="about"><p className="eyebrow">ABOUT LOG CABIN SCOUT</p><h2>Less scrolling. More dreaming.</h2><p>We're building a simple way to discover log cabins for sale, with links to their original listings.</p></section>
+      <section className="about" id="about"><p className="eyebrow">A NOTE FROM THE SCOUT</p><h2>For the love of log cabins.</h2><p>There's something special about a home built of logs. We scout distinctive cabins across the country and point you to their original sale listings. No endless scrolling. Just places worth a closer look.</p></section>
     </main>
-    <footer>© {new Date().getFullYear()} Log Cabin Scout</footer>
+    <footer><span>© {new Date().getFullYear()} Log Cabin Scout</span><span>Find your place in the woods.</span></footer>
   </>;
 }
