@@ -1,10 +1,13 @@
-name: Discover log cabin candidates (manual)
+name: Discover log cabin candidates
 
 on:
+  # Once per week; max 4 RentCast requests per scheduled run.
+  schedule:
+    - cron: '17 12 * * 1'
   workflow_dispatch:
     inputs:
       state:
-        description: 'State to sample'
+        description: 'State to sample (manual runs only)'
         type: choice
         options: [VA, WV, NC, TN, PA, NY, CO, MT, ID, WA]
         required: true
@@ -12,6 +15,11 @@ on:
 
 permissions:
   contents: read
+
+# Avoid overlapping jobs (and duplicate API charges).
+concurrency:
+  group: rentcast-discovery
+  cancel-in-progress: false
 
 jobs:
   discover:
@@ -21,17 +29,39 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Run classification unit tests
-        run: node --test scripts/lib/classify-cabin.test.mjs
-      - name: Sample RentCast (up to four paid requests)
+      - name: Run classification and rotation tests
+        run: |
+          node --test scripts/lib/classify-cabin.test.mjs
+          node --test scripts/lib/discovery-schedule.test.mjs
+      - name: Choose state
+        id: state
+        env:
+          REQUESTED_STATE: ${{ github.event.inputs.state }}
+        run: |
+          selected=$(RENTCAST_STATE="$REQUESTED_STATE" node scripts/select-discovery-state.mjs)
+          echo "state=$selected" >> "$GITHUB_OUTPUT"
+          echo "Sampling state: $selected"
+      - name: Check whether key is configured
+        id: key
         env:
           RENTCAST_API_KEY: ${{ secrets.RENTCAST_API_KEY }}
-          RENTCAST_STATE: ${{ inputs.state }}
+        run: |
+          if [ -n "$RENTCAST_API_KEY" ]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::RENTCAST_API_KEY is not configured; no API requests made."
+          fi
+      - name: Sample RentCast (max four requests)
+        if: steps.key.outputs.configured == 'true'
+        env:
+          RENTCAST_API_KEY: ${{ secrets.RENTCAST_API_KEY }}
+          RENTCAST_STATE: ${{ steps.state.outputs.state }}
         run: node scripts/rentcast-discover.mjs
-      - name: Save candidate review artifact
-        if: success()
+      - name: Save candidates for review
+        if: success() && steps.key.outputs.configured == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: rentcast-candidates
+          name: rentcast-candidates-${{ steps.state.outputs.state }}
           path: artifacts/candidates.json
-          retention-days: 7
+          retention-days: 30
