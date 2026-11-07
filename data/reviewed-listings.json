@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "id": "mls:VALA2010884",
+    "title": "295 Douglas Road",
+    "location": "Mineral, Virginia",
+    "price": 949000,
+    "acreage": 1.43,
+    "listingUrl": "https://goldenlandgroup.northroprealty.com/listing/vala2010884-295-douglas-rd-mineral-va-23117/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-07T12:00:00Z"
+  },
+  {
+    "id": "mls:10001316",
+    "title": "20420 Out Of Bounds Drive",
+    "location": "Abingdon, Virginia",
+    "price": 239000,
+    "acreage": 0.69,
+    "listingUrl": "https://www.realtorjosh.com/listing/10001316-20420-out-of-bounds-drive-abingdon-virginia-24211/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-07T12:00:00Z"
+  },
+  {
+    "id": "mls:112401",
+    "title": "206 Pottery Drive",
+    "location": "Fancy Gap, Virginia",
+    "price": 289900,
+    "acreage": null,
+    "listingUrl": "https://www.coldwellbanker.com/va/fancy-gap/206-pottery-dr/lid-P00800000HJG1REYUkJqZhMoukKPCkFjWWJ7KUMD",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-07T12:00:00Z"
+  }
+]
