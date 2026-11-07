@@ -28,3 +28,10 @@ jobs:
           RENTCAST_API_KEY: ${{ secrets.RENTCAST_API_KEY }}
           RENTCAST_STATE: ${{ inputs.state }}
         run: node scripts/rentcast-discover.mjs
+      - name: Save candidate review artifact
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rentcast-candidates
+          path: artifacts/candidates.json
+          retention-days: 7
