@@ -1,3 +1,5 @@
+import { parsePhoto } from '../../src/lib/photo.mjs';
+
 /**
  * Convert explicitly reviewed, sourced active listings into the public feed.
  * Does not call RentCast. Do not treat architectural data alone as final review.
@@ -33,7 +35,7 @@ export function buildFeed(input) {
       acreage: typeof item.acreage === 'number' && Number.isFinite(item.acreage) && item.acreage >= 0 ? item.acreage : null,
       propertyType: 'Log cabin',
       listingUrl: item.listingUrl,
-      imageUrl: validHttps(item.imageUrl) ? item.imageUrl : undefined,
+      photo: parsePhoto(item.photo),
       verified: true,
       lastCheckedAt: checked.toISOString(),
     });

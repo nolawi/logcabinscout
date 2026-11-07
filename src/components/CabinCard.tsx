@@ -18,7 +18,7 @@ export default function CabinCard({ cabin, variant = 1 }: CabinCardProps) {
 
   return (
     <article className="card">
-      <CabinPhoto key={cabin.imageUrl ?? 'no-photo'} imageUrl={cabin.imageUrl} title={cabin.title} variant={variant} isSample={cabin.isSample} />
+      <CabinPhoto key={cabin.photo?.url ?? 'no-photo'} photo={cabin.photo} title={cabin.title} variant={variant} isSample={cabin.isSample} />
       <div className="details">
         <small>{cabin.location}</small>
         <h3>{cabin.title}</h3>

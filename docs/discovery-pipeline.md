@@ -14,7 +14,8 @@ There are two deliberately distinct stages:
 Each reviewed record must have:
 - A stable string `id`, `title`, `location`, numeric `price`, and optional numeric `acreage`.
 - An **actual HTTPS original listing URL** and, optionally, an image URL
-  with appropriate display permission.
+  with appropriate display permission recorded in a `photo` object; see
+  [property photography](property-photos.md).
 - `verified: true` only after confirming both actual log construction
   **and** that the property is for sale.
 - `status: "active"` and a recent ISO timestamp `lastCheckedAt`.

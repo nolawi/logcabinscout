@@ -30,7 +30,6 @@ Only verified, active, authorized listing records should be included:
     "acreage": 4.2,
     "propertyType": "Log cabin",
     "listingUrl": "https://example.com/original-listing",
-    "imageUrl": "https://example.com/authorized-photo.jpg",
     "verified": true,
     "lastCheckedAt": "2026-11-07T12:00:00.000Z"
   }
@@ -44,6 +43,9 @@ original listing links and photo use are permitted.
 The browser-side parser rejects records without `verified: true`, a valid HTTPS
 listing URL, a title, location, nonnegative numeric price, and unique ID.
 A valid UTC ISO `lastCheckedAt` timestamp is required; missing, invalid, future, and expired dates are excluded.
+Optional `photo` metadata must include authorized imagery, descriptive alt text,
+credit, source link, and intrinsic dimensions. Attribution and source links are preserved without asserting that they establish a usage license. Bare `imageUrl` fields are ignored.
+See [photo permissions and responsive assets](property-photos.md).
 Missing/invalid photos do not prevent inclusion. In future, an automated server-side
 job can generate this JSON from Supabase or a licensed source. Do not expose
 RentCast or Supabase service-role credentials in this file or client bundle.

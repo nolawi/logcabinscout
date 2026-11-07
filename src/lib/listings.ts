@@ -1,3 +1,4 @@
+import { parsePhoto } from './photo.mjs';
 import type { Cabin } from '../types/cabin';
 
 type ListingRecord = Record<string, unknown>;
@@ -52,7 +53,7 @@ export function parseListings(input: unknown, now = Date.now()): Cabin[] {
       acreage: number(item.acreage),
       propertyType: string(item.propertyType) || 'Log cabin',
       listingUrl,
-      imageUrl: safeUrl(item.imageUrl),
+      photo: parsePhoto(item.photo),
       isSample: false,
       lastCheckedAt: new Date(checked).toISOString(),
     });

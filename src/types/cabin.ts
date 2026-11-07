@@ -1,3 +1,5 @@
+import type { PropertyPhoto } from '../lib/photo.mjs';
+
 /** Listing shape shared by cards and future data providers. */
 export type Cabin = {
   id: string;
@@ -7,7 +9,7 @@ export type Cabin = {
   acreage: number | null;
   propertyType: string;
   lastCheckedAt?: string;
-  imageUrl?: string;
+  photo?: PropertyPhoto;
   listingUrl?: string;
   /** Preview records must never be represented as real for-sale listings. */
   isSample?: boolean;
