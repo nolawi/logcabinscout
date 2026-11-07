@@ -29,7 +29,7 @@ nav { display: flex; flex-wrap: wrap; gap: clamp(18px, 3vw, 42px); font-size: 13
 nav a { padding: 10px 0; border-bottom: 2px solid transparent; }
 nav a:hover { border-color: var(--rust); }
 
-.hero { position: relative; min-height: 510px; isolation: isolate; display: flex; align-items: center; justify-content: center; padding: 70px 24px 80px; text-align: center; overflow: hidden; background: #d0d2bd url('/logcabinscout/hero-landscape.svg') center / cover no-repeat; }
+.hero { position: relative; min-height: 510px; isolation: isolate; display: flex; align-items: center; justify-content: center; padding: 70px 24px 80px; text-align: center; overflow: hidden; background-color: #d0d2bd; background-position: center; background-size: cover; background-repeat: no-repeat; }
 .hero::before { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, rgba(246,240,228,.3), rgba(246,240,228,.76) 55%, rgba(246,240,228,.18)); }
 .hero-inner { max-width: 850px; }
 .eyebrow { color: var(--rust); font-weight: 700; font-size: 11px; letter-spacing: .19em; text-transform: uppercase; }
