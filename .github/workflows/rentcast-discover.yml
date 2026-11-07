@@ -1,0 +1,30 @@
+name: Discover log cabin candidates (manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      state:
+        description: 'State to sample'
+        type: choice
+        options: [VA, WV, NC, TN, PA, NY, CO, MT, ID, WA]
+        required: true
+        default: VA
+
+permissions:
+  contents: read
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run classification unit tests
+        run: node --test scripts/lib/classify-cabin.test.mjs
+      - name: Sample RentCast (up to four paid requests)
+        env:
+          RENTCAST_API_KEY: ${{ secrets.RENTCAST_API_KEY }}
+          RENTCAST_STATE: ${{ inputs.state }}
+        run: node scripts/rentcast-discover.mjs
