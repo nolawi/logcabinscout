@@ -51,8 +51,8 @@ are preserved. GitHub Pages base URL is respected for brand assets.
   with the branded fallback. Changing the image URL resets photo loading.
 - Inline SVG arrows use the surrounding text color and are hidden from assistive
   technology; link text supplies their accessible names.
-- Secondary text uses darker ink for contrast. Listing links and filter-reset
-  controls have 44px minimum touch heights; cards align links along the bottom.
+- Secondary text uses darker ink for contrast. Filter-reset controls have a 44px minimum height;
+  card photos and addresses provide direct links to the property.
 - The compact header uses a small emblem and single-line wordmark without
   navigation links. Heading wrapping and reduced-motion support remain available.
 
@@ -62,3 +62,7 @@ The visible page opens on filters and property cards, with one result count.
 Editorial introductions, story copy, repeated property-type labels, and visible
 review dates are omitted. A screen-reader heading and background freshness
 filtering remain; image source credits stay visible.
+
+Property photos and addresses link directly to the original listing. Price and
+acreage share a compact row; a separate repeated listing CTA is omitted.
+Photo credits retain separate source links.

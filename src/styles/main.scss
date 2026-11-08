@@ -53,13 +53,10 @@ h2 { color: var(--pine); font-size: clamp(32px, 3.3vw, 49px); line-height: 1.2; 
 .cabin-image.is-loaded { opacity: 1; }
 .arrow-icon { display: block; flex-shrink: 0; }
 .sample-badge { position: absolute; top: 14px; left: 14px; padding: 6px 10px; color: var(--pine); background: var(--paper); font-size: 10px; font-weight: 700; border-radius: 3px; text-transform: uppercase; letter-spacing: .08em; }
-.details { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: 24px; }
+.details { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: 18px 20px 20px; }
 .details small { color: var(--ink-soft); font-weight: 600; font-size: 12px; }
-.details h2 { overflow-wrap: anywhere; margin: 9px 0 12px; font-size: 21px; line-height: 1.3; color: var(--pine); }
-.details strong { display: block; margin-bottom: 18px; color: var(--rust); font: 700 26px/1.25 var(--serif); }
-.details p { align-self: stretch; margin: 0 0 18px; border-top: 1px solid var(--line); padding-top: 13px; color: var(--ink-soft); font-size: 13px; }
-.listing-link { display: inline-flex; align-items: center; gap: 9px; margin-top: auto; min-height: 44px; color: var(--pine); font-size: 13px; font-weight: 700; border-bottom: 1px solid var(--rust); padding-bottom: 2px; }
-.listing-link:hover { color: var(--rust); }
+.details h2 { overflow-wrap: anywhere; margin: 6px 0 14px; font-size: 21px; line-height: 1.3; color: var(--pine); }
+.details strong { display: block; margin-bottom: 0; color: var(--rust); font: 700 25px/1.25 var(--serif); }
 .empty-state, .feed-notice { padding: 16px 20px; margin: 0 0 25px; background: #efe8d9; color: var(--pine); border-left: 3px solid var(--rust); font-size: 13px; line-height: 1.5; }
 
 footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px; padding: 16px clamp(20px, 5vw, 86px); color: var(--paper); background: var(--pine); font-size: 12px; letter-spacing: .03em; }
@@ -84,3 +81,10 @@ footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14
 .photo-credit a:focus-visible { outline-color: #fffaf0; outline-offset: 2px; }
 
 .photo-frame { position: relative; aspect-ratio: 3 / 2; display: grid; place-items: center; overflow: hidden; }
+
+.card-facts { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 18px; width: 100%; }
+.acreage { color: var(--ink-soft); font-size: 13px; }
+.card-title-link { display: inline-flex; align-items: center; gap: 8px; min-height: 32px; }
+.card-title-link:hover { color: var(--rust); text-decoration: underline; text-underline-offset: 4px; }
+.photo-link { display: block; }
+.photo-link:focus-visible { outline-offset: -4px; }
