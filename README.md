@@ -35,9 +35,10 @@ Never advance `lastCheckedAt` solely to keep a listing visible. Regenerate and c
 `public/listings.json` when reviewed data changes. Generation is deterministic;
 the browser enforces expiry without a redeployment. See [feed details](docs/listings-feed.md).
 
-The site deploys to **https://elancabin.com/** through the existing GitHub Pages
-repository `asyncdc/elancabin`. Vite uses the root base path `/`; `public/CNAME`
-records the custom domain. Run `npm run deploy` to build and publish a release.
+The site deploys to **https://elancabin.com/** through GitHub Pages in this
+repository. Pushes to `main` run tests, build the app, and deploy automatically.
+Vite uses the root base path `/`; `public/CNAME` records the custom domain.
+`npm run deploy` requests a manual redeployment of remote `main` using GitHub CLI.
 See [deployment details](docs/deployment.md).
 
 Manage candidates, photos, and inactive listings with `npm run review -- --help`.

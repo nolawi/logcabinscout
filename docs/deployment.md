@@ -1,36 +1,39 @@
 # Website deployment
 
 Production URL: https://elancabin.com/
-Application source: `nolawi/logcabinscout`
-Existing GitHub Pages hosting repository: `asyncdc/elancabin`, branch `main`, root `/`
+Application source and GitHub Pages repository: `nolawi/logcabinscout`
 
-The domain already points to this hosting repository, with HTTPS enforced and a
-GitHub-managed certificate. Retaining that configuration avoids DNS changes and
-preserves the existing certificate. The connected GitHub integration can push code
-but cannot modify Pages settings, so this deployment uses the existing static
-Pages build rather than transferring the domain to a new repository.
+GitHub Pages uses **GitHub Actions** as its source, with custom domain
+`elancabin.com` and HTTPS enforced. The domain already points to GitHub Pages.
+The historical placeholder source remains in `asyncdc/elancabin`, whose custom
+domain assignment has been removed. No further writes to that repository are needed.
 
-After committing and merging source changes, run:
+## Deploy
 
-```bash
-npm run deploy
-```
+Pushes to `main` automatically run `.github/workflows/deploy.yml`. The workflow:
 
-The script runs tests, builds Vite, clones the hosting repo temporarily, checks its
-CNAME, copies the built files, and pushes a release commit to its main branch.
-It makes no paid API requests. Existing unrelated hosting files are preserved.
-Git history retains the original placeholder HTML and every previous release.
-`deployment.json` records the app source commit and previous hosting commit.
-`.nojekyll` ensures the Vite output is served as static files.
+1. Installs locked dependencies on Node 22 and runs all tests.
+2. Verifies the generated feed matches the reviewed source.
+3. Builds Vite and uploads only `dist/` as the Pages artifact.
+4. Deploys through the `github-pages` environment using GitHub's short-lived token.
 
-Pushes to the application repo do **not** automatically deploy: run this command
-for a release. GitHub builds Pages after the hosting repository receives the push.
-Check its `pages-build-deployment` Actions run, then load the domain on desktop.
-Verify asset requests, `/listings.json`, photos, search, sort, and reset.
+No PAT, cross-repository write access, or paid hosting service is needed. Build
+failures prevent deployment. Deployments run in sequence, and only the deploy job
+receives Pages write and identity-token permissions.
 
-Vite uses base `/` for the domain root, and `public/CNAME` contains `elancabin.com`.
-No PAT is stored in either repository; Git uses the environment's existing access.
-This remains GitHub's free static hosting.
+To redeploy the current remote `main`, use GitHub Actions → Deploy website → Run
+workflow, or run `npm run deploy` with an authenticated GitHub CLI. Uncommitted or
+unmerged local changes are not included in that deployment.
 
-To roll back, revert the release commit in `asyncdc/elancabin` or redeploy an earlier
-application commit. The prior source and placeholder remain available in Git history.
+Vite's base is `/` because the app is hosted at the domain root. `public/CNAME`
+records the domain; the repository's Pages settings control the active assignment.
+Do not restore the domain assignment on the old placeholder repository.
+
+## Verify and roll back
+
+After a deployment, inspect its Actions result and open the live site on desktop.
+Check the JS/CSS assets, `/listings.json`, property photos, search, sort, and reset.
+External image hosts can fail independently; branded fallbacks remain available.
+
+To roll back, revert the relevant source commit on `main`; the workflow tests,
+builds, and deploys the reverted app. GitHub manages the HTTPS certificate.
