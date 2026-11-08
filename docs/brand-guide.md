@@ -66,3 +66,7 @@ filtering remain; image source credits stay visible.
 Property photos and addresses link directly to the original listing. Price and
 acreage share a compact row; a separate repeated listing CTA is omitted.
 Photo credits retain separate source links.
+
+Filters use a single unboxed toolbar with descriptive selected values and
+screen-reader labels. The result count is compact and stays in place when the
+clear-filters control appears.

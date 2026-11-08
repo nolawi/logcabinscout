@@ -39,27 +39,27 @@ export default function App() {
         {isLoading && <p role="status">Loading cabins…</p>}
         {error && <p className="feed-notice" role="status">We couldn’t load the listings. Please refresh the page to try again.</p>}
         {!isLoading && !error && listings.length > 0 && <><div className="listing-filters" role="search" aria-label="Filter cabin listings">
-          <label className="filter-search">Search
-            <input type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="City, state, or cabin..." />
+          <label className="filter-search"><span className="sr-only">Search</span>
+            <input type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="Search city, state, or address" />
           </label>
-          <label>State
+          <label><span className="sr-only">State</span>
             <select value={states.includes(state) ? state : 'all'} onChange={event => setState(event.target.value)}>
               <option value="all">All states</option>
               {states.map(value => <option key={value} value={value}>{value}</option>)}
             </select>
           </label>
-          <label>Max price
+          <label><span className="sr-only">Max price</span>
             <select value={maxPrice} onChange={event => setMaxPrice(event.target.value)}>
               <option value="all">Any price</option>
-              <option value="250000">$250,000</option>
-              <option value="500000">$500,000</option>
-              <option value="750000">$750,000</option>
-              <option value="1000000">$1,000,000</option>
+              <option value="250000">Up to $250,000</option>
+              <option value="500000">Up to $500,000</option>
+              <option value="750000">Up to $750,000</option>
+              <option value="1000000">Up to $1,000,000</option>
             </select>
           </label>
-          <label>Sort by
+          <label><span className="sr-only">Sort by</span>
             <select value={sortBy} onChange={event => setSortBy(event.target.value as SortOrder)}>
-              <option value="featured">Featured</option>
+              <option value="featured">Sort: featured</option>
               <option value="price-asc">Price: low to high</option>
               <option value="price-desc">Price: high to low</option>
               <option value="acreage-desc">Acreage: most first</option>
@@ -67,7 +67,7 @@ export default function App() {
           </label>
         </div>
         <div className="results-bar" aria-live="polite">
-          <span>{visible.length} {visible.length === 1 ? 'cabin' : 'cabins'} found</span>
+          <span>{visible.length} {visible.length === 1 ? 'cabin' : 'cabins'}</span>
           {hasFilters && <button type="button" className="reset-filters" onClick={resetFilters}>Clear filters</button>}
         </div>
         <CabinGrid cabins={visible} />
