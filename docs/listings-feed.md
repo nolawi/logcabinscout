@@ -10,7 +10,7 @@ The generator retains valid review dates, even for old records, so its output an
 CI consistency checks do not change with the build date. The browser rejects
 future dates and hides listings at age **30 days or older**, using the visitor's
 clock. It recalculates every minute and on tab visibility/focus changes, so an open
-page also expires records. Review dates appear on each card in UTC.
+page also expires records. Review dates remain in the feed for background expiry checks and are not shown on cards.
 
 A successful empty feed (including all-expired records) shows “No current listings.”
 A failed request or malformed feed envelope shows a refresh message. Loading never

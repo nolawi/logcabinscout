@@ -11,20 +11,15 @@ const dollars = new Intl.NumberFormat('en-US', {
 });
 
 export default function CabinCard({ cabin, variant = 1 }: CabinCardProps) {
-  const details = [
-    cabin.acreage === null ? null : `${cabin.acreage.toLocaleString()} acres`,
-    cabin.propertyType,
-  ].filter(Boolean).join(' · ');
 
   return (
     <article className="card">
       <CabinPhoto key={cabin.photo?.url ?? 'no-photo'} photo={cabin.photo} title={cabin.title} variant={variant} isSample={cabin.isSample} />
       <div className="details">
         <small>{cabin.location}</small>
-        <h3>{cabin.title}</h3>
+        <h2>{cabin.title}</h2>
         <strong>{dollars.format(cabin.price)}</strong>
-        <p>{details}</p>
-        {cabin.lastCheckedAt && <p className="listing-checked">Last checked <time dateTime={cabin.lastCheckedAt}>{new Date(cabin.lastCheckedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time></p>}
+        {cabin.acreage !== null && <p>{cabin.acreage.toLocaleString()} acres</p>}
         {cabin.listingUrl && (
           <a className="listing-link" href={cabin.listingUrl} target="_blank" rel="noopener noreferrer">
             View original listing <ArrowIcon />

@@ -35,12 +35,8 @@ export default function App() {
     <main id="home">
 
       <section className="content" id="cabins">
-        <div className="section-title">
-          <div><p className="eyebrow">THE SCOUTED COLLECTION</p><h1>Log cabins for sale.</h1>
-            <p>{isLoading ? 'Checking available listings…' : error ? 'The collection is temporarily unavailable.'
-              : `${listings.length} sourced cabin ${listings.length === 1 ? 'listing' : 'listings'} checked in the last 30 days.`}</p>
-          </div>
-        </div>
+        <h1 className="sr-only">Log cabins for sale</h1>
+        {isLoading && <p role="status">Loading cabins…</p>}
         {error && <p className="feed-notice" role="status">We couldn’t load the listings. Please refresh the page to try again.</p>}
         {!isLoading && !error && listings.length > 0 && <><div className="listing-filters" role="search" aria-label="Filter cabin listings">
           <label className="filter-search">Search
@@ -75,11 +71,11 @@ export default function App() {
           {hasFilters && <button type="button" className="reset-filters" onClick={resetFilters}>Clear filters</button>}
         </div>
         <CabinGrid cabins={visible} />
-        <p className="collection-note">Listings are shown for 30 days after review. Prices and availability can change; confirm details with the original listing.</p></>}
+        </>}
         {!isLoading && !error && listings.length === 0 && <p className="empty-state" role="status">No current listings. We’re scouting more cabins; check back soon.</p>}
       </section>
-      <section className="about" id="about"><p className="eyebrow">A NOTE FROM THE SCOUT</p><h2>For the love of log cabins.</h2><p>There's something special about a home built of logs. We scout distinctive cabins across the country and point you to their original sale listings. No endless scrolling. Just places worth a closer look.</p></section>
+
     </main>
-    <footer><span>© {new Date().getFullYear()} Log Cabin Scout</span><span>Find your place in the woods.</span></footer>
+    <footer><span>© {new Date().getFullYear()} Log Cabin Scout</span></footer>
   </>;
 }

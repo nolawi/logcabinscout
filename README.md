@@ -36,7 +36,8 @@ Never advance `lastCheckedAt` solely to keep a listing visible. Regenerate and c
 the browser enforces expiry without a redeployment. See [feed details](docs/listings-feed.md).
 
 The site deploys to **https://elancabin.com/** through GitHub Pages in this
-repository. Pushes to `main` run tests, build the app, and deploy automatically.
+repository. Pushes to `main` run build checks. Website deployment is manual so design
+changes can be grouped into a release.
 Vite uses the root base path `/`; `public/CNAME` records the custom domain.
 `npm run deploy` requests a manual redeployment of remote `main` using GitHub CLI.
 See [deployment details](docs/deployment.md).

@@ -55,3 +55,10 @@ are preserved. GitHub Pages base URL is respected for brand assets.
   controls have 44px minimum touch heights; cards align links along the bottom.
 - The compact header uses a small emblem and single-line wordmark without
   navigation links. Heading wrapping and reduced-motion support remain available.
+
+## Minimal browsing layout
+
+The visible page opens on filters and property cards, with one result count.
+Editorial introductions, story copy, repeated property-type labels, and visible
+review dates are omitted. A screen-reader heading and background freshness
+filtering remain; image source credits stay visible.

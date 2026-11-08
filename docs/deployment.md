@@ -10,7 +10,8 @@ domain assignment has been removed. No further writes to that repository are nee
 
 ## Deploy
 
-Pushes to `main` automatically run `.github/workflows/deploy.yml`. The workflow:
+Website deployment is manual. Pushes to `main` do not update the live website.
+Run `.github/workflows/deploy.yml` when a release is wanted. The workflow:
 
 1. Installs locked dependencies on Node 22 and runs all tests.
 2. Verifies the generated feed matches the reviewed source.
@@ -35,5 +36,5 @@ After a deployment, inspect its Actions result and open the live site on desktop
 Check the JS/CSS assets, `/listings.json`, property photos, search, sort, and reset.
 External image hosts can fail independently; branded fallbacks remain available.
 
-To roll back, revert the relevant source commit on `main`; the workflow tests,
-builds, and deploys the reverted app. GitHub manages the HTTPS certificate.
+To roll back, revert the relevant source commit on `main`, then manually run the
+deployment workflow to publish the reverted app. GitHub manages the HTTPS certificate.
