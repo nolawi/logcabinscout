@@ -53,5 +53,5 @@ are preserved. GitHub Pages base URL is respected for brand assets.
   technology; link text supplies their accessible names.
 - Secondary text uses darker ink for contrast. Listing links and filter-reset
   controls have 44px minimum touch heights; cards align links along the bottom.
-- Heading wrapping, a stacked header below 360px, and reduced-motion support keep
-  the layout readable on narrow screens and with fallback fonts.
+- The compact header uses a small emblem and single-line wordmark without
+  navigation links. Heading wrapping and reduced-motion support remain available.

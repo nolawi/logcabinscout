@@ -31,7 +31,7 @@ export default function App() {
   const hasFilters = query !== '' || state !== 'all' || maxPrice !== 'all' || sortBy !== 'featured';
 
   return <>
-    <header className="header"><a className="brand" href="#home" aria-label="Log Cabin Scout home"><img src={import.meta.env.BASE_URL + "logo-mark.svg"} alt="" width="58" height="58" /><span className="brand-wordmark">LOG CABIN <strong>SCOUT</strong></span></a><nav aria-label="Main navigation"><a href="#cabins">Browse Cabins</a><a href="#about">Our Story</a></nav></header>
+    <header className="header"><a className="brand" href={import.meta.env.BASE_URL} aria-label="Log Cabin Scout home"><img src={import.meta.env.BASE_URL + "logo-mark.svg"} alt="" width="40" height="40" /><span className="brand-wordmark">LOG CABIN <strong>SCOUT</strong></span></a></header>
     <main id="home">
 
       <section className="content" id="cabins">
