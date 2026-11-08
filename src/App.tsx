@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { useSavedCabins } from './hooks/useSavedCabins';
 import CabinGrid from './components/CabinGrid';
 import { useListings, type ListingSnapshot } from './hooks/useListings';
 
@@ -11,6 +12,10 @@ export default function App({ initialFeed }: { initialFeed?: ListingSnapshot } =
   const [sortBy, setSortBy] = useState<SortOrder>('featured');
   const { listings, isLoading, error } = useListings(initialFeed);
 
+  const { saved, toggle: toggleSaved, canPersist } = useSavedCabins();
+  const savedIds = useMemo(() => new Set(saved), [saved]);
+  const [savedOnly, setSavedOnly] = useState(false);
+  const savedAvailable = listings.filter(cabin => savedIds.has(cabin.id)).length;
   const source = listings;
   const states = useMemo(() => [...new Set(source.map(cabin => cabin.location.split(',').at(-1)?.trim()).filter((value): value is string => Boolean(value)))].sort(), [source]);
   const visible = useMemo(() => {
@@ -19,16 +24,16 @@ export default function App({ initialFeed }: { initialFeed?: ListingSnapshot } =
       const matchesSearch = `${cabin.title} ${cabin.location}`.toLowerCase().includes(search);
       const matchesState = state === 'all' || !states.includes(state) || cabin.location.split(',').at(-1)?.trim() === state;
       const matchesPrice = maxPrice === 'all' || cabin.price <= Number(maxPrice);
-      return matchesSearch && matchesState && matchesPrice;
+      return matchesSearch && matchesState && matchesPrice && (!savedOnly || savedIds.has(cabin.id));
     });
     if (sortBy === 'price-asc') return filtered.sort((a, b) => a.price - b.price);
     if (sortBy === 'price-desc') return filtered.sort((a, b) => b.price - a.price);
     if (sortBy === 'acreage-desc') return filtered.sort((a, b) => (b.acreage ?? -1) - (a.acreage ?? -1));
     return filtered;
-  }, [source, query, state, maxPrice, sortBy, states]);
+  }, [source, query, state, maxPrice, sortBy, states, savedOnly, savedIds]);
 
-  const resetFilters = () => { setQuery(''); setState('all'); setMaxPrice('all'); setSortBy('featured'); };
-  const hasFilters = query !== '' || state !== 'all' || maxPrice !== 'all' || sortBy !== 'featured';
+  const resetFilters = () => { setQuery(''); setState('all'); setMaxPrice('all'); setSortBy('featured'); setSavedOnly(false); };
+  const hasFilters = query !== '' || state !== 'all' || maxPrice !== 'all' || sortBy !== 'featured' || savedOnly;
 
   return <>
     <header className="header"><a className="brand" href={import.meta.env.BASE_URL} aria-label="Log Cabin Scout home"><img src={import.meta.env.BASE_URL + "logo-mark.svg"} alt="" width="40" height="40" /><span className="brand-wordmark">LOG CABIN <strong>SCOUT</strong></span></a></header>
@@ -68,9 +73,13 @@ export default function App({ initialFeed }: { initialFeed?: ListingSnapshot } =
         </div>
         <div className="results-bar" aria-live="polite">
           <span>{visible.length} {visible.length === 1 ? 'cabin' : 'cabins'}</span>
+          <div className="result-actions">
+          <button type="button" className="saved-filter" aria-pressed={savedOnly} onClick={() => setSavedOnly(value => !value)}>Saved only</button>
           {hasFilters && <button type="button" className="reset-filters" onClick={resetFilters}>Clear filters</button>}
+          </div>
         </div>
-        <CabinGrid cabins={visible} />
+        {!canPersist && saved.length > 0 && <p className="saved-notice" role="status">Saved for this visit only. Browser storage is unavailable.</p>}
+        <CabinGrid cabins={visible} savedIds={savedIds} onToggleSaved={toggleSaved} emptyMessage={savedOnly && savedAvailable === 0 ? 'No saved cabins in the current collection. Use a heart to save one.' : undefined} />
         </>}
         {!isLoading && !error && listings.length === 0 && <p className="empty-state" role="status">No current listings. We’re scouting more cabins; check back soon.</p>}
       </section>

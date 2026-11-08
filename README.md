@@ -50,3 +50,6 @@ and Colorado. See [expanded listing sources](docs/expanded-listing-sources.md).
 
 Production builds prerender the collection and generate crawl metadata for search
 engines. See [SEO and sharing](docs/seo.md).
+
+Use card hearts and **Saved only** to shortlist properties in your browser.
+See [saved cabins](docs/saved-cabins.md) for persistence behavior.
