@@ -40,3 +40,8 @@ Do not create fake direct-listing links; obtain links and image permissions
 from a legitimate source before marking an item reviewed.
 
 An empty or expired collection shows no current listings; production never falls back to fictional properties.
+
+
+Discovery history now retains classification results and candidate observations
+between runs. See [history retention and limitations](scheduled-discovery.md#retained-discovery-history).
+This history never grants approval for publication or updates the public feed.

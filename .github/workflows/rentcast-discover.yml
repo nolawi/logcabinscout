@@ -15,6 +15,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
 
 # Avoid overlapping jobs (and duplicate API charges).
 concurrency:
@@ -23,6 +24,7 @@ concurrency:
 
 jobs:
   discover:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -31,7 +33,7 @@ jobs:
           node-version: '22'
       - name: Run discovery tests
         run: |
-          node --test scripts/lib/classify-cabin.test.mjs scripts/lib/discovery-schedule.test.mjs scripts/lib/discover.test.mjs
+          node --test scripts/lib/classify-cabin.test.mjs scripts/lib/discovery-schedule.test.mjs scripts/lib/discover.test.mjs scripts/lib/discovery-history.test.mjs
       - name: Choose state
         id: state
         env:
@@ -51,7 +53,23 @@ jobs:
             echo "configured=false" >> "$GITHUB_OUTPUT"
             echo "::notice::RENTCAST_API_KEY is not configured; no API requests made."
           fi
+      - name: Find retained discovery history
+        id: history
+        if: steps.key.outputs.configured == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await require('./scripts/restore-discovery-history.cjs')({ github, context, core });
+      - name: Restore discovery history
+        if: steps.history.outputs.run_id != ''
+        uses: actions/download-artifact@v4
+        with:
+          name: rentcast-discovery-history
+          path: artifacts
+          github-token: ${{ github.token }}
+          run-id: ${{ steps.history.outputs.run_id }}
       - name: Sample RentCast (max four requests)
+        id: sample
         if: steps.key.outputs.configured == 'true'
         env:
           RENTCAST_API_KEY: ${{ secrets.RENTCAST_API_KEY }}
@@ -63,4 +81,15 @@ jobs:
         with:
           name: rentcast-candidates-${{ steps.state.outputs.state }}
           path: artifacts/candidates.json
+          overwrite: true
           retention-days: 30
+
+      - name: Retain discovery history, including successful lookups before a failure
+        if: always() && steps.key.outputs.configured == 'true' && steps.sample.outcome != 'skipped'
+        uses: actions/upload-artifact@v4
+        with:
+          name: rentcast-discovery-history
+          path: artifacts/history.json
+          if-no-files-found: ignore
+          overwrite: true
+          retention-days: 90

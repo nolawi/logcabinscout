@@ -55,4 +55,36 @@ failures, concurrent budget enforcement, response validation, and review-only ou
 
 The four-attempt limit is per script process. It is not an account-wide spending
 cap: the separate probe, manual reruns, and other consumers use their own budget.
-Cross-run enrichment caching and provider-level cabin search remain future work.
+Provider-level cabin search remains future work.
+
+
+## Retained discovery history
+
+The workflow restores `rentcast-discovery-history` from the newest retained
+artifact of this workflow on `main` (including failed runs with saved progress).
+It ignores artifacts from other branches, workflows, or pull request events.
+Manual discovery is restricted to `main` so feature branches cannot write the
+shared history. Runs are serialized by the existing concurrency group.
+
+Successful property classifications, including negative matches, are reused for
+90 days. The sale search still runs, and candidates use its current price and
+listing fields. Reuse does not refresh the classification timestamp. History
+keys hash the normalized address with its state. Only classification/evidence and
+candidate summaries are stored, never credentials or full provider responses.
+Candidate records retain first/last observation timestamps and stay unverified.
+
+Local runs use `artifacts/history.json`; each successful lookup is atomically
+saved before proceeding. If a later lookup fails, earlier work can be reused.
+The workflow uploads history even after a sampling failure, with 90-day retention.
+Candidate outputs remain separate 30-day review artifacts. Local `artifacts/`
+is ignored by Git; no automatic listing publication or repository writes occur.
+
+Artifact storage is not a permanent database: expiration, manual deletion, or
+no retained artifact starts a new history. Retrieval errors or corrupt history
+stop the run before API calls rather than silently discarding it. A canceled
+runner may lose work that was not uploaded yet. This is a cost-saving cache,
+not a guarantee against every duplicate request or an account-wide spend cap.
+
+Run `node --test scripts/lib/discovery-history.test.mjs` to validate serialized
+reuse, expiration, failure recovery, artifact selection, and actual CLI file
+save/reload using a simulated provider. No paid requests are needed.

@@ -4,3 +4,6 @@ dist
 .env.*
 !.env.example
 .DS_Store
+
+# Local discovery output and retained lookup history
+artifacts/
