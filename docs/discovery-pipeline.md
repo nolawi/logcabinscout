@@ -48,3 +48,7 @@ This history never grants approval for publication or updates the public feed.
 
 Use the [local review tool](review-workflow.md) to inspect artifacts, approve candidates,
 attach source links/photos, and mark listings inactive without manually rebuilding JSON.
+
+Keyword-targeted [public source discovery](public-discovery.md) now complements
+RentCast sampling and preserves sourced home details for review. It is manual
+and makes no paid API calls.

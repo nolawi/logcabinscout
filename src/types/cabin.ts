@@ -7,6 +7,9 @@ export type Cabin = {
   location: string;
   price: number;
   acreage: number | null;
+  bedrooms?: number | null;
+  bathrooms?: number | null;
+  squareFeet?: number | null;
   propertyType: string;
   lastCheckedAt?: string;
   photo?: PropertyPhoto;

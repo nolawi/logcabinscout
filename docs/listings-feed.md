@@ -49,3 +49,8 @@ See [photo permissions and responsive assets](property-photos.md).
 Missing/invalid photos do not prevent inclusion. In future, an automated server-side
 job can generate this JSON from Supabase or a licensed source. Do not expose
 RentCast or Supabase service-role credentials in this file or client bundle.
+
+Optional numeric `bedrooms`, `bathrooms`, and `squareFeet` fields are carried
+through the reviewed source, generated feed, and cards. Unknown values stay null
+and are omitted visually; fractional bathroom counts and zero-bedroom studios
+are retained. Square footage must be a positive integer measured in square feet.

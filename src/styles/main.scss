@@ -82,7 +82,7 @@ footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14
 
 .photo-frame { position: relative; aspect-ratio: 3 / 2; display: grid; place-items: center; overflow: hidden; }
 
-.card-facts { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 18px; width: 100%; }
+.card-facts { margin-top: auto; display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 18px; width: 100%; }
 .acreage { color: var(--ink-soft); font-size: 13px; }
 .card-title-link { display: inline-flex; align-items: center; gap: 8px; min-height: 32px; }
 .card-title-link:hover { color: var(--rust); text-decoration: underline; text-underline-offset: 4px; }
@@ -96,3 +96,5 @@ footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14
 .saved-filter { min-height: 40px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 4px; color: var(--pine); background: transparent; font-size: 13px; }
 .saved-filter[aria-pressed="true"] { background: var(--pine); color: var(--paper); border-color: var(--pine); }
 .saved-notice { color: var(--ink-soft); font-size: 12px; margin: 0 0 16px; }
+
+.home-details { margin: 0 0 12px; color: var(--ink-soft); font-size: 13px; line-height: 1.5; }

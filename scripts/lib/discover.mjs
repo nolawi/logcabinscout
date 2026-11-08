@@ -73,6 +73,7 @@ export async function discover(state, client, date = new Date(), savedHistory = 
       id: String(listing.id ?? listing.formattedAddress), source: 'RentCast',
       address: listing.formattedAddress, city: listing.city ?? null,
       state: listing.state ?? state, price: listing.price ?? null,
+      bedrooms: listing.bedrooms ?? null, bathrooms: listing.bathrooms ?? null, squareFeet: listing.squareFootage ?? null,
       listedDate: listing.listedDate ?? null, classification: result.classification,
       evidence: result.evidence, status: 'needs-review', verified: false,
       firstSeenAt: previous?.candidate?.firstSeenAt ?? observedAt, lastSeenAt: observedAt,

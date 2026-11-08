@@ -31,3 +31,10 @@ test('empty or invalid entries never become sample listings', () => {
   assert.throws(() => parseListings({ listings: [] }, now), /listing array/);
   assert.equal(parseListings([listing, listing], now).length, 1);
 });
+
+test('home details preserve studio and fractional baths while omitting invalid unknowns', () => {
+  const [known]=parseListings([{...listing,bedrooms:0,bathrooms:1.5,squareFeet:480}],now);
+  assert.equal(known.bedrooms,0);assert.equal(known.bathrooms,1.5);assert.equal(known.squareFeet,480);
+  const [unknown]=parseListings([{...listing,bedrooms:-2,bathrooms:'2',squareFeet:0}],now);
+  assert.equal(unknown.bedrooms,null);assert.equal(unknown.bathrooms,null);assert.equal(unknown.squareFeet,null);
+});

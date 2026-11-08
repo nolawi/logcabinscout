@@ -40,7 +40,10 @@
       "height": 682,
       "allowCropping": false,
       "variants": []
-    }
+    },
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "squareFeet": 2408
   },
   {
     "id": "zillow:13853194",
@@ -60,6 +63,84 @@
       "sourceUrl": "https://www.zillow.com/homedetails/252-Snowmass-Dr-Livermore-CO-80536/13853194_zpid/",
       "width": 960,
       "height": 716,
+      "allowCropping": false,
+      "variants": []
+    },
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 1672
+  },
+  {
+    "id": "zillow:106956353",
+    "title": "190 Coyote Run",
+    "location": "Murphy, North Carolina",
+    "price": 359000,
+    "acreage": 3.08,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "squareFeet": 1196,
+    "listingUrl": "https://www.zillow.com/homedetails/190-Coyote-Run-Murphy-NC-28906/106956353_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T02:17:34.520Z",
+    "logConstructionEvidence": "Source description identifies log construction for the primary residence.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/f5f2075220cbf7a4a0d3c0f31311d5a3-o_a.jpg",
+      "alt": "Exterior of 190 Coyote Run in Murphy, North Carolina",
+      "credit": "NGBOR / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/190-Coyote-Run-Murphy-NC-28906/106956353_zpid/",
+      "width": 1024,
+      "height": 576,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
+    "id": "zillow:337980259",
+    "title": "872 Tulip Dr",
+    "location": "New Brighton, Pennsylvania",
+    "price": 635000,
+    "acreage": 32.18,
+    "bedrooms": 2,
+    "bathrooms": 3,
+    "squareFeet": null,
+    "listingUrl": "https://www.zillow.com/homedetails/872-Tulip-Dr-New-Brighton-PA-15066/337980259_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T02:17:34.538Z",
+    "logConstructionEvidence": "Source description identifies log construction for the primary residence.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/c5b7699660fd6f90dc9d96fe0bd1c031-o_a.jpg",
+      "alt": "Exterior of 872 Tulip Dr in New Brighton, Pennsylvania",
+      "credit": "WPMLS / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/872-Tulip-Dr-New-Brighton-PA-15066/337980259_zpid/",
+      "width": 1024,
+      "height": 576,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
+    "id": "zillow:209613753",
+    "title": "18371 High Mountain Vw",
+    "location": "Florence, Montana",
+    "price": 265000,
+    "acreage": 10.02,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "squareFeet": 480,
+    "listingUrl": "https://www.zillow.com/homedetails/18371-High-Mountain-Vw-Florence-MT-59833/209613753_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T02:17:34.551Z",
+    "logConstructionEvidence": "Source description identifies log construction for the primary residence.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/18695fd3c55d193a9144d61cfb360965-o_a.jpg",
+      "alt": "Exterior of 18371 High Mountain Vw in Florence, Montana",
+      "credit": "MRMLS / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/18371-High-Mountain-Vw-Florence-MT-59833/209613753_zpid/",
+      "width": 1024,
+      "height": 683,
       "allowCropping": false,
       "variants": []
     }
@@ -105,7 +186,10 @@
       "height": 576,
       "allowCropping": false,
       "variants": []
-    }
+    },
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 2842
   },
   {
     "id": "zillow:235403768",
@@ -125,6 +209,84 @@
       "sourceUrl": "https://www.zillow.com/homedetails/1725-County-Road-600-Pagosa-Springs-CO-81147/235403768_zpid/",
       "width": 1024,
       "height": 767,
+      "allowCropping": false,
+      "variants": []
+    },
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "squareFeet": 2128
+  },
+  {
+    "id": "zillow:102193906",
+    "title": "418 Piney Creek Dr",
+    "location": "Lake Lure, North Carolina",
+    "price": 324000,
+    "acreage": 3.15,
+    "bedrooms": 2,
+    "bathrooms": 3,
+    "squareFeet": 1997,
+    "listingUrl": "https://www.zillow.com/homedetails/418-Piney-Creek-Dr-Lake-Lure-NC-28746/102193906_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T02:17:34.530Z",
+    "logConstructionEvidence": "Source description identifies log construction for the primary residence.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/fc2988e1bb09bfaee97e4e2d2644c6ab-o_a.jpg",
+      "alt": "Exterior of 418 Piney Creek Dr in Lake Lure, North Carolina",
+      "credit": "Canopy MLS / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/418-Piney-Creek-Dr-Lake-Lure-NC-28746/102193906_zpid/",
+      "width": 1024,
+      "height": 768,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
+    "id": "zillow:78722169",
+    "title": "504 Probst Rd",
+    "location": "Jamestown, Pennsylvania",
+    "price": 495000,
+    "acreage": 10.25,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "squareFeet": 1326,
+    "listingUrl": "https://www.zillow.com/homedetails/504-Probst-Rd-Jamestown-PA-16134/78722169_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T02:17:34.542Z",
+    "logConstructionEvidence": "Source description identifies log construction for the primary residence.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/31a269fa114ee5d162a8ecb566826d89-o_a.jpg",
+      "alt": "Exterior of 504 Probst Rd in Jamestown, Pennsylvania",
+      "credit": "GEMLS / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/504-Probst-Rd-Jamestown-PA-16134/78722169_zpid/",
+      "width": 1024,
+      "height": 629,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
+    "id": "zillow:250239028",
+    "title": "247 Mill Gulch Rd",
+    "location": "Sheridan, Montana",
+    "price": 749000,
+    "acreage": 27.62,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "squareFeet": 1350,
+    "listingUrl": "https://www.zillow.com/homedetails/247-Mill-Gulch-Rd-Sheridan-MT-59749/250239028_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T02:17:34.554Z",
+    "logConstructionEvidence": "Source description identifies log construction for the primary residence.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/a0d3883c6500175e1b78a018a8e3c63b-o_a.jpg",
+      "alt": "Exterior of 247 Mill Gulch Rd in Sheridan, Montana",
+      "credit": "Big Sky Country MLS / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/247-Mill-Gulch-Rd-Sheridan-MT-59749/250239028_zpid/",
+      "width": 1024,
+      "height": 768,
       "allowCropping": false,
       "variants": []
     }
@@ -170,7 +332,10 @@
       "height": 682,
       "allowCropping": false,
       "variants": []
-    }
+    },
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "squareFeet": 2255
   },
   {
     "id": "zillow:13991629",
@@ -190,6 +355,84 @@
       "sourceUrl": "https://www.zillow.com/homedetails/9562-County-Road-18-Fairplay-CO-80440/13991629_zpid/",
       "width": 1024,
       "height": 682,
+      "allowCropping": false,
+      "variants": []
+    },
+    "bedrooms": 1,
+    "bathrooms": 0,
+    "squareFeet": 532
+  },
+  {
+    "id": "zillow:74984195",
+    "title": "1067 Mcpherson Road",
+    "location": "Vass, North Carolina",
+    "price": 268000,
+    "acreage": 1.97,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 1392,
+    "listingUrl": "https://www.zillow.com/homedetails/1067-McPherson-Rd-Vass-NC-28394/74984195_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T02:17:34.534Z",
+    "logConstructionEvidence": "Source description identifies log construction for the primary residence.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/c09af4fcbf35433f1307f05d4363c09d-o_a.jpg",
+      "alt": "Exterior of 1067 Mcpherson Road in Vass, North Carolina",
+      "credit": "Hive MLS / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/1067-McPherson-Rd-Vass-NC-28394/74984195_zpid/",
+      "width": 1024,
+      "height": 682,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
+    "id": "zillow:8932507",
+    "title": "1154 Park Rd",
+    "location": "Elverson, Pennsylvania",
+    "price": 200000,
+    "acreage": 2.61,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "squareFeet": 720,
+    "listingUrl": "https://www.zillow.com/homedetails/1154-Park-Rd-Elverson-PA-19520/8932507_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T02:17:34.547Z",
+    "logConstructionEvidence": "Source description identifies log construction for the primary residence.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/ad4353b73c8fb34680640b4259919845-o_a.jpg",
+      "alt": "Exterior of 1154 Park Rd in Elverson, Pennsylvania",
+      "credit": "Bright MLS / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/1154-Park-Rd-Elverson-PA-19520/8932507_zpid/",
+      "width": 1024,
+      "height": 474,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
+    "id": "zillow:3145082",
+    "title": "13245 Balsamroot Rd",
+    "location": "Lolo, Montana",
+    "price": 505000,
+    "acreage": 1.38,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 2046,
+    "listingUrl": "https://www.zillow.com/homedetails/13245-Balsamroot-Rd-Lolo-MT-59847/3145082_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T02:17:34.558Z",
+    "logConstructionEvidence": "Source description identifies log construction for the primary residence.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/56c703996f68e1275d420d75570a8524-o_a.jpg",
+      "alt": "Exterior of 13245 Balsamroot Rd in Lolo, Montana",
+      "credit": "MRMLS / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/13245-Balsamroot-Rd-Lolo-MT-59847/3145082_zpid/",
+      "width": 1024,
+      "height": 683,
       "allowCropping": false,
       "variants": []
     }
@@ -214,7 +457,10 @@
       "height": 683,
       "allowCropping": false,
       "variants": []
-    }
+    },
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 1275
   },
   {
     "id": "zillow:463356865",
@@ -236,7 +482,10 @@
       "height": 768,
       "allowCropping": false,
       "variants": []
-    }
+    },
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 2400
   },
   {
     "id": "zillow:41290091",
@@ -258,7 +507,10 @@
       "height": 767,
       "allowCropping": false,
       "variants": []
-    }
+    },
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 2098
   },
   {
     "id": "zillow:128492323",
@@ -280,7 +532,10 @@
       "height": 576,
       "allowCropping": false,
       "variants": []
-    }
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "squareFeet": 1280
   },
   {
     "id": "zillow:42504621",
@@ -302,7 +557,10 @@
       "height": 683,
       "allowCropping": false,
       "variants": []
-    }
+    },
+    "bedrooms": 1,
+    "bathrooms": 2,
+    "squareFeet": 1352
   },
   {
     "id": "zillow:2075700125",
@@ -324,7 +582,10 @@
       "height": 768,
       "allowCropping": false,
       "variants": []
-    }
+    },
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "squareFeet": 1736
   },
   {
     "id": "zillow:334055567",
@@ -346,7 +607,10 @@
       "height": 768,
       "allowCropping": false,
       "variants": []
-    }
+    },
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "squareFeet": 1289
   },
   {
     "id": "zillow:235401431",
@@ -368,6 +632,9 @@
       "height": 698,
       "allowCropping": false,
       "variants": []
-    }
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "squareFeet": 620
   }
 ]

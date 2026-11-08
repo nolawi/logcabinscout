@@ -45,11 +45,15 @@ See [deployment details](docs/deployment.md).
 Manage candidates, photos, and inactive listings with `npm run review -- --help`.
 See the [local review workflow](docs/review-workflow.md).
 
-The collection now includes 17 sourced properties across Virginia, Tennessee,
-and Colorado. See [expanded listing sources](docs/expanded-listing-sources.md).
+The collection now includes 26 sourced properties across Virginia, Tennessee, Colorado, North Carolina,
+Pennsylvania, and Montana. See [expanded listing sources](docs/expanded-listing-sources.md).
 
 Production builds prerender the collection and generate crawl metadata for search
 engines. See [SEO and sharing](docs/seo.md).
 
 Use card hearts and **Saved only** to shortlist properties in your browser.
 See [saved cabins](docs/saved-cabins.md) for persistence behavior.
+
+For keyword-targeted discovery without paid API calls, see
+[public listing discovery](docs/public-discovery.md). Cards include sourced
+bedroom, bathroom, and square-footage details where available.

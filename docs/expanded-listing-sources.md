@@ -29,3 +29,24 @@ and uncropped framing. They remain remotely hosted for the user’s personal bro
 
 The default collection order alternates states so the first row shows geographic
 variety. Original Virginia record details and review timestamps were preserved.
+
+## North Carolina, Pennsylvania, and Montana expansion
+
+Nine additional source-backed log homes expand the collection to 26 properties
+across six states. Source descriptions and exterior photos were inspected.
+Prices and dates remain in the reviewed records; no paid API calls were made.
+Home details were also added to the previously sourced Tennessee and Colorado
+records using their original source-page data. Unknown facts on older records
+remain omitted; original review timestamps were preserved.
+
+| Property/source | Location | Price | Beds | Baths | Sq ft |
+| --- | --- | ---: | ---: | ---: | ---: |
+| [190 Coyote Run](https://www.zillow.com/homedetails/190-Coyote-Run-Murphy-NC-28906/106956353_zpid/) | Murphy, North Carolina | $359,000 | 3 | 3 | 1196 |
+| [418 Piney Creek Dr](https://www.zillow.com/homedetails/418-Piney-Creek-Dr-Lake-Lure-NC-28746/102193906_zpid/) | Lake Lure, North Carolina | $324,000 | 2 | 3 | 1997 |
+| [1067 Mcpherson Road](https://www.zillow.com/homedetails/1067-McPherson-Rd-Vass-NC-28394/74984195_zpid/) | Vass, North Carolina | $268,000 | 3 | 2 | 1392 |
+| [872 Tulip Dr](https://www.zillow.com/homedetails/872-Tulip-Dr-New-Brighton-PA-15066/337980259_zpid/) | New Brighton, Pennsylvania | $635,000 | 2 | 3 | Unknown |
+| [504 Probst Rd](https://www.zillow.com/homedetails/504-Probst-Rd-Jamestown-PA-16134/78722169_zpid/) | Jamestown, Pennsylvania | $495,000 | 3 | 3 | 1326 |
+| [1154 Park Rd](https://www.zillow.com/homedetails/1154-Park-Rd-Elverson-PA-19520/8932507_zpid/) | Elverson, Pennsylvania | $200,000 | 1 | 1 | 720 |
+| [18371 High Mountain Vw](https://www.zillow.com/homedetails/18371-High-Mountain-Vw-Florence-MT-59833/209613753_zpid/) | Florence, Montana | $265,000 | 1 | 1 | 480 |
+| [247 Mill Gulch Rd](https://www.zillow.com/homedetails/247-Mill-Gulch-Rd-Sheridan-MT-59749/250239028_zpid/) | Sheridan, Montana | $749,000 | 2 | 2 | 1350 |
+| [13245 Balsamroot Rd](https://www.zillow.com/homedetails/13245-Balsamroot-Rd-Lolo-MT-59847/3145082_zpid/) | Lolo, Montana | $505,000 | 3 | 2 | 2046 |

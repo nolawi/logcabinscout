@@ -1,7 +1,8 @@
+import { STATE_NAMES } from './discovery-schedule.mjs';
 import { buildFeed } from './build-feed.mjs';
 import { parsePhoto } from '../../src/lib/photo.mjs';
 
-const fields = new Set(['title', 'location', 'price', 'acreage', 'listingUrl', 'lastCheckedAt', 'photo']);
+const fields = new Set(['title', 'location', 'price', 'acreage', 'listingUrl', 'lastCheckedAt', 'photo', 'bedrooms', 'bathrooms', 'squareFeet']);
 export function validateReviewed(rows) {
   if (!Array.isArray(rows) || rows.some(row => !row || typeof row.id !== 'string' || !row.id.trim()) || new Set(rows.map(row => row.id)).size !== rows.length) throw new Error('Invalid or duplicate reviewed listing IDs');
 }
@@ -30,6 +31,10 @@ function validateListing(row, now) {
   if (buildFeed([{ ...row, status: 'active', verified: true }]).length !== 1) throw new Error('Listing requires title, location, price, HTTPS listing URL, and a valid UTC lastCheckedAt');
   if (Date.parse(row.lastCheckedAt) > now) throw new Error('lastCheckedAt cannot be in the future');
   if (row.acreage !== undefined && row.acreage !== null && (typeof row.acreage !== 'number' || !Number.isFinite(row.acreage) || row.acreage < 0)) throw new Error('Acreage must be null or a nonnegative number');
+  for (const field of ['bedrooms', 'bathrooms', 'squareFeet']) {
+    const value = row[field];
+    if (value !== undefined && value !== null && (typeof value !== 'number' || !Number.isFinite(value) || value < 0 || (field !== 'bathrooms' && !Number.isInteger(value)) || (field === 'squareFeet' && value === 0))) throw new Error(`Invalid ${field}`);
+  }
   if (row.photo !== undefined && row.photo !== null && !parsePhoto(row.photo)) throw new Error('Photo requires URL, alt text, credit, source URL, width, and height');
 }
 
@@ -44,8 +49,9 @@ export function reviewChange(reviewed, command, now = Date.now()) {
     const details = detailsPatch(command.details, true);
     const row = {
       id: candidate.id, title: candidate.address,
-      location: [candidate.city, candidate.state].filter(Boolean).join(', '),
-      price: candidate.price, acreage: null, ...details,
+      location: [candidate.city, STATE_NAMES[candidate.state] ?? candidate.state].filter(Boolean).join(', '),
+      price: candidate.price, acreage: candidate.acreage ?? null, listingUrl: candidate.listingUrl,
+      bedrooms: candidate.bedrooms ?? null, bathrooms: candidate.bathrooms ?? null, squareFeet: candidate.squareFeet ?? null, ...details,
       discoveryId: candidate.id, status: 'active', verified: true,
     };
     if (rows.some(existing => existing.id === row.id)) throw new Error('Reviewed listing ID already exists');

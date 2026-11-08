@@ -51,6 +51,9 @@ export function parseListings(input: unknown, now = Date.now()): Cabin[] {
     listings.push({
       id, title, location, price,
       acreage: number(item.acreage),
+      bedrooms: Number.isInteger(item.bedrooms) ? number(item.bedrooms) : null,
+      bathrooms: number(item.bathrooms),
+      squareFeet: Number.isInteger(item.squareFeet) && Number(item.squareFeet) > 0 ? number(item.squareFeet) : null,
       propertyType: string(item.propertyType) || 'Log cabin',
       listingUrl,
       photo: parsePhoto(item.photo),

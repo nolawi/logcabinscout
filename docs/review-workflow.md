@@ -38,7 +38,8 @@ Create a local details file, for example `artifacts/review-details.json`:
 The timestamp above is only an example. Supply the actual review time in UTC;
 it is never generated or renewed by the tool. A candidate does not supply its
 own approval date. Price, location, and title default from the candidate if omitted;
-source URL and review date must be supplied. A custom ID is optional. Approval
+a source URL must be supplied if absent from the candidate, and a review date
+must always be supplied. A custom ID is optional. Approval
 marks the reviewed record active and verified and stores its original discovery ID.
 
 ```bash
@@ -52,7 +53,8 @@ approvals are rejected; use `update` for an existing reviewed record.
 ## Edit source links, prices, or photos
 
 Use a details file containing only fields to change. Supported fields are `title`,
-`location`, `price`, `acreage`, `listingUrl`, `lastCheckedAt`, and `photo`.
+`location`, `price`, `acreage`, `bedrooms`, `bathrooms`, `squareFeet`,
+`listingUrl`, `lastCheckedAt`, and `photo`.
 Photo format and source-credit guidance are in [property photos](property-photos.md).
 Set `photo` to `null` to remove an image. Updating a photo or price does not
 implicitly renew `lastCheckedAt`. Unknown fields are rejected to catch typos.

@@ -11,6 +11,11 @@ const dollars = new Intl.NumberFormat('en-US', {
 });
 
 export default function CabinCard({ cabin, variant = 1, isSaved, onToggleSaved }: CabinCardProps) {
+  const homeDetails = [
+    cabin.bedrooms == null ? null : cabin.bedrooms === 0 ? 'Studio' : `${cabin.bedrooms} ${cabin.bedrooms === 1 ? 'bed' : 'beds'}`,
+    cabin.bathrooms == null ? null : `${cabin.bathrooms} ${cabin.bathrooms === 1 ? 'bath' : 'baths'}`,
+    cabin.squareFeet == null ? null : `${cabin.squareFeet.toLocaleString('en-US')} sq ft`,
+  ].filter(Boolean).join(' · ');
   return (
     <article className="card">
       <div className="card-media">
@@ -24,6 +29,7 @@ export default function CabinCard({ cabin, variant = 1, isSaved, onToggleSaved }
         <h2>{cabin.listingUrl
           ? <a className="card-title-link" href={cabin.listingUrl} target="_blank" rel="noopener noreferrer">{cabin.title}<ArrowIcon /></a>
           : cabin.title}</h2>
+        {homeDetails && <p className="home-details">{homeDetails}</p>}
         <div className="card-facts">
           <strong>{dollars.format(cabin.price)}</strong>
           {cabin.acreage !== null && <span className="acreage">{cabin.acreage.toLocaleString()} acres</span>}

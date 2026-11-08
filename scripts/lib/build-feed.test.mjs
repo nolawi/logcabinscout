@@ -27,3 +27,10 @@ test('rejects invalid review dates without manufacturing verification dates', ()
     assert.deepEqual(buildFeed([{ ...good, lastCheckedAt }]), []);
   }
 });
+
+test('optional home facts retain sourced numbers while invalid or unknown values stay null',()=>{
+ const [known]=buildFeed([{...good,bedrooms:3,bathrooms:2.5,squareFeet:1250}]);
+ assert.equal(known.bedrooms,3);assert.equal(known.bathrooms,2.5);assert.equal(known.squareFeet,1250);
+ const [unknown]=buildFeed([{...good,bedrooms:-1,bathrooms:Infinity,squareFeet:0}]);
+ assert.equal(unknown.bedrooms,null);assert.equal(unknown.bathrooms,null);assert.equal(unknown.squareFeet,null);
+});

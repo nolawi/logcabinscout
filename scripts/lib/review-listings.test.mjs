@@ -72,3 +72,11 @@ test('CLI previews without writing, writes consistent JSON, and rolls back on fe
     assert.notEqual(run(['status','mls:123','sold','--write']).status,0);
   } finally { await rm(root,{recursive:true,force:true}); }
 });
+
+test('approval keeps sourced home facts and normalizes state names; invalid edits fail',()=>{
+  const sourced={...candidate,bedrooms:2,bathrooms:1.5,squareFeet:1250};
+  const result=reviewChange([],{action:'approve',id:sourced.id,candidates:{candidates:[sourced]},details},now);
+  assert.equal(result.feed[0].bedrooms,2);assert.equal(result.feed[0].bathrooms,1.5);assert.equal(result.feed[0].squareFeet,1250);
+  assert.equal(result.reviewed[0].location,'Mineral, Virginia');
+  assert.throws(()=>reviewChange(result.reviewed,{action:'update',id:'mls:123',details:{bedrooms:2.5}},now),/Invalid bedrooms/);
+});
