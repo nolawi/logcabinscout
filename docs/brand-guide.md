@@ -30,7 +30,9 @@ Grounded, warm, curated. Use “Cabins worth the hunt,” “The scouted collect
 and “Find your place in the woods.” Avoid claiming nationwide completeness.
 
 ## Listing imagery
-The hero uses original branded vector art; real listing cards continue to use
+The homepage opens directly on the listing collection, with compact typography
+and no promotional hero. The original landscape asset is retained for future use.
+Listing cards use
 source-linked property photographs where supplied, with neutral placeholders
 for missing or failed images. See [photo sources](property-photos.md).
 Do not replace placeholders with unrelated pictures or imply stock photos depict

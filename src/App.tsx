@@ -1,5 +1,4 @@
 import { useMemo, useState } from 'react';
-import ArrowIcon from './components/ArrowIcon';
 import CabinGrid from './components/CabinGrid';
 import { useListings } from './hooks/useListings';
 
@@ -34,16 +33,15 @@ export default function App() {
   return <>
     <header className="header"><a className="brand" href="#home" aria-label="Log Cabin Scout home"><img src={import.meta.env.BASE_URL + "logo-mark.svg"} alt="" width="58" height="58" /><span className="brand-wordmark">LOG CABIN <strong>SCOUT</strong></span></a><nav aria-label="Main navigation"><a href="#cabins">Browse Cabins</a><a href="#about">Our Story</a></nav></header>
     <main id="home">
-      <section className="hero" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}hero-landscape.svg)` }}><div className="hero-inner"><p className="eyebrow">AN INDEPENDENT GUIDE TO LOG HOMES FOR SALE</p><h1>Cabins worth<br/><em>the hunt.</em></h1><p>A carefully curated collection of log cabins for sale, from mountain hideaways to woodland retreats.</p><a className="cta" href="#cabins">Explore the collection <ArrowIcon /></a></div></section>
+
       <section className="content" id="cabins">
         <div className="section-title">
-          <div><p className="eyebrow">THE SCOUTED COLLECTION</p><h2>Find a cabin to call your own.</h2>
+          <div><p className="eyebrow">THE SCOUTED COLLECTION</p><h1>Log cabins for sale.</h1>
             <p>{isLoading ? 'Checking available listings…' : error ? 'The collection is temporarily unavailable.'
               : `${listings.length} sourced cabin ${listings.length === 1 ? 'listing' : 'listings'} checked in the last 30 days.`}</p>
           </div>
         </div>
         {error && <p className="feed-notice" role="status">We couldn’t load the listings. Please refresh the page to try again.</p>}
-        {!isLoading && !error && listings.length > 0 && <p className="feed-notice">Listings are shown for 30 days after review. Prices and availability can change; confirm details with the original listing.</p>}
         {!isLoading && !error && listings.length > 0 && <><div className="listing-filters" role="search" aria-label="Filter cabin listings">
           <label className="filter-search">Search
             <input type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="City, state, or cabin..." />
@@ -76,7 +74,8 @@ export default function App() {
           <span>{visible.length} {visible.length === 1 ? 'cabin' : 'cabins'} found</span>
           {hasFilters && <button type="button" className="reset-filters" onClick={resetFilters}>Clear filters</button>}
         </div>
-        <CabinGrid cabins={visible} /></>}
+        <CabinGrid cabins={visible} />
+        <p className="collection-note">Listings are shown for 30 days after review. Prices and availability can change; confirm details with the original listing.</p></>}
         {!isLoading && !error && listings.length === 0 && <p className="empty-state" role="status">No current listings. We’re scouting more cabins; check back soon.</p>}
       </section>
       <section className="about" id="about"><p className="eyebrow">A NOTE FROM THE SCOUT</p><h2>For the love of log cabins.</h2><p>There's something special about a home built of logs. We scout distinctive cabins across the country and point you to their original sale listings. No endless scrolling. Just places worth a closer look.</p></section>
