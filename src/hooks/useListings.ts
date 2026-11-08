@@ -1,6 +1,9 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Cabin } from '../types/cabin';
 import { parseListings } from '../lib/listings';
+import { serializeJson, structuredData } from '../lib/seo.mjs';
+
+export type ListingSnapshot = { records: unknown; renderedAt: number };
 
 type ListingFeed = { listings: Cabin[]; isLoading: boolean; error: boolean };
 
@@ -8,15 +11,21 @@ type ListingFeed = { listings: Cabin[]; isLoading: boolean; error: boolean };
  * Read a public, pre-generated feed. Secrets and provider API calls stay
  * server-side; the browser never communicates directly with RentCast.
  */
-export function useListings(): ListingFeed {
-  const [records, setRecords] = useState<unknown>([]);
-  const [now, setNow] = useState(Date.now);
+export function useListings(initialFeed?: ListingSnapshot): ListingFeed {
+  const [records, setRecords] = useState<unknown>(initialFeed?.records ?? []);
+  const [now, setNow] = useState(initialFeed?.renderedAt ?? Date.now());
   const listings = useMemo(() => parseListings(records, now), [records, now]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(!initialFeed);
   const [error, setError] = useState(false);
 
   useEffect(() => {
+    const schema = document.getElementById('site-schema');
+    if (schema) schema.textContent = serializeJson(structuredData(error ? [] : listings));
+  }, [listings, error]);
+
+  useEffect(() => {
     const refresh = () => setNow(Date.now());
+    refresh();
     const timer = window.setInterval(refresh, 60_000);
     window.addEventListener('focus', refresh);
     document.addEventListener('visibilitychange', refresh);

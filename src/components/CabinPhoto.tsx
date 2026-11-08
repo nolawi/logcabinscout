@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { PropertyPhoto } from '../lib/photo.mjs';
 
 const assetUrl = (url: string) => url.startsWith('/') ? `${import.meta.env.BASE_URL}${url.slice(1)}` : url;
@@ -8,6 +8,11 @@ type CabinPhotoProps = { photo?: PropertyPhoto; title: string; listingUrl?: stri
 /** Key this component by image URL so a changed photo gets a fresh loading state. */
 export default function CabinPhoto({ photo, title, listingUrl, variant, isSample }: CabinPhotoProps) {
   const [status, setStatus] = useState<'loading' | 'loaded' | 'failed'>('loading');
+  const imageRef = useRef<HTMLImageElement>(null);
+  useEffect(() => {
+    const image = imageRef.current;
+    if (image?.complete) setStatus(image.naturalWidth > 0 ? 'loaded' : 'failed');
+  }, [photo?.url]);
   const showImage = Boolean(photo) && status !== 'failed';
   const caption = !photo ? 'Property photo not available' : status === 'failed' ? 'Property photo unavailable' : 'Loading property photo…';
 
@@ -17,7 +22,7 @@ export default function CabinPhoto({ photo, title, listingUrl, variant, isSample
       <span className="photo-caption">{caption}</span>
       <span className="photo-note">{photo && status === 'loading' ? 'A closer look is on its way' : 'Explore the original listing for more details'}</span>
     </div>}
-    {showImage && photo && <img className={`cabin-image${status === 'loaded' ? ' is-loaded' : ''}`} src={assetUrl(photo.url)} srcSet={photo.variants.length ? photo.variants.map(item => `${assetUrl(item.url)} ${item.width}w`).join(', ') : undefined} sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 820px) 45vw, (max-width: 1300px) 30vw, 380px" width={photo.width} height={photo.height} style={{ objectFit: photo.allowCropping ? 'cover' : 'contain' }} alt={photo.alt || title} loading="lazy" decoding="async" onLoad={() => setStatus('loaded')} onError={() => setStatus('failed')} />}
+    {showImage && photo && <img ref={imageRef} className={`cabin-image${status === 'loaded' ? ' is-loaded' : ''}`} src={assetUrl(photo.url)} srcSet={photo.variants.length ? photo.variants.map(item => `${assetUrl(item.url)} ${item.width}w`).join(', ') : undefined} sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 820px) 45vw, (max-width: 1300px) 30vw, 380px" width={photo.width} height={photo.height} style={{ objectFit: photo.allowCropping ? 'cover' : 'contain' }} alt={photo.alt || title} loading="lazy" decoding="async" onLoad={() => setStatus('loaded')} onError={() => setStatus('failed')} />}
     {isSample && <span className="sample-badge">Sample listing</span>}
     </div>;
 

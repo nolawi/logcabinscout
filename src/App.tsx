@@ -1,15 +1,15 @@
 import { useMemo, useState } from 'react';
 import CabinGrid from './components/CabinGrid';
-import { useListings } from './hooks/useListings';
+import { useListings, type ListingSnapshot } from './hooks/useListings';
 
 type SortOrder = 'featured' | 'price-asc' | 'price-desc' | 'acreage-desc';
 
-export default function App() {
+export default function App({ initialFeed }: { initialFeed?: ListingSnapshot } = {}) {
   const [query, setQuery] = useState('');
   const [state, setState] = useState('all');
   const [maxPrice, setMaxPrice] = useState('all');
   const [sortBy, setSortBy] = useState<SortOrder>('featured');
-  const { listings, isLoading, error } = useListings();
+  const { listings, isLoading, error } = useListings(initialFeed);
 
   const source = listings;
   const states = useMemo(() => [...new Set(source.map(cabin => cabin.location.split(',').at(-1)?.trim()).filter((value): value is string => Boolean(value)))].sort(), [source]);
@@ -76,6 +76,6 @@ export default function App() {
       </section>
 
     </main>
-    <footer><span>© {new Date().getFullYear()} Log Cabin Scout</span></footer>
+    <footer><span>© {new Date(initialFeed?.renderedAt ?? Date.now()).getFullYear()} Log Cabin Scout</span></footer>
   </>;
 }

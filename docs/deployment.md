@@ -15,7 +15,8 @@ Run `.github/workflows/deploy.yml` when a release is wanted. The workflow:
 
 1. Installs locked dependencies on Node 22 and runs all tests.
 2. Verifies the generated feed matches the reviewed source.
-3. Builds Vite and uploads only `dist/` as the Pages artifact.
+3. Builds and prerenders the collection, validates SEO output, and uploads only
+   `dist/` as the Pages artifact.
 4. Deploys through the `github-pages` environment using GitHub's short-lived token.
 
 No PAT, cross-repository write access, or paid hosting service is needed. Build
