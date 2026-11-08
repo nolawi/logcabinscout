@@ -11,7 +11,8 @@ authoritative destination for visitors.
 | 112401 | 206 Pottery Dr, Fancy Gap, VA | $289,900 | Brokerage listing explicitly describes a log cabin |
 
 Source links and display fields are stored in
-`data/reviewed-listings.json`. No listing photos are copied or embedded.
+`data/reviewed-listings.json`. Remote source photographs are now embedded with
+linked credits; see [photo sources](property-photos.md).
 
 The site has no ongoing status verification yet. Review timestamps are preserved
 in the feed. The browser hides records at thirty days, including on static

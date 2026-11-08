@@ -1,9 +1,21 @@
 # Property photos and source credits
 
-The user requested property thumbnails for personal browsing, with Zillow,
-Redfin, or the original MLS/brokerage listing as possible sources. No exact
-photo URLs have been retrieved yet: those sites require network access in this
-cloud environment. Existing listings retain their branded placeholders.
+The three initial listings now have exterior photographs linked from their source
+sites for the user's personal browsing. Images remain remotely hosted, with linked
+source credits. They are displayed uncropped, and credit captions sit beneath the
+image so embedded MLS watermarks remain visible.
+
+| Property | Image source | Match evidence |
+| --- | --- | --- |
+| 295 Douglas Road | Bright MLS via Northrop Realty | Original listing page, MLS VALA2010884 |
+| 20420 Out Of Bounds Drive | TVRMLS via Realtor Josh | Original listing page, MLS 10001316 |
+| 206 Pottery Drive | Zillow listing photo | Zillow page title includes the address and MLS 112401 |
+
+The exact source-page and image URLs, alt text, credits, and measured dimensions
+are stored in `data/reviewed-listings.json`. No local copies or resized derivatives
+are committed. Source credits identify provenance, not a newly obtained license.
+External hosts may remove images or restrict embedding; the existing fallback
+handles failed loads. Listing verification timestamps were not changed by adding photos.
 
 ## Add an exact property match
 

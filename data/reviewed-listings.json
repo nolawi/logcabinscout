@@ -8,7 +8,17 @@
     "listingUrl": "https://goldenlandgroup.northroprealty.com/listing/vala2010884-295-douglas-rd-mineral-va-23117/",
     "status": "active",
     "verified": true,
-    "lastCheckedAt": "2026-11-07T12:00:00Z"
+    "lastCheckedAt": "2026-11-07T12:00:00Z",
+    "photo": {
+      "url": "https://feed-images.rewhosting.com/bright/Full/Property/805568839012/1-65084bdb4a77153d57a20fa0289b3c59-o.webp",
+      "alt": "Front exterior of 295 Douglas Road surrounded by autumn trees",
+      "credit": "Bright MLS / Northrop Realty",
+      "sourceUrl": "https://goldenlandgroup.northroprealty.com/listing/vala2010884-295-douglas-rd-mineral-va-23117/",
+      "width": 1024,
+      "height": 683,
+      "allowCropping": false,
+      "variants": []
+    }
   },
   {
     "id": "mls:10001316",
@@ -19,7 +29,17 @@
     "listingUrl": "https://www.realtorjosh.com/listing/10001316-20420-out-of-bounds-drive-abingdon-virginia-24211/",
     "status": "active",
     "verified": true,
-    "lastCheckedAt": "2026-11-07T12:00:00Z"
+    "lastCheckedAt": "2026-11-07T12:00:00Z",
+    "photo": {
+      "url": "https://feed-images.rewhosting.com/tnvamls/Photo/Property/20260924142814694105000000/1-65261dde74c58e3b7d973b3dc46d641e-l.jpg",
+      "alt": "Log exterior and porch at 20420 Out Of Bounds Drive",
+      "credit": "TVRMLS / Realtor Josh",
+      "sourceUrl": "https://www.realtorjosh.com/listing/10001316-20420-out-of-bounds-drive-abingdon-virginia-24211/",
+      "width": 1024,
+      "height": 768,
+      "allowCropping": false,
+      "variants": []
+    }
   },
   {
     "id": "mls:112401",
@@ -30,6 +50,16 @@
     "listingUrl": "https://www.coldwellbanker.com/va/fancy-gap/206-pottery-dr/lid-P00800000HJG1REYUkJqZhMoukKPCkFjWWJ7KUMD",
     "status": "active",
     "verified": true,
-    "lastCheckedAt": "2026-11-07T12:00:00Z"
+    "lastCheckedAt": "2026-11-07T12:00:00Z",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/893a1a62882461e84195b1751977e367-cc_ft_1536.jpg",
+      "alt": "Exterior of the log cabin at 206 Pottery Drive",
+      "credit": "Listing photo via Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/206-Pottery-Dr-Fancy-Gap-VA-24328/2108675536_zpid/",
+      "width": 1024,
+      "height": 767,
+      "allowCropping": false,
+      "variants": []
+    }
   }
 ]

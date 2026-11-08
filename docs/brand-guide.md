@@ -31,7 +31,8 @@ and “Find your place in the woods.” Avoid claiming nationwide completeness.
 
 ## Listing imagery
 The hero uses original branded vector art; real listing cards continue to use
-neutral placeholders until we obtain property photos with appropriate usage rights.
+source-linked property photographs where supplied, with neutral placeholders
+for missing or failed images. See [photo sources](property-photos.md).
 Do not replace placeholders with unrelated pictures or imply stock photos depict
 the actual home.
 
