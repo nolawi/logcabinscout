@@ -35,7 +35,10 @@ Never advance `lastCheckedAt` solely to keep a listing visible. Regenerate and c
 `public/listings.json` when reviewed data changes. Generation is deterministic;
 the browser enforces expiry without a redeployment. See [feed details](docs/listings-feed.md).
 
-For GitHub Pages, the Vite base path is set to `/logcabinscout/`. Change this to `/` when moving to a custom domain.
+The site deploys to **https://elancabin.com/** through the existing GitHub Pages
+repository `asyncdc/elancabin`. Vite uses the root base path `/`; `public/CNAME`
+records the custom domain. Run `npm run deploy` to build and publish a release.
+See [deployment details](docs/deployment.md).
 
 Manage candidates, photos, and inactive listings with `npm run review -- --help`.
 See the [local review workflow](docs/review-workflow.md).
