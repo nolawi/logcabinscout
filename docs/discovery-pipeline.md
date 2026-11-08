@@ -45,3 +45,6 @@ An empty or expired collection shows no current listings; production never falls
 Discovery history now retains classification results and candidate observations
 between runs. See [history retention and limitations](scheduled-discovery.md#retained-discovery-history).
 This history never grants approval for publication or updates the public feed.
+
+Use the [local review tool](review-workflow.md) to inspect artifacts, approve candidates,
+attach source links/photos, and mark listings inactive without manually rebuilding JSON.
