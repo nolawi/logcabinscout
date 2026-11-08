@@ -68,3 +68,7 @@ After adding photos, run `npm test`, regenerate with
 photos and linked credits on desktop/mobile. Failed images keep their original
 listing links and fall back to the branded placeholder. Remove withdrawn photos
 and regenerate the feed when needed.
+
+The expanded Tennessee and Colorado collection also uses source-linked photos
+from the corresponding Zillow listing galleries, with measured dimensions and
+MLS/provider credits. See [expanded listing sources](expanded-listing-sources.md).

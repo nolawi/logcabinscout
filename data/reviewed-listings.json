@@ -21,6 +21,50 @@
     }
   },
   {
+    "id": "zillow:215443044",
+    "title": "1160 Oak Grove Rd",
+    "location": "Harrogate, Tennessee",
+    "price": 949500,
+    "acreage": 81.47,
+    "listingUrl": "https://www.zillow.com/homedetails/1160-Oak-Grove-Rd-Harrogate-TN-37752/215443044_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T01:34:02Z",
+    "logConstructionEvidence": "Listing description identifies a hand-hewn log main home built in 2025.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/b78eacfcb4db5ab0305167f3c2555ba3-o_a.jpg",
+      "alt": "Exterior of 1160 Oak Grove Rd in Harrogate, Tennessee",
+      "credit": "RealTracs MLS / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/1160-Oak-Grove-Rd-Harrogate-TN-37752/215443044_zpid/",
+      "width": 1024,
+      "height": 682,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
+    "id": "zillow:13853194",
+    "title": "252 Snowmass Dr",
+    "location": "Livermore, Colorado",
+    "price": 378000,
+    "acreage": 5.11,
+    "listingUrl": "https://www.zillow.com/homedetails/252-Snowmass-Dr-Livermore-CO-80536/13853194_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T01:34:02Z",
+    "logConstructionEvidence": "Listing description identifies the primary home as a log cabin.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/9b9f7d2610116d0fe59ca37372e8a8f4-cc_ft_960.jpg",
+      "alt": "Exterior of 252 Snowmass Dr in Livermore, Colorado",
+      "credit": "IRES / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/252-Snowmass-Dr-Livermore-CO-80536/13853194_zpid/",
+      "width": 960,
+      "height": 716,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
     "id": "mls:10001316",
     "title": "20420 Out Of Bounds Drive",
     "location": "Abingdon, Virginia",
@@ -42,6 +86,50 @@
     }
   },
   {
+    "id": "zillow:66567412",
+    "title": "342 Big Springs Ln",
+    "location": "Jacksboro, Tennessee",
+    "price": 430000,
+    "acreage": 16.4,
+    "listingUrl": "https://www.zillow.com/homedetails/342-Big-Springs-Ln-Jacksboro-TN-37757/66567412_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T01:34:02Z",
+    "logConstructionEvidence": "Listing description identifies the primary home as a log cabin.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/811f6a51b39f7eab804e24c5fa55919b-o_a.jpg",
+      "alt": "Exterior of 342 Big Springs Ln in Jacksboro, Tennessee",
+      "credit": "East Tennessee Realtors / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/342-Big-Springs-Ln-Jacksboro-TN-37757/66567412_zpid/",
+      "width": 1024,
+      "height": 576,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
+    "id": "zillow:235403768",
+    "title": "1725 CR 600",
+    "location": "Pagosa Springs, Colorado",
+    "price": 1500000,
+    "acreage": 37.93,
+    "listingUrl": "https://www.zillow.com/homedetails/1725-County-Road-600-Pagosa-Springs-CO-81147/235403768_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T01:34:02Z",
+    "logConstructionEvidence": "Listing description identifies the primary dwelling as a two-story D-log home.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/20b5ce851490d69ee9162fa7957098ce-o_a.jpg",
+      "alt": "Exterior of 1725 CR 600 in Pagosa Springs, Colorado",
+      "credit": "CREN / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/1725-County-Road-600-Pagosa-Springs-CO-81147/235403768_zpid/",
+      "width": 1024,
+      "height": 767,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
     "id": "mls:112401",
     "title": "206 Pottery Drive",
     "location": "Fancy Gap, Virginia",
@@ -58,6 +146,226 @@
       "sourceUrl": "https://www.zillow.com/homedetails/206-Pottery-Dr-Fancy-Gap-VA-24328/2108675536_zpid/",
       "width": 1024,
       "height": 767,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
+    "id": "zillow:63630108",
+    "title": "4003 Chapel Hill Rd",
+    "location": "Crawford, Tennessee",
+    "price": 264900,
+    "acreage": 5.36,
+    "listingUrl": "https://www.zillow.com/homedetails/4003-Chapel-Hill-Rd-Crawford-TN-38554/63630108_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T01:34:02Z",
+    "logConstructionEvidence": "Listing description identifies the primary home as a log cabin.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/ccdf17f4dc4bfc79049ad2934691780b-o_a.jpg",
+      "alt": "Exterior of 4003 Chapel Hill Rd in Crawford, Tennessee",
+      "credit": "UCMLS / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/4003-Chapel-Hill-Rd-Crawford-TN-38554/63630108_zpid/",
+      "width": 1024,
+      "height": 682,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
+    "id": "zillow:13991629",
+    "title": "9562 CO RD 18",
+    "location": "Fairplay, Colorado",
+    "price": 400000,
+    "acreage": 30,
+    "listingUrl": "https://www.zillow.com/homedetails/9562-County-Road-18-Fairplay-CO-80440/13991629_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T01:34:02Z",
+    "logConstructionEvidence": "Listing description identifies the primary home as a log cabin.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/d5d42103e0a4d58e7777e0e61de8ea38-o_a.jpg",
+      "alt": "Exterior of 9562 CO RD 18 in Fairplay, Colorado",
+      "credit": "REcolorado / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/9562-County-Road-18-Fairplay-CO-80440/13991629_zpid/",
+      "width": 1024,
+      "height": 682,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
+    "id": "zillow:81214974",
+    "title": "173 Coyote Ln",
+    "location": "Livingston, Tennessee",
+    "price": 439900,
+    "acreage": 7.07,
+    "listingUrl": "https://www.zillow.com/homedetails/173-Coyote-Ln-Livingston-TN-38570/81214974_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T01:34:02Z",
+    "logConstructionEvidence": "Listing description identifies the primary home as a log cabin.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/e951350c96160ee7ebfbb7a37262f700-o_a.jpg",
+      "alt": "Exterior of 173 Coyote Ln in Livingston, Tennessee",
+      "credit": "UCMLS / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/173-Coyote-Ln-Livingston-TN-38570/81214974_zpid/",
+      "width": 1024,
+      "height": 683,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
+    "id": "zillow:463356865",
+    "title": "0 Oro Fino Fs Rd",
+    "location": "Durango, Colorado",
+    "price": 625000,
+    "acreage": 10.38,
+    "listingUrl": "https://www.zillow.com/homedetails/0-Oro-Fino-Fs-Rd-Durango-CO-81301/463356865_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T01:34:02Z",
+    "logConstructionEvidence": "Listing description identifies an authentic log home built in 2000.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/62cc7e4f19371c1cbe303cd64129bcee-o_a.jpg",
+      "alt": "Exterior of 0 Oro Fino Fs Rd in Durango, Colorado",
+      "credit": "My State MLS / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/0-Oro-Fino-Fs-Rd-Durango-CO-81301/463356865_zpid/",
+      "width": 1024,
+      "height": 768,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
+    "id": "zillow:41290091",
+    "title": "154 Whitetail Ln",
+    "location": "Belvidere, Tennessee",
+    "price": 495000,
+    "acreage": 5.05,
+    "listingUrl": "https://www.zillow.com/homedetails/154-Whitetail-Ln-Belvidere-TN-37306/41290091_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T01:34:02Z",
+    "logConstructionEvidence": "Listing description identifies the primary home as a log cabin.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/6a8c1957b1096a935f2f54c38c5887b6-o_a.jpg",
+      "alt": "Exterior of 154 Whitetail Ln in Belvidere, Tennessee",
+      "credit": "RealTracs MLS / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/154-Whitetail-Ln-Belvidere-TN-37306/41290091_zpid/",
+      "width": 1024,
+      "height": 767,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
+    "id": "zillow:128492323",
+    "title": "308 Dilley Ln",
+    "location": "Westcliffe, Colorado",
+    "price": 275000,
+    "acreage": 16.27,
+    "listingUrl": "https://www.zillow.com/homedetails/308-Dilley-Ln-Westcliffe-CO-81252/128492323_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T01:34:02Z",
+    "logConstructionEvidence": "Listing description identifies the primary home as a log cabin.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/a8e282cd513db612f48a9fffd624b285-o_a.jpg",
+      "alt": "Exterior of 308 Dilley Ln in Westcliffe, Colorado",
+      "credit": "Royal Gorge AOR / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/308-Dilley-Ln-Westcliffe-CO-81252/128492323_zpid/",
+      "width": 1024,
+      "height": 576,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
+    "id": "zillow:42504621",
+    "title": "2029 Beach Front Dr",
+    "location": "Sevierville, Tennessee",
+    "price": 449000,
+    "acreage": 0.37,
+    "listingUrl": "https://www.zillow.com/homedetails/2029-Beach-Front-Dr-Sevierville-TN-37876/42504621_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T01:34:02Z",
+    "logConstructionEvidence": "Listing description identifies the primary home as a log cabin.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/2f7bbc6a1f21493dbaf01249e8433133-o_a.jpg",
+      "alt": "Exterior of 2029 Beach Front Dr in Sevierville, Tennessee",
+      "credit": "RealTracs MLS / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/2029-Beach-Front-Dr-Sevierville-TN-37876/42504621_zpid/",
+      "width": 1024,
+      "height": 683,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
+    "id": "zillow:2075700125",
+    "title": "0516 County Road 674",
+    "location": "Breckenridge, Colorado",
+    "price": 899000,
+    "acreage": 0.5,
+    "listingUrl": "https://www.zillow.com/homedetails/516-County-Road-674-Breckenridge-CO-80424/2075700125_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T01:34:02Z",
+    "logConstructionEvidence": "Listing description identifies the primary home as a log cabin.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/8d665d3449cfa685cc42d143a5b320d9-o_a.jpg",
+      "alt": "Exterior of 0516 County Road 674 in Breckenridge, Colorado",
+      "credit": "Altitude Realtors / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/516-County-Road-674-Breckenridge-CO-80424/2075700125_zpid/",
+      "width": 1024,
+      "height": 768,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
+    "id": "zillow:334055567",
+    "title": "350 Wieland Drive",
+    "location": "Bayfield, Colorado",
+    "price": 635000,
+    "acreage": 3,
+    "listingUrl": "https://www.zillow.com/homedetails/350-Wieland-Dr-Bayfield-CO-81122/334055567_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T01:34:02Z",
+    "logConstructionEvidence": "Listing description identifies the primary home as a log cabin.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/3043f23cd1f12d7460e1456ecfef8101-o_a.jpg",
+      "alt": "Exterior of 350 Wieland Drive in Bayfield, Colorado",
+      "credit": "CREN / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/350-Wieland-Dr-Bayfield-CO-81122/334055567_zpid/",
+      "width": 1024,
+      "height": 768,
+      "allowCropping": false,
+      "variants": []
+    }
+  },
+  {
+    "id": "zillow:235401431",
+    "title": "1059 E Stollsteimer",
+    "location": "Pagosa Springs, Colorado",
+    "price": 160000,
+    "acreage": 1.1,
+    "listingUrl": "https://www.zillow.com/homedetails/1059-E-Stollsteimer-Rd-Pagosa-Springs-CO-81147/235401431_zpid/",
+    "status": "active",
+    "verified": true,
+    "lastCheckedAt": "2026-11-08T01:34:02Z",
+    "logConstructionEvidence": "Listing description identifies the primary home as a log cabin.",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/08c56331234cdacd1a3b84c15d884838-o_a.jpg",
+      "alt": "Exterior of 1059 E Stollsteimer in Pagosa Springs, Colorado",
+      "credit": "CREN / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/1059-E-Stollsteimer-Rd-Pagosa-Springs-CO-81147/235401431_zpid/",
+      "width": 1024,
+      "height": 698,
       "allowCropping": false,
       "variants": []
     }

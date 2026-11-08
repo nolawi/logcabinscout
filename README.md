@@ -44,3 +44,6 @@ See [deployment details](docs/deployment.md).
 
 Manage candidates, photos, and inactive listings with `npm run review -- --help`.
 See the [local review workflow](docs/review-workflow.md).
+
+The collection now includes 17 sourced properties across Virginia, Tennessee,
+and Colorado. See [expanded listing sources](docs/expanded-listing-sources.md).
