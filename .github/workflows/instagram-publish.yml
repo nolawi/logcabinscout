@@ -14,6 +14,10 @@ on:
         description: 'Public HTTPS JPEG URL; required only for publishing'
         type: string
         required: false
+      image_urls:
+        description: 'Carousel: JSON array of 2–10 public HTTPS JPEG URLs; replaces image_url'
+        type: string
+        required: false
       caption:
         description: 'Post caption; required only for publishing'
         type: string
@@ -37,5 +41,6 @@ jobs:
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           PUBLISH: ${{ inputs.publish }}
           PREPARE: ${{ inputs.prepare }}
+          IMAGE_URLS: ${{ inputs.image_urls }}
           IMAGE_URL: ${{ inputs.image_url }}
           POST_CAPTION: ${{ inputs.caption }}

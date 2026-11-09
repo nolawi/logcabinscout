@@ -58,3 +58,18 @@ The original test post used an illustration and temporary-domain copy. Changing
 the generator does not edit or replace that existing Instagram post. New drafts
 use property photographs and source-only captions. Website deployment remains
 manual and independent from Instagram.
+
+## Carousel posts
+
+The manual publishing workflow accepts `image_urls`: a JSON array of 2–10
+public HTTPS JPEG URLs. Prefer three distinct photographs from the same verified
+property gallery; minimum two for new posts. Leave `image_urls` blank for the
+legacy single-image option. The publisher validates every URL, processes each
+child, creates the parent carousel, then publishes the parent exactly once.
+Preparation mode stops before publishing. Original public provider JPEG URLs
+can be used directly, so posting needs neither image commits nor a site deploy.
+Keep source watermarks and photo credits. Listing captions put the original
+listing URL on its own line, without a label or availability boilerplate.
+The weekly draft generator still prepares single-photo previews; carousel gallery
+selection happens when preparing the post, rather than inventing additional
+photos or treating resolution variants as separate photographs.

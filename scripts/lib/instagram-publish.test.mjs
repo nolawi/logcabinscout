@@ -31,3 +31,23 @@ test('prepare mode processes the image without publishing a post', async () => {
  assert.equal(result.published,false); assert.equal(result.containerId,'123');
  assert.ok(!calls.some(c=>c.url.endsWith('/media_publish')));
 });
+
+test('three-photo carousel creates three children then publishes the parent once', async () => {
+ const calls=[];
+ const result=await publishInstagram({token:'secret',publish:true,imageUrls:['https://example.com/1.jpg','https://example.com/2.jpg','https://example.com/3.jpg'],caption:'Listing'},fake([identity,quota,{id:'101'},{status_code:'FINISHED'},{id:'102'},{status_code:'FINISHED'},{id:'103'},{status_code:'FINISHED'},{id:'200'},{status_code:'FINISHED'},{id:'300'}],calls));
+ assert.equal(result.mediaId,'300');
+ const writes=calls.filter(c=>c.method==='POST');
+ assert.equal(writes.length,5);
+ assert.ok(writes.slice(0,3).every(c=>c.body.get('is_carousel_item')==='true'));
+ assert.equal(writes[3].body.get('media_type'),'CAROUSEL');assert.equal(writes[3].body.get('children'),'101,102,103');
+ assert.equal(writes[4].body.get('creation_id'),'200');
+});
+test('invalid or duplicate carousel images fail before creating media', async () => {
+ for (const imageUrls of [['https://example.com/1.jpg'],['https://example.com/1.jpg','http://example.com/2.jpg'],['https://example.com/1.jpg','https://example.com/1.jpg']]) {
+  const calls=[];await assert.rejects(publishInstagram({token:'secret',publish:true,imageUrls,caption:'Listing'},fake([identity,quota],calls)));assert.equal(calls.length,2);
+ }
+});
+test('failed carousel child prevents parent creation and publishing', async () => {
+ const calls=[];await assert.rejects(publishInstagram({token:'secret',publish:true,imageUrls:['https://example.com/1.jpg','https://example.com/2.jpg'],caption:'Listing'},fake([identity,quota,{id:'101'},{status_code:'ERROR'}],calls)),/not available/);
+ assert.equal(calls.filter(c=>c.method==='POST').length,1);
+});

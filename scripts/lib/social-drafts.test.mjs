@@ -20,7 +20,7 @@ test('cards embed property photos, preserve credit, and omit the temporary domai
  const html=renderSocialCard(draft,'<svg></svg>','data:image/jpeg;base64,/9j/AAAA');
  assert.ok(!html.includes('<script>'));assert.ok(html.includes('&lt;script&gt;'));
  assert.ok(html.includes('data:image/jpeg;base64,'));assert.ok(html.includes('height:auto'));assert.ok(!html.includes('<header'));assert.ok(!html.includes('<footer'));assert.ok(!html.includes(draft.facts));
- assert.ok(!html.toLowerCase().includes('elancabin'));assert.ok(!draft.caption.toLowerCase().includes('elancabin'));assert.ok(!draft.caption.includes('link in bio'));
+ assert.ok(!html.toLowerCase().includes('elancabin'));assert.ok(!draft.caption.toLowerCase().includes('elancabin'));assert.ok(!draft.caption.includes('link in bio'));assert.ok(!draft.caption.includes('Full listing:'));assert.ok(!draft.caption.includes('Prices and availability'));assert.ok(draft.caption.split('\n').includes(draft.sourceUrl));
  assert.ok(draft.caption.includes('https://example.com/listing'));
  assert.ok(draft.altText.includes('<script>alert(1)</script>'));assert.ok(draft.caption.includes('MLS / Listing provider'));
 });

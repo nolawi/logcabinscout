@@ -13,7 +13,7 @@ export function prepareSocialDrafts(listings,date=new Date()) {
     const facts = [dollars(row.price),row.acreage==null?null:`${row.acreage.toLocaleString('en-US')} acres`].filter(Boolean).join(' · ');
     return {
       listingId:row.id,title:row.title,location:row.location,price:row.price,facts,sourceUrl:row.listingUrl,photo:row.photo,
-      caption:`Cabin spotlight: ${row.location}\n${row.title}\n${facts}\n\nFull listing: ${row.listingUrl}\nPhotos: ${row.photo.credit || 'Listing provider'}.\nPrices and availability can change.\n\n#LogCabinScout #LogCabinsForSale #CabinLife`,
+      caption:`Cabin spotlight: ${row.location}\n${row.title}\n${facts}\n\n${row.listingUrl}\nPhotos: ${row.photo.credit || 'Listing provider'}.\n\n#LogCabinScout #LogCabinsForSale #CabinLife`,
       altText:`${row.photo.alt || `Property photograph of ${row.title}, ${row.location}`}. Asking ${dollars(row.price)}${row.acreage==null?'':`, ${row.acreage} acres`}. Photo: ${row.photo.credit || 'Listing provider'}.`,
     };
   });
