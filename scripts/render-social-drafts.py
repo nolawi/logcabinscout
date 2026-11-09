@@ -1,4 +1,4 @@
-"""Render original branded draft cards locally, without external requests or publishing."""
+"""Render property-photo draft cards from embedded images, without browser network requests or publishing."""
 import json
 import os
 from pathlib import Path
@@ -12,6 +12,7 @@ with sync_playwright() as p:
     page.route('**/*', lambda route: route.abort())
     for index, draft in enumerate(manifest['drafts'], 1):
         page.set_content((output / f'draft-{index}.html').read_text(), wait_until='load')
+        assert page.locator('.photo img').evaluate('(img)=>img.complete && img.naturalWidth > 0'), 'Property image failed to load'
         assert page.locator('.main').evaluate('(el)=>el.getBoundingClientRect().bottom') <= page.locator('footer').bounding_box()['y'], 'Draft text overlaps footer'
         page.screenshot(path=str(output / f'draft-{index}.png'))
         page.screenshot(path=str(output / f'draft-{index}.jpg'), type='jpeg', quality=92)

@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {prepareSocialDrafts,renderSocialCard} from './social-drafts.mjs';
 const date=new Date('2026-11-09T12:00:00Z');
-const row=(id,location)=>({id,title:'1 Cabin Road',location,price:250000,acreage:2,listingUrl:'https://example.com/listing',photo:{url:'https://example.com/property-photo.jpg'}});
+const row=(id,location)=>({id,title:'1 Cabin Road',location,price:250000,acreage:2,listingUrl:'https://example.com/listing',photo:{url:'https://example.com/property-photo.jpg',credit:'MLS / Listing provider',alt:'Cabin exterior'}});
 test('weekly drafts are deterministic, unique, and prefer different states',()=>{
  const rows=[row('1','Example, Virginia'),row('2','Other, Virginia'),row('3','Place, Colorado')];
  const drafts=prepareSocialDrafts(rows,date);
@@ -15,11 +15,17 @@ test('empty collections create nothing and one listing never creates duplicate p
  assert.equal(prepareSocialDrafts([row('1','Example, Virginia')],date).length,1);
  assert.deepEqual(prepareSocialDrafts([{...row('1','Example, Virginia'),isSample:true}],date),[]);
 });
-test('cards escape source text and do not embed property photos or source scripts',()=>{
+test('cards embed property photos, preserve credit, and omit the temporary domain',()=>{
  const [draft]=prepareSocialDrafts([{...row('1','Place, Colorado'),title:'<script>alert(1)</script>'}],date);
- const html=renderSocialCard(draft,'<svg></svg>');
+ const html=renderSocialCard(draft,'<svg></svg>','data:image/jpeg;base64,/9j/AAAA');
  assert.ok(!html.includes('<script>'));assert.ok(html.includes('&lt;script&gt;'));
- assert.ok(!html.includes('property-photo.jpg'));
+ assert.ok(html.includes('data:image/jpeg;base64,'));assert.ok(html.includes('object-fit:contain'));assert.ok(html.includes('MLS / Listing provider'));
+ assert.ok(!html.toLowerCase().includes('elancabin'));assert.ok(!draft.caption.toLowerCase().includes('elancabin'));assert.ok(!draft.caption.includes('link in bio'));
  assert.ok(draft.caption.includes('https://example.com/listing'));
- assert.ok(draft.altText.includes('no property photograph'));
+ assert.ok(draft.altText.includes('Cabin exterior'));assert.ok(draft.caption.includes('MLS / Listing provider'));
+});
+
+test('photo drafts never substitute illustrations for missing photos',()=>{
+ assert.deepEqual(prepareSocialDrafts([{...row('1','Place, Colorado'),photo:null}],date),[]);
+ assert.throws(()=>renderSocialCard({},'<svg></svg>'),/photograph/);
 });

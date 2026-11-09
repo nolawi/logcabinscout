@@ -1,93 +1,59 @@
-# Instagram drafts: free-first setup
+# Instagram drafts and publishing
 
-The `Prepare Instagram drafts` workflow produces a weekly batch of two draft
-posts from the currently published collection at `https://elancabin.com/listings.json`.
-Queued, undeployed listings on main are not promoted. A failed feed request stops
-the run instead of falling back to unpublished content. It also supports manual runs on main.
-It uploads original 1080×1350 PNG cards, captions, alt text, HTML sources, and a
-manifest as a 30-day GitHub Actions artifact named `instagram-drafts`.
+The weekly **Prepare Instagram drafts** workflow creates two property-photo
+spotlights from the live listing feed. Selection rotates weekly and prefers
+different states. Only current, non-sample listings with sourced photos are used.
+The feed URL is an internal data source, never promotional copy.
 
-The cards use our own logo and landscape artwork with listing facts. Brokerage
-and Zillow photographs are not reused in social cards. Different states are
-preferred, and selection rotates weekly. Only current feed records are eligible;
-if no records are current, the manifest records an empty batch instead of posting
-stale or fictional listings. A one-property feed creates one draft, not duplicates.
+Cards show the actual listing photograph, location, address, price, acreage and
+source credit. Photos are downloaded over HTTPS and embedded for offline browser
+rendering. Images are fitted in full without cropping or removing watermarks.
+No temporary hosting domain appears on cards or in captions. Captions link to
+the original Zillow, brokerage or other listing page and retain photo credits.
+Instagram generally displays caption URLs as plain text, rather than clickable
+links. The user reports MLS licenses and requested property-photo use; credits
+remain attached and no universal license grant is inferred or stored.
 
-Generate locally:
+Run locally:
 
 ```bash
 npm run instagram:drafts
-# Use the installed Playwright Chromium, or set CHROMIUM_EXECUTABLE to a local binary.
-python scripts/render-social-drafts.py
+CHROMIUM_EXECUTABLE=/usr/bin/chromium python scripts/render-social-drafts.py
 ```
 
-The renderer uses Python Playwright 1.62.0 (pinned in CI). Its browser renders only
-local inline HTML/SVG; external requests during rendering are blocked.
-The generator makes one public HTTPS feed request, with no provider API calls. Draft outputs are under
-ignored `artifacts/instagram/`. No Instagram password, Meta token, paid API,
-third-party scheduling subscription, or website deployment is needed.
+Outputs are ignored under `artifacts/instagram/`: HTML, JPEG, PNG, captions,
+alt text and a draft manifest. The weekly workflow uploads these as a 30-day
+artifact. Photos are downloaded by the generator; all browser network requests
+are blocked during rendering. Python Playwright is pinned to 1.62.0 in CI.
+A failed photo download stops generation instead of substituting artwork.
 
-## Publishing is not connected
+## Meta connection
 
-### Check a Unified Login connection
+The account is `logcabinscout`, Instagram ID `17841480907650824`. The repository
+Actions secret `INSTAGRAM_ACCESS_TOKEN` holds the token; never paste it in chat
+or commit it. New apps use Unified Login with a business portfolio.
+**Check Meta connection** checks the exact ID and username using Instagram
+Graph or Facebook Graph, without posting or logging raw responses or secrets.
 
-Newer Meta apps may require Unified Login and a business portfolio instead of
-the older Instagram Login dashboard flow. Save the resulting token directly as
-the repository Actions secret `INSTAGRAM_ACCESS_TOKEN`; never paste it in chat.
-Run **Check Meta connection** manually from Actions on main. It makes read-only
-requests for account `17841480907650824` and requires its username to match
-`logcabinscout`. It tries Instagram Graph, then Facebook Graph for tokens from
-other login flows. It logs no token or raw provider responses. Missing secrets,
-rejected tokens, and mismatched accounts fail the job. A passing check verifies
-target account read access only; it does not verify publishing permissions,
-create media containers, or publish anything.
-Publishing remains disconnected until target account access and a separate
-publishing integration are implemented and tested.
+## Manual publishing
 
-This workflow does not contact Instagram, create media containers, publish posts,
-or send messages. A manifest always marks `published: false`. It is not a posting
-history or a guarantee against reposting the same property after inventory changes.
-Inspect captions and current source details before choosing a draft to publish.
+**Instagram publishing** is manual only. Both `publish` and `prepare` default
+to false. The default checks identity and publishing quota using Facebook Graph.
+With `prepare: true`, a public HTTPS JPEG URL and matching caption, Meta creates
+and processes an unpublished container. With `publish: true`, it also sends one
+publish request after processing finishes. No publish request is retried.
+Check Instagram before rerunning an ambiguous failure; manual reruns are not
+deduplicated. There is no automatic posting schedule.
 
-For direct publishing later, connect the professional Instagram account through
-Meta's official authorization flow and configure the required app permissions and
-secure token storage. That external account connection has not been performed in
-this repository or chat. Never paste passwords or tokens into chat or commit them.
-Property-photo posts would additionally need social-use permission from the
-relevant rights holder. The current original-artwork cards avoid that dependency.
+Public snapshots and their captions are under `public/social/instagram/`.
+`latest.json` describes the latest prepared batch, not posting history.
+Hash-based JPEG filenames are immutable; original text-card files remain for
+historical references. Raw GitHub image URLs work without a site deployment.
+Private Actions artifact URLs cannot be used by Meta. Publishing new snapshots
+requires copying the rendered JPEGs and matching metadata into this directory.
+Facts are snapshots and should be checked before posting.
 
-The website's deployment stays manual and is unrelated to this draft schedule.
-
-## Manual publishing workflow
-
-**Instagram publishing** is manual-only and defaults to `publish: false`.
-The default performs read-only account identity and content-publishing quota
-checks. A successful quota check does not prove a real post will succeed.
-To publish one post, provide a publicly accessible HTTPS JPEG image URL and
-caption, and explicitly enable `publish`. It creates one container, waits for
-readiness, and sends one publish request with no automatic retry. Inspect
-Instagram before rerunning a failed or ambiguous publishing attempt; manual
-reruns are not deduplicated. No automatic posting schedule is enabled.
-
-Draft artifacts now include JPEGs alongside PNGs. GitHub Actions artifacts are
-private downloads and cannot serve as Meta image URLs. The chosen JPEG needs
-public hosting before a real post can be sent. This workflow does not deploy
-the website or upload images to public hosting. The original draft manifest
-continues to describe draft generation only, not publishing history.
-
-### Public image cards and preparation test
-
-The initial cards and their captions are checked in under
-`public/social/instagram/`. `latest.json` records their original feed timestamp,
-listing facts, captions and public image URLs. Their hash-based filenames are
-immutable: publish new files when facts change instead of replacing old images.
-Raw GitHub URLs make them publicly fetchable without a website deployment;
-website URLs become available on the next requested Pages deployment.
-These are snapshots, not automatically refreshed inventory.
-
-Set `prepare: true` and leave `publish: false` in **Instagram publishing** to
-create a Meta media container and wait for image processing, without calling
-`media_publish`. Supply one public JPEG URL and its matching caption from the
-manifest. The returned container ID confirms image processing, not a public
-post. Both flags default to false. Containers expire; the eventual publish run
-creates its own new container. Do not publish old facts without checking them.
+The original test post used an illustration and temporary-domain copy. Changing
+the generator does not edit or replace that existing Instagram post. New drafts
+use property photographs and source-only captions. Website deployment remains
+manual and independent from Instagram.

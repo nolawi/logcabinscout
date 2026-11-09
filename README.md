@@ -58,5 +58,5 @@ For keyword-targeted discovery without paid API calls, see
 [public listing discovery](docs/public-discovery.md). Cards include sourced
 bedroom, bathroom, and square-footage details where available.
 
-A free-first weekly Instagram draft workflow creates two original branded cards
+A free-first weekly Instagram draft workflow creates two branded property-photo cards
 with captions; see [Instagram drafts](docs/instagram.md). It does not publish posts.
