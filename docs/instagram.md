@@ -5,9 +5,10 @@ spotlights from the live listing feed. Selection rotates weekly and prefers
 different states. Only current, non-sample listings with sourced photos are used.
 The feed URL is an internal data source, never promotional copy.
 
-Cards show the actual listing photograph, location, address, price, acreage and
-source credit. Photos are downloaded over HTTPS and embedded for offline browser
-rendering. Images are fitted in full without cropping or removing watermarks.
+Post images contain only the property photograph. Location, address, price,
+acreage, source credit and the original listing URL appear in the caption. Photos are downloaded over HTTPS and embedded for offline browser
+rendering. Images preserve their full aspect ratio without cropping, added borders,
+logos, text overlays, or watermark removal.
 No temporary hosting domain appears on cards or in captions. Captions link to
 the original Zillow, brokerage or other listing page and retain photo credits.
 Instagram generally displays caption URLs as plain text, rather than clickable

@@ -12,9 +12,10 @@ with sync_playwright() as p:
     page.route('**/*', lambda route: route.abort())
     for index, draft in enumerate(manifest['drafts'], 1):
         page.set_content((output / f'draft-{index}.html').read_text(), wait_until='load')
-        assert page.locator('.photo img').evaluate('(img)=>img.complete && img.naturalWidth > 0'), 'Property image failed to load'
-        assert page.locator('.main').evaluate('(el)=>el.getBoundingClientRect().bottom') <= page.locator('footer').bounding_box()['y'], 'Draft text overlaps footer'
-        page.screenshot(path=str(output / f'draft-{index}.png'))
-        page.screenshot(path=str(output / f'draft-{index}.jpg'), type='jpeg', quality=92)
+        photo = page.locator('img')
+        assert photo.evaluate('(img)=>img.complete && img.naturalWidth > 0'), 'Property image failed to load'
+        # Capture only the photograph at its original aspect ratio, without a card.
+        photo.screenshot(path=str(output / f'draft-{index}.png'))
+        photo.screenshot(path=str(output / f'draft-{index}.jpg'), type='jpeg', quality=95)
     browser.close()
 print(f"Rendered {len(manifest['drafts'])} draft PNGs; nothing published.")

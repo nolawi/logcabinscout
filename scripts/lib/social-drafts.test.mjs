@@ -16,13 +16,13 @@ test('empty collections create nothing and one listing never creates duplicate p
  assert.deepEqual(prepareSocialDrafts([{...row('1','Example, Virginia'),isSample:true}],date),[]);
 });
 test('cards embed property photos, preserve credit, and omit the temporary domain',()=>{
- const [draft]=prepareSocialDrafts([{...row('1','Place, Colorado'),title:'<script>alert(1)</script>'}],date);
+ const [draft]=prepareSocialDrafts([{...row('1','Place, Colorado'),title:'<script>alert(1)</script>',photo:{...row('1','Place, Colorado').photo,alt:'<script>alert(1)</script>'}}],date);
  const html=renderSocialCard(draft,'<svg></svg>','data:image/jpeg;base64,/9j/AAAA');
  assert.ok(!html.includes('<script>'));assert.ok(html.includes('&lt;script&gt;'));
- assert.ok(html.includes('data:image/jpeg;base64,'));assert.ok(html.includes('object-fit:contain'));assert.ok(html.includes('MLS / Listing provider'));
+ assert.ok(html.includes('data:image/jpeg;base64,'));assert.ok(html.includes('height:auto'));assert.ok(!html.includes('<header'));assert.ok(!html.includes('<footer'));assert.ok(!html.includes(draft.facts));
  assert.ok(!html.toLowerCase().includes('elancabin'));assert.ok(!draft.caption.toLowerCase().includes('elancabin'));assert.ok(!draft.caption.includes('link in bio'));
  assert.ok(draft.caption.includes('https://example.com/listing'));
- assert.ok(draft.altText.includes('Cabin exterior'));assert.ok(draft.caption.includes('MLS / Listing provider'));
+ assert.ok(draft.altText.includes('<script>alert(1)</script>'));assert.ok(draft.caption.includes('MLS / Listing provider'));
 });
 
 test('photo drafts never substitute illustrations for missing photos',()=>{
