@@ -1,0 +1,36 @@
+name: Instagram publishing
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: 'Publish ONE post (false only checks account and publishing quota)'
+        type: boolean
+        default: false
+      image_url:
+        description: 'Public HTTPS JPEG URL; required only for publishing'
+        type: string
+        required: false
+      caption:
+        description: 'Post caption; required only for publishing'
+        type: string
+        required: false
+permissions:
+  contents: read
+concurrency:
+  group: instagram-publishing
+  cancel-in-progress: false
+jobs:
+  instagram:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/publish-instagram.mjs
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          PUBLISH: ${{ inputs.publish }}
+          IMAGE_URL: ${{ inputs.image_url }}
+          POST_CAPTION: ${{ inputs.caption }}

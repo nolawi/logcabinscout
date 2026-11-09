@@ -11,7 +11,7 @@ const landscape=await readFile(new URL('../public/hero-landscape.svg',import.met
 const output=new URL('../artifacts/instagram/',import.meta.url);
 await mkdir(output,{recursive:true});
 // Remove only this generator's numbered outputs to avoid retaining stale cards on an empty run.
-for(let i=1;i<=2;i++)for(const extension of ['html','png','caption.txt','alt.txt'])await rm(new URL(`draft-${i}.${extension}`,output),{force:true});
+for(let i=1;i<=2;i++)for(const extension of ['html','png','jpg','caption.txt','alt.txt'])await rm(new URL(`draft-${i}.${extension}`,output),{force:true});
 for(const [i,draft] of drafts.entries()) {
   await writeFile(new URL(`draft-${i+1}.html`,output),renderSocialCard(draft,logo,landscape));
   await writeFile(new URL(`draft-${i+1}.caption.txt`,output),draft.caption+'\n');

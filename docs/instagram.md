@@ -57,3 +57,20 @@ Property-photo posts would additionally need social-use permission from the
 relevant rights holder. The current original-artwork cards avoid that dependency.
 
 The website's deployment stays manual and is unrelated to this draft schedule.
+
+## Manual publishing workflow
+
+**Instagram publishing** is manual-only and defaults to `publish: false`.
+The default performs read-only account identity and content-publishing quota
+checks. A successful quota check does not prove a real post will succeed.
+To publish one post, provide a publicly accessible HTTPS JPEG image URL and
+caption, and explicitly enable `publish`. It creates one container, waits for
+readiness, and sends one publish request with no automatic retry. Inspect
+Instagram before rerunning a failed or ambiguous publishing attempt; manual
+reruns are not deduplicated. No automatic posting schedule is enabled.
+
+Draft artifacts now include JPEGs alongside PNGs. GitHub Actions artifacts are
+private downloads and cannot serve as Meta image URLs. The chosen JPEG needs
+public hosting before a real post can be sent. This workflow does not deploy
+the website or upload images to public hosting. The original draft manifest
+continues to describe draft generation only, not publishing history.

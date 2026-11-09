@@ -14,5 +14,6 @@ with sync_playwright() as p:
         page.set_content((output / f'draft-{index}.html').read_text(), wait_until='load')
         assert page.locator('.main').evaluate('(el)=>el.getBoundingClientRect().bottom') <= page.locator('footer').bounding_box()['y'], 'Draft text overlaps footer'
         page.screenshot(path=str(output / f'draft-{index}.png'))
+        page.screenshot(path=str(output / f'draft-{index}.jpg'), type='jpeg', quality=92)
     browser.close()
 print(f"Rendered {len(manifest['drafts'])} draft PNGs; nothing published.")
