@@ -45,8 +45,8 @@ See [deployment details](docs/deployment.md).
 Manage candidates, photos, and inactive listings with `npm run review -- --help`.
 See the [local review workflow](docs/review-workflow.md).
 
-The collection now includes 26 sourced properties across Virginia, Tennessee, Colorado, North Carolina,
-Pennsylvania, and Montana. See [expanded listing sources](docs/expanded-listing-sources.md).
+The collection now includes 37 sourced properties across Virginia, Tennessee, Colorado, North Carolina,
+Pennsylvania, Montana, West Virginia, Georgia, Kentucky, and Idaho. See [expanded listing sources](docs/expanded-listing-sources.md).
 
 Production builds prerender the collection and generate crawl metadata for search
 engines. See [SEO and sharing](docs/seo.md).

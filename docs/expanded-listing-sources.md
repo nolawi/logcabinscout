@@ -50,3 +50,24 @@ remain omitted; original review timestamps were preserved.
 | [18371 High Mountain Vw](https://www.zillow.com/homedetails/18371-High-Mountain-Vw-Florence-MT-59833/209613753_zpid/) | Florence, Montana | $265,000 | 1 | 1 | 480 |
 | [247 Mill Gulch Rd](https://www.zillow.com/homedetails/247-Mill-Gulch-Rd-Sheridan-MT-59749/250239028_zpid/) | Sheridan, Montana | $749,000 | 2 | 2 | 1350 |
 | [13245 Balsamroot Rd](https://www.zillow.com/homedetails/13245-Balsamroot-Rd-Lolo-MT-59847/3145082_zpid/) | Lolo, Montana | $505,000 | 3 | 2 | 2046 |
+
+## West Virginia, Georgia, Kentucky, and Idaho expansion
+
+Eleven new source-backed listings bring the collection to 37 properties across
+ten states. The selected exterior photos and primary-residence descriptions were
+inspected. A keyword match referring only to bathroom styling was excluded.
+No paid API calls were made, and existing records were preserved unchanged.
+
+| Property/source | Location | Price | Beds | Baths | Sq ft |
+| --- | --- | ---: | ---: | ---: | ---: |
+| [1209 Gaines Rd](https://www.zillow.com/homedetails/1209-Gaines-Rd-Rock-Cave-WV-26234/23114144_zpid/) | Rock Cave, West Virginia | $369,000 | 3 | 3 | 3034 |
+| [416 River Haven Dr](https://www.zillow.com/homedetails/416-River-Haven-Dr-Harpers-Ferry-WV-25425/22573204_zpid/) | Harpers Ferry, West Virginia | $250,000 | 2 | 1 | 1300 |
+| [431 Lost River State Park Rd](https://www.zillow.com/homedetails/431-Lost-River-State-Park-Rd-Moorefield-WV-26836/337621252_zpid/) | Moorefield, West Virginia | $259,900 | 3 | 2 | 2016 |
+| [287 Dumas Rd](https://www.zillow.com/homedetails/287-Dumas-Rd-Forsyth-GA-31029/76520841_zpid/) | Forsyth, Georgia | $199,900 | 4 | 2 | 1579 |
+| [531 Caldwell Rd](https://www.zillow.com/homedetails/531-Caldwell-Rd-Griffin-GA-30223/69901757_zpid/) | Griffin, Georgia | $450,000 | 3 | 3 | 3039 |
+| [80 Treetop Ln](https://www.zillow.com/homedetails/80-Treetop-Ln-Blairsville-GA-30512/105425238_zpid/) | Blairsville, Georgia | $250,000 | 2 | 2 | 832 |
+| [297 Jim Bernard Rd #297](https://www.zillow.com/homedetails/297-Jim-Bernard-Rd-297-London-KY-40744/465929418_zpid/) | London, Kentucky | $275,000 | 3 | 2 | 1368 |
+| [117 Ghan Smith Rd](https://www.zillow.com/homedetails/117-Ghan-Smith-Rd-Russellville-KY-42276/234267648_zpid/) | Russellville, Kentucky | $239,900 | 3 | 3 | 2130 |
+| [720 Cypress Rd](https://www.zillow.com/homedetails/720-Cypress-Rd-Benton-KY-42025/2100313441_zpid/) | Benton, Kentucky | $450,000 | 4 | 2 | 1580 |
+| [69 Skyview Ln](https://www.zillow.com/homedetails/69-Skyview-Ln-Boise-ID-83716/89895546_zpid/) | Boise, Idaho | $449,900 | 3 | 2 | 1552 |
+| [948 E 900 N](https://www.zillow.com/homedetails/948-E-900-N-Shelley-ID-83274/113286835_zpid/) | Shelley, Idaho | $580,000 | 3 | 2 | 2729 |
