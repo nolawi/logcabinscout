@@ -24,3 +24,11 @@ test('missing publishing permission fails', async () => {
   let calls = 0;
   await assert.rejects(checkMetaConnection('secret', async () => ({ ok: true, json: async () => ++calls === 1 ? { id: '123' } : { data: [] } })), /instagram_content_publish/);
 });
+test('accepts an identity wrapped in a data array', async () => {
+  let calls = 0;
+  const result = await checkMetaConnection('secret', async () => ({ ok: true, json: async () => ++calls === 1 ? { data: [{ user_id: '123' }] } : { data: ['instagram_basic', 'instagram_content_publish'].map(permission => ({ permission, status: 'granted' })) } }));
+  assert.match(result, /verified/);
+});
+test('empty identity data fails without logging response contents', async () => {
+  await assert.rejects(checkMetaConnection('secret', async () => ({ ok: true, json: async () => ({ data: [], sensitive: 'secret' }) })), /data array with 0 entries/);
+});

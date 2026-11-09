@@ -20,7 +20,11 @@ export async function checkMetaConnection(token, request = fetch) {
     return body;
   }
   const identity = await get('me?fields=id');
-  if (!identity.id) throw new Error('Meta did not return an authenticated identity.');
+  const account = identity.id ? identity : identity.data?.[0];
+  if (!account?.id && !account?.user_id) {
+    const shape = Array.isArray(identity.data) ? `data array with ${identity.data.length} entries` : 'no identity object';
+    throw new Error(`Meta did not return an authenticated identity (${shape}). Account authorization needs investigation.`);
+  }
   const permissions = await get('me/permissions');
   const granted = new Set((permissions.data ?? []).filter(p => p.status === 'granted').map(p => p.permission));
   const missing = ['instagram_basic', 'instagram_content_publish'].filter(p => !granted.has(p));
