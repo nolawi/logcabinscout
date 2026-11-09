@@ -1,0 +1,20 @@
+name: Remove two Instagram test posts
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: instagram-publishing
+  cancel-in-progress: false
+jobs:
+  cleanup:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/remove-instagram-test-posts.mjs
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
