@@ -29,6 +29,20 @@ third-party scheduling subscription, or website deployment is needed.
 
 ## Publishing is not connected
 
+### Check a Unified Login connection
+
+Newer Meta apps may require Unified Login and a business portfolio instead of
+the older Instagram Login dashboard flow. Save the resulting token directly as
+the repository Actions secret `INSTAGRAM_ACCESS_TOKEN`; never paste it in chat.
+Run **Check Meta connection** manually from Actions on main. It makes read-only
+requests to the Facebook Graph API for the authenticated identity and granted
+`instagram_basic` / `instagram_content_publish` permissions. It logs no token
+or raw provider responses. Missing secrets and rejected tokens fail the job.
+A passing check verifies authentication and permissions only; it does not verify
+the target Instagram asset, create media containers, or publish anything.
+Publishing remains disconnected until target account access and a separate
+publishing integration are implemented and tested.
+
 This workflow does not contact Instagram, create media containers, publish posts,
 or send messages. A manifest always marks `published: false`. It is not a posting
 history or a guarantee against reposting the same property after inventory changes.
