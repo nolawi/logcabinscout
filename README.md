@@ -57,3 +57,6 @@ See [saved cabins](docs/saved-cabins.md) for persistence behavior.
 For keyword-targeted discovery without paid API calls, see
 [public listing discovery](docs/public-discovery.md). Cards include sourced
 bedroom, bathroom, and square-footage details where available.
+
+A free-first weekly Instagram draft workflow creates two original branded cards
+with captions; see [Instagram drafts](docs/instagram.md). It does not publish posts.
