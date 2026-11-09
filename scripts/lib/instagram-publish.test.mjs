@@ -25,3 +25,9 @@ test('invalid image URL prevents container creation', async () => {
 test('failed container prevents publishing', async () => {
  const calls=[]; await assert.rejects(publishInstagram({token:'secret',publish:true,imageUrl:'https://elancabin.com/a.jpg',caption:'test'},fake([identity,quota,{id:'123'},{status_code:'ERROR'}],calls)),/not available/); assert.ok(!calls.some(c=>c.url.endsWith('/media_publish')));
 });
+test('prepare mode processes the image without publishing a post', async () => {
+ const calls=[];
+ const result=await publishInstagram({token:'secret',prepare:true,imageUrl:'https://example.com/card.jpg',caption:'test'},fake([identity,quota,{id:'123'},{status_code:'FINISHED'}],calls));
+ assert.equal(result.published,false); assert.equal(result.containerId,'123');
+ assert.ok(!calls.some(c=>c.url.endsWith('/media_publish')));
+});

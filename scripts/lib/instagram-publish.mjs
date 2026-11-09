@@ -1,6 +1,6 @@
 import { INSTAGRAM_ACCOUNT_ID } from './meta-connection.mjs';
 
-export async function publishInstagram({ token, imageUrl = '', caption = '', publish = false }, request = fetch, pause = ms => new Promise(resolve => setTimeout(resolve, ms))) {
+export async function publishInstagram({ token, imageUrl = '', caption = '', publish = false, prepare = false }, request = fetch, pause = ms => new Promise(resolve => setTimeout(resolve, ms))) {
   if (!token?.trim()) throw new Error('INSTAGRAM_ACCESS_TOKEN is missing.');
   const base = `https://graph.facebook.com/v27.0/${INSTAGRAM_ACCOUNT_ID}`;
   async function api(url, fields) {
@@ -26,7 +26,7 @@ export async function publishInstagram({ token, imageUrl = '', caption = '', pub
   const quota = limit.data?.[0];
   if (!Number.isFinite(quota?.quota_usage) || !Number.isFinite(quota?.config?.quota_total)) throw new Error('Meta did not confirm publishing quota access.');
   if (quota.quota_usage >= quota.config.quota_total) throw new Error('Instagram publishing quota is exhausted.');
-  if (!publish) return { published: false, message: 'Account identity and publishing quota access verified. No media container or post created.' };
+  if (!publish && !prepare) return { published: false, message: 'Account identity and publishing quota access verified. No media container or post created.' };
   let url;
   try { url = new URL(imageUrl); } catch { throw new Error('A public HTTPS JPEG image URL is required.'); }
   if (url.protocol !== 'https:' || url.username || url.password) throw new Error('Use a public HTTPS JPEG image URL without credentials.');
@@ -41,6 +41,7 @@ export async function publishInstagram({ token, imageUrl = '', caption = '', pub
     await pause(5000);
   }
   if (!ready) throw new Error('Media container is still processing. No publish request was sent.');
+  if (!publish) return { published: false, containerId: String(container.id), message: 'Meta fetched and processed the image successfully. Container ready; no post published.' };
   // Never retry this POST: an ambiguous response could otherwise create duplicates.
   const post = await api(`${base}/media_publish`, { creation_id: String(container.id) });
   if (!/^\d+$/.test(String(post.id))) throw new Error('Publishing response was inconclusive. Check Instagram before retrying.');

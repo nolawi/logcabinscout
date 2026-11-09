@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-11-09T22:30:04.431Z",
+  "sourceFeed": "https://elancabin.com/listings.json",
+  "status": "draft-only",
+  "published": false,
+  "drafts": [
+    {
+      "listingId": "zillow:106956353",
+      "title": "190 Coyote Run",
+      "location": "Murphy, North Carolina",
+      "price": 359000,
+      "facts": "$359,000 \u00b7 3.08 acres",
+      "sourceUrl": "https://www.zillow.com/homedetails/190-Coyote-Run-Murphy-NC-28906/106956353_zpid/",
+      "caption": "Cabin spotlight: Murphy, North Carolina\n190 Coyote Run\n$359,000 \u00b7 3.08 acres\n\nBrowse cabins at elancabin.com \u2014 link in bio.\nOriginal listing: https://www.zillow.com/homedetails/190-Coyote-Run-Murphy-NC-28906/106956353_zpid/\nPrices and availability can change.\n\n#LogCabinScout #LogCabinsForSale #CabinLife",
+      "altText": "Log Cabin Scout branded text card: 190 Coyote Run, Murphy, North Carolina. Asking $359,000, 3.08 acres. Original cabin emblem and landscape illustration; no property photograph.",
+      "imagePath": "/social/instagram/2026-11-09-4e0efe8242ca.jpg",
+      "publicImageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/2026-11-09-4e0efe8242ca.jpg"
+    },
+    {
+      "listingId": "zillow:128492323",
+      "title": "308 Dilley Ln",
+      "location": "Westcliffe, Colorado",
+      "price": 275000,
+      "facts": "$275,000 \u00b7 16.27 acres",
+      "sourceUrl": "https://www.zillow.com/homedetails/308-Dilley-Ln-Westcliffe-CO-81252/128492323_zpid/",
+      "caption": "Cabin spotlight: Westcliffe, Colorado\n308 Dilley Ln\n$275,000 \u00b7 16.27 acres\n\nBrowse cabins at elancabin.com \u2014 link in bio.\nOriginal listing: https://www.zillow.com/homedetails/308-Dilley-Ln-Westcliffe-CO-81252/128492323_zpid/\nPrices and availability can change.\n\n#LogCabinScout #LogCabinsForSale #CabinLife",
+      "altText": "Log Cabin Scout branded text card: 308 Dilley Ln, Westcliffe, Colorado. Asking $275,000, 16.27 acres. Original cabin emblem and landscape illustration; no property photograph.",
+      "imagePath": "/social/instagram/2026-11-09-1c2c0893f4f4.jpg",
+      "publicImageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/2026-11-09-1c2c0893f4f4.jpg"
+    }
+  ]
+}

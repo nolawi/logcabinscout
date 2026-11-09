@@ -74,3 +74,20 @@ private downloads and cannot serve as Meta image URLs. The chosen JPEG needs
 public hosting before a real post can be sent. This workflow does not deploy
 the website or upload images to public hosting. The original draft manifest
 continues to describe draft generation only, not publishing history.
+
+### Public image cards and preparation test
+
+The initial cards and their captions are checked in under
+`public/social/instagram/`. `latest.json` records their original feed timestamp,
+listing facts, captions and public image URLs. Their hash-based filenames are
+immutable: publish new files when facts change instead of replacing old images.
+Raw GitHub URLs make them publicly fetchable without a website deployment;
+website URLs become available on the next requested Pages deployment.
+These are snapshots, not automatically refreshed inventory.
+
+Set `prepare: true` and leave `publish: false` in **Instagram publishing** to
+create a Meta media container and wait for image processing, without calling
+`media_publish`. Supply one public JPEG URL and its matching caption from the
+manifest. The returned container ID confirms image processing, not a public
+post. Both flags default to false. Containers expire; the eventual publish run
+creates its own new container. Do not publish old facts without checking them.
