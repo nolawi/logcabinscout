@@ -36,8 +36,12 @@
     {
       "queueId": "forsyth-ga",
       "listingId": "zillow:76520841",
-      "state": "publishing",
-      "startedAt": "2026-11-10T15:53:01.134Z"
+      "state": "published",
+      "startedAt": "2026-11-10T15:53:01.134Z",
+      "publishedAt": "2026-11-10T15:53:54.258Z",
+      "mediaId": "18138059161734059",
+      "permalink": "https://www.instagram.com/p/DfkRg1ADScM/",
+      "imageCount": 4
     }
   ]
 }
