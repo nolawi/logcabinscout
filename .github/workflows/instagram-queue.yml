@@ -6,6 +6,14 @@ on:
         description: '1–3 prepared queue IDs, separated by commas'
         type: string
         required: true
+      verification_time:
+        description: 'UTC source-check timestamp supplied by instagram:post'
+        type: string
+        required: true
+      verification_digest:
+        description: 'Package checksum supplied by instagram:post after live source checks'
+        type: string
+        required: true
       publish:
         description: 'Publish the selected posts; false checks sources and history only'
         type: boolean
@@ -32,6 +40,8 @@ jobs:
       - run: npm test
       - run: node scripts/publish-instagram-queue.mjs
         env:
+          VERIFICATION_TIME: ${{ inputs.verification_time }}
+          VERIFICATION_DIGEST: ${{ inputs.verification_digest }}
           POST_IDS: ${{ inputs.post_ids }}
           PUBLISH: ${{ inputs.publish }}
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}

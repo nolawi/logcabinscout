@@ -1,7 +1,6 @@
 import {readFileSync,writeFileSync,appendFileSync,mkdirSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
-import {listingGallery} from './lib/public-listings.mjs';
-import {selectQueuePosts,verifyQueueSource,publishQueueBatch} from './lib/instagram-queue.mjs';
+import {selectQueuePosts,validateSourceVerification,publishQueueBatch} from './lib/instagram-queue.mjs';
 import {publishInstagram} from './lib/instagram-publish.mjs';
 import {INSTAGRAM_ACCOUNT_ID} from './lib/meta-connection.mjs';
 const historyPath='data/instagram-post-history.json';
@@ -10,10 +9,7 @@ try {
  const history=JSON.parse(readFileSync(historyPath));
  const ids=(process.env.POST_IDS??'').split(',').map(x=>x.trim()).filter(Boolean);
  const posts=selectQueuePosts(queue,history,ids);
- for(const post of posts){
-  const html=execFileSync('curl',['--fail','--silent','--show-error','--location','--proto','=https','--proto-redir','=https','--max-time','30',post.listing.listingUrl],{encoding:'utf8',maxBuffer:15*1024*1024});
-  verifyQueueSource(post,listingGallery(html,post.listing.listingUrl));
- }
+ validateSourceVerification(posts,process.env.VERIFICATION_TIME,process.env.VERIFICATION_DIGEST);
  const token=process.env.INSTAGRAM_ACCESS_TOKEN;
  if(!token)throw new Error('INSTAGRAM_ACCESS_TOKEN is missing.');
  const response=await fetch(`https://graph.facebook.com/v27.0/${INSTAGRAM_ACCOUNT_ID}/media?fields=id,caption&limit=100`,{headers:{Authorization:`Bearer ${token}`},redirect:'error',signal:AbortSignal.timeout(25000)});

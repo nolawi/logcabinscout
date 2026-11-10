@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {selectQueuePosts,verifyQueueSource,publishQueueBatch} from './instagram-queue.mjs';
+import {selectQueuePosts,verifyQueueSource,publishQueueBatch,sourceVerification,validateSourceVerification} from './instagram-queue.mjs';
 const photo = id => `https://photos.zillowstatic.com/fp/${id}-o_a.jpg`;
 const post = (id='one') => ({id,listing:{id:`zillow:${id}`,price:100000,acreage:2,bedrooms:2,bathrooms:1,squareFeet:900},slides:['cover','exterior','land','interior'].map((role,i)=>({role,sourceUrl:photo(`abc${i}`),imageUrl:`https://example.com/${i}.jpg`}))});
 const source = p => ({listing:p.listing,photos:p.slides.map(x=>x.sourceUrl)});
@@ -38,4 +38,13 @@ test('ambiguous publishing errors retain a blocking history entry and stop the b
 test('receipt persistence failure never repeats the publish request',async()=>{
  let writes=0,calls=0;
  await assert.rejects(publishQueueBatch({posts:[post(),post('two')],history:{posts:[]},persist:async()=>{if(++writes===2)throw new Error('push failed');},publish:async()=>{calls++;return {published:true,mediaId:'123'};}}),/push failed/);assert.equal(calls,1);
+});
+
+test('source checks are bound to exact packages and must be recent',()=>{
+ const posts=[post()];const now=Date.parse('2026-11-10T12:00:00Z');const v=sourceVerification(posts,new Date(now));
+ assert.equal(validateSourceVerification(posts,v.verification_time,v.verification_digest,now),true);
+ assert.throws(()=>validateSourceVerification(posts,v.verification_time,v.verification_digest,now+31*60000),/stale/);
+ assert.throws(()=>validateSourceVerification(posts,v.verification_time,v.verification_digest,now-3*60000),/stale/);
+ assert.throws(()=>validateSourceVerification([post('two')],v.verification_time,v.verification_digest,now),/match/);
+ assert.throws(()=>validateSourceVerification(posts,'',v.verification_digest,now),/stale/);
 });

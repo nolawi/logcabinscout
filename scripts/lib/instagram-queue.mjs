@@ -1,3 +1,4 @@
+import {createHash} from 'node:crypto';
 export function selectQueuePosts(queue, history, ids) {
   if (!Array.isArray(queue.posts) || !Array.isArray(history.posts)) throw new Error('Invalid queue or history.');
   if (!Array.isArray(ids) || ids.length < 1 || ids.length > 3 || new Set(ids).size !== ids.length) throw new Error('Choose 1–3 distinct queue IDs.');
@@ -38,4 +39,15 @@ export async function publishQueueBatch({posts,history,publish,persist,now=()=>n
     results.push(entry);
   }
   return results;
+}
+
+export function sourceVerification(posts, now = new Date()) {
+  return { verification_time: now.toISOString(), verification_digest: createHash('sha256').update(JSON.stringify(posts)).digest('hex') };
+}
+export function validateSourceVerification(posts, time, digest, now = Date.now()) {
+  const checked = Date.parse(time);
+  if (!Number.isFinite(checked) || now-checked > 30*60*1000 || checked-now > 2*60*1000) throw new Error('Source verification is missing or stale. Run instagram:post from the publishing workspace.');
+  const expected = sourceVerification(posts,new Date(checked)).verification_digest;
+  if (digest !== expected) throw new Error('Verified packages do not match the queued posts. Recheck sources before publishing.');
+  return true;
 }

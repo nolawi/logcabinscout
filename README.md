@@ -62,6 +62,6 @@ A free-first weekly Instagram draft workflow creates two branded property-photo 
 with captions; see [Instagram drafts](docs/instagram.md). It does not publish posts.
 
 Prepared Instagram posts can be listed with `npm run instagram:post -- --list`
-and published by queue ID with `npm run instagram:post -- <id>`. The manual
-workflow rechecks listing facts and records post history to prevent repeats;
+and published by queue ID with `npm run instagram:post -- <id>`. The publishing
+command rechecks listing facts, and the workflow records history to prevent repeats;
 see [queue instructions](docs/instagram.md#ready-to-post-queue-fast-path).

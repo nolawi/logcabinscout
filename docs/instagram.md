@@ -150,9 +150,9 @@ npm run instagram:post -- boise-id jamestown-pa harrogate-tn
 ```
 
 These commands dispatch **Publish prepared Instagram posts**. The workflow
-only runs manually on main; its default is check-only. It rechecks each original
+only runs manually on main; its default is check-only. The publishing command rechecks each original
 listing for active log-cabin status, matching price/home facts and selected
-photo identities. A changed source blocks the entire batch before publishing.
+photo identities before dispatching. A changed source blocks the entire batch before publishing.
 It checks both committed history and the account's recent 100 posts to avoid
 repeats. Posts run sequentially under the same concurrency group as the legacy
 manual publisher. No website deployment is needed.
@@ -185,3 +185,16 @@ before posting so their raw GitHub URLs resolve. Original gallery URLs serve the
 other images directly. Refreshing packages never posts or deploys the site.
 Keep source credits/watermarks and disclose material conditions (for example,
 TLC, off-grid utilities, or seasonal access) in the prepared caption notes.
+
+### Source checks run on the publishing client
+
+Zillow rejects requests from GitHub Actions runners with HTTP 403. The
+`instagram:post` command therefore performs the live source checks in the
+publishing workspace before dispatch, and supplies a UTC verification timestamp
+and SHA-256 checksum of the exact selected packages. The workflow requires that
+checksum to match and the timestamp to be at most 30 minutes old (allowing up to
+two minutes of forward clock skew). It does not retry blocked Zillow requests.
+This is an attestation from an authorized publishing client, not a signature
+from Zillow; repository dispatch access remains the authorization boundary.
+Use the CLI instead of manually inventing these inputs in the Actions form.
+Both check-only and publishing runs still check live Instagram history.
