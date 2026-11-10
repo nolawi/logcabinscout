@@ -60,3 +60,8 @@ bedroom, bathroom, and square-footage details where available.
 
 A free-first weekly Instagram draft workflow creates two branded property-photo cards
 with captions; see [Instagram drafts](docs/instagram.md). It does not publish posts.
+
+Prepared Instagram posts can be listed with `npm run instagram:post -- --list`
+and published by queue ID with `npm run instagram:post -- <id>`. The manual
+workflow rechecks listing facts and records post history to prevent repeats;
+see [queue instructions](docs/instagram.md#ready-to-post-queue-fast-path).

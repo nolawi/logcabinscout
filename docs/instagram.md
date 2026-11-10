@@ -132,3 +132,56 @@ Headline text is one short line and precedes the unlabelled listing URL.
 Do not imply amenities or property features without source evidence. The
 Florence post uses “Off Grid With Bitterroot Views”, matching its live listing.
 Earlier published posts and dated manifests retain their original formatting.
+
+## Ready-to-post queue (fast path)
+
+`data/instagram-plan.json` contains ten editorial selections: a fact-based
+five-word headline and four manually reviewed gallery indexes per property.
+`data/instagram-queue.json` contains rendered, public covers, captions, source
+facts and the four selected photo URLs. Packages do not create Meta drafts or
+containers, so there is no container expiry while waiting to publish.
+
+```bash
+npm run instagram:post -- --list
+npm run instagram:post -- --check russellville-ky
+npm run instagram:post -- russellville-ky
+# Up to three in one explicitly requested batch:
+npm run instagram:post -- boise-id jamestown-pa harrogate-tn
+```
+
+These commands dispatch **Publish prepared Instagram posts**. The workflow
+only runs manually on main; its default is check-only. It rechecks each original
+listing for active log-cabin status, matching price/home facts and selected
+photo identities. A changed source blocks the entire batch before publishing.
+It checks both committed history and the account's recent 100 posts to avoid
+repeats. Posts run sequentially under the same concurrency group as the legacy
+manual publisher. No website deployment is needed.
+
+`data/instagram-post-history.json` is the durable posting ledger. Before each
+post, the workflow commits and pushes a `publishing` claim to main. After success
+it records the media ID, permalink and timestamp; an ambiguous failure is marked
+`needs-review` and blocks a blind rerun. A failure to persist the claim prevents
+publishing. Receipt persistence failure stops the batch; the earlier remote
+claim still blocks repeating that property. History commits use `[skip ci]`
+because they change no application behavior. Receipts are also retained as an
+Actions artifact for 90 days. The history does not expire with the artifact.
+
+A `needs-review` entry must be reconciled against Instagram before resuming;
+do not delete a claim merely to retry. The script never automatically retries
+`media_publish`. Account deletion/profile editing remain separate manual tasks.
+The legacy raw-URL publisher remains available; use this queue workflow for the
+history and source checks described above.
+
+To refresh one package after a listing changes:
+
+```bash
+CHROMIUM_EXECUTABLE=/usr/bin/chromium npm run instagram:prepare -- russellville-ky
+```
+
+Omit the ID to refresh all unposted packages. This fetches public source pages,
+renders covers with the existing Python Playwright installation, and writes the
+queue and content-addressed JPEGs. Commit/push refreshed packages and new covers
+before posting so their raw GitHub URLs resolve. Original gallery URLs serve the
+other images directly. Refreshing packages never posts or deploys the site.
+Keep source credits/watermarks and disclose material conditions (for example,
+TLC, off-grid utilities, or seasonal access) in the prepared caption notes.

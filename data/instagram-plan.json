@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "posts": [
+    {
+      "id": "forsyth-ga",
+      "listingId": "zillow:76520841",
+      "coverLocation": "Forsyth, GA",
+      "headline": "Five Acres Of Georgia Quiet",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 1,
+        "land": 43,
+        "interior": 9
+      }
+    },
+    {
+      "id": "lake-lure-nc",
+      "listingId": "zillow:102193906",
+      "coverLocation": "Lake Lure, NC",
+      "headline": "A Lake Lure Cabin Project",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 2,
+        "land": 5,
+        "interior": 6
+      },
+      "notes": "A cabin project needing TLC, per the listing."
+    },
+    {
+      "id": "rock-cave-wv",
+      "listingId": "zillow:23114144",
+      "coverLocation": "Rock Cave, WV",
+      "headline": "West Virginia Logs And Land",
+      "photoIndexes": {
+        "cover": 46,
+        "exterior": 49,
+        "land": 47,
+        "interior": 3
+      }
+    },
+    {
+      "id": "russellville-ky",
+      "listingId": "zillow:234267648",
+      "coverLocation": "Russellville, KY",
+      "headline": "Front Porch Evenings In Kentucky",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 40,
+        "land": 36,
+        "interior": 1
+      }
+    },
+    {
+      "id": "boise-id",
+      "listingId": "zillow:89895546",
+      "coverLocation": "Boise, ID",
+      "headline": "Idaho Views Beyond The Pines",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 42,
+        "land": 43,
+        "interior": 4
+      }
+    },
+    {
+      "id": "jamestown-pa",
+      "listingId": "zillow:78722169",
+      "coverLocation": "Jamestown, PA",
+      "headline": "Ten Acres Of Pennsylvania Quiet",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 4,
+        "land": 8,
+        "interior": 10
+      }
+    },
+    {
+      "id": "harrogate-tn",
+      "listingId": "zillow:215443044",
+      "coverLocation": "Harrogate, TN",
+      "headline": "A Tennessee Homestead Above Everything",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 2,
+        "land": 55,
+        "interior": 10
+      }
+    },
+    {
+      "id": "sheridan-mt",
+      "listingId": "zillow:250239028",
+      "coverLocation": "Sheridan, MT",
+      "headline": "Montana Mornings Beside The Fireplace",
+      "photoIndexes": {
+        "cover": 4,
+        "exterior": 1,
+        "land": 3,
+        "interior": 16
+      }
+    },
+    {
+      "id": "fairplay-co",
+      "listingId": "zillow:13991629",
+      "coverLocation": "Fairplay, CO",
+      "headline": "Thirty Acres Beyond The Crowds",
+      "photoIndexes": {
+        "cover": 11,
+        "exterior": 1,
+        "land": 0,
+        "interior": 14
+      },
+      "notes": "Off-grid; seasonal road access and spring-fed seasonal water. No bathroom listed."
+    },
+    {
+      "id": "blairsville-ga",
+      "listingId": "zillow:105425238",
+      "coverLocation": "Blairsville, GA",
+      "headline": "A Red Cabin Among Trees",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 2,
+        "land": 1,
+        "interior": 5
+      }
+    }
+  ]
+}

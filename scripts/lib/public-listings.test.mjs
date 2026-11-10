@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {pageData,searchState,searchCandidates,cabinEvidence,listingCandidate,squareFeetFrom} from './public-listings.mjs';
+import {pageData,searchState,searchCandidates,cabinEvidence,listingCandidate,squareFeetFrom,listingGallery} from './public-listings.mjs';
 const url='https://www.zillow.com/homedetails/1-Example-Road/123_zpid/';
 const wrap=data=>`<script id="__NEXT_DATA__" type="application/json">${JSON.stringify(data).replace(/</g,'\\u003c')}</script>`;
 function html(patch={}) {
@@ -36,4 +36,12 @@ test('search discovery uses real region data and skips known, duplicate, and unr
  assert.equal(searchState(search).filterState.keywords.value,'log cabin');
  assert.equal(searchCandidates(search,'NC').length,1);
  assert.equal(searchCandidates(search,'NC',new Set(['zillow:123'])).length,0);
+});
+
+test('gallery chooses one JPEG resolution per source photo and rejects inactive or unsafe galleries',()=>{
+ const originals=Array.from({length:4},(_,i)=>({mixedSources:{jpeg:[{width:320,url:`https://photos.zillowstatic.com/fp/abc${i}-small.jpg`},{width:1536,url:`https://photos.zillowstatic.com/fp/abc${i}-large.jpg`}]}}));
+ const source=listingGallery(html({originalPhotos:originals}),url);
+ assert.equal(source.photos.length,4);assert.ok(source.photos.every(x=>x.endsWith('-large.jpg')));
+ assert.throws(()=>listingGallery(html({originalPhotos:originals,homeStatus:'SOLD'}),url),/eligible/);
+ assert.throws(()=>listingGallery(html({originalPhotos:originals.map(()=>({mixedSources:{jpeg:[{width:9999,url:'http://127.0.0.1/private'}]}}))}),url),/four usable/);
 });

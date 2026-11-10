@@ -1,0 +1,525 @@
+{
+  "version": 1,
+  "posts": [
+    {
+      "id": "forsyth-ga",
+      "headline": "Five Acres Of Georgia Quiet",
+      "checkedAt": "2026-11-10T15:47:29.581Z",
+      "listing": {
+        "id": "zillow:76520841",
+        "title": "287 Dumas Rd",
+        "location": "Forsyth, Georgia",
+        "price": 199900,
+        "acreage": 5,
+        "bedrooms": 4,
+        "bathrooms": 2,
+        "squareFeet": 1579,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/287-Dumas-Rd-Forsyth-GA-31029/76520841_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/8e10848fecaad1fec6841df63b8fed17-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/287-Dumas-Rd-Forsyth-GA-31029/76520841_zpid/",
+          "alt": "Exterior of 287 Dumas Rd in Forsyth, Georgia",
+          "credit": "GAMLS / Zillow",
+          "width": 1024,
+          "height": 768,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-09T03:18:13.657Z"
+      },
+      "caption": "Five Acres Of Georgia Quiet\nhttps://www.zillow.com/homedetails/287-Dumas-Rd-Forsyth-GA-31029/76520841_zpid/\n\n287 Dumas Rd · Forsyth, Georgia\n$199,900 · 5 acres\n4 beds · 2 baths · 1,579 sq ft\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #GeorgiaRealEstate\n\nPhotos: GAMLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/8e10848fecaad1fec6841df63b8fed17-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/7d80b1710e316fda2d37.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/c6513d04f336757f16bec61d350dfb5f-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/c6513d04f336757f16bec61d350dfb5f-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/acc8fe09346e4bbfc9e4f7acb70791ae-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/acc8fe09346e4bbfc9e4f7acb70791ae-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/9e347b2fee5653271b4dad0eced27bc2-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/9e347b2fee5653271b4dad0eced27bc2-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "lake-lure-nc",
+      "headline": "A Lake Lure Cabin Project",
+      "checkedAt": "2026-11-10T15:47:31.590Z",
+      "listing": {
+        "id": "zillow:102193906",
+        "title": "418 Piney Creek Dr",
+        "location": "Lake Lure, North Carolina",
+        "price": 324000,
+        "acreage": 3.15,
+        "bedrooms": 2,
+        "bathrooms": 3,
+        "squareFeet": 1997,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/418-Piney-Creek-Dr-Lake-Lure-NC-28746/102193906_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/fc2988e1bb09bfaee97e4e2d2644c6ab-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/418-Piney-Creek-Dr-Lake-Lure-NC-28746/102193906_zpid/",
+          "alt": "Exterior of 418 Piney Creek Dr in Lake Lure, North Carolina",
+          "credit": "Canopy MLS / Zillow",
+          "width": 1024,
+          "height": 768,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-08T02:17:34.530Z"
+      },
+      "caption": "A Lake Lure Cabin Project\nhttps://www.zillow.com/homedetails/418-Piney-Creek-Dr-Lake-Lure-NC-28746/102193906_zpid/\n\n418 Piney Creek Dr · Lake Lure, North Carolina\n$324,000 · 3.15 acres\n2 beds · 3 baths · 1,997 sq ft\n\nA cabin project needing TLC, per the listing.\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #NorthCarolinaRealEstate\n\nPhotos: Canopy MLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/fc2988e1bb09bfaee97e4e2d2644c6ab-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/9fbc66f7c8b08683887a.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/8cdeb33e5cf7c8157187b0cf5a6596b1-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/8cdeb33e5cf7c8157187b0cf5a6596b1-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/23c537ecef8fda5758ef79107386a0ae-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/23c537ecef8fda5758ef79107386a0ae-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/38f79672881d020ebfa1bcd9debc2dbf-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/38f79672881d020ebfa1bcd9debc2dbf-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "rock-cave-wv",
+      "headline": "West Virginia Logs And Land",
+      "checkedAt": "2026-11-10T15:47:33.476Z",
+      "listing": {
+        "id": "zillow:23114144",
+        "title": "1209 Gaines Rd",
+        "location": "Rock Cave, West Virginia",
+        "price": 369000,
+        "acreage": 8.05,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "squareFeet": 3034,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/1209-Gaines-Rd-Rock-Cave-WV-26234/23114144_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/89cafe211d45c217e863ff09de7f401c-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/1209-Gaines-Rd-Rock-Cave-WV-26234/23114144_zpid/",
+          "alt": "Exterior of 1209 Gaines Rd in Rock Cave, West Virginia",
+          "credit": "NCWV REIN / Zillow",
+          "width": 1024,
+          "height": 766,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-09T03:18:13.641Z"
+      },
+      "caption": "West Virginia Logs And Land\nhttps://www.zillow.com/homedetails/1209-Gaines-Rd-Rock-Cave-WV-26234/23114144_zpid/\n\n1209 Gaines Rd · Rock Cave, West Virginia\n$369,000 · 8.05 acres\n3 beds · 3 baths · 3,034 sq ft\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #WestVirginiaRealEstate\n\nPhotos: NCWV REIN / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/8b79cc1d597b1f1225f20894de128c80-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/4d66ef492977d0a27219.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/f39addf669960fdfeb28cadc637f22e9-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/f39addf669960fdfeb28cadc637f22e9-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/9ac1d3c4e06d1a5e88c0ce9a1418634a-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/9ac1d3c4e06d1a5e88c0ce9a1418634a-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/1360829f8167e7de00499c2b59d9f884-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/1360829f8167e7de00499c2b59d9f884-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "russellville-ky",
+      "headline": "Front Porch Evenings In Kentucky",
+      "checkedAt": "2026-11-10T15:47:35.618Z",
+      "listing": {
+        "id": "zillow:234267648",
+        "title": "117 Ghan Smith Rd",
+        "location": "Russellville, Kentucky",
+        "price": 239900,
+        "acreage": 0.99,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "squareFeet": 2130,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/117-Ghan-Smith-Rd-Russellville-KY-42276/234267648_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/bb05d9a3fdaf40cba37184c24ea61569-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/117-Ghan-Smith-Rd-Russellville-KY-42276/234267648_zpid/",
+          "alt": "Exterior of 117 Ghan Smith Rd in Russellville, Kentucky",
+          "credit": "RASK / Zillow",
+          "width": 1024,
+          "height": 767,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-09T03:18:13.682Z"
+      },
+      "caption": "Front Porch Evenings In Kentucky\nhttps://www.zillow.com/homedetails/117-Ghan-Smith-Rd-Russellville-KY-42276/234267648_zpid/\n\n117 Ghan Smith Rd · Russellville, Kentucky\n$239,900 · 0.99 acres\n3 beds · 3 baths · 2,130 sq ft\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #KentuckyRealEstate\n\nPhotos: RASK / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/bb05d9a3fdaf40cba37184c24ea61569-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/a5d7f9e38ddc9f810c2d.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/e2096cb94239016a902a8bd57e2e6ce4-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/e2096cb94239016a902a8bd57e2e6ce4-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/6b7b982ed967c1a352329bd62f83db74-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/6b7b982ed967c1a352329bd62f83db74-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/3fdc04fb19e9f7f8a0f6ea5a885d95a1-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/3fdc04fb19e9f7f8a0f6ea5a885d95a1-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "boise-id",
+      "headline": "Idaho Views Beyond The Pines",
+      "checkedAt": "2026-11-10T15:47:37.701Z",
+      "listing": {
+        "id": "zillow:89895546",
+        "title": "69 Skyview Ln",
+        "location": "Boise, Idaho",
+        "price": 449900,
+        "acreage": 2.65,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "squareFeet": 1552,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/69-Skyview-Ln-Boise-ID-83716/89895546_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/7deb7d33fc9dc23cb1f141d4438ac18b-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/69-Skyview-Ln-Boise-ID-83716/89895546_zpid/",
+          "alt": "Exterior of 69 Skyview Ln in Boise, Idaho",
+          "credit": "IMLS / Zillow",
+          "width": 1024,
+          "height": 683,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-09T03:18:13.694Z"
+      },
+      "caption": "Idaho Views Beyond The Pines\nhttps://www.zillow.com/homedetails/69-Skyview-Ln-Boise-ID-83716/89895546_zpid/\n\n69 Skyview Ln · Boise, Idaho\n$449,900 · 2.65 acres\n3 beds · 2 baths · 1,552 sq ft\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #IdahoRealEstate\n\nPhotos: IMLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/7deb7d33fc9dc23cb1f141d4438ac18b-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/b722cc66c1a3fa5d173f.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/95cfff17c65ba385db5a8982ba339a64-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/95cfff17c65ba385db5a8982ba339a64-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/d24c269b173981eb8363d6c96ca3295e-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/d24c269b173981eb8363d6c96ca3295e-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/12a194d336dfffa1820030016efd0c47-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/12a194d336dfffa1820030016efd0c47-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "jamestown-pa",
+      "headline": "Ten Acres Of Pennsylvania Quiet",
+      "checkedAt": "2026-11-10T15:47:39.850Z",
+      "listing": {
+        "id": "zillow:78722169",
+        "title": "504 Probst Rd",
+        "location": "Jamestown, Pennsylvania",
+        "price": 495000,
+        "acreage": 10.25,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "squareFeet": 1326,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/504-Probst-Rd-Jamestown-PA-16134/78722169_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/31a269fa114ee5d162a8ecb566826d89-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/504-Probst-Rd-Jamestown-PA-16134/78722169_zpid/",
+          "alt": "Exterior of 504 Probst Rd in Jamestown, Pennsylvania",
+          "credit": "GEMLS / Zillow",
+          "width": 1024,
+          "height": 629,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-08T02:17:34.542Z"
+      },
+      "caption": "Ten Acres Of Pennsylvania Quiet\nhttps://www.zillow.com/homedetails/504-Probst-Rd-Jamestown-PA-16134/78722169_zpid/\n\n504 Probst Rd · Jamestown, Pennsylvania\n$495,000 · 10.25 acres\n3 beds · 3 baths · 1,326 sq ft\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #PennsylvaniaRealEstate\n\nPhotos: GEMLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/31a269fa114ee5d162a8ecb566826d89-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/569e1c97491c2a82e250.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/2f27169e1f227a73d4e6dc208f0781d3-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/2f27169e1f227a73d4e6dc208f0781d3-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/f6a95d22e577a71c1322ba75dbf82e65-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/f6a95d22e577a71c1322ba75dbf82e65-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/9e87f51147c4f826705205dce4aec242-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/9e87f51147c4f826705205dce4aec242-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "harrogate-tn",
+      "headline": "A Tennessee Homestead Above Everything",
+      "checkedAt": "2026-11-10T15:47:41.751Z",
+      "listing": {
+        "id": "zillow:215443044",
+        "title": "1160 Oak Grove Rd",
+        "location": "Harrogate, Tennessee",
+        "price": 949500,
+        "acreage": 81.47,
+        "bedrooms": 3,
+        "bathrooms": 4,
+        "squareFeet": 2408,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/1160-Oak-Grove-Rd-Harrogate-TN-37752/215443044_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/b78eacfcb4db5ab0305167f3c2555ba3-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/1160-Oak-Grove-Rd-Harrogate-TN-37752/215443044_zpid/",
+          "alt": "Exterior of 1160 Oak Grove Rd in Harrogate, Tennessee",
+          "credit": "RealTracs MLS / Zillow",
+          "width": 1024,
+          "height": 682,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-08T01:34:02.000Z"
+      },
+      "caption": "A Tennessee Homestead Above Everything\nhttps://www.zillow.com/homedetails/1160-Oak-Grove-Rd-Harrogate-TN-37752/215443044_zpid/\n\n1160 Oak Grove Rd · Harrogate, Tennessee\n$949,500 · 81.47 acres\n3 beds · 4 baths · 2,408 sq ft\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #TennesseeRealEstate\n\nPhotos: RealTracs MLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/b78eacfcb4db5ab0305167f3c2555ba3-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/c8c90a7d5ab4fe505388.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/621cde278d4826398a31c8e60d0597bd-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/621cde278d4826398a31c8e60d0597bd-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/b631302b669271098cefcfd8dc86717f-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/b631302b669271098cefcfd8dc86717f-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/1dd9825188c2ff2178514ff352fc522b-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/1dd9825188c2ff2178514ff352fc522b-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "sheridan-mt",
+      "headline": "Montana Mornings Beside The Fireplace",
+      "checkedAt": "2026-11-10T15:47:43.738Z",
+      "listing": {
+        "id": "zillow:250239028",
+        "title": "247 Mill Gulch Rd",
+        "location": "Sheridan, Montana",
+        "price": 749000,
+        "acreage": 27.62,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "squareFeet": 1350,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/247-Mill-Gulch-Rd-Sheridan-MT-59749/250239028_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/a0d3883c6500175e1b78a018a8e3c63b-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/247-Mill-Gulch-Rd-Sheridan-MT-59749/250239028_zpid/",
+          "alt": "Exterior of 247 Mill Gulch Rd in Sheridan, Montana",
+          "credit": "Big Sky Country MLS / Zillow",
+          "width": 1024,
+          "height": 768,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-08T02:17:34.554Z"
+      },
+      "caption": "Montana Mornings Beside The Fireplace\nhttps://www.zillow.com/homedetails/247-Mill-Gulch-Rd-Sheridan-MT-59749/250239028_zpid/\n\n247 Mill Gulch Rd · Sheridan, Montana\n$749,000 · 27.62 acres\n2 beds · 2 baths · 1,350 sq ft\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #MontanaRealEstate\n\nPhotos: Big Sky Country MLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/c7aa1e4b5d25e5f67edb479973af967e-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/e9813b8241bd6904f085.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/8ff9e2aaed72fdb5cc7d09216375a9a6-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/8ff9e2aaed72fdb5cc7d09216375a9a6-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/c2b8ca39e6e8e92fa9b8c9a62ebe6171-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/c2b8ca39e6e8e92fa9b8c9a62ebe6171-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/7651a2cd88dd89f435655f13631707ed-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/7651a2cd88dd89f435655f13631707ed-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "fairplay-co",
+      "headline": "Thirty Acres Beyond The Crowds",
+      "checkedAt": "2026-11-10T15:47:45.563Z",
+      "listing": {
+        "id": "zillow:13991629",
+        "title": "9562 CO RD 18",
+        "location": "Fairplay, Colorado",
+        "price": 400000,
+        "acreage": 30,
+        "bedrooms": 1,
+        "bathrooms": 0,
+        "squareFeet": 532,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/9562-County-Road-18-Fairplay-CO-80440/13991629_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/d5d42103e0a4d58e7777e0e61de8ea38-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/9562-County-Road-18-Fairplay-CO-80440/13991629_zpid/",
+          "alt": "Exterior of 9562 CO RD 18 in Fairplay, Colorado",
+          "credit": "REcolorado / Zillow",
+          "width": 1024,
+          "height": 682,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-08T01:34:02.000Z"
+      },
+      "caption": "Thirty Acres Beyond The Crowds\nhttps://www.zillow.com/homedetails/9562-County-Road-18-Fairplay-CO-80440/13991629_zpid/\n\n9562 CO RD 18 · Fairplay, Colorado\n$400,000 · 30 acres\n1 bed · 0 baths · 532 sq ft\n\nOff-grid; seasonal road access and spring-fed seasonal water. No bathroom listed.\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #ColoradoRealEstate\n\nPhotos: REcolorado / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/7fea7700aee7b75224e82c442f9ade3d-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/fe60155860f0e3a25be6.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/d5d42103e0a4d58e7777e0e61de8ea38-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/d5d42103e0a4d58e7777e0e61de8ea38-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/d88f6d0370411c40d30bd5387db349bd-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/d88f6d0370411c40d30bd5387db349bd-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/985a97dcf591ffd0ecc57ced750a8401-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/985a97dcf591ffd0ecc57ced750a8401-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "blairsville-ga",
+      "headline": "A Red Cabin Among Trees",
+      "checkedAt": "2026-11-10T15:47:47.556Z",
+      "listing": {
+        "id": "zillow:105425238",
+        "title": "80 Treetop Ln",
+        "location": "Blairsville, Georgia",
+        "price": 250000,
+        "acreage": 0.64,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "squareFeet": 832,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/80-Treetop-Ln-Blairsville-GA-30512/105425238_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/24d4aeedc64a59afc09adbc433c12988-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/80-Treetop-Ln-Blairsville-GA-30512/105425238_zpid/",
+          "alt": "Exterior of 80 Treetop Ln in Blairsville, Georgia",
+          "credit": "Greater Chattanooga Realtors / Zillow",
+          "width": 1024,
+          "height": 682,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-09T03:18:13.668Z"
+      },
+      "caption": "A Red Cabin Among Trees\nhttps://www.zillow.com/homedetails/80-Treetop-Ln-Blairsville-GA-30512/105425238_zpid/\n\n80 Treetop Ln · Blairsville, Georgia\n$250,000 · 0.64 acres\n2 beds · 2 baths · 832 sq ft\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #GeorgiaRealEstate\n\nPhotos: Greater Chattanooga Realtors / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/24d4aeedc64a59afc09adbc433c12988-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/63bee65a94f45f261db1.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/4bbdfcd2c06c9ce6f85f256e54f42d4b-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/4bbdfcd2c06c9ce6f85f256e54f42d4b-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/96db28203d17376fef3e6ce7015f52b1-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/96db28203d17376fef3e6ce7015f52b1-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/dfb4d17ae86b400a7252df6a1a5ab879-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/dfb4d17ae86b400a7252df6a1a5ab879-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    }
+  ]
+}

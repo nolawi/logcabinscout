@@ -3,7 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "scripts": {"instagram:drafts": "node --experimental-strip-types scripts/instagram-drafts.mjs", "discover:public": "node scripts/discover-public-listings.mjs", "deploy": "gh workflow run deploy.yml --ref main --repo nolawi/logcabinscout", "review": "node scripts/review-listings.mjs", "test": "node --experimental-strip-types --test scripts/lib/*.test.mjs src/lib/*.test.mjs", "dev": "vite", "build": "tsc -b && vite build && node scripts/prerender-site.mjs && node scripts/check-seo.mjs", "preview": "vite preview"},
-  "dependencies": {"react": "^19.2.0", "react-dom": "^19.2.0"},
-  "devDependencies": {"@types/react": "^19.2.0", "@types/react-dom": "^19.2.0", "@vitejs/plugin-react": "^5.0.0", "sass": "^1.90.0", "typescript": "~5.9.0", "vite": "^7.1.0"}
+  "scripts": {
+    "instagram:drafts": "node --experimental-strip-types scripts/instagram-drafts.mjs",
+    "discover:public": "node scripts/discover-public-listings.mjs",
+    "deploy": "gh workflow run deploy.yml --ref main --repo nolawi/logcabinscout",
+    "review": "node scripts/review-listings.mjs",
+    "test": "node --experimental-strip-types --test scripts/lib/*.test.mjs src/lib/*.test.mjs",
+    "dev": "vite",
+    "build": "tsc -b && vite build && node scripts/prerender-site.mjs && node scripts/check-seo.mjs",
+    "preview": "vite preview",
+    "instagram:prepare": "node scripts/prepare-instagram-queue.mjs",
+    "instagram:post": "node scripts/instagram-post.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "sass": "^1.90.0",
+    "typescript": "~5.9.0",
+    "vite": "^7.1.0"
+  }
 }

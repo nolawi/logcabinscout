@@ -8,7 +8,7 @@ export function buildInstagramCaption(row, { headline = row.socialTitle || `A Ca
   const localTag = state ? `#${state}RealEstate` : '#CabinForSale';
   const hashtags = `#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin ${localTag}`;
   const credit = (row.photo?.credit || 'Listing provider').replace(/[.\s]+$/,'');
-  return [`${headline.trim()}\n${row.listingUrl}`,`${row.title} · ${row.location}\n${facts}${rooms?`\n${rooms}`:''}`,hashtags,`Photos: ${credit}.`].join('\n\n');
+  return [`${headline.trim()}\n${row.listingUrl}`,`${row.title} · ${row.location}\n${facts}${rooms?`\n${rooms}`:''}`,row.socialNotes || null,hashtags,`Photos: ${credit}.`].filter(Boolean).join('\n\n');
 }
 export function prepareSocialDrafts(listings,date=new Date()) {
   if (!Number.isFinite(date.getTime())) throw new Error('Invalid draft date');

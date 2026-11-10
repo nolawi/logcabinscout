@@ -56,3 +56,8 @@ test('one bedroom and bathroom use singular labels',()=>{
  const caption=buildInstagramCaption({...row('1','Florence, Montana'),bedrooms:1,bathrooms:1});
  assert.ok(caption.includes('1 bed · 1 bath'));assert.ok(!caption.includes('1 beds'));
 });
+
+test('material property notes stay above hashtags while credit remains last',()=>{
+ const caption=buildInstagramCaption({...row('1','Fairplay, Colorado'),bathrooms:0,socialNotes:'Off-grid; seasonal road access.'},{headline:'Thirty Acres Beyond The Crowds'});
+ assert.ok(caption.includes('0 baths'));assert.ok(caption.includes('Off-grid; seasonal road access.'));assert.ok(caption.indexOf('Off-grid;')<caption.indexOf('#LogCabinScout'));assert.ok(caption.endsWith('Photos: MLS / Listing provider.'));
+});

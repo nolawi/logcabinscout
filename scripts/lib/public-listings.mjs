@@ -75,3 +75,21 @@ export function listingCandidate(html, url) {
     status: 'needs-review', verified: false,
   };
 }
+
+/** Gallery URLs are grouped by actual photo, not by resolution variant. */
+export function listingGallery(html, url) {
+  const listing = listingCandidate(html, url);
+  if (!listing) throw new Error('Listing is no longer an eligible active log cabin.');
+  const zpid = new URL(url).pathname.match(/\/(\d+)_zpid\//)[1];
+  const cache = pageData(html)?.props?.pageProps?.componentProps?.gdpClientCache;
+  const property = propertyFrom(typeof cache === 'string' ? JSON.parse(cache) : cache, zpid);
+  const gallery = property.originalPhotos ?? property.responsivePhotosOriginalRatio ?? property.responsivePhotos ?? [];
+  const photos = gallery.map(photo => {
+    const variants = [...(photo.mixedSources?.jpeg ?? [])].sort((a,b) => b.width-a.width);
+    return variants.map(item => item.url).find(value => {
+      try { const u = new URL(value); return u.protocol === 'https:' && u.hostname === 'photos.zillowstatic.com' && !u.username && !u.password; } catch { return false; }
+    });
+  }).filter(Boolean);
+  if (photos.length < 4) throw new Error('Listing does not have four usable source photos.');
+  return { listing, photos };
+}
