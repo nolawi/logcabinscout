@@ -51,3 +51,10 @@ test('failed carousel child prevents parent creation and publishing', async () =
  const calls=[];await assert.rejects(publishInstagram({token:'secret',publish:true,imageUrls:['https://example.com/1.jpg','https://example.com/2.jpg'],caption:'Listing'},fake([identity,quota,{id:'101'},{status_code:'ERROR'}],calls)),/not available/);
  assert.equal(calls.filter(c=>c.method==='POST').length,1);
 });
+
+test('published carousel is verified by a read without repeating publishing', async()=>{
+ const calls=[];
+ const result=await publishInstagram({token:'secret',publish:true,imageUrls:['https://example.com/1.jpg','https://example.com/2.jpg'],caption:'Listing'},fake([identity,quota,{id:'101'},{status_code:'FINISHED'},{id:'102'},{status_code:'FINISHED'},{id:'200'},{status_code:'FINISHED'},{id:'300'},{permalink:'https://www.instagram.com/p/ExamplePost/',media_type:'CAROUSEL_ALBUM',children:{data:[{id:'101'},{id:'102'}]}}],calls));
+ assert.equal(result.verifiedImageCount,2);assert.equal(result.permalink,'https://www.instagram.com/p/ExamplePost/');
+ assert.equal(calls.filter(c=>c.url.endsWith('/media_publish')).length,1);assert.equal(calls.at(-1).method,'GET');
+});

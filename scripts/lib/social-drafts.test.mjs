@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {prepareSocialDrafts,renderSocialCard} from './social-drafts.mjs';
+import {prepareSocialDrafts,renderSocialCard,buildInstagramCaption} from './social-drafts.mjs';
 const date=new Date('2026-11-09T12:00:00Z');
 const row=(id,location)=>({id,title:'1 Cabin Road',location,price:250000,acreage:2,listingUrl:'https://example.com/listing',photo:{url:'https://example.com/property-photo.jpg',credit:'MLS / Listing provider',alt:'Cabin exterior'}});
 test('weekly drafts are deterministic, unique, and prefer different states',()=>{
@@ -28,4 +28,18 @@ test('cards embed property photos, preserve credit, and omit the temporary domai
 test('photo drafts never substitute illustrations for missing photos',()=>{
  assert.deepEqual(prepareSocialDrafts([{...row('1','Place, Colorado'),photo:null}],date),[]);
  assert.throws(()=>renderSocialCard({},'<svg></svg>'),/photograph/);
+});
+
+test('captions put the bare URL first, five tags before final photo credit, and include known home facts',()=>{
+ const caption=buildInstagramCaption({...row('1','Jacksboro, Tennessee'),bedrooms:3,bathrooms:2,squareFeet:2842});
+ assert.equal(caption.split('\n')[0],'https://example.com/listing');
+ assert.ok(caption.endsWith('Photos: MLS / Listing provider.'));
+ assert.equal(caption.match(/#[A-Za-z]+/g).length,5);
+ assert.ok(caption.includes('#TennesseeRealEstate'));
+ assert.ok(caption.includes('3 beds · 2 baths · 2,842 sq ft'));
+ assert.ok(!caption.includes('availability'));assert.ok(!caption.includes('Full listing:'));
+});
+test('missing room facts are omitted instead of invented',()=>{
+ const caption=buildInstagramCaption(row('1','Place, Colorado'));
+ assert.ok(!caption.includes('beds'));assert.ok(!caption.includes('sq ft'));assert.ok(!caption.includes('undefined'));
 });

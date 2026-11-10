@@ -1,5 +1,14 @@
 const escapeHtml = value => String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;');
 const dollars = value => new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(value);
+export function buildInstagramCaption(row) {
+  const facts = [dollars(row.price),row.acreage==null?null:`${row.acreage.toLocaleString('en-US')} acres`].filter(Boolean).join(' · ');
+  const rooms = [row.bedrooms==null?null:`${row.bedrooms} beds`,row.bathrooms==null?null:`${row.bathrooms} baths`,row.squareFeet==null?null:`${row.squareFeet.toLocaleString('en-US')} sq ft`].filter(Boolean).join(' · ');
+  const state = row.location.split(',').at(-1).trim().replace(/[^A-Za-z]/g,'');
+  const localTag = state ? `#${state}RealEstate` : '#CabinForSale';
+  const hashtags = `#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin ${localTag}`;
+  const credit = (row.photo?.credit || 'Listing provider').replace(/[.\s]+$/,'');
+  return [row.listingUrl,`${row.title} · ${row.location}\n${facts}${rooms?`\n${rooms}`:''}`,hashtags,`Photos: ${credit}.`].join('\n\n');
+}
 export function prepareSocialDrafts(listings,date=new Date()) {
   if (!Number.isFinite(date.getTime())) throw new Error('Invalid draft date');
   const available = [...listings].filter(row => !row.isSample && row.price > 0 && row.listingUrl && row.photo?.url).sort((a,b)=>a.id.localeCompare(b.id));
@@ -13,7 +22,7 @@ export function prepareSocialDrafts(listings,date=new Date()) {
     const facts = [dollars(row.price),row.acreage==null?null:`${row.acreage.toLocaleString('en-US')} acres`].filter(Boolean).join(' · ');
     return {
       listingId:row.id,title:row.title,location:row.location,price:row.price,facts,sourceUrl:row.listingUrl,photo:row.photo,
-      caption:`Cabin spotlight: ${row.location}\n${row.title}\n${facts}\n\n${row.listingUrl}\nPhotos: ${row.photo.credit || 'Listing provider'}.\n\n#LogCabinScout #LogCabinsForSale #CabinLife`,
+      caption:buildInstagramCaption(row),
       altText:`${row.photo.alt || `Property photograph of ${row.title}, ${row.location}`}. Asking ${dollars(row.price)}${row.acreage==null?'':`, ${row.acreage} acres`}. Photo: ${row.photo.credit || 'Listing provider'}.`,
     };
   });

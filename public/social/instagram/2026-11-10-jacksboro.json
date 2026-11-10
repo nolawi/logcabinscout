@@ -1,0 +1,37 @@
+{
+  "listingId": "zillow:66567412",
+  "address": "342 Big Springs Ln",
+  "location": "Jacksboro, Tennessee",
+  "price": 430000,
+  "acreage": 16.4,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "squareFeet": 2842,
+  "verifiedOn": "2026-11-10",
+  "sourceUrl": "https://www.zillow.com/homedetails/342-Big-Springs-Ln-Jacksboro-TN-37757/66567412_zpid/",
+  "caption": "https://www.zillow.com/homedetails/342-Big-Springs-Ln-Jacksboro-TN-37757/66567412_zpid/\n\n342 Big Springs Ln · Jacksboro, Tennessee\n$430,000 · 16.4 acres\n3 beds · 2 baths · 2,842 sq ft\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #TennesseeRealEstate\n\nPhotos: East Tennessee Realtors / Zillow.",
+  "slides": [
+    {
+      "role": "cover",
+      "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/2026-11-10-5428afb115d4.jpg",
+      "originalPhotoUrl": "https://photos.zillowstatic.com/fp/811f6a51b39f7eab804e24c5fa55919b-uncropped_scaled_within_1536_1152.jpg",
+      "overlay": {
+        "location": "JACKSBORO, TN",
+        "price": "$430,000",
+        "alignment": "center"
+      }
+    },
+    {
+      "role": "exterior",
+      "imageUrl": "https://photos.zillowstatic.com/fp/7505ed3c6d28f4643ca765a3d0cf46bd-uncropped_scaled_within_1536_1152.jpg"
+    },
+    {
+      "role": "land",
+      "imageUrl": "https://photos.zillowstatic.com/fp/c8af81fd28bb32eddb88a7ec549b623b-uncropped_scaled_within_1536_1152.jpg"
+    },
+    {
+      "role": "interior",
+      "imageUrl": "https://photos.zillowstatic.com/fp/468ddce2b24c20cddc560f70352a0192-uncropped_scaled_within_1536_1152.jpg"
+    }
+  ]
+}

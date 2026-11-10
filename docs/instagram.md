@@ -105,3 +105,18 @@ selection and cover preparation use this documented editorial process.
 Instagram profile icon/bio edits and deletion of old test posts remain manual
 with the current connection. The attempted cleanup returned Meta error code 10;
 no deletion was confirmed. Do not assume old posts have been removed.
+
+### Current cover and caption styling
+
+Cover text is large, white, and centered horizontally and vertically: location
+above price, with a subtle shadow. At 1280px image width, location uses 64px type
+and price uses 124px. Browser checks verify centering, fit, and image loading.
+The original photograph, aspect ratio, and source watermark remain intact.
+
+`buildInstagramCaption` is shared by weekly drafts and manually prepared posts.
+It puts the bare listing URL first, then verified address/location, price and
+acreage, followed by known beds/baths/square footage. Five relevant hashtags
+include a state-specific real estate tag. Photo credit is the last line.
+Unknown home facts are omitted. There is no temporary-domain promotion or
+availability boilerplate. The publisher reads back a successful post's permalink
+and child count when available; verification failure never retries publishing.

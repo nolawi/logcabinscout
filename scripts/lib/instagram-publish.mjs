@@ -66,5 +66,12 @@ export async function publishInstagram({ token, imageUrl = '', imageUrls, captio
   // Never retry this POST: an ambiguous response could otherwise create duplicates.
   const post = await api(`${base}/media_publish`, { creation_id: String(container.id) });
   if (!/^\d+$/.test(String(post.id))) throw new Error('Publishing response was inconclusive. Check Instagram before retrying.');
-  return { published: true, mediaId: String(post.id), message: 'One Instagram post published.' };
+  // Verify the result with a read; never repeat the publish POST if this read fails.
+  let permalink, verifiedImageCount;
+  try {
+    const detail = await api(`https://graph.facebook.com/v27.0/${post.id}?fields=permalink,media_type,children{id}`);
+    if (/^https:\/\/(www\.)?instagram\.com\/(p|reel)\/[A-Za-z0-9_-]+\/?$/.test(detail.permalink ?? '')) permalink = detail.permalink;
+    if (Array.isArray(detail.children?.data)) verifiedImageCount = detail.children.data.length;
+  } catch { /* A published post remains successful even if verification is unavailable. */ }
+  return { published: true, mediaId: String(post.id), imageCount: urls.length, verifiedImageCount, permalink, message: 'One Instagram post published.' };
 }

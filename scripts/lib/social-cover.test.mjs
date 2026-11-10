@@ -5,7 +5,7 @@ const input = { location: 'Livermore, CO', price: 378000, photoData: 'data:image
 test('cover preserves embedded photo and renders only location and price overlays', () => {
  const html = renderInstagramCover(input);
  assert.ok(html.includes(input.photoData));assert.ok(html.includes('LIVERMORE, CO'));assert.ok(html.includes('$378,000'));
- assert.ok(html.includes('height:auto'));assert.ok(html.includes('color:white'));assert.ok(!html.includes('object-fit:cover'));assert.ok(!html.includes('elancabin'));assert.ok(!html.includes('LOG CABIN SCOUT'));
+ assert.ok(html.includes('left:50%;top:50%'));assert.ok(html.includes('text-align:center'));assert.ok(html.includes('font-size:124px'));assert.ok(html.includes('font-size:64px'));assert.ok(html.includes('height:auto'));assert.ok(html.includes('color:white'));assert.ok(!html.includes('object-fit:cover'));assert.ok(!html.includes('elancabin'));assert.ok(!html.includes('LOG CABIN SCOUT'));
 });
 test('location is escaped and invalid prices or remote images are rejected', () => {
  assert.ok(!renderInstagramCover({...input, location:'<script>alert(1)</script>'}).includes('<script>'));
