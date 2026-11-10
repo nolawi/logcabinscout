@@ -108,15 +108,27 @@ no deletion was confirmed. Do not assume old posts have been removed.
 
 ### Current cover and caption styling
 
-Cover text is large, white, and centered horizontally and vertically: location
-above price, with a subtle shadow. At 1280px image width, location uses 64px type
-and price uses 124px. Browser checks verify centering, fit, and image loading.
+Cover text is white and centered horizontally in the lower part of the image:
+location above price, with a subtle shadow. At 1280px image width, location uses
+42px type and price uses 80px. The text block is centered at 78% of image height.
+Browser checks verify position, fit, and image loading.
 The original photograph, aspect ratio, and source watermark remain intact.
 
 `buildInstagramCaption` is shared by weekly drafts and manually prepared posts.
-It puts the bare listing URL first, then verified address/location, price and
+It puts a short editorial headline first, then the bare listing URL on its own
+line, followed by verified address/location, price and
 acreage, followed by known beds/baths/square footage. Five relevant hashtags
 include a state-specific real estate tag. Photo credit is the last line.
 Unknown home facts are omitted. There is no temporary-domain promotion or
 availability boilerplate. The publisher reads back a successful post's permalink
 and child count when available; verification failure never retries publishing.
+
+### Editorial headlines
+
+Use an original, fact-based headline of roughly five words for each selected
+property. Pass it as `buildInstagramCaption(row, { headline })`; a location-based
+headline is used for weekly previews when no editorial title is supplied.
+Headline text is one short line and precedes the unlabelled listing URL.
+Do not imply amenities or property features without source evidence. The
+Florence post uses “Off Grid With Bitterroot Views”, matching its live listing.
+Earlier published posts and dated manifests retain their original formatting.

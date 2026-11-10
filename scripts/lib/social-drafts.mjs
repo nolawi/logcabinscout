@@ -1,13 +1,14 @@
 const escapeHtml = value => String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;');
 const dollars = value => new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(value);
-export function buildInstagramCaption(row) {
+export function buildInstagramCaption(row, { headline = row.socialTitle || `A Cabin Escape In ${row.location.split(',')[0].trim()}` } = {}) {
+  if (typeof headline !== 'string' || !headline.trim() || /[\r\n]/.test(headline) || headline.length > 100) throw new Error('Caption headline must be one short line.');
   const facts = [dollars(row.price),row.acreage==null?null:`${row.acreage.toLocaleString('en-US')} acres`].filter(Boolean).join(' · ');
-  const rooms = [row.bedrooms==null?null:`${row.bedrooms} beds`,row.bathrooms==null?null:`${row.bathrooms} baths`,row.squareFeet==null?null:`${row.squareFeet.toLocaleString('en-US')} sq ft`].filter(Boolean).join(' · ');
+  const rooms = [row.bedrooms==null?null:`${row.bedrooms} ${row.bedrooms===1?'bed':'beds'}`,row.bathrooms==null?null:`${row.bathrooms} ${row.bathrooms===1?'bath':'baths'}`,row.squareFeet==null?null:`${row.squareFeet.toLocaleString('en-US')} sq ft`].filter(Boolean).join(' · ');
   const state = row.location.split(',').at(-1).trim().replace(/[^A-Za-z]/g,'');
   const localTag = state ? `#${state}RealEstate` : '#CabinForSale';
   const hashtags = `#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin ${localTag}`;
   const credit = (row.photo?.credit || 'Listing provider').replace(/[.\s]+$/,'');
-  return [row.listingUrl,`${row.title} · ${row.location}\n${facts}${rooms?`\n${rooms}`:''}`,hashtags,`Photos: ${credit}.`].join('\n\n');
+  return [`${headline.trim()}\n${row.listingUrl}`,`${row.title} · ${row.location}\n${facts}${rooms?`\n${rooms}`:''}`,hashtags,`Photos: ${credit}.`].join('\n\n');
 }
 export function prepareSocialDrafts(listings,date=new Date()) {
   if (!Number.isFinite(date.getTime())) throw new Error('Invalid draft date');

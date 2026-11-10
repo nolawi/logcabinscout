@@ -11,7 +11,7 @@ with sync_playwright() as p:
     page.set_content(Path(html_path).read_text(), wait_until='load')
     assert page.locator('img').evaluate('(img)=>img.complete && img.naturalWidth > 0'), 'Source photograph failed to load'
     assert page.locator('.location').evaluate('(el)=>el.scrollWidth <= el.clientWidth'), 'Location text overflows'
-    assert page.locator('.overlay').evaluate('(el)=>{const b=el.getBoundingClientRect(),p=el.parentElement.getBoundingClientRect();return Math.abs((b.x+b.width/2)-(p.x+p.width/2))<1 && Math.abs((b.y+b.height/2)-(p.y+p.height/2))<1 && b.top>=p.top && b.bottom<=p.bottom}'), 'Cover text must be centered and fit within the photo'
+    assert page.locator('.overlay').evaluate('(el)=>{const b=el.getBoundingClientRect(),p=el.parentElement.getBoundingClientRect();return Math.abs((b.x+b.width/2)-(p.x+p.width/2))<1 && Math.abs((b.y+b.height/2)-(p.y+p.height*0.78))<1 && b.top>=p.top && b.bottom<=p.bottom}'), 'Cover text must be horizontally centered, lower in the photo, and fit within the image'
     page.locator('figure').screenshot(path=output_path, type='jpeg', quality=95)
     browser.close()
 print('Cover rendered from the original photo with location and price only.')

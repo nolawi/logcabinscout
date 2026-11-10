@@ -1,0 +1,38 @@
+{
+  "listingId": "zillow:209613753",
+  "address": "18371 High Mountain Vw",
+  "location": "Florence, Montana",
+  "price": 265000,
+  "acreage": 10.02,
+  "bedrooms": 1,
+  "bathrooms": 1,
+  "squareFeet": 480,
+  "verifiedOn": "2026-11-10",
+  "sourceUrl": "https://www.zillow.com/homedetails/18371-High-Mountain-Vw-Florence-MT-59833/209613753_zpid/",
+  "headline": "Off Grid With Bitterroot Views",
+  "caption": "Off Grid With Bitterroot Views\nhttps://www.zillow.com/homedetails/18371-High-Mountain-Vw-Florence-MT-59833/209613753_zpid/\n\n18371 High Mountain Vw · Florence, Montana\n$265,000 · 10.02 acres\n1 bed · 1 bath · 480 sq ft\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #MontanaRealEstate\n\nPhotos: MRMLS / Zillow.",
+  "slides": [
+    {
+      "role": "cover",
+      "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/2026-11-10-a494f127c3ea.jpg",
+      "originalPhotoUrl": "https://photos.zillowstatic.com/fp/18695fd3c55d193a9144d61cfb360965-uncropped_scaled_within_1536_1152.jpg",
+      "overlay": {
+        "location": "FLORENCE, MT",
+        "price": "$265,000",
+        "alignment": "lower-center"
+      }
+    },
+    {
+      "role": "exterior",
+      "imageUrl": "https://photos.zillowstatic.com/fp/e764ac5540e27ad11d23c030b0535614-uncropped_scaled_within_1536_1152.jpg"
+    },
+    {
+      "role": "land",
+      "imageUrl": "https://photos.zillowstatic.com/fp/58ee8ad1354fb95e6373a1617fed6958-uncropped_scaled_within_1536_1152.jpg"
+    },
+    {
+      "role": "interior",
+      "imageUrl": "https://photos.zillowstatic.com/fp/0aa83e5f0df971f9bc370a8f2d7dea1c-uncropped_scaled_within_1536_1152.jpg"
+    }
+  ]
+}
