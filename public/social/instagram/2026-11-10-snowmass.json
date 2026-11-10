@@ -1,0 +1,33 @@
+{
+  "listingId": "zillow:13853194",
+  "address": "252 Snowmass Dr",
+  "location": "Livermore, Colorado",
+  "price": 378000,
+  "acreage": 5.11,
+  "verifiedOn": "2026-11-10",
+  "sourceUrl": "https://www.zillow.com/homedetails/252-Snowmass-Dr-Livermore-CO-80536/13853194_zpid/",
+  "caption": "Cabin spotlight: Livermore, Colorado\n252 Snowmass Dr\n$378,000 \u00b7 5.11 acres\n3 beds \u00b7 2 baths\n\nhttps://www.zillow.com/homedetails/252-Snowmass-Dr-Livermore-CO-80536/13853194_zpid/\nPhotos: IRES / Zillow.\n\n#LogCabinScout #LogCabinsForSale #CabinLife",
+  "slides": [
+    {
+      "role": "cover",
+      "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/2026-11-10-0191a86ec552.jpg",
+      "originalPhotoUrl": "https://photos.zillowstatic.com/fp/eef8c34c7f8802d46a8d184d1d13e237-cc_ft_1536.jpg",
+      "overlay": {
+        "location": "LIVERMORE, CO",
+        "price": "$378,000"
+      }
+    },
+    {
+      "role": "exterior",
+      "imageUrl": "https://photos.zillowstatic.com/fp/b9218dc83e974a825e1d5120e238afee-cc_ft_1536.jpg"
+    },
+    {
+      "role": "land",
+      "imageUrl": "https://photos.zillowstatic.com/fp/9b9f7d2610116d0fe59ca37372e8a8f4-cc_ft_1536.jpg"
+    },
+    {
+      "role": "interior",
+      "imageUrl": "https://photos.zillowstatic.com/fp/fb5ab8c11bb367a3352d3970907e163b-cc_ft_1536.jpg"
+    }
+  ]
+}

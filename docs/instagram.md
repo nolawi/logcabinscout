@@ -73,3 +73,35 @@ listing URL on its own line, without a label or availability boilerplate.
 The weekly draft generator still prepares single-photo previews; carousel gallery
 selection happens when preparing the post, rather than inventing additional
 photos or treating resolution variants as separate photographs.
+
+## Four-slide editorial format
+
+New posts use four slides in this order:
+
+1. Strongest exterior with only location and price in white.
+2. A different exterior angle.
+3. Land, yard, or an exterior detail.
+4. One unstaged interior photograph.
+
+Only the cover has added typography. Its original photograph remains under a
+separate text layer, with its aspect ratio and source watermark preserved.
+No logo, website, box, or border is added. Caption conventions remain unchanged.
+Do not select virtually staged interiors when an unstaged view is available.
+
+Generate a cover from an already downloaded, verified source photograph:
+
+```bash
+node scripts/prepare-instagram-cover.mjs source.jpg 'Livermore, CO' 378000 cover.html
+CHROMIUM_EXECUTABLE=/usr/bin/chromium python scripts/render-instagram-cover.py cover.html cover.jpg
+```
+
+Host the new cover at a public JPEG URL before dispatching the carousel. Original
+provider URLs can be used for the other slides. The dated Snowmass manifest in
+`public/social/instagram/2026-11-10-snowmass.json` records the sourced facts,
+caption, photo origins, and slide order for the first four-slide post.
+The weekly workflow still generates photo-only previews; final four-slide
+selection and cover preparation use this documented editorial process.
+
+Instagram profile icon/bio edits and deletion of old test posts remain manual
+with the current connection. The attempted cleanup returned Meta error code 10;
+no deletion was confirmed. Do not assume old posts have been removed.
