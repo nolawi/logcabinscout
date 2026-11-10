@@ -46,8 +46,12 @@
     {
       "queueId": "lake-lure-nc",
       "listingId": "zillow:102193906",
-      "state": "publishing",
-      "startedAt": "2026-11-10T15:53:55.913Z"
+      "state": "published",
+      "startedAt": "2026-11-10T15:53:55.913Z",
+      "publishedAt": "2026-11-10T15:54:40.532Z",
+      "mediaId": "17953618731325379",
+      "permalink": "https://www.instagram.com/p/DfkRnpNF8md/",
+      "imageCount": 4
     }
   ]
 }
