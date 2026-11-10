@@ -32,6 +32,12 @@
       "state": "published",
       "mediaId": "18113219585232117",
       "permalink": "https://www.instagram.com/p/DfkMpvemPac/"
+    },
+    {
+      "queueId": "forsyth-ga",
+      "listingId": "zillow:76520841",
+      "state": "publishing",
+      "startedAt": "2026-11-10T15:53:01.134Z"
     }
   ]
 }
