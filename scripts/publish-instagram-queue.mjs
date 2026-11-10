@@ -27,8 +27,14 @@ try {
   writeFileSync(historyPath,JSON.stringify(value,null,2)+'\n');
   execFileSync('git',['add',historyPath]);
   execFileSync('git',['commit','-m','Record Instagram queue state [skip ci]'],{stdio:'inherit'});
-  execFileSync('git',['pull','--rebase','origin','main'],{stdio:'inherit'});
-  execFileSync('git',['push','origin','HEAD:main'],{stdio:'inherit'});
+  for(let attempt=0;attempt<3;attempt++) {
+   execFileSync('git',['pull','--rebase','origin','main'],{stdio:'inherit'});
+   try { execFileSync('git',['push','origin','HEAD:main'],{stdio:'inherit'});return; }
+   catch(error) {
+    if(attempt===2)throw new Error('History push failed after three attempts. Reconcile saved receipts before retrying; do not republish.');
+    await new Promise(resolve=>setTimeout(resolve,1000));
+   }
+  }
  };
  await publishQueueBatch({posts,history,persist,publish:async post=>{
   const result=await publishInstagram({token,imageUrls:post.slides.map(x=>x.imageUrl),caption:post.caption,publish:true});

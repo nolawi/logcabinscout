@@ -198,3 +198,13 @@ This is an attestation from an authorized publishing client, not a signature
 from Zillow; repository dispatch access remains the authorization boundary.
 Use the CLI instead of manually inventing these inputs in the Actions form.
 Both check-only and publishing runs still check live Instagram history.
+
+### Receipt synchronization recovery
+
+Only Git history pushes are retried (up to three attempts, with a rebase on the
+latest main before each push). Meta publish requests are never retried. If
+history still fails to sync, recover the receipt from the Actions artifact or
+verified run log and update the existing claim to `published`; do not dispatch
+that property again. The first three queue posts were all confirmed with four
+images; Rock Cave's receipt was reconciled after GitHub rejected its first
+history push with a transient `commit_refs` failure.

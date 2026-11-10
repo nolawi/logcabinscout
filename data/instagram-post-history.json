@@ -56,8 +56,12 @@
     {
       "queueId": "rock-cave-wv",
       "listingId": "zillow:23114144",
-      "state": "publishing",
-      "startedAt": "2026-11-10T15:54:43.154Z"
+      "state": "published",
+      "startedAt": "2026-11-10T15:54:43.154Z",
+      "publishedAt": "2026-11-10T15:55:31.295Z",
+      "mediaId": "17912799660308151",
+      "permalink": "https://www.instagram.com/p/DfkRt8nl5xk/",
+      "imageCount": 4
     }
   ]
 }
