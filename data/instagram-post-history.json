@@ -76,8 +76,12 @@
     {
       "queueId": "boise-id",
       "listingId": "zillow:89895546",
-      "state": "publishing",
-      "startedAt": "2026-11-12T17:15:53.519Z"
+      "state": "published",
+      "startedAt": "2026-11-12T17:15:53.519Z",
+      "publishedAt": "2026-11-12T17:16:29.745Z",
+      "mediaId": "18391899691227085",
+      "permalink": "https://www.instagram.com/p/DfpkkxplzBd/",
+      "imageCount": 4
     }
   ]
 }
