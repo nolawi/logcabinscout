@@ -66,8 +66,12 @@
     {
       "queueId": "russellville-ky",
       "listingId": "zillow:234267648",
-      "state": "publishing",
-      "startedAt": "2026-11-12T17:15:05.308Z"
+      "state": "published",
+      "startedAt": "2026-11-12T17:15:05.308Z",
+      "publishedAt": "2026-11-12T17:15:51.791Z",
+      "mediaId": "18154218799480556",
+      "permalink": "https://www.instagram.com/p/DfpkgDBl-zi/",
+      "imageCount": 4
     }
   ]
 }
