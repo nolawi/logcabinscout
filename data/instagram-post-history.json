@@ -86,8 +86,12 @@
     {
       "queueId": "jamestown-pa",
       "listingId": "zillow:78722169",
-      "state": "publishing",
-      "startedAt": "2026-11-12T17:16:31.435Z"
+      "state": "published",
+      "startedAt": "2026-11-12T17:16:31.435Z",
+      "publishedAt": "2026-11-12T17:17:15.028Z",
+      "mediaId": "17975785785176590",
+      "permalink": "https://www.instagram.com/p/DfpkqS8F5b0/",
+      "imageCount": 4
     }
   ]
 }
