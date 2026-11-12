@@ -60,7 +60,7 @@ export function listingCandidate(html, url) {
   if (!property) throw new Error('Unsupported source property layout');
   const evidence = cabinEvidence(property.description);
   const status = property.attributionInfo?.trueStatus ?? '';
-  if (!['SINGLE_FAMILY', 'SingleFamily'].includes(property.homeType) || property.homeStatus !== 'FOR_SALE' || /pending|contract|contingent|sold/i.test(status) || evidence.length === 0) return null;
+  if (!['SINGLE_FAMILY', 'SingleFamily'].includes(property.homeType) || property.homeStatus !== 'FOR_SALE' || /pending|contract|contingen|sold|back[ -]?up|active[ -]offer|offer\s*w\/?bump/i.test(status) || evidence.length === 0) return null;
   const address = property.address ?? property;
   if (!address.streetAddress || !address.city || !address.state || number(property.price) === null) return null;
   const lot = property.resoFacts?.lotSize;

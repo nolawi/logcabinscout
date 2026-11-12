@@ -71,3 +71,36 @@ No paid API calls were made, and existing records were preserved unchanged.
 | [720 Cypress Rd](https://www.zillow.com/homedetails/720-Cypress-Rd-Benton-KY-42025/2100313441_zpid/) | Benton, Kentucky | $450,000 | 4 | 2 | 1580 |
 | [69 Skyview Ln](https://www.zillow.com/homedetails/69-Skyview-Ln-Boise-ID-83716/89895546_zpid/) | Boise, Idaho | $449,900 | 3 | 2 | 1552 |
 | [948 E 900 N](https://www.zillow.com/homedetails/948-E-900-N-Shelley-ID-83274/113286835_zpid/) | Shelley, Idaho | $580,000 | 3 | 2 | 2729 |
+
+## November 12 nationwide expansion
+
+Ten individually checked listings add Arkansas, Maine, Michigan, Minnesota,
+Missouri, New Hampshire, New York, Oregon, Washington, and Wisconsin. The
+collection now contains 47 properties across 20 states. Existing records and
+their review dates were preserved. No paid API calls were made.
+
+Each source identified the primary home as a log cabin/home and reported it
+for sale. Selected exterior photographs were visually inspected, their actual
+dimensions measured, and source credits/watermarks preserved without cropping.
+Search candidates with accepted offers/backup-only status were excluded. A
+Minnesota result mentioning only reclaimed beams from an old cabin was also
+excluded because that did not establish log construction of the main home.
+
+| Property/source | Location | Price | Acres | Beds | Baths | Sq ft |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| [810 River Bend Rd](https://www.zillow.com/homedetails/810-River-Bend-Rd-Mammoth-Spring-AR-72554/109035928_zpid/) | Mammoth Spring, Arkansas | $575,000 | 1.5 | 3 | 3 | 4038 |
+| [230 Hall Farm Road](https://www.zillow.com/homedetails/230-Hall-Farm-Rd-Athens-ME-04912/466222304_zpid/) | Athens, Maine | $179,000 | 7 | 2 | 1 | 640 |
+| [1716 Harrah Rd](https://www.zillow.com/homedetails/1716-Harrah-Rd-Niles-MI-49120/73858654_zpid/) | Niles, Michigan | $335,000 | 10 | 3 | 3 | 2981 |
+| [2793 Wolf Track Tr](https://www.zillow.com/homedetails/2793-Wolf-Track-Trl-Ely-MN-55731/303995838_zpid/) | Ely, Minnesota | $409,900 | 0.28 | 2 | 1 | 998 |
+| [385 Autumn Rdg](https://www.zillow.com/homedetails/385-Autumn-Rdg-Altenburg-MO-63732/119288800_zpid/) | Altenburg, Missouri | $425,000 | 4.58 | 3 | 2 | 1700 |
+| [1516 Stark Highway](https://www.zillow.com/homedetails/1516-Stark-Hwy-Stark-NH-03582/86747950_zpid/) | Stark, New Hampshire | $189,000 | 0.95 | 3 | 2 | 1540 |
+| [4795 County Route 70a](https://www.zillow.com/homedetails/4795-County-Route-70a-Bath-NY-14810/32570401_zpid/) | Bath, New York | $279,000 | 35.08 | 2 | 1 | 1698 |
+| [56711 Lunar Dr](https://www.zillow.com/homedetails/56711-Lunar-Dr-Bend-OR-97707/60593818_zpid/) | Bend, Oregon | $574,900 | 0.75 | 2 | 2 | 1200 |
+| [473 Wishkah Lane](https://www.zillow.com/homedetails/473-Wishkah-Ln-Anacortes-WA-98221/61002180_zpid/) | Anacortes, Washington | $365,000 | 0.53 | 2 | 2 | 820 |
+| [9650 N Brown Rd](https://www.zillow.com/homedetails/9650-N-Brown-Rd-Edgerton-WI-53534/40527145_zpid/) | Edgerton, Wisconsin | $495,000 | 0.65 | 3 | 2 | 1217 |
+
+Source notes: the Athens cabin is off-grid; the Stark and Bath listings describe
+renovation potential; the Anacortes address is on Center Island, with water-taxi
+access and a community-water occupancy restriction described by the seller.
+Edgerton’s structured lot field reports 0.65 acres while its description rounds
+to 0.66; the feed follows the structured field. Original listings retain details.

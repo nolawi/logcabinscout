@@ -45,3 +45,10 @@ test('gallery chooses one JPEG resolution per source photo and rejects inactive 
  assert.throws(()=>listingGallery(html({originalPhotos:originals,homeStatus:'SOLD'}),url),/eligible/);
  assert.throws(()=>listingGallery(html({originalPhotos:originals.map(()=>({mixedSources:{jpeg:[{width:9999,url:'http://127.0.0.1/private'}]}}))}),url),/four usable/);
 });
+
+test('accepted offers and backup-only statuses are excluded even when homeStatus says for sale',()=>{
+ for (const trueStatus of ['Active-Offer w/Bump-Show','Active-Offer No Bump','Accepting Back-up Offers','Accepting Backup Offers','Active With Contingency']) {
+  assert.equal(listingCandidate(html({attributionInfo:{trueStatus}}),url),null,trueStatus);
+ }
+ assert.ok(listingCandidate(html({attributionInfo:{trueStatus:'Active'}}),url));
+});
