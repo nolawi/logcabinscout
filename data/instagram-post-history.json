@@ -116,8 +116,12 @@
     {
       "queueId": "fairplay-co",
       "listingId": "zillow:13991629",
-      "state": "publishing",
-      "startedAt": "2026-11-16T21:47:35.309Z"
+      "state": "published",
+      "startedAt": "2026-11-16T21:47:35.309Z",
+      "publishedAt": "2026-11-16T21:48:29.220Z",
+      "mediaId": "18054154250814148",
+      "permalink": "https://www.instagram.com/p/Df0W4RDF4a0/",
+      "imageCount": 4
     }
   ]
 }
