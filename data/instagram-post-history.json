@@ -106,8 +106,12 @@
     {
       "queueId": "sheridan-mt",
       "listingId": "zillow:250239028",
-      "state": "publishing",
-      "startedAt": "2026-11-16T21:46:48.376Z"
+      "state": "published",
+      "startedAt": "2026-11-16T21:46:48.376Z",
+      "publishedAt": "2026-11-16T21:47:33.144Z",
+      "mediaId": "17915089941480548",
+      "permalink": "https://www.instagram.com/p/Df0WxZnF4ie/",
+      "imageCount": 4
     }
   ]
 }
