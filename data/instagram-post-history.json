@@ -96,8 +96,12 @@
     {
       "queueId": "harrogate-tn",
       "listingId": "zillow:215443044",
-      "state": "publishing",
-      "startedAt": "2026-11-16T21:46:03.054Z"
+      "state": "published",
+      "startedAt": "2026-11-16T21:46:03.054Z",
+      "publishedAt": "2026-11-16T21:46:46.776Z",
+      "mediaId": "18390763072225638",
+      "permalink": "https://www.instagram.com/p/Df0Wr_Nl1kf/",
+      "imageCount": 4
     }
   ]
 }
