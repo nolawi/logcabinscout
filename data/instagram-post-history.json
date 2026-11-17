@@ -209,7 +209,7 @@
     {
       "queueId": "edgerton-wi",
       "listingId": "zillow:40527145",
-      "state": "publishing",
+      "state": "needs-review",
       "startedAt": "2026-11-17T22:54:24.981Z"
     }
   ]
