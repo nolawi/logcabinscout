@@ -185,6 +185,43 @@
         "interior": 11
       },
       "notes": "Renovation opportunity, per the listing."
+    },
+    {
+      "id": "bath-ny",
+      "listingId": "zillow:32570401",
+      "coverLocation": "Bath, NY",
+      "headline": "Thirty Five Acres Of Quiet",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 2,
+        "land": 36,
+        "interior": 6
+      },
+      "notes": "Partially renovated; further work remains, per the listing."
+    },
+    {
+      "id": "bend-or",
+      "listingId": "zillow:60593818",
+      "coverLocation": "Bend, OR",
+      "headline": "Cedar Logs Near The Deschutes",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 3,
+        "land": 45,
+        "interior": 7
+      }
+    },
+    {
+      "id": "edgerton-wi",
+      "listingId": "zillow:40527145",
+      "coverLocation": "Edgerton, WI",
+      "headline": "A Hideaway Above Rock River",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 50,
+        "land": 45,
+        "interior": 2
+      }
     }
   ]
 }

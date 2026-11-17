@@ -780,6 +780,162 @@
           "imageUrl": "https://photos.zillowstatic.com/fp/cca41fff361479e48c7231846096077c-uncropped_scaled_within_1536_1152.jpg"
         }
       ]
+    },
+    {
+      "id": "bath-ny",
+      "headline": "Thirty Five Acres Of Quiet",
+      "checkedAt": "2026-11-17T22:49:46.736Z",
+      "listing": {
+        "id": "zillow:32570401",
+        "title": "4795 County Route 70a",
+        "location": "Bath, New York",
+        "price": 279000,
+        "acreage": 35.08,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "squareFeet": 1698,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/4795-County-Route-70a-Bath-NY-14810/32570401_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/37051707af0b6d2b602683c2ac4b2a57-uncropped_scaled_within_1344_1008.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/4795-County-Route-70a-Bath-NY-14810/32570401_zpid/",
+          "alt": "Exterior of 4795 County Route 70a in Bath, New York",
+          "credit": "NYSAMLSs / Zillow",
+          "width": 1182,
+          "height": 664,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-12T16:58:48.696Z"
+      },
+      "caption": "Thirty Five Acres Of Quiet\nhttps://www.zillow.com/homedetails/4795-County-Route-70a-Bath-NY-14810/32570401_zpid/\n\n4795 County Route 70a · Bath, New York\n$279,000 · 35.08 acres\n2 beds · 1 bath · 1,698 sq ft\n\nPartially renovated; further work remains, per the listing.\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #NewYorkRealEstate\n\nPhotos: NYSAMLSs / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/37051707af0b6d2b602683c2ac4b2a57-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/c0b46451fea774cabf7e.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/89265f1c97c64dc6d87ab84139cdda62-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/89265f1c97c64dc6d87ab84139cdda62-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/05455ee9667605745772b3211fe80a57-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/05455ee9667605745772b3211fe80a57-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/e1a446d92c642baef216d1e346a527aa-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/e1a446d92c642baef216d1e346a527aa-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "bend-or",
+      "headline": "Cedar Logs Near The Deschutes",
+      "checkedAt": "2026-11-17T22:49:50.376Z",
+      "listing": {
+        "id": "zillow:60593818",
+        "title": "56711 Lunar Dr",
+        "location": "Bend, Oregon",
+        "price": 574900,
+        "acreage": 0.75,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "squareFeet": 1200,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/56711-Lunar-Dr-Bend-OR-97707/60593818_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/aa7f742ab1b1c0b94b280c9955cfa714-cc_ft_1344.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/56711-Lunar-Dr-Bend-OR-97707/60593818_zpid/",
+          "alt": "Exterior of 56711 Lunar Dr in Bend, Oregon",
+          "credit": "RMLS (OR) / Zillow",
+          "width": 1344,
+          "height": 1008,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-12T16:58:48.696Z"
+      },
+      "caption": "Cedar Logs Near The Deschutes\nhttps://www.zillow.com/homedetails/56711-Lunar-Dr-Bend-OR-97707/60593818_zpid/\n\n56711 Lunar Dr · Bend, Oregon\n$574,900 · 0.75 acres\n2 beds · 2 baths · 1,200 sq ft\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #OregonRealEstate\n\nPhotos: RMLS (OR) / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/aa7f742ab1b1c0b94b280c9955cfa714-cc_ft_1536.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/fda6f7141f427a5725c0.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/fc7255042c23904236140550cd6e94b8-cc_ft_1536.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/fc7255042c23904236140550cd6e94b8-cc_ft_1536.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/bc165a04e46bca484971ccfbdf932c47-cc_ft_1536.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/bc165a04e46bca484971ccfbdf932c47-cc_ft_1536.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/b081f163e1a55e300f37df9d675d60c3-cc_ft_1536.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/b081f163e1a55e300f37df9d675d60c3-cc_ft_1536.jpg"
+        }
+      ]
+    },
+    {
+      "id": "edgerton-wi",
+      "headline": "A Hideaway Above Rock River",
+      "checkedAt": "2026-11-17T22:49:54.022Z",
+      "listing": {
+        "id": "zillow:40527145",
+        "title": "9650 N Brown Rd",
+        "location": "Edgerton, Wisconsin",
+        "price": 495000,
+        "acreage": 0.65,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "squareFeet": 1217,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/9650-N-Brown-Rd-Edgerton-WI-53534/40527145_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/10856058507f01b586ec53c1662a462f-uncropped_scaled_within_1344_1008.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/9650-N-Brown-Rd-Edgerton-WI-53534/40527145_zpid/",
+          "alt": "Exterior of 9650 N Brown Rd in Edgerton, Wisconsin",
+          "credit": "SCWMLS / Zillow",
+          "width": 1344,
+          "height": 1008,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-12T16:58:48.696Z"
+      },
+      "caption": "A Hideaway Above Rock River\nhttps://www.zillow.com/homedetails/9650-N-Brown-Rd-Edgerton-WI-53534/40527145_zpid/\n\n9650 N Brown Rd · Edgerton, Wisconsin\n$495,000 · 0.65 acres\n3 beds · 2 baths · 1,217 sq ft\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #WisconsinRealEstate\n\nPhotos: SCWMLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/10856058507f01b586ec53c1662a462f-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/b01e6f985268d50b20ba.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/81e21f969b03922737f83b3ca077e0f9-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/81e21f969b03922737f83b3ca077e0f9-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/5c81432d2e9f8646d768603a547b4723-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/5c81432d2e9f8646d768603a547b4723-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/3d3b94e1153330b7114d78c52befb517-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/3d3b94e1153330b7114d78c52befb517-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
     }
   ]
 }
