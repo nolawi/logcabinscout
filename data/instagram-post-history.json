@@ -146,8 +146,12 @@
     {
       "queueId": "athens-me",
       "listingId": "zillow:466222304",
-      "state": "publishing",
-      "startedAt": "2026-11-17T18:51:05.041Z"
+      "state": "published",
+      "startedAt": "2026-11-17T18:51:05.041Z",
+      "publishedAt": "2026-11-17T18:51:58.566Z",
+      "mediaId": "18023777972949594",
+      "permalink": "https://www.instagram.com/p/Df2ndkcjnMv/",
+      "imageCount": 4
     }
   ]
 }
