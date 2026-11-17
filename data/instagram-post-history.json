@@ -176,8 +176,13 @@
     {
       "queueId": "stark-nh",
       "listingId": "zillow:86747950",
-      "state": "needs-review",
-      "startedAt": "2026-11-17T22:11:55.353Z"
+      "state": "published",
+      "startedAt": "2026-11-17T22:11:55.353Z",
+      "mediaId": "18466821814187286",
+      "permalink": "https://www.instagram.com/p/Df2-eFwGAQT/",
+      "imageCount": 4,
+      "reconciledAt": "2026-11-17T22:14:08.994Z",
+      "reconciliationRunId": "44187980926"
     }
   ]
 }
