@@ -36,7 +36,13 @@ export default function App({ initialFeed }: { initialFeed?: ListingSnapshot } =
   const hasFilters = query !== '' || state !== 'all' || maxPrice !== 'all' || sortBy !== 'featured' || savedOnly;
 
   return <>
-    <header className="header"><a className="brand" href={import.meta.env.BASE_URL} aria-label="Log Cabin Scout home"><img src={import.meta.env.BASE_URL + "logo-mark.svg"} alt="" width="40" height="40" /><span className="brand-wordmark">LOG CABIN <strong>SCOUT</strong></span></a></header>
+    <header className="header">
+      <a className="brand" href={import.meta.env.BASE_URL} aria-label="Log Cabin Scout home"><img src={import.meta.env.BASE_URL + "logo-mark.svg"} alt="" width="40" height="40" /><span className="brand-wordmark">LOG CABIN <strong>SCOUT</strong></span></a>
+      <a className="instagram-link" href="https://www.instagram.com/logcabinscout/" target="_blank" rel="noopener noreferrer" aria-label="Log Cabin Scout on Instagram (opens in a new tab)">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>
+        <span>Instagram</span>
+      </a>
+    </header>
     <main id="home">
 
       <section className="content" id="cabins">
