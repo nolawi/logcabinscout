@@ -126,8 +126,12 @@
     {
       "queueId": "blairsville-ga",
       "listingId": "zillow:105425238",
-      "state": "publishing",
-      "startedAt": "2026-11-17T18:48:57.422Z"
+      "state": "published",
+      "startedAt": "2026-11-17T18:48:57.422Z",
+      "publishedAt": "2026-11-17T18:50:08.020Z",
+      "mediaId": "18144513052613420",
+      "permalink": "https://www.instagram.com/p/Df2nOpYjl59/",
+      "imageCount": 4
     }
   ]
 }
