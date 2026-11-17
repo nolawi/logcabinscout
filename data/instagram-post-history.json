@@ -198,8 +198,13 @@
     {
       "queueId": "bend-or",
       "listingId": "zillow:60593818",
-      "state": "needs-review",
-      "startedAt": "2026-11-17T22:52:32.263Z"
+      "state": "published",
+      "startedAt": "2026-11-17T22:52:32.263Z",
+      "mediaId": "17976511419177726",
+      "permalink": "https://www.instagram.com/p/Df3DGuYly_K/",
+      "imageCount": 4,
+      "reconciledAt": "2026-11-17T22:53:52.605Z",
+      "reconciliationRunId": "44194403932"
     }
   ]
 }
