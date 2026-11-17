@@ -166,8 +166,12 @@
     {
       "queueId": "ely-mn",
       "listingId": "zillow:303995838",
-      "state": "publishing",
-      "startedAt": "2026-11-17T22:10:54.984Z"
+      "state": "published",
+      "startedAt": "2026-11-17T22:10:54.984Z",
+      "publishedAt": "2026-11-17T22:11:53.156Z",
+      "mediaId": "18110836592523049",
+      "permalink": "https://www.instagram.com/p/Df2-WcqnQej/",
+      "imageCount": 4
     }
   ]
 }
