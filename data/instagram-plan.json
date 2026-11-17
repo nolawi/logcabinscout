@@ -147,6 +147,44 @@
         "interior": 30
       },
       "notes": "Off-grid; solar power, generator and a dug well, per the listing."
+    },
+    {
+      "id": "mammoth-spring-ar",
+      "listingId": "zillow:109035928",
+      "coverLocation": "Mammoth Spring, AR",
+      "headline": "Riverfront Logs In The Ozarks",
+      "photoIndexes": {
+        "cover": 2,
+        "exterior": 49,
+        "land": 47,
+        "interior": 4
+      }
+    },
+    {
+      "id": "ely-mn",
+      "listingId": "zillow:303995838",
+      "coverLocation": "Ely, MN",
+      "headline": "Moose Lake Mornings In Minnesota",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 42,
+        "land": 35,
+        "interior": 5
+      },
+      "notes": "Shared septic; HOA dues approximately $750/year, per the listing."
+    },
+    {
+      "id": "stark-nh",
+      "listingId": "zillow:86747950",
+      "coverLocation": "Stark, NH",
+      "headline": "A New Hampshire Cabin Project",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 53,
+        "land": 3,
+        "interior": 11
+      },
+      "notes": "Renovation opportunity, per the listing."
     }
   ]
 }

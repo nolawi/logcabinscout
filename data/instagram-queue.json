@@ -624,6 +624,162 @@
           "imageUrl": "https://photos.zillowstatic.com/fp/b83d21d6ce8a82d6782baab2aec82c58-uncropped_scaled_within_1536_1152.jpg"
         }
       ]
+    },
+    {
+      "id": "mammoth-spring-ar",
+      "headline": "Riverfront Logs In The Ozarks",
+      "checkedAt": "2026-11-17T22:06:51.537Z",
+      "listing": {
+        "id": "zillow:109035928",
+        "title": "810 River Bend Rd",
+        "location": "Mammoth Spring, Arkansas",
+        "price": 575000,
+        "acreage": 1.5,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "squareFeet": 4038,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/810-River-Bend-Rd-Mammoth-Spring-AR-72554/109035928_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/e9f84ebd1631c07ba94afe7991198999-uncropped_scaled_within_1344_1008.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/810-River-Bend-Rd-Mammoth-Spring-AR-72554/109035928_zpid/",
+          "alt": "Exterior of 810 River Bend Rd in Mammoth Spring, Arkansas",
+          "credit": "CARMLS / Zillow",
+          "width": 1344,
+          "height": 756,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-12T16:58:48.696Z"
+      },
+      "caption": "Riverfront Logs In The Ozarks\nhttps://www.zillow.com/homedetails/810-River-Bend-Rd-Mammoth-Spring-AR-72554/109035928_zpid/\n\n810 River Bend Rd · Mammoth Spring, Arkansas\n$575,000 · 1.5 acres\n3 beds · 3 baths · 4,038 sq ft\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #ArkansasRealEstate\n\nPhotos: CARMLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/e9f84ebd1631c07ba94afe7991198999-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/633704e4ec9f1884c711.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/949844220e674c49e7891e8cc6ba988e-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/949844220e674c49e7891e8cc6ba988e-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/3bfa4e755bdc3adf77243e8d81950050-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/3bfa4e755bdc3adf77243e8d81950050-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/bc2866d3b7c9c7fb246154d9cf93e936-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/bc2866d3b7c9c7fb246154d9cf93e936-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ely-mn",
+      "headline": "Moose Lake Mornings In Minnesota",
+      "checkedAt": "2026-11-17T22:06:55.111Z",
+      "listing": {
+        "id": "zillow:303995838",
+        "title": "2793 Wolf Track Tr",
+        "location": "Ely, Minnesota",
+        "price": 409900,
+        "acreage": 0.28,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "squareFeet": 998,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/2793-Wolf-Track-Trl-Ely-MN-55731/303995838_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/ef92ab90bb873b95ebcc649f516a3e8c-uncropped_scaled_within_1344_1008.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/2793-Wolf-Track-Trl-Ely-MN-55731/303995838_zpid/",
+          "alt": "Exterior of 2793 Wolf Track Tr in Ely, Minnesota",
+          "credit": "Lake Superior Area Realtors / Zillow",
+          "width": 1200,
+          "height": 795,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-12T16:58:48.696Z"
+      },
+      "caption": "Moose Lake Mornings In Minnesota\nhttps://www.zillow.com/homedetails/2793-Wolf-Track-Trl-Ely-MN-55731/303995838_zpid/\n\n2793 Wolf Track Tr · Ely, Minnesota\n$409,900 · 0.28 acres\n2 beds · 1 bath · 998 sq ft\n\nShared septic; HOA dues approximately $750/year, per the listing.\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #MinnesotaRealEstate\n\nPhotos: Lake Superior Area Realtors / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/ef92ab90bb873b95ebcc649f516a3e8c-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/dd52efa73ec8e6278358.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/e48bd7f8b43cd4ff7000be8754307b84-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/e48bd7f8b43cd4ff7000be8754307b84-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/6afe66839ff90976b14ecb8038a67d01-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/6afe66839ff90976b14ecb8038a67d01-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/552950343570367a7e6162de6ef7b1d4-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/552950343570367a7e6162de6ef7b1d4-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "stark-nh",
+      "headline": "A New Hampshire Cabin Project",
+      "checkedAt": "2026-11-17T22:06:58.599Z",
+      "listing": {
+        "id": "zillow:86747950",
+        "title": "1516 Stark Highway",
+        "location": "Stark, New Hampshire",
+        "price": 189000,
+        "acreage": 0.95,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "squareFeet": 1540,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/1516-Stark-Hwy-Stark-NH-03582/86747950_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/a5d29b192dc26098ad83a41dea68f6f2-uncropped_scaled_within_1344_1008.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/1516-Stark-Hwy-Stark-NH-03582/86747950_zpid/",
+          "alt": "Exterior of 1516 Stark Highway in Stark, New Hampshire",
+          "credit": "PrimeMLS / Zillow",
+          "width": 1344,
+          "height": 1008,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-12T16:58:48.696Z"
+      },
+      "caption": "A New Hampshire Cabin Project\nhttps://www.zillow.com/homedetails/1516-Stark-Hwy-Stark-NH-03582/86747950_zpid/\n\n1516 Stark Highway · Stark, New Hampshire\n$189,000 · 0.95 acres\n3 beds · 2 baths · 1,540 sq ft\n\nRenovation opportunity, per the listing.\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #NewHampshireRealEstate\n\nPhotos: PrimeMLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/a5d29b192dc26098ad83a41dea68f6f2-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/cb8cf9b8aa42141cac7c.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/14bbd6638437f24a30f8f37a900adbd1-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/14bbd6638437f24a30f8f37a900adbd1-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/6c201650fb7b2cbff7e63ba472db2e55-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/6c201650fb7b2cbff7e63ba472db2e55-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/cca41fff361479e48c7231846096077c-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/cca41fff361479e48c7231846096077c-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
     }
   ]
 }
