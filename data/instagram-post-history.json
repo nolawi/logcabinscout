@@ -187,8 +187,13 @@
     {
       "queueId": "bath-ny",
       "listingId": "zillow:32570401",
-      "state": "needs-review",
-      "startedAt": "2026-11-17T22:50:34.982Z"
+      "state": "published",
+      "startedAt": "2026-11-17T22:50:34.982Z",
+      "mediaId": "18080622602732394",
+      "permalink": "https://www.instagram.com/p/Df3C288jutY/",
+      "imageCount": 4,
+      "reconciledAt": "2026-11-17T22:51:49.918Z",
+      "reconciliationRunId": "44194091325"
     }
   ]
 }
