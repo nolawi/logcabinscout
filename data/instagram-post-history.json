@@ -194,6 +194,12 @@
       "imageCount": 4,
       "reconciledAt": "2026-11-17T22:51:49.918Z",
       "reconciliationRunId": "44194091325"
+    },
+    {
+      "queueId": "bend-or",
+      "listingId": "zillow:60593818",
+      "state": "publishing",
+      "startedAt": "2026-11-17T22:52:32.263Z"
     }
   ]
 }
