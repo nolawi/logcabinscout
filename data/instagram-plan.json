@@ -122,6 +122,31 @@
         "land": 1,
         "interior": 5
       }
+    },
+    {
+      "id": "niles-mi",
+      "listingId": "zillow:73858654",
+      "coverLocation": "Niles, MI",
+      "headline": "Ten Acres Of Michigan Quiet",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 1,
+        "land": 4,
+        "interior": 10
+      }
+    },
+    {
+      "id": "athens-me",
+      "listingId": "zillow:466222304",
+      "coverLocation": "Athens, ME",
+      "headline": "Seven Acres Of Maine Quiet",
+      "photoIndexes": {
+        "cover": 6,
+        "exterior": 0,
+        "land": 3,
+        "interior": 30
+      },
+      "notes": "Off-grid; solar power, generator and a dug well, per the listing."
     }
   ]
 }
