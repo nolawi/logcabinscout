@@ -198,7 +198,7 @@
     {
       "queueId": "bend-or",
       "listingId": "zillow:60593818",
-      "state": "publishing",
+      "state": "needs-review",
       "startedAt": "2026-11-17T22:52:32.263Z"
     }
   ]
