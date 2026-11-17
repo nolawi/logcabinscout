@@ -156,8 +156,12 @@
     {
       "queueId": "mammoth-spring-ar",
       "listingId": "zillow:109035928",
-      "state": "publishing",
-      "startedAt": "2026-11-17T22:09:59.832Z"
+      "state": "published",
+      "startedAt": "2026-11-17T22:09:59.832Z",
+      "publishedAt": "2026-11-17T22:10:52.959Z",
+      "mediaId": "18198166420396808",
+      "permalink": "https://www.instagram.com/p/Df2-OYZHYMd/",
+      "imageCount": 4
     }
   ]
 }
