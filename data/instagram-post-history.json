@@ -205,6 +205,12 @@
       "imageCount": 4,
       "reconciledAt": "2026-11-17T22:53:52.605Z",
       "reconciliationRunId": "44194403932"
+    },
+    {
+      "queueId": "edgerton-wi",
+      "listingId": "zillow:40527145",
+      "state": "publishing",
+      "startedAt": "2026-11-17T22:54:24.981Z"
     }
   ]
 }
