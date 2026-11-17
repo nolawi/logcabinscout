@@ -136,8 +136,12 @@
     {
       "queueId": "niles-mi",
       "listingId": "zillow:73858654",
-      "state": "publishing",
-      "startedAt": "2026-11-17T18:50:09.380Z"
+      "state": "published",
+      "startedAt": "2026-11-17T18:50:09.380Z",
+      "publishedAt": "2026-11-17T18:51:03.063Z",
+      "mediaId": "18128706103924232",
+      "permalink": "https://www.instagram.com/p/Df2nWsDjgIP/",
+      "imageCount": 4
     }
   ]
 }
