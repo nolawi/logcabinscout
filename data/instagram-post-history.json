@@ -242,8 +242,13 @@
     {
       "queueId": "london-ky",
       "listingId": "zillow:465929418",
-      "state": "needs-review",
-      "startedAt": "2026-11-19T16:14:58.699Z"
+      "state": "published",
+      "startedAt": "2026-11-19T16:14:58.699Z",
+      "mediaId": "18120852596005617",
+      "permalink": "https://www.instagram.com/p/Df7fMS2F7Cj/",
+      "imageCount": 4,
+      "reconciledAt": "2026-11-19T16:16:16.088Z",
+      "reconciliationRunId": "44564140754"
     }
   ]
 }
