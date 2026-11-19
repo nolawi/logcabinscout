@@ -220,7 +220,7 @@
     {
       "queueId": "anacortes-wa",
       "listingId": "zillow:61002180",
-      "state": "publishing",
+      "state": "needs-review",
       "startedAt": "2026-11-19T16:11:04.573Z"
     }
   ]
