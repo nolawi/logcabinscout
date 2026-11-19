@@ -227,6 +227,12 @@
       "imageCount": 4,
       "reconciledAt": "2026-11-19T16:12:18.909Z",
       "reconciliationRunId": "44563384785"
+    },
+    {
+      "queueId": "altenburg-mo",
+      "listingId": "zillow:119288800",
+      "state": "publishing",
+      "startedAt": "2026-11-19T16:13:05.582Z"
     }
   ]
 }
