@@ -242,7 +242,7 @@
     {
       "queueId": "london-ky",
       "listingId": "zillow:465929418",
-      "state": "publishing",
+      "state": "needs-review",
       "startedAt": "2026-11-19T16:14:58.699Z"
     }
   ]
