@@ -231,8 +231,13 @@
     {
       "queueId": "altenburg-mo",
       "listingId": "zillow:119288800",
-      "state": "needs-review",
-      "startedAt": "2026-11-19T16:13:05.582Z"
+      "state": "published",
+      "startedAt": "2026-11-19T16:13:05.582Z",
+      "mediaId": "18077477261777429",
+      "permalink": "https://www.instagram.com/p/Df7e9oQFyx4/",
+      "imageCount": 4,
+      "reconciledAt": "2026-11-19T16:14:17.160Z",
+      "reconciliationRunId": "44563762848"
     }
   ]
 }
