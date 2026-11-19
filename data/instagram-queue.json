@@ -936,6 +936,162 @@
           "imageUrl": "https://photos.zillowstatic.com/fp/3d3b94e1153330b7114d78c52befb517-uncropped_scaled_within_1536_1152.jpg"
         }
       ]
+    },
+    {
+      "id": "anacortes-wa",
+      "headline": "An Island Cabin Among Firs",
+      "checkedAt": "2026-11-19T16:10:18.711Z",
+      "listing": {
+        "id": "zillow:61002180",
+        "title": "473 Wishkah Lane",
+        "location": "Anacortes, Washington",
+        "price": 365000,
+        "acreage": 0.53,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "squareFeet": 820,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/473-Wishkah-Ln-Anacortes-WA-98221/61002180_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/39685a994b32d08022487e471b867edd-uncropped_scaled_within_1344_1008.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/473-Wishkah-Ln-Anacortes-WA-98221/61002180_zpid/",
+          "alt": "Exterior of 473 Wishkah Lane in Anacortes, Washington",
+          "credit": "NWMLS / Zillow",
+          "width": 1344,
+          "height": 1008,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-12T16:58:48.696Z"
+      },
+      "caption": "An Island Cabin Among Firs\n\n473 Wishkah Lane · Anacortes, Washington\n$365,000 · 0.53 acres\n2 beds · 2 baths · 820 sq ft\n\nhttps://www.zillow.com/homedetails/473-Wishkah-Ln-Anacortes-WA-98221/61002180_zpid/\n\nOn Center Island, accessed by water taxi or private aircraft. Community water is available to homes occupied 180 days or less, per the listing.\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #WashingtonRealEstate\n\nPhotos: NWMLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/39685a994b32d08022487e471b867edd-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/bd9904c9dbb548927496.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/75a38b5813ae1d32f5b5b2dd4ad5eac4-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/75a38b5813ae1d32f5b5b2dd4ad5eac4-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/8603bfee9292fd55df95d440de48b849-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/8603bfee9292fd55df95d440de48b849-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/865e3db25520a7257d3790e67fae8e24-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/865e3db25520a7257d3790e67fae8e24-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "altenburg-mo",
+      "headline": "Missouri Mornings Beside The Pond",
+      "checkedAt": "2026-11-19T16:10:21.797Z",
+      "listing": {
+        "id": "zillow:119288800",
+        "title": "385 Autumn Rdg",
+        "location": "Altenburg, Missouri",
+        "price": 425000,
+        "acreage": 4.58,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "squareFeet": 1700,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/385-Autumn-Rdg-Altenburg-MO-63732/119288800_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/36f1876ebb93e0342bbd67ed5de1d139-uncropped_scaled_within_1344_1008.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/385-Autumn-Rdg-Altenburg-MO-63732/119288800_zpid/",
+          "alt": "Exterior of 385 Autumn Rdg in Altenburg, Missouri",
+          "credit": "My State MLS / Zillow",
+          "width": 1280,
+          "height": 853,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-12T16:58:48.696Z"
+      },
+      "caption": "Missouri Mornings Beside The Pond\n\n385 Autumn Rdg · Altenburg, Missouri\n$425,000 · 4.58 acres\n3 beds · 2 baths · 1,700 sq ft\n\nhttps://www.zillow.com/homedetails/385-Autumn-Rdg-Altenburg-MO-63732/119288800_zpid/\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #MissouriRealEstate\n\nPhotos: My State MLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/d8ea881fcc3df317fb0ec9d7485db5b6-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/b8a82060cf02c9f9745f.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/1f6d54a1b3f027d05bb586fc889aa696-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/1f6d54a1b3f027d05bb586fc889aa696-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/36f1876ebb93e0342bbd67ed5de1d139-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/36f1876ebb93e0342bbd67ed5de1d139-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/bb933bc4243d3fc83f11fcadceb8bff3-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/bb933bc4243d3fc83f11fcadceb8bff3-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "london-ky",
+      "headline": "A Kentucky Cabin Among Trees",
+      "checkedAt": "2026-11-19T16:10:24.857Z",
+      "listing": {
+        "id": "zillow:465929418",
+        "title": "297 Jim Bernard Rd #297",
+        "location": "London, Kentucky",
+        "price": 275000,
+        "acreage": 5.57,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "squareFeet": 1368,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/297-Jim-Bernard-Rd-297-London-KY-40744/465929418_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/c0617e53c5823b7b1fcd467fd3708bef-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/297-Jim-Bernard-Rd-297-London-KY-40744/465929418_zpid/",
+          "alt": "Exterior of 297 Jim Bernard Rd #297 in London, Kentucky",
+          "credit": "Imagine MLS / Zillow",
+          "width": 1024,
+          "height": 682,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-09T03:18:13.676Z"
+      },
+      "caption": "A Kentucky Cabin Among Trees\n\n297 Jim Bernard Rd #297 · London, Kentucky\n$275,000 · 5.57 acres\n3 beds · 2 baths · 1,368 sq ft\n\nhttps://www.zillow.com/homedetails/297-Jim-Bernard-Rd-297-London-KY-40744/465929418_zpid/\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #KentuckyRealEstate\n\nPhotos: Imagine MLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/6dd0f3b622e9574e173eb58276c8dcdf-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/d8724723a4bdd884155a.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/fc0c6f76b23118b8492758d6f49919da-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/fc0c6f76b23118b8492758d6f49919da-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/8de74872fb29214364de5e75d487ce3d-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/8de74872fb29214364de5e75d487ce3d-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/75eb50d662b2d8bf0ef30f784d967e23-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/75eb50d662b2d8bf0ef30f784d967e23-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
     }
   ]
 }

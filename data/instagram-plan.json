@@ -222,6 +222,43 @@
         "land": 45,
         "interior": 2
       }
+    },
+    {
+      "id": "anacortes-wa",
+      "listingId": "zillow:61002180",
+      "coverLocation": "Anacortes, WA",
+      "headline": "An Island Cabin Among Firs",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 29,
+        "land": 27,
+        "interior": 1
+      },
+      "notes": "On Center Island, accessed by water taxi or private aircraft. Community water is available to homes occupied 180 days or less, per the listing."
+    },
+    {
+      "id": "altenburg-mo",
+      "listingId": "zillow:119288800",
+      "coverLocation": "Altenburg, MO",
+      "headline": "Missouri Mornings Beside The Pond",
+      "photoIndexes": {
+        "cover": 6,
+        "exterior": 5,
+        "land": 0,
+        "interior": 15
+      }
+    },
+    {
+      "id": "london-ky",
+      "listingId": "zillow:465929418",
+      "coverLocation": "London, KY",
+      "headline": "A Kentucky Cabin Among Trees",
+      "photoIndexes": {
+        "cover": 7,
+        "exterior": 10,
+        "land": 21,
+        "interior": 40
+      }
     }
   ]
 }

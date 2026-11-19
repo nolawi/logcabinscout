@@ -30,9 +30,9 @@ test('photo drafts never substitute illustrations for missing photos',()=>{
  assert.throws(()=>renderSocialCard({},'<svg></svg>'),/photograph/);
 });
 
-test('captions put a short headline above the bare URL, five tags before credit, and include known home facts',()=>{
+test('captions put property details before the bare URL, five tags before credit, and include known home facts',()=>{
  const caption=buildInstagramCaption({...row('1','Jacksboro, Tennessee'),bedrooms:3,bathrooms:2,squareFeet:2842});
- assert.equal(caption.split('\n')[1],'https://example.com/listing');
+ assert.ok(caption.indexOf('https://example.com/listing') > caption.indexOf('2,842 sq ft'));
  assert.ok(caption.endsWith('Photos: MLS / Listing provider.'));
  assert.equal(caption.match(/#[A-Za-z]+/g).length,5);
  assert.ok(caption.includes('#TennesseeRealEstate'));
@@ -44,10 +44,11 @@ test('missing room facts are omitted instead of invented',()=>{
  assert.ok(!caption.includes('beds'));assert.ok(!caption.includes('sq ft'));assert.ok(!caption.includes('undefined'));
 });
 
-test('editorial headlines appear immediately before the URL and reject multiline content',()=>{
+test('editorial headlines lead captions with a blank line and reject multiline content',()=>{
  const caption=buildInstagramCaption(row('1','Florence, Montana'),{headline:'Off Grid With Bitterroot Views'});
  assert.equal(caption.split('\n')[0],'Off Grid With Bitterroot Views');
- assert.equal(caption.split('\n')[1],'https://example.com/listing');
+ assert.equal(caption.split('\n\n')[0],'Off Grid With Bitterroot Views');
+ assert.equal(caption.split('\n\n')[2],'https://example.com/listing');
  assert.equal(caption.split('\n')[0].split(' ').length,5);
  assert.throws(()=>buildInstagramCaption(row('1','Place, Colorado'),{headline:'One\nTwo'}),/headline/);
 });

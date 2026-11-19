@@ -208,3 +208,10 @@ verified run log and update the existing claim to `published`; do not dispatch
 that property again. The first three queue posts were all confirmed with four
 images; Rock Cave's receipt was reconciled after GitHub rejected its first
 history push with a transient `commit_refs` failure.
+
+### Caption order (November 19, 2026)
+
+New captions use headline, blank line, property address/location and home facts,
+blank line, then the bare original listing URL. Material notes follow the URL;
+five hashtags and the final photo credit remain. This supersedes the earlier
+URL-first examples. Existing published captions are retained.
