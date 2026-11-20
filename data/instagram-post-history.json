@@ -249,6 +249,12 @@
       "imageCount": 4,
       "reconciledAt": "2026-11-19T16:16:16.088Z",
       "reconciliationRunId": "44564140754"
+    },
+    {
+      "queueId": "vass-nc",
+      "listingId": "zillow:74984195",
+      "state": "publishing",
+      "startedAt": "2026-11-20T16:44:41.474Z"
     }
   ]
 }
