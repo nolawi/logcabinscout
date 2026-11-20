@@ -253,8 +253,12 @@
     {
       "queueId": "vass-nc",
       "listingId": "zillow:74984195",
-      "state": "publishing",
-      "startedAt": "2026-11-20T16:44:41.474Z"
+      "state": "published",
+      "startedAt": "2026-11-20T16:44:41.474Z",
+      "publishedAt": "2026-11-20T16:45:43.935Z",
+      "mediaId": "18217913665364358",
+      "permalink": "https://www.instagram.com/p/Df-HZhpknQ2/",
+      "imageCount": 4
     }
   ]
 }
