@@ -1092,6 +1092,58 @@
           "imageUrl": "https://photos.zillowstatic.com/fp/75eb50d662b2d8bf0ef30f784d967e23-uncropped_scaled_within_1536_1152.jpg"
         }
       ]
+    },
+    {
+      "id": "vass-nc",
+      "headline": "A Carolina Cabin Among Pines",
+      "checkedAt": "2026-11-20T16:43:51.373Z",
+      "listing": {
+        "id": "zillow:74984195",
+        "title": "1067 Mcpherson Road",
+        "location": "Vass, North Carolina",
+        "price": 268000,
+        "acreage": 1.97,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "squareFeet": 1392,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/1067-McPherson-Rd-Vass-NC-28394/74984195_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/c09af4fcbf35433f1307f05d4363c09d-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/1067-McPherson-Rd-Vass-NC-28394/74984195_zpid/",
+          "alt": "Exterior of 1067 Mcpherson Road in Vass, North Carolina",
+          "credit": "Hive MLS / Zillow",
+          "width": 1024,
+          "height": 682,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-08T02:17:34.534Z"
+      },
+      "caption": "A Carolina Cabin Among Pines\n\n1067 Mcpherson Road · Vass, North Carolina\n$268,000 · 1.97 acres\n3 beds · 2 baths · 1,392 sq ft\n\nhttps://www.zillow.com/homedetails/1067-McPherson-Rd-Vass-NC-28394/74984195_zpid/\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #NorthCarolinaRealEstate\n\nPhotos: Hive MLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/81e7c39452495c6f986f14d1b38d5bda-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/0c6aade4ad5ff37902b0.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/f161bb8a8bec45d717e3851a14b26b31-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/f161bb8a8bec45d717e3851a14b26b31-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/4c288425e8a3c1c9e94136bf85af791a-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/4c288425e8a3c1c9e94136bf85af791a-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/1fa4082f737c207068b9dc7bf0e208ec-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/1fa4082f737c207068b9dc7bf0e208ec-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
     }
   ]
 }

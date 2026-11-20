@@ -259,6 +259,18 @@
         "land": 21,
         "interior": 40
       }
+    },
+    {
+      "id": "vass-nc",
+      "listingId": "zillow:74984195",
+      "coverLocation": "Vass, NC",
+      "headline": "A Carolina Cabin Among Pines",
+      "photoIndexes": {
+        "cover": 2,
+        "exterior": 29,
+        "land": 34,
+        "interior": 5
+      }
     }
   ]
 }
