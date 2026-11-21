@@ -303,8 +303,12 @@
     {
       "queueId": "crawford-tn",
       "listingId": "zillow:63630108",
-      "state": "publishing",
-      "startedAt": "2026-11-21T16:34:38.904Z"
+      "state": "published",
+      "startedAt": "2026-11-21T16:34:38.904Z",
+      "publishedAt": "2026-11-21T16:35:25.177Z",
+      "mediaId": "18123499358282581",
+      "permalink": "https://www.instagram.com/p/DgArA0fDac_/",
+      "imageCount": 4
     }
   ],
   "failedAttempts": [
