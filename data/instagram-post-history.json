@@ -263,8 +263,12 @@
     {
       "queueId": "lolo-mt",
       "listingId": "zillow:3145082",
-      "state": "publishing",
-      "startedAt": "2026-11-21T16:29:04.314Z"
+      "state": "published",
+      "startedAt": "2026-11-21T16:29:04.314Z",
+      "publishedAt": "2026-11-21T16:29:53.594Z",
+      "mediaId": "18128053360899073",
+      "permalink": "https://www.instagram.com/p/DgAqYrmF51x/",
+      "imageCount": 4
     }
   ]
 }
