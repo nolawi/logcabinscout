@@ -299,6 +299,12 @@
       "mediaId": "17991590925120070",
       "permalink": "https://www.instagram.com/p/DgAqvb4lx3B/",
       "imageCount": 4
+    },
+    {
+      "queueId": "crawford-tn",
+      "listingId": "zillow:63630108",
+      "state": "publishing",
+      "startedAt": "2026-11-21T16:34:38.904Z"
     }
   ],
   "failedAttempts": [
