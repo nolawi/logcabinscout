@@ -273,8 +273,12 @@
     {
       "queueId": "benton-ky",
       "listingId": "zillow:2100313441",
-      "state": "publishing",
-      "startedAt": "2026-11-21T16:29:54.840Z"
+      "state": "published",
+      "startedAt": "2026-11-21T16:29:54.840Z",
+      "publishedAt": "2026-11-21T16:30:56.583Z",
+      "mediaId": "17961297267275669",
+      "permalink": "https://www.instagram.com/p/DgAqgQpF3c-/",
+      "imageCount": 4
     }
   ]
 }
