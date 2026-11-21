@@ -271,6 +271,79 @@
         "land": 34,
         "interior": 5
       }
+    },
+    {
+      "id": "lolo-mt",
+      "listingId": "zillow:3145082",
+      "coverLocation": "Lolo, MT",
+      "headline": "A Montana Cabin Among Pines",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 1,
+        "land": 10,
+        "interior": 14
+      }
+    },
+    {
+      "id": "benton-ky",
+      "listingId": "zillow:2100313441",
+      "coverLocation": "Benton, KY",
+      "headline": "Rolling Acres And Kentucky Logs",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 29,
+        "land": 33,
+        "interior": 5
+      }
+    },
+    {
+      "id": "new-brighton-pa",
+      "listingId": "zillow:337980259",
+      "coverLocation": "New Brighton, PA",
+      "headline": "Pennsylvania Logs And Autumn Fields",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 6,
+        "land": 19,
+        "interior": 25
+      }
+    },
+    {
+      "id": "bayfield-co",
+      "listingId": "zillow:334055567",
+      "coverLocation": "Bayfield, CO",
+      "headline": "Colorado Evenings Among The Pines",
+      "photoIndexes": {
+        "cover": 2,
+        "exterior": 39,
+        "land": 40,
+        "interior": 7
+      }
+    },
+    {
+      "id": "crawford-tn",
+      "listingId": "zillow:63630108",
+      "coverLocation": "Crawford, TN",
+      "headline": "A Tennessee Cabin Beneath Trees",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 38,
+        "land": 44,
+        "interior": 8
+      }
+    },
+    {
+      "id": "belvidere-tn",
+      "listingId": "zillow:41290091",
+      "coverLocation": "Belvidere, TN",
+      "headline": "Quiet Trails On Keith Springs",
+      "photoIndexes": {
+        "cover": 67,
+        "exterior": 1,
+        "land": 68,
+        "interior": 6
+      },
+      "notes": "The loft serves as the third bedroom, per the listing."
     }
   ]
 }

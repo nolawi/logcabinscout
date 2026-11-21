@@ -1144,6 +1144,318 @@
           "imageUrl": "https://photos.zillowstatic.com/fp/1fa4082f737c207068b9dc7bf0e208ec-uncropped_scaled_within_1536_1152.jpg"
         }
       ]
+    },
+    {
+      "id": "lolo-mt",
+      "headline": "A Montana Cabin Among Pines",
+      "checkedAt": "2026-11-21T16:28:04.586Z",
+      "listing": {
+        "id": "zillow:3145082",
+        "title": "13245 Balsamroot Rd",
+        "location": "Lolo, Montana",
+        "price": 505000,
+        "acreage": 1.38,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "squareFeet": 2046,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/13245-Balsamroot-Rd-Lolo-MT-59847/3145082_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/56c703996f68e1275d420d75570a8524-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/13245-Balsamroot-Rd-Lolo-MT-59847/3145082_zpid/",
+          "alt": "Exterior of 13245 Balsamroot Rd in Lolo, Montana",
+          "credit": "MRMLS / Zillow",
+          "width": 1024,
+          "height": 683,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-08T02:17:34.558Z"
+      },
+      "caption": "A Montana Cabin Among Pines\n\n13245 Balsamroot Rd · Lolo, Montana\n$505,000 · 1.38 acres\n3 beds · 2 baths · 2,046 sq ft\n\nhttps://www.zillow.com/homedetails/13245-Balsamroot-Rd-Lolo-MT-59847/3145082_zpid/\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #MontanaRealEstate\n\nPhotos: MRMLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/56c703996f68e1275d420d75570a8524-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/964a93fd0d89d0d4662a.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/9cf77d021b05e0510870ac424f1b19e5-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/9cf77d021b05e0510870ac424f1b19e5-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/27d62050d98a9695bf768a624e931508-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/27d62050d98a9695bf768a624e931508-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/4311a9ff2fd334d00ae24d8287395c9b-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/4311a9ff2fd334d00ae24d8287395c9b-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "benton-ky",
+      "headline": "Rolling Acres And Kentucky Logs",
+      "checkedAt": "2026-11-21T16:28:06.811Z",
+      "listing": {
+        "id": "zillow:2100313441",
+        "title": "720 Cypress Rd",
+        "location": "Benton, Kentucky",
+        "price": 450000,
+        "acreage": 16.63,
+        "bedrooms": 4,
+        "bathrooms": 2,
+        "squareFeet": 1580,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/720-Cypress-Rd-Benton-KY-42025/2100313441_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/545b04dcd41d91a6437e20f8e9010366-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/720-Cypress-Rd-Benton-KY-42025/2100313441_zpid/",
+          "alt": "Exterior of 720 Cypress Rd in Benton, Kentucky",
+          "credit": "Imagine MLS / Zillow",
+          "width": 1024,
+          "height": 682,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-09T03:18:13.690Z"
+      },
+      "caption": "Rolling Acres And Kentucky Logs\n\n720 Cypress Rd · Benton, Kentucky\n$450,000 · 16.63 acres\n4 beds · 2 baths · 1,580 sq ft\n\nhttps://www.zillow.com/homedetails/720-Cypress-Rd-Benton-KY-42025/2100313441_zpid/\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #KentuckyRealEstate\n\nPhotos: Imagine MLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/545b04dcd41d91a6437e20f8e9010366-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/c733ba2f819fd18e0c84.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/b204a9f16195d1ec35e5ffb9c4670962-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/b204a9f16195d1ec35e5ffb9c4670962-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/b4aa9b314c3ffa302e6b53374117f517-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/b4aa9b314c3ffa302e6b53374117f517-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/c9edbb9f83499375fb4bfde388487f33-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/c9edbb9f83499375fb4bfde388487f33-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "new-brighton-pa",
+      "headline": "Pennsylvania Logs And Autumn Fields",
+      "checkedAt": "2026-11-21T16:28:10.066Z",
+      "listing": {
+        "id": "zillow:337980259",
+        "title": "872 Tulip Dr",
+        "location": "New Brighton, Pennsylvania",
+        "price": 635000,
+        "acreage": 32.18,
+        "bedrooms": 2,
+        "bathrooms": 3,
+        "squareFeet": null,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/872-Tulip-Dr-New-Brighton-PA-15066/337980259_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/c5b7699660fd6f90dc9d96fe0bd1c031-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/872-Tulip-Dr-New-Brighton-PA-15066/337980259_zpid/",
+          "alt": "Exterior of 872 Tulip Dr in New Brighton, Pennsylvania",
+          "credit": "WPMLS / Zillow",
+          "width": 1024,
+          "height": 576,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-08T02:17:34.538Z"
+      },
+      "caption": "Pennsylvania Logs And Autumn Fields\n\n872 Tulip Dr · New Brighton, Pennsylvania\n$635,000 · 32.18 acres\n2 beds · 3 baths\n\nhttps://www.zillow.com/homedetails/872-Tulip-Dr-New-Brighton-PA-15066/337980259_zpid/\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #PennsylvaniaRealEstate\n\nPhotos: WPMLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/c5b7699660fd6f90dc9d96fe0bd1c031-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/5a9acea57b194f7b23ad.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/a716f684dfc3e08c95a7f15ccb3ac433-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/a716f684dfc3e08c95a7f15ccb3ac433-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/8efebe813578581fcf0f687fe6cbb4be-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/8efebe813578581fcf0f687fe6cbb4be-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/4557b4606d4fec33d693db77703033e5-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/4557b4606d4fec33d693db77703033e5-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "bayfield-co",
+      "headline": "Colorado Evenings Among The Pines",
+      "checkedAt": "2026-11-21T16:28:12.658Z",
+      "listing": {
+        "id": "zillow:334055567",
+        "title": "350 Wieland Drive",
+        "location": "Bayfield, Colorado",
+        "price": 595000,
+        "acreage": 3,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "squareFeet": 1289,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/350-Wieland-Dr-Bayfield-CO-81122/334055567_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/3043f23cd1f12d7460e1456ecfef8101-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/350-Wieland-Dr-Bayfield-CO-81122/334055567_zpid/",
+          "alt": "Exterior of 350 Wieland Drive in Bayfield, Colorado",
+          "credit": "CREN / Zillow",
+          "width": 1024,
+          "height": 768,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-08T01:34:02.000Z"
+      },
+      "caption": "Colorado Evenings Among The Pines\n\n350 Wieland Drive · Bayfield, Colorado\n$595,000 · 3 acres\n2 beds · 2 baths · 1,289 sq ft\n\nhttps://www.zillow.com/homedetails/350-Wieland-Dr-Bayfield-CO-81122/334055567_zpid/\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #ColoradoRealEstate\n\nPhotos: CREN / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/2487cede15cb312c38103587f383f8f4-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/152c609b0cc3a12d78c2.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/ffb1b726f07724682acd259336f4dd94-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/ffb1b726f07724682acd259336f4dd94-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/b6df431079fa352543eb92c997ffe188-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/b6df431079fa352543eb92c997ffe188-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/24f9618fdd4d5d5171edba27ad806c38-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/24f9618fdd4d5d5171edba27ad806c38-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "crawford-tn",
+      "headline": "A Tennessee Cabin Beneath Trees",
+      "checkedAt": "2026-11-21T16:28:15.369Z",
+      "listing": {
+        "id": "zillow:63630108",
+        "title": "4003 Chapel Hill Rd",
+        "location": "Crawford, Tennessee",
+        "price": 264900,
+        "acreage": 5.36,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "squareFeet": 2255,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/4003-Chapel-Hill-Rd-Crawford-TN-38554/63630108_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/ccdf17f4dc4bfc79049ad2934691780b-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/4003-Chapel-Hill-Rd-Crawford-TN-38554/63630108_zpid/",
+          "alt": "Exterior of 4003 Chapel Hill Rd in Crawford, Tennessee",
+          "credit": "UCMLS / Zillow",
+          "width": 1024,
+          "height": 682,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-08T01:34:02.000Z"
+      },
+      "caption": "A Tennessee Cabin Beneath Trees\n\n4003 Chapel Hill Rd · Crawford, Tennessee\n$264,900 · 5.36 acres\n3 beds · 3 baths · 2,255 sq ft\n\nhttps://www.zillow.com/homedetails/4003-Chapel-Hill-Rd-Crawford-TN-38554/63630108_zpid/\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #TennesseeRealEstate\n\nPhotos: UCMLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/ccdf17f4dc4bfc79049ad2934691780b-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/b8394b237ad075673701.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/6bf298e84dce192ba5da6ec77c2301a7-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/6bf298e84dce192ba5da6ec77c2301a7-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/f0bff2e7cad4602a081bc1f797d84def-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/f0bff2e7cad4602a081bc1f797d84def-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/90a5c895c847d7b5928cfb7ba20b834f-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/90a5c895c847d7b5928cfb7ba20b834f-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "belvidere-tn",
+      "headline": "Quiet Trails On Keith Springs",
+      "checkedAt": "2026-11-21T16:28:18.172Z",
+      "listing": {
+        "id": "zillow:41290091",
+        "title": "154 Whitetail Ln",
+        "location": "Belvidere, Tennessee",
+        "price": 495000,
+        "acreage": 5.05,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "squareFeet": 2098,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/154-Whitetail-Ln-Belvidere-TN-37306/41290091_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/6a8c1957b1096a935f2f54c38c5887b6-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/154-Whitetail-Ln-Belvidere-TN-37306/41290091_zpid/",
+          "alt": "Exterior of 154 Whitetail Ln in Belvidere, Tennessee",
+          "credit": "RealTracs MLS / Zillow",
+          "width": 1024,
+          "height": 767,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-08T01:34:02.000Z"
+      },
+      "caption": "Quiet Trails On Keith Springs\n\n154 Whitetail Ln · Belvidere, Tennessee\n$495,000 · 5.05 acres\n3 beds · 2 baths · 2,098 sq ft\n\nhttps://www.zillow.com/homedetails/154-Whitetail-Ln-Belvidere-TN-37306/41290091_zpid/\n\nThe loft serves as the third bedroom, per the listing.\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #TennesseeRealEstate\n\nPhotos: RealTracs MLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/cb126e63e21bacab74273b9f947b98e8-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/f31989fc11e3c0c9edec.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/6a8c1957b1096a935f2f54c38c5887b6-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/6a8c1957b1096a935f2f54c38c5887b6-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/9dd3ed7f2cf8c2ac0074036db41ae5da-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/9dd3ed7f2cf8c2ac0074036db41ae5da-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/97567e7970228f9ea6bbb119cf595182-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/97567e7970228f9ea6bbb119cf595182-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
     }
   ]
 }

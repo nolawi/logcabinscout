@@ -58,3 +58,24 @@ test('published carousel is verified by a read without repeating publishing', as
  assert.equal(result.verifiedImageCount,2);assert.equal(result.permalink,'https://www.instagram.com/p/ExamplePost/');
  assert.equal(calls.filter(c=>c.url.endsWith('/media_publish')).length,1);assert.equal(calls.at(-1).method,'GET');
 });
+
+test('ambiguous publish responses reconcile a unique recent carousel without another write',async()=>{
+ for(const mode of ['match','missing','duplicate','stale','wrong-count','wrong-caption','read-error']) {
+  const calls=[];const item={id:'300',caption:'Listing',timestamp:new Date().toISOString(),permalink:'https://www.instagram.com/p/ExamplePost/',children:{data:[{id:'101'},{id:'102'}]}};
+  if(mode==='stale')item.timestamp='2020-01-01T00:00:00Z';
+  if(mode==='wrong-count')item.children.data.pop();
+  if(mode==='wrong-caption')item.caption='Other';
+  const bodies=[identity,quota,{id:'101'},{status_code:'FINISHED'},{id:'102'},{status_code:'FINISHED'},{id:'200'},{status_code:'FINISHED'}];
+  const request=async(url,options)=>{
+   calls.push({url,...options});
+   if(url.endsWith('/media_publish'))return{ok:false,status:403,json:async()=>({error:{code:4}})};
+   if(url.includes('/media?')){if(mode==='read-error')throw Error('unavailable');return{ok:true,json:async()=>({data:mode==='missing'?[]:mode==='duplicate'?[item,item]:[item]})}}
+   return{ok:true,json:async()=>bodies.shift()};
+  };
+  const result=publishInstagram({token:'secret',publish:true,imageUrls:['https://example.com/1.jpg','https://example.com/2.jpg'],caption:'Listing'},request);
+  if(mode==='match'){const published=await result;assert.equal(published.mediaId,'300');assert.equal(published.verifiedImageCount,2)}
+  else await assert.rejects(result,/code 4/);
+  assert.equal(calls.filter(c=>c.url.endsWith('/media_publish')).length,1);
+  assert.equal(calls.at(-1).method,'GET');
+ }
+});

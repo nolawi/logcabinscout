@@ -215,3 +215,12 @@ New captions use headline, blank line, property address/location and home facts,
 blank line, then the bare original listing URL. Material notes follow the URL;
 five hashtags and the final photo credit remain. This supersedes the earlier
 URL-first examples. Existing published captions are retained.
+
+### Ambiguous publish response recovery
+
+If the single publish request returns an error, the publisher makes one read of
+recent account history. It accepts only a unique exact-caption match created
+within the current attempt's time window, with a valid Instagram permalink and
+the expected carousel child count. No publish request is resent. Missing,
+stale, duplicate, mismatched or unreadable results preserve the error and
+`needs-review` protection for manual reconciliation.

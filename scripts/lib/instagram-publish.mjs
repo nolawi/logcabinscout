@@ -64,7 +64,25 @@ export async function publishInstagram({ token, imageUrl = '', imageUrls, captio
   await waitForContainer(container);
   if (!publish) return { published: false, containerId: String(container.id), message: 'Meta fetched and processed the image successfully. Container ready; no post published.' };
   // Never retry this POST: an ambiguous response could otherwise create duplicates.
-  const post = await api(`${base}/media_publish`, { creation_id: String(container.id) });
+  const attemptedAt = Date.now();
+  let post;
+  try { post = await api(`${base}/media_publish`, { creation_id: String(container.id) }); }
+  catch (error) {
+    // Meta can report an error after publishing. Reconcile by reading; never resend.
+    try {
+      const recent = await api(`${base}/media?fields=id,caption,timestamp,permalink,children{id}&limit=10`);
+      const matches = (recent.data ?? []).filter(item => item.caption === caption
+        && /^\d+$/.test(String(item.id))
+        && Date.parse(item.timestamp) >= attemptedAt - 60000
+        && Date.parse(item.timestamp) <= Date.now() + 60000
+        && /^https:\/\/(www\.)?instagram\.com\/p\/[A-Za-z0-9_-]+\/?$/.test(item.permalink ?? '')
+        && (!carousel || item.children?.data?.length === urls.length));
+      if (matches.length === 1) return { published: true, mediaId: String(matches[0].id), imageCount: urls.length,
+        verifiedImageCount: carousel ? matches[0].children.data.length : 1, permalink: matches[0].permalink,
+        message: 'Published post confirmed in account history after an ambiguous response.' };
+    } catch { /* Preserve the original failure when history cannot confirm success. */ }
+    throw error;
+  }
   if (!/^\d+$/.test(String(post.id))) throw new Error('Publishing response was inconclusive. Check Instagram before retrying.');
   // Verify the result with a read; never repeat the publish POST if this read fails.
   let permalink, verifiedImageCount;
