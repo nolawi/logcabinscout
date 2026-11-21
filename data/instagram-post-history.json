@@ -299,12 +299,18 @@
       "mediaId": "17991590925120070",
       "permalink": "https://www.instagram.com/p/DgAqvb4lx3B/",
       "imageCount": 4
-    },
+    }
+  ],
+  "failedAttempts": [
     {
       "queueId": "crawford-tn",
       "listingId": "zillow:63630108",
-      "state": "needs-review",
-      "startedAt": "2026-11-21T16:32:57.783Z"
+      "state": "confirmed-not-published",
+      "startedAt": "2026-11-21T16:32:57.783Z",
+      "reconciledAt": "2026-11-21T16:33:53.394Z",
+      "reconciliationRunId": "44925237931",
+      "failedRunId": "44925092262",
+      "reason": "Meta processing error HTTP 400 code -2; subsequent account history confirms no Crawford post. One fresh attempt authorized within the six-post batch."
     }
   ]
 }
