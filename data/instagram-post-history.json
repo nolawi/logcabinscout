@@ -283,8 +283,12 @@
     {
       "queueId": "new-brighton-pa",
       "listingId": "zillow:337980259",
-      "state": "publishing",
-      "startedAt": "2026-11-21T16:30:57.831Z"
+      "state": "published",
+      "startedAt": "2026-11-21T16:30:57.831Z",
+      "publishedAt": "2026-11-21T16:31:44.699Z",
+      "mediaId": "18016074677994524",
+      "permalink": "https://www.instagram.com/p/DgAqmP3l6JE/",
+      "imageCount": 4
     }
   ]
 }
