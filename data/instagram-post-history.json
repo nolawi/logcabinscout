@@ -309,6 +309,12 @@
       "mediaId": "18123499358282581",
       "permalink": "https://www.instagram.com/p/DgArA0fDac_/",
       "imageCount": 4
+    },
+    {
+      "queueId": "belvidere-tn",
+      "listingId": "zillow:41290091",
+      "state": "publishing",
+      "startedAt": "2026-11-21T16:35:26.476Z"
     }
   ],
   "failedAttempts": [
