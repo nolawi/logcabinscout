@@ -293,8 +293,12 @@
     {
       "queueId": "bayfield-co",
       "listingId": "zillow:334055567",
-      "state": "publishing",
-      "startedAt": "2026-11-21T16:32:22.390Z"
+      "state": "published",
+      "startedAt": "2026-11-21T16:32:22.390Z",
+      "publishedAt": "2026-11-21T16:32:56.055Z",
+      "mediaId": "17991590925120070",
+      "permalink": "https://www.instagram.com/p/DgAqvb4lx3B/",
+      "imageCount": 4
     }
   ]
 }
