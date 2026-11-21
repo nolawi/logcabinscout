@@ -303,7 +303,7 @@
     {
       "queueId": "crawford-tn",
       "listingId": "zillow:63630108",
-      "state": "publishing",
+      "state": "needs-review",
       "startedAt": "2026-11-21T16:32:57.783Z"
     }
   ]
