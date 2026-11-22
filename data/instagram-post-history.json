@@ -323,8 +323,12 @@
     {
       "queueId": "breckenridge-co",
       "listingId": "zillow:2075700125",
-      "state": "publishing",
-      "startedAt": "2026-11-22T13:50:49.589Z"
+      "state": "published",
+      "startedAt": "2026-11-22T13:50:49.589Z",
+      "publishedAt": "2026-11-22T13:51:24.513Z",
+      "mediaId": "18147674590580445",
+      "permalink": "https://www.instagram.com/p/DgC9DICjbQx/",
+      "imageCount": 4
     }
   ],
   "failedAttempts": [
