@@ -344,6 +344,18 @@
         "interior": 6
       },
       "notes": "The loft serves as the third bedroom, per the listing."
+    },
+    {
+      "id": "breckenridge-co",
+      "listingId": "zillow:2075700125",
+      "coverLocation": "Breckenridge, CO",
+      "headline": "A Colorado Cabin Beneath Quandary",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 38,
+        "land": 8,
+        "interior": 11
+      }
     }
   ]
 }

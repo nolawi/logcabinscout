@@ -1456,6 +1456,58 @@
           "imageUrl": "https://photos.zillowstatic.com/fp/97567e7970228f9ea6bbb119cf595182-uncropped_scaled_within_1536_1152.jpg"
         }
       ]
+    },
+    {
+      "id": "breckenridge-co",
+      "headline": "A Colorado Cabin Beneath Quandary",
+      "checkedAt": "2026-11-22T13:50:18.796Z",
+      "listing": {
+        "id": "zillow:2075700125",
+        "title": "0516 County Road 674",
+        "location": "Breckenridge, Colorado",
+        "price": 899000,
+        "acreage": 0.5,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "squareFeet": 1736,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/516-County-Road-674-Breckenridge-CO-80424/2075700125_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/8d665d3449cfa685cc42d143a5b320d9-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/516-County-Road-674-Breckenridge-CO-80424/2075700125_zpid/",
+          "alt": "Exterior of 0516 County Road 674 in Breckenridge, Colorado",
+          "credit": "Altitude Realtors / Zillow",
+          "width": 1024,
+          "height": 768,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-08T01:34:02.000Z"
+      },
+      "caption": "A Colorado Cabin Beneath Quandary\n\n0516 County Road 674 · Breckenridge, Colorado\n$899,000 · 0.5 acres\n3 beds · 3 baths · 1,736 sq ft\n\nhttps://www.zillow.com/homedetails/516-County-Road-674-Breckenridge-CO-80424/2075700125_zpid/\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #ColoradoRealEstate\n\nPhotos: Altitude Realtors / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/8d665d3449cfa685cc42d143a5b320d9-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/4e73d1360530df9032da.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/5b43992486ecaa5807a97afd8a559e5c-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/5b43992486ecaa5807a97afd8a559e5c-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/6d85b8c94ed3b2cdc3c09e416e7f4327-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/6d85b8c94ed3b2cdc3c09e416e7f4327-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/aa4582d29e1ee956186dcb4d1a70c05d-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/aa4582d29e1ee956186dcb4d1a70c05d-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
     }
   ]
 }
