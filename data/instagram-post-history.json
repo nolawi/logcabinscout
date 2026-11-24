@@ -339,6 +339,12 @@
       "mediaId": "18124890224063136",
       "permalink": "https://www.instagram.com/p/DgHezAKkZLZ/",
       "imageCount": 4
+    },
+    {
+      "queueId": "livingston-tn",
+      "listingId": "zillow:81214974",
+      "state": "publishing",
+      "startedAt": "2026-11-24T08:03:15.748Z"
     }
   ],
   "failedAttempts": [
