@@ -333,8 +333,12 @@
     {
       "queueId": "pagosa-springs-co",
       "listingId": "zillow:235403768",
-      "state": "publishing",
-      "startedAt": "2026-11-24T08:02:44.686Z"
+      "state": "published",
+      "startedAt": "2026-11-24T08:02:44.686Z",
+      "publishedAt": "2026-11-24T08:03:14.243Z",
+      "mediaId": "18124890224063136",
+      "permalink": "https://www.instagram.com/p/DgHezAKkZLZ/",
+      "imageCount": 4
     }
   ],
   "failedAttempts": [
