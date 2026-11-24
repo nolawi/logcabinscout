@@ -343,8 +343,12 @@
     {
       "queueId": "livingston-tn",
       "listingId": "zillow:81214974",
-      "state": "publishing",
-      "startedAt": "2026-11-24T08:03:15.748Z"
+      "state": "published",
+      "startedAt": "2026-11-24T08:03:15.748Z",
+      "publishedAt": "2026-11-24T08:03:49.373Z",
+      "mediaId": "18129074188921372",
+      "permalink": "https://www.instagram.com/p/DgHe2_WF7It/",
+      "imageCount": 4
     }
   ],
   "failedAttempts": [
