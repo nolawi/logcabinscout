@@ -1508,6 +1508,162 @@
           "imageUrl": "https://photos.zillowstatic.com/fp/aa4582d29e1ee956186dcb4d1a70c05d-uncropped_scaled_within_1536_1152.jpg"
         }
       ]
+    },
+    {
+      "id": "pagosa-springs-co",
+      "headline": "Colorado Logs And Open Acres",
+      "checkedAt": "2026-11-24T08:02:00.114Z",
+      "listing": {
+        "id": "zillow:235403768",
+        "title": "1725 CR 600",
+        "location": "Pagosa Springs, Colorado",
+        "price": 1500000,
+        "acreage": 37.93,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "squareFeet": 2128,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/1725-County-Road-600-Pagosa-Springs-CO-81147/235403768_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/20b5ce851490d69ee9162fa7957098ce-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/1725-County-Road-600-Pagosa-Springs-CO-81147/235403768_zpid/",
+          "alt": "Exterior of 1725 CR 600 in Pagosa Springs, Colorado",
+          "credit": "CREN / Zillow",
+          "width": 1024,
+          "height": 767,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-08T01:34:02.000Z"
+      },
+      "caption": "Colorado Logs And Open Acres\n\n1725 CR 600 · Pagosa Springs, Colorado\n$1,500,000 · 37.93 acres\n4 beds · 3 baths · 2,128 sq ft\n\nhttps://www.zillow.com/homedetails/1725-County-Road-600-Pagosa-Springs-CO-81147/235403768_zpid/\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #ColoradoRealEstate\n\nPhotos: CREN / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/20b5ce851490d69ee9162fa7957098ce-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/4629a017ce35c6ec2e8b.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/eb455e7a6930ae60c30ac6eed67dd341-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/eb455e7a6930ae60c30ac6eed67dd341-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/93c8be7b1f1105902fe0666a6129ac8f-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/93c8be7b1f1105902fe0666a6129ac8f-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/d1637b860ff570c05f9a607163f20827-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/d1637b860ff570c05f9a607163f20827-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "livingston-tn",
+      "headline": "Tennessee Logs And Autumn Pastures",
+      "checkedAt": "2026-11-24T08:02:02.309Z",
+      "listing": {
+        "id": "zillow:81214974",
+        "title": "173 Coyote Ln",
+        "location": "Livingston, Tennessee",
+        "price": 439900,
+        "acreage": 7.07,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "squareFeet": 1275,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/173-Coyote-Ln-Livingston-TN-38570/81214974_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/e951350c96160ee7ebfbb7a37262f700-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/173-Coyote-Ln-Livingston-TN-38570/81214974_zpid/",
+          "alt": "Exterior of 173 Coyote Ln in Livingston, Tennessee",
+          "credit": "UCMLS / Zillow",
+          "width": 1024,
+          "height": 683,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-08T01:34:02.000Z"
+      },
+      "caption": "Tennessee Logs And Autumn Pastures\n\n173 Coyote Ln · Livingston, Tennessee\n$439,900 · 7.07 acres\n3 beds · 2 baths · 1,275 sq ft\n\nhttps://www.zillow.com/homedetails/173-Coyote-Ln-Livingston-TN-38570/81214974_zpid/\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #TennesseeRealEstate\n\nPhotos: UCMLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/e951350c96160ee7ebfbb7a37262f700-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/092c8266cf7cf91a7a58.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/324182667e7101df615bb231fbbd331c-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/324182667e7101df615bb231fbbd331c-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/cf5bbba55bb90ed96456aa8da79f5f05-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/cf5bbba55bb90ed96456aa8da79f5f05-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/7ba60c4ebf95855fa51a52990a97aff6-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/7ba60c4ebf95855fa51a52990a97aff6-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "durango-co",
+      "headline": "Off Grid Above The World",
+      "checkedAt": "2026-11-24T08:02:04.519Z",
+      "listing": {
+        "id": "zillow:463356865",
+        "title": "0 Oro Fino Fs Rd",
+        "location": "Durango, Colorado",
+        "price": 625000,
+        "acreage": 10.38,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "squareFeet": 2400,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/0-Oro-Fino-Fs-Rd-Durango-CO-81301/463356865_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/62cc7e4f19371c1cbe303cd64129bcee-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/0-Oro-Fino-Fs-Rd-Durango-CO-81301/463356865_zpid/",
+          "alt": "Exterior of 0 Oro Fino Fs Rd in Durango, Colorado",
+          "credit": "My State MLS / Zillow",
+          "width": 1024,
+          "height": 768,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-08T01:34:02.000Z"
+      },
+      "caption": "Off Grid Above The World\n\n0 Oro Fino Fs Rd · Durango, Colorado\n$625,000 · 10.38 acres\n3 beds · 2 baths · 2,400 sq ft\n\nhttps://www.zillow.com/homedetails/0-Oro-Fino-Fs-Rd-Durango-CO-81301/463356865_zpid/\n\nOff-grid at 10,500 feet; winter access requires a snowmobile or tracked vehicle. Listed square footage differs between the property facts and description; verify with the agent.\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #ColoradoRealEstate\n\nPhotos: My State MLS / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/9840c79e6d73711a57355869b34a08bb-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/17f74b2e4a47d375e154.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/3871e9ce88413d51070a09d03a224952-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/3871e9ce88413d51070a09d03a224952-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/5c2fd9b54e830fd65b24ba40b1475114-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/5c2fd9b54e830fd65b24ba40b1475114-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/d3a8b6eab651aa21c594bf1ca664159a-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/d3a8b6eab651aa21c594bf1ca664159a-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
     }
   ]
 }

@@ -356,6 +356,43 @@
         "land": 8,
         "interior": 11
       }
+    },
+    {
+      "id": "pagosa-springs-co",
+      "listingId": "zillow:235403768",
+      "coverLocation": "Pagosa Springs, CO",
+      "headline": "Colorado Logs And Open Acres",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 11,
+        "land": 6,
+        "interior": 15
+      }
+    },
+    {
+      "id": "livingston-tn",
+      "listingId": "zillow:81214974",
+      "coverLocation": "Livingston, TN",
+      "headline": "Tennessee Logs And Autumn Pastures",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 5,
+        "land": 10,
+        "interior": 52
+      }
+    },
+    {
+      "id": "durango-co",
+      "listingId": "zillow:463356865",
+      "coverLocation": "Durango, CO",
+      "headline": "Off Grid Above The World",
+      "photoIndexes": {
+        "cover": 11,
+        "exterior": 36,
+        "land": 4,
+        "interior": 21
+      },
+      "notes": "Off-grid at 10,500 feet; winter access requires a snowmobile or tracked vehicle. Listed square footage differs between the property facts and description; verify with the agent."
     }
   ]
 }
