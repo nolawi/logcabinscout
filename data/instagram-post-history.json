@@ -383,8 +383,12 @@
     {
       "queueId": "floyd-va",
       "listingId": "zillow:335642692",
-      "state": "publishing",
-      "startedAt": "2026-11-27T23:16:57.602Z"
+      "state": "published",
+      "startedAt": "2026-11-27T23:16:57.602Z",
+      "publishedAt": "2026-11-27T23:17:43.198Z",
+      "mediaId": "18053033387820062",
+      "permalink": "https://www.instagram.com/p/DgQ11BcFPrC/",
+      "imageCount": 4
     }
   ],
   "failedAttempts": [
