@@ -373,8 +373,12 @@
     {
       "queueId": "greenbush-me",
       "listingId": "zillow:442542471",
-      "state": "publishing",
-      "startedAt": "2026-11-27T23:16:18.660Z"
+      "state": "published",
+      "startedAt": "2026-11-27T23:16:18.660Z",
+      "publishedAt": "2026-11-27T23:16:56.147Z",
+      "mediaId": "18149727211573457",
+      "permalink": "https://www.instagram.com/p/DgQ1v0IFAPQ/",
+      "imageCount": 4
     }
   ],
   "failedAttempts": [
