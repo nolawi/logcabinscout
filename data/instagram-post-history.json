@@ -379,6 +379,12 @@
       "mediaId": "18149727211573457",
       "permalink": "https://www.instagram.com/p/DgQ1v0IFAPQ/",
       "imageCount": 4
+    },
+    {
+      "queueId": "floyd-va",
+      "listingId": "zillow:335642692",
+      "state": "publishing",
+      "startedAt": "2026-11-27T23:16:57.602Z"
     }
   ],
   "failedAttempts": [
