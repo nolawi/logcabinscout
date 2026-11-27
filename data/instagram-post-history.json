@@ -363,8 +363,12 @@
     {
       "queueId": "pagosa-project-co",
       "listingId": "zillow:235401431",
-      "state": "publishing",
-      "startedAt": "2026-11-27T23:15:27.215Z"
+      "state": "published",
+      "startedAt": "2026-11-27T23:15:27.215Z",
+      "publishedAt": "2026-11-27T23:16:17.323Z",
+      "mediaId": "18121334318091668",
+      "permalink": "https://www.instagram.com/p/DgQ1qkylLmQ/",
+      "imageCount": 4
     }
   ],
   "failedAttempts": [
