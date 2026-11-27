@@ -393,6 +393,43 @@
         "interior": 21
       },
       "notes": "Off-grid at 10,500 feet; winter access requires a snowmobile or tracked vehicle. Listed square footage differs between the property facts and description; verify with the agent."
+    },
+    {
+      "id": "pagosa-project-co",
+      "listingId": "zillow:235401431",
+      "coverLocation": "Pagosa Springs, CO",
+      "headline": "A Colorado Cabin To Restore",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 33,
+        "land": 27,
+        "interior": 12
+      },
+      "notes": "Sold as-is; needs updates and TLC, per the listing."
+    },
+    {
+      "id": "greenbush-me",
+      "listingId": "zillow:442542471",
+      "coverLocation": "Greenbush, ME",
+      "headline": "Fourteen Acres Of Maine Quiet",
+      "photoIndexes": {
+        "cover": 2,
+        "exterior": 1,
+        "land": 17,
+        "interior": 4
+      }
+    },
+    {
+      "id": "floyd-va",
+      "listingId": "zillow:335642692",
+      "coverLocation": "Floyd, VA",
+      "headline": "Blue Ridge Logs Beside Water",
+      "photoIndexes": {
+        "cover": 0,
+        "exterior": 4,
+        "land": 1,
+        "interior": 11
+      }
     }
   ]
 }

@@ -1664,6 +1664,162 @@
           "imageUrl": "https://photos.zillowstatic.com/fp/d3a8b6eab651aa21c594bf1ca664159a-uncropped_scaled_within_1536_1152.jpg"
         }
       ]
+    },
+    {
+      "id": "pagosa-project-co",
+      "headline": "A Colorado Cabin To Restore",
+      "checkedAt": "2026-11-27T23:14:42.594Z",
+      "listing": {
+        "id": "zillow:235401431",
+        "title": "1059 E Stollsteimer",
+        "location": "Pagosa Springs, Colorado",
+        "price": 160000,
+        "acreage": 1.1,
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "squareFeet": 620,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/1059-E-Stollsteimer-Rd-Pagosa-Springs-CO-81147/235401431_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/08c56331234cdacd1a3b84c15d884838-o_a.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/1059-E-Stollsteimer-Rd-Pagosa-Springs-CO-81147/235401431_zpid/",
+          "alt": "Exterior of 1059 E Stollsteimer in Pagosa Springs, Colorado",
+          "credit": "CREN / Zillow",
+          "width": 1024,
+          "height": 698,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-08T01:34:02.000Z"
+      },
+      "caption": "A Colorado Cabin To Restore\n\n1059 E Stollsteimer · Pagosa Springs, Colorado\n$160,000 · 1.1 acres\n1 bed · 1 bath · 620 sq ft\n\nhttps://www.zillow.com/homedetails/1059-E-Stollsteimer-Rd-Pagosa-Springs-CO-81147/235401431_zpid/\n\nSold as-is; needs updates and TLC, per the listing.\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #ColoradoRealEstate\n\nPhotos: CREN / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/08c56331234cdacd1a3b84c15d884838-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/28bc567159e606c20925.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/8e892f6074e09f8e669fab58155abd3d-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/8e892f6074e09f8e669fab58155abd3d-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/144af744c8d9504097c7d2a575fb6e76-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/144af744c8d9504097c7d2a575fb6e76-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/a74f07ab3d4105b5deb6a16ba347e857-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/a74f07ab3d4105b5deb6a16ba347e857-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "greenbush-me",
+      "headline": "Fourteen Acres Of Maine Quiet",
+      "checkedAt": "2026-11-27T23:14:45.146Z",
+      "listing": {
+        "id": "zillow:442542471",
+        "title": "27 Town Farm Road",
+        "location": "Greenbush, Maine",
+        "price": 124900,
+        "acreage": 14,
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "squareFeet": 756,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/27-Town-Farm-Rd-Greenbush-ME-04418/442542471_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/88a075bb5e9d7c83a96ae11f9cad101c-uncropped_scaled_within_1536_1152.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/27-Town-Farm-Rd-Greenbush-ME-04418/442542471_zpid/",
+          "alt": "Log cabin exterior at 27 Town Farm Road in Greenbush",
+          "credit": "Maine Listings / Zillow",
+          "width": 1536,
+          "height": 1152,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-27T23:14:39.007Z"
+      },
+      "caption": "Fourteen Acres Of Maine Quiet\n\n27 Town Farm Road · Greenbush, Maine\n$124,900 · 14 acres\n1 bed · 1 bath · 756 sq ft\n\nhttps://www.zillow.com/homedetails/27-Town-Farm-Rd-Greenbush-ME-04418/442542471_zpid/\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #MaineRealEstate\n\nPhotos: Maine Listings / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/88a075bb5e9d7c83a96ae11f9cad101c-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/ae046842da3b88f026bd.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/568189b4583cfa695b798b8f063dfb8f-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/568189b4583cfa695b798b8f063dfb8f-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/89b36985f5f1322a92b745c215bb2fcc-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/89b36985f5f1322a92b745c215bb2fcc-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/b7af3f02a3a02ea18d196b1a942a0322-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/b7af3f02a3a02ea18d196b1a942a0322-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "floyd-va",
+      "headline": "Blue Ridge Logs Beside Water",
+      "checkedAt": "2026-11-27T23:14:47.409Z",
+      "listing": {
+        "id": "zillow:335642692",
+        "title": "183 Pine Mountain Rd NE",
+        "location": "Floyd, Virginia",
+        "price": 449000,
+        "acreage": 10.01,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "squareFeet": 1519,
+        "propertyType": "Log cabin",
+        "listingUrl": "https://www.zillow.com/homedetails/183-Pine-Mountain-Rd-NE-Floyd-VA-24091/335642692_zpid/",
+        "photo": {
+          "url": "https://photos.zillowstatic.com/fp/519ba8e1265adfa1cf75192b1a09026c-uncropped_scaled_within_1536_1152.jpg",
+          "sourceUrl": "https://www.zillow.com/homedetails/183-Pine-Mountain-Rd-NE-Floyd-VA-24091/335642692_zpid/",
+          "alt": "Log cabin exterior at 183 Pine Mountain Rd NE in Floyd",
+          "credit": "RVAR / Zillow",
+          "width": 1536,
+          "height": 1022,
+          "allowCropping": false,
+          "variants": []
+        },
+        "verified": true,
+        "lastCheckedAt": "2026-11-27T23:14:39.007Z"
+      },
+      "caption": "Blue Ridge Logs Beside Water\n\n183 Pine Mountain Rd NE · Floyd, Virginia\n$449,000 · 10.01 acres\n3 beds · 2 baths · 1,519 sq ft\n\nhttps://www.zillow.com/homedetails/183-Pine-Mountain-Rd-NE-Floyd-VA-24091/335642692_zpid/\n\n#LogCabinScout #LogCabinsForSale #CabinLife #LogCabin #VirginiaRealEstate\n\nPhotos: RVAR / Zillow.",
+      "slides": [
+        {
+          "role": "cover",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/519ba8e1265adfa1cf75192b1a09026c-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/nolawi/logcabinscout/main/public/social/instagram/covers/4d39156e7b6d451a4937.jpg"
+        },
+        {
+          "role": "exterior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/feff20077ca6b6a9a898fb5e4dca8efb-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/feff20077ca6b6a9a898fb5e4dca8efb-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "land",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/ba3503b81615d8698488eac46337ce3e-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/ba3503b81615d8698488eac46337ce3e-uncropped_scaled_within_1536_1152.jpg"
+        },
+        {
+          "role": "interior",
+          "sourceUrl": "https://photos.zillowstatic.com/fp/405ceb2f139436c1318c7b11e4c42328-uncropped_scaled_within_1536_1152.jpg",
+          "imageUrl": "https://photos.zillowstatic.com/fp/405ceb2f139436c1318c7b11e4c42328-uncropped_scaled_within_1536_1152.jpg"
+        }
+      ]
     }
   ]
 }

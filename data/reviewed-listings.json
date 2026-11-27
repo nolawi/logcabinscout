@@ -1025,7 +1025,7 @@
     "status": "active",
     "verified": true,
     "lastCheckedAt": "2026-11-12T16:58:48.696Z",
-    "logConstructionEvidence": "This 4.58\u00b1 acre waterfront log cabin property in Cape Girardeau County, MO near Altenburg offers ideal country living in Cape Girardeau MO. The main log cabin provides private residential living space designed for comfortable, full-time country living.",
+    "logConstructionEvidence": "This 4.58± acre waterfront log cabin property in Cape Girardeau County, MO near Altenburg offers ideal country living in Cape Girardeau MO. The main log cabin provides private residential living space designed for comfortable, full-time country living.",
     "photo": {
       "url": "https://photos.zillowstatic.com/fp/36f1876ebb93e0342bbd67ed5de1d139-uncropped_scaled_within_1344_1008.jpg",
       "sourceUrl": "https://www.zillow.com/homedetails/385-Autumn-Rdg-Altenburg-MO-63732/119288800_zpid/",
@@ -1161,5 +1161,51 @@
       "allowCropping": false,
       "variants": []
     }
+  },
+  {
+    "id": "zillow:442542471",
+    "title": "27 Town Farm Road",
+    "location": "Greenbush, Maine",
+    "price": 124900,
+    "acreage": 14,
+    "listingUrl": "https://www.zillow.com/homedetails/27-Town-Farm-Rd-Greenbush-ME-04418/442542471_zpid/",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "squareFeet": 756,
+    "lastCheckedAt": "2026-11-27T23:14:39.007Z",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/88a075bb5e9d7c83a96ae11f9cad101c-uncropped_scaled_within_1536_1152.jpg",
+      "alt": "Log cabin exterior at 27 Town Farm Road in Greenbush",
+      "credit": "Maine Listings / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/27-Town-Farm-Rd-Greenbush-ME-04418/442542471_zpid/",
+      "width": 1536,
+      "height": 1152
+    },
+    "discoveryId": "zillow:442542471",
+    "status": "active",
+    "verified": true
+  },
+  {
+    "id": "zillow:335642692",
+    "title": "183 Pine Mountain Rd NE",
+    "location": "Floyd, Virginia",
+    "price": 449000,
+    "acreage": 10.01,
+    "listingUrl": "https://www.zillow.com/homedetails/183-Pine-Mountain-Rd-NE-Floyd-VA-24091/335642692_zpid/",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 1519,
+    "lastCheckedAt": "2026-11-27T23:14:39.007Z",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/519ba8e1265adfa1cf75192b1a09026c-uncropped_scaled_within_1536_1152.jpg",
+      "alt": "Log cabin exterior at 183 Pine Mountain Rd NE in Floyd",
+      "credit": "RVAR / Zillow",
+      "sourceUrl": "https://www.zillow.com/homedetails/183-Pine-Mountain-Rd-NE-Floyd-VA-24091/335642692_zpid/",
+      "width": 1536,
+      "height": 1022
+    },
+    "discoveryId": "zillow:335642692",
+    "status": "active",
+    "verified": true
   }
 ]

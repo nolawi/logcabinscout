@@ -1126,5 +1126,53 @@
     },
     "verified": true,
     "lastCheckedAt": "2026-11-12T16:58:48.696Z"
+  },
+  {
+    "id": "zillow:442542471",
+    "title": "27 Town Farm Road",
+    "location": "Greenbush, Maine",
+    "price": 124900,
+    "acreage": 14,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "squareFeet": 756,
+    "propertyType": "Log cabin",
+    "listingUrl": "https://www.zillow.com/homedetails/27-Town-Farm-Rd-Greenbush-ME-04418/442542471_zpid/",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/88a075bb5e9d7c83a96ae11f9cad101c-uncropped_scaled_within_1536_1152.jpg",
+      "sourceUrl": "https://www.zillow.com/homedetails/27-Town-Farm-Rd-Greenbush-ME-04418/442542471_zpid/",
+      "alt": "Log cabin exterior at 27 Town Farm Road in Greenbush",
+      "credit": "Maine Listings / Zillow",
+      "width": 1536,
+      "height": 1152,
+      "allowCropping": false,
+      "variants": []
+    },
+    "verified": true,
+    "lastCheckedAt": "2026-11-27T23:14:39.007Z"
+  },
+  {
+    "id": "zillow:335642692",
+    "title": "183 Pine Mountain Rd NE",
+    "location": "Floyd, Virginia",
+    "price": 449000,
+    "acreage": 10.01,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 1519,
+    "propertyType": "Log cabin",
+    "listingUrl": "https://www.zillow.com/homedetails/183-Pine-Mountain-Rd-NE-Floyd-VA-24091/335642692_zpid/",
+    "photo": {
+      "url": "https://photos.zillowstatic.com/fp/519ba8e1265adfa1cf75192b1a09026c-uncropped_scaled_within_1536_1152.jpg",
+      "sourceUrl": "https://www.zillow.com/homedetails/183-Pine-Mountain-Rd-NE-Floyd-VA-24091/335642692_zpid/",
+      "alt": "Log cabin exterior at 183 Pine Mountain Rd NE in Floyd",
+      "credit": "RVAR / Zillow",
+      "width": 1536,
+      "height": 1022,
+      "allowCropping": false,
+      "variants": []
+    },
+    "verified": true,
+    "lastCheckedAt": "2026-11-27T23:14:39.007Z"
   }
 ]
