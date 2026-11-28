@@ -12,9 +12,8 @@ The existing source checks and 30-day expiry still apply. Instagram records
 never renew a property's review date or override its price or sale source.
 
 Cards keep the original source links and add a secondary “View on Instagram”
-link. “As seen on Instagram” combines with search, state, maximum price, sort,
-and Saved only. Clear filters resets both toggles. Empty intersections show an
-explanation and the clear action remains available.
+link. There is no Instagram-only filter or promotional badge. Existing search,
+state, price, sort and saved controls continue to operate on the whole collection.
 
 The history is read at build time, shared by prerendering and client rendering.
 New post links appear on the website after the next manual website build/deploy;
@@ -27,3 +26,6 @@ items, sorting, clear/reset, empty intersections, safe links, and hydration.
 Three legacy published-property entries have no permalink and are excluded.
 
 Release status: implemented on main; website deployment remains manual.
+
+November 28 refinement: removed the Instagram-only filter at the owner’s request;
+keep the integration to simple card links.

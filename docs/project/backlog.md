@@ -58,7 +58,7 @@ stable across this file, GitHub issues, and Notion. No arbitrary delivery dates.
 | ID | Priority | Status | Task | Done when | Depends on |
 |---|---|---|---|---|---|
 | LCS-08 | P1 | Ready | Define one shared listing and content model | Document stable property IDs, source facts, review dates, photo provenance, captions, slide selections, queue states, and published Instagram IDs/links. Decide which fields remain file-backed initially. | — |
-| LCS-09 | P1 | Done | Link published Instagram posts to website listings | Join publication history to property IDs; show verified post links on relevant cards/detail views and offer an “As seen on Instagram” view. No guessed links or browser-only API secrets. | 05, 08 |
+| LCS-09 | P1 | Done | Link published Instagram posts to website listings | Join publication history to property IDs; show verified post links on relevant cards/detail views Keep this to simple secondary links; no Instagram-only filter or promotional badges. No guessed links or browser-only API secrets. | 05, 08 |
 | LCS-10 | P1 | Backlog | Build a private operations dashboard | Secure the operator view; show candidates, stale listings, ready posts, published posts, failures, and last successful jobs. Start read-only; add actions only as needed. | 08 |
 | LCS-11 | P1 | Backlog | Connect Supabase when the dashboard needs it | Review the existing schema, migrate a small sample, apply access rules, keep tokens server-side, and preserve stable IDs/history. Document rollback/export. Stay file-backed until persistence needs justify migration. | 08, 10 |
 | LCS-12 | P1 | Ready | Expand reliable nationwide discovery | Improve free-first state rotation, source coverage, log-home evidence, and deduplication. Review a small new batch across several states; measure candidate quality and requests. Do not introduce paid API usage by default. | — |
@@ -159,3 +159,16 @@ Evidence: `docs/website-instagram.md`, `src/lib/instagram.ts` and its tests;
 104 tests passing, production build/SEO checks passing, desktop interactions
 verified with 49 current cards and 37 linked properties. No guessed links for
 three legacy records without permalinks. No website deployment performed.
+
+
+### Direction refinement — November 28, 2026
+
+The owner requested simple Instagram links only. Removed the Instagram-only
+filter; keep card links and the existing header link. This supersedes earlier
+“As seen on Instagram” plans and delivery notes. Do not expand the social
+integration into promotional badges or dedicated filtering.
+
+Next recommended task: a listing and photo-health audit (LCS-13), followed by
+small targeted fixes and source-checked additions (LCS-12). Establish the actual
+broken-photo/stale counts before deciding the scope. Keep brand/domain research
+in the backlog; no dashboard or database work is needed for this next step.
