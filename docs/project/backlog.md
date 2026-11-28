@@ -245,3 +245,15 @@ publication verification and monitoring. A hosted dashboard is not a prerequisit
 for preparation automation. Scheduled posting remains gated on a reliable source
 runner and the owner's chosen cadence. No domain purchase, DNS/profile change,
 paid service, website deployment or scheduled post was performed by this update.
+
+
+### Domain shortlist researched — November 28, 2026
+
+[Name and published-rate comparison](domain-shortlist-2026-11-28.md) recommends
+logcabinscout.com at Porkbun: published standard .com registration/renewal $11.81.
+Namecheap advertises an eligible new-customer $6.48 first-year promo but lists
+$19.98 renewal, with applicable ICANN fee extra. Registry lookups returned no
+record; checkout availability is not guaranteed. See the report for conditions.
+01a–01c research is recorded; LCS-01 is not Done. Domain/registrar selection,
+checkout authorization, purchase, dates and renewal reminders remain outstanding.
+The domain register records the recommendation without claiming ownership.

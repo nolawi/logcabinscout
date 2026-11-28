@@ -25,9 +25,9 @@ subscription funnel, or dedicated mobile redesign in this phase.
 
 | Subtask | Status | Completion / next action |
 |---|---|---|
-| 01a — Shortlist names | Ready | Check brand fit and live availability of logcabinscout.com, scoutlogcabins.com, and a small number of readable alternatives. These are ideas, not confirmed available domains. Prefer .com; avoid awkward spelling or premium resale names. |
-| 01b — Compare actual checkout totals | Ready | Compare two or three reputable registrars, including a low-cost option. Record first-year total, renewal price, transfer price, privacy, taxes/fees, and whether DNS/redirects cost extra. Skip unnecessary hosting/email/SSL bundles. |
-| 01c — Set a one-year budget | Ready | Aim for roughly US$10–20 for year one and standard renewal around US$25 or less as a planning target, not a quoted offer. If a .com costs more, surface the tradeoff rather than chasing a misleading $1 promotion. |
+| 01a — Shortlist names | Research complete | Check brand fit and live availability of logcabinscout.com, scoutlogcabins.com, and a small number of readable alternatives. These are ideas, not confirmed available domains. Prefer .com; avoid awkward spelling or premium resale names. |
+| 01b — Compare actual checkout totals | Published rates compared; cart pending | Compare two or three reputable registrars, including a low-cost option. Record first-year total, renewal price, transfer price, privacy, taxes/fees, and whether DNS/redirects cost extra. Skip unnecessary hosting/email/SSL bundles. |
+| 01c — Set a one-year budget | Target recorded | Aim for roughly US$10–20 for year one and standard renewal around US$25 or less as a planning target, not a quoted offer. If a .com costs more, surface the tradeoff rather than chasing a misleading $1 promotion. |
 | 01d — Select and register | Blocked: selection/payment | Owner chooses the exact domain and authorizes the checkout total; register one year in the owner's registrar account. Keep payment/account recovery private. Do not buy a name without authorization. |
 | 01e — Record ownership and renewal | Backlog | Fill domain-register.csv with registrar, dates, renewal total, auto-renew decision, and reminder dates. Keep account IDs, passwords, and payment information out of Git. Set renewal reminders 60 and 30 days ahead; create actual reminders only when dates/service are known. |
 | 02a — Keep free hosting | Backlog | Continue GitHub Pages initially. Connect the domain through DNS/CNAME and HTTPS; verify apex/www behavior and certificate before switching public links. A registrar change does not require moving the repository or buying hosting. |
@@ -120,3 +120,10 @@ ready buffer → monitoring → explicitly chosen posting schedule.
 Keep domain migration, brand decisions, preparation automation, and scheduled
 publication as separately tracked deliveries. Continue existing manual posting
 while those pieces mature. The detailed backlog remains the record of status.
+
+## Domain research result
+
+[November 28 shortlist and pricing](domain-shortlist-2026-11-28.md) recommends
+logcabinscout.com at Porkbun, subject to owner selection and a standard one-year
+checkout. No registry record was returned; registrar availability and cart total
+remain unconfirmed. Nothing has been purchased.
