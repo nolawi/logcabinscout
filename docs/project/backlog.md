@@ -36,7 +36,8 @@ to buy domains, incur recurring charges, or turn on unattended publishing.
 
 ## Tracking rules
 
-Statuses: Ready, Backlog, In progress, Blocked, Done. All items start unimplemented.
+Statuses: Ready, Backlog, In progress, Blocked, Done. Done items link to evidence;
+new subtasks start unimplemented.
 Priority P0 = launch foundation, P1 = operating workflow, P2 = growth/optional.
 Work on one main item at a time. Record evidence before setting Done. Keep IDs
 stable across this file, GitHub issues, and Notion. No arbitrary delivery dates.
@@ -45,12 +46,12 @@ stable across this file, GitHub issues, and Notion. No arbitrary delivery dates.
 
 | ID | Priority | Status | Task | Done when | Depends on |
 |---|---|---|---|---|---|
-| LCS-01 | P0 | Ready | Choose a permanent Log Cabin Scout domain | Check availability and naming fit; record the selected domain, registrar, renewal cost, and ownership. Purchase only after the owner chooses and authorizes the cost. | — |
-| LCS-02 | P0 | Backlog | Move the website to that domain | Configure DNS, CNAME, HTTPS, and apex/www behavior; verify the production site; retain a rollback plan. Use registrar redirects for the old domain if supported. | 01 |
+| LCS-01 | P0 | Ready | Choose and register an inexpensive branded domain for one year | Complete subtasks 01a–01e in brand-domain-automation.md: live availability and first-year/renewal comparison, owner-selected one-year checkout, and domain register with renewal reminders. Targets are planning budgets, not price or availability claims. Purchase only with explicit domain/cost authorization. | — |
+| LCS-02 | P0 | Backlog | Migrate from temporary elancabin.com and track retirement | Configure the selected domain on existing free hosting, DNS/CNAME, HTTPS and apex/www; verify before changing links. Record old-domain redirect/renewal/retirement and rollback decisions in domain-register.csv. Keep elancabin.com live during transition. | 01 |
 | LCS-03 | P0 | Backlog | Complete the domain migration for SEO and integrations | Update canonical URLs, sitemap, social previews, repository settings, and any Meta OAuth/privacy URLs actually in use; verify old links and search-console setup. | 02 |
 | LCS-04 | P0 | Backlog | Connect the Instagram profile to the website | Set the permanent website in the profile link and a clear bio; upload the selected profile icon manually. Verify the link opens the correct site. | 02, 06 |
 | LCS-05 | P0 | Ready | Make website and Instagram navigation feel connected | Audit the existing header link; add useful Instagram links to footer/about or listing context, and define a simple Instagram landing route. Avoid a heavy embedded feed. Verify each route. | — |
-| LCS-06 | P0 | Ready | Unify the visual brand | Save editable masters, icon exports, colors, typography, and usage rules; compare the selected icon with similar publishers and refine distinguishing features. Match profile, website, covers, and social previews without cluttering property photos. | — |
+| LCS-06 | P0 | Ready | Deliver one coherent brand kit across website and Instagram | Complete 06a–06h: positioning, editable logo master, icon/wordmark/favicon/preview exports, existing color/type rules, compact website pass, post templates, profile copy and cross-channel acceptance. Follow brand-domain-automation.md; preserve the selected direction and visual distinction. | — |
 | LCS-07 | P1 | Ready | Simplify the website around finding cabins | Review desktop header, cards, photo hierarchy, filters, and original-listing actions; make listings immediately accessible. No new hero, long introductory copy, or dedicated mobile redesign in this phase. | — |
 
 ### Next — manage one operation (8–15)
@@ -58,31 +59,34 @@ stable across this file, GitHub issues, and Notion. No arbitrary delivery dates.
 | ID | Priority | Status | Task | Done when | Depends on |
 |---|---|---|---|---|---|
 | LCS-08 | P1 | Ready | Define one shared listing and content model | Document stable property IDs, source facts, review dates, photo provenance, captions, slide selections, queue states, and published Instagram IDs/links. Decide which fields remain file-backed initially. | — |
-| LCS-09 | P1 | Done | Link published Instagram posts to website listings | Join publication history to property IDs; show verified post links on relevant cards/detail views Keep this to simple secondary links; no Instagram-only filter or promotional badges. No guessed links or browser-only API secrets. | 05, 08 |
+| LCS-09 | P1 | Done | Link published Instagram posts to website listings | Join publication history to property IDs; show verified post links on relevant cards/detail views. Keep this to simple secondary links; no Instagram-only filter or promotional badges. No guessed links or browser-only API secrets. | 05, 08 |
 | LCS-10 | P1 | Backlog | Build a private operations dashboard | Secure the operator view; show candidates, stale listings, ready posts, published posts, failures, and last successful jobs. Start read-only; add actions only as needed. | 08 |
 | LCS-11 | P1 | Backlog | Connect Supabase when the dashboard needs it | Review the existing schema, migrate a small sample, apply access rules, keep tokens server-side, and preserve stable IDs/history. Document rollback/export. Stay file-backed until persistence needs justify migration. | 08, 10 |
 | LCS-12 | P1 | Ready | Expand reliable nationwide discovery | Improve free-first state rotation, source coverage, log-home evidence, and deduplication. Review a small new batch across several states; measure candidate quality and requests. Do not introduce paid API usage by default. | — |
 | LCS-13 | P1 | Done | Keep older cabins and automate on-demand status checks | Retain aging records; build a reusable check-and-apply command with evidence and change history. Label confirmed sold/pending/off-market states; preserve uncertain checks. Replace age-only expiry with honest status labels and correct for-sale counts/SEO when implemented. See listing-lifecycle.md. | 08 |
-| LCS-14 | P1 | Backlog | Streamline photo selection and post preparation | Offer a gallery picker with four distinct images, mostly exterior and one interior; keep source credits/watermarks, material notes, small cover text, and the agreed caption format. Preview quickly before publishing. | 08, 10 |
-| LCS-15 | P1 | Backlog | Add monitoring and a publishing recovery runbook | Surface token expiry, source failures, queue failures, duplicate protection, publishing receipts, and deployment status. Exercise failure/reconciliation paths and retain recoverable backups. | 10 |
+| LCS-14 | P1 | Backlog | Automate preparation and maintain a seven-post ready buffer | Build on existing tools: repeatable discovery/check/selection/caption/cover preparation, resumable queue, exception report and seven distinct ready posts. Preserve current four-slide/caption format. Manual/source uncertainty review where needed; no posting merely from preparation. | 08 (existing file tools first; dashboard optional) |
+| LCS-15 | P1 | Backlog | Track operational health and recover publication failures | Generate a low-cost report of source failures, token/permission health, queue depth, receipts, status/photo checks and deployment drift. Preserve idempotency, backups, bounded retries and a kill switch before enabling scheduled jobs. | 08, 14 (dashboard optional) |
 
 ### Consider / Later — automate and grow (16–20)
 
 | ID | Priority | Status | Task | Done when | Depends on |
 |---|---|---|---|---|---|
-| LCS-16 | P2 | Backlog | Introduce controlled scheduling | Start with a visible content calendar and prepared queue. Define cadence, fresh source checks, rate limits, idempotency, stop conditions, and a kill switch. Enable unattended publication only after the owner explicitly chooses it. | 14, 15 |
+| LCS-16 | P1 | Backlog | Schedule prepared Instagram posts after readiness checks | Follow automation stages A–I: solve supported source-check runner access, choose cadence/timezone/start/queue explicitly, then enable bounded scheduling with freshness checks, receipts, duplicate prevention, pause rules and a kill switch. No unattended schedule enabled by this plan. | 14, 15 |
 | LCS-17 | P2 | Backlog | Measure useful growth | Choose low-cost analytics; track Instagram-to-site visits, original-listing clicks, saves, and state interest. Use tagged profile links; establish a baseline before claiming improvements. | 02, 04 |
 | LCS-18 | P2 | Backlog | Expand useful SEO content | Add state/location pages only where inventory supports them, strengthen listing metadata/internal links, and verify search indexing on the permanent domain. Avoid thin mass-generated pages. | 03, 12, 13 |
-| LCS-19 | P2 | Backlog | Create a practical marketing program | Define a short editorial calendar mixing affordable cabins, distinctive exteriors, and regional finds. Keep a shortlist of Virginia architects/builders/designers, draft collaboration ideas, and test themes against measured results. Following and outreach remain manual unless specifically authorized and supported. | 06, 17 |
+| LCS-19 | P2 | Backlog | Test log-home editorial themes and light audience growth | Use the reference review without copying Cheap Old Houses: test affordable/wooded/waterfront/mountain themes, keep source links, measure outcomes and consider a quiet opt-in digest or submitted cabins later. No subscription-heavy homepage, invented success stories or unauthorized outreach. | 06, 17 |
 | LCS-20 | P2 | Ready | Run a weekly project and backlog review | Review inventory, published content, failures, spend, and results; select the next item; update statuses and evidence; maintain this repository backlog. Consider alerts, email digests, or advanced filters only after core usage supports them. | — |
 
 ## Recommended starting order
 
-Start 01 (domain decision) and 06 (brand assets). While domain selection is pending,
-complete 05 (social navigation audit) and design 08 (shared data model). Then deliver
-02–04 as one domain launch, followed by 09–10 as one website/Instagram operations
-milestone. Improve discovery and freshness in small batches throughout. Add
-scheduling and marketing measurement after the workflow is reliable.
+Next: domain shortlist and actual first-year/renewal comparisons (01a–01c), plus
+positioning and brand asset audit (06a–06d). Keep elancabin.com as temporary hosting.
+Then register one year after owner selection, migrate DNS/HTTPS and profile/site
+references, and track old-domain retirement. Build one preparation run and a
+seven-post buffer using existing files before a hosted dashboard. Add monitoring,
+then enable a posting schedule only after explicit cadence selection and reliable
+source checks. See the [detailed breakdown and reference review](brand-domain-automation.md)
+and [domain register](domain-register.csv).
 
 ## Master Notion project
 
@@ -224,3 +228,20 @@ changed. No bulk status run, paid service, automatic schedule, or deployment was
 performed. Tests and browser validation are recorded in the command guide.
 Additional source adapters remain future LCS-12 work. Earlier 30-day-expiry notes
 in the activity log describe historical behavior and are superseded.
+
+
+### Domain, branding, and automation breakdown — November 28, 2026
+
+Expanded LCS-01/02/06/14/15/16/19 into concrete sub-deliveries in
+[brand-domain-automation.md](brand-domain-automation.md). Added a domain register:
+elancabin.com is explicitly temporary, the permanent domain is unselected, and
+one-year checkout and renewal costs must be recorded separately. The reference
+review of Cheap Old Houses suggests editorial clarity, recurring themes and
+cross-channel continuity, not a copy of its brand, cheap-house positioning or
+subscription-first homepage.
+
+Automation targets discovery, preparation, status/photo checks, queueing,
+publication verification and monitoring. A hosted dashboard is not a prerequisite
+for preparation automation. Scheduled posting remains gated on a reliable source
+runner and the owner's chosen cadence. No domain purchase, DNS/profile change,
+paid service, website deployment or scheduled post was performed by this update.
