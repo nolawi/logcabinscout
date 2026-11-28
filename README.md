@@ -48,7 +48,7 @@ Never advance `lastCheckedAt` solely to keep a listing visible. Regenerate and c
 `public/listings.json` when reviewed data changes. Generation is deterministic;
 the browser updates freshness labels without removing older homes. See [feed details](docs/listings-feed.md).
 
-The site deploys to **https://elancabin.com/** through GitHub Pages in this
+The site deploys to **https://logcabinscout.com/** through GitHub Pages in this
 repository. Pushes to `main` run build checks. Website deployment is manual so design
 changes can be grouped into a release.
 Vite uses the root base path `/`; `public/CNAME` records the custom domain.

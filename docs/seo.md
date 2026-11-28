@@ -1,6 +1,6 @@
 # Search and sharing
 
-The canonical homepage is `https://elancabin.com/`. The title and description
+The canonical homepage is `https://logcabinscout.com/`. The title and description
 identify the site as a curated log-cabin-for-sale collection without claiming
 complete nationwide coverage. Open Graph and Twitter metadata reference the
 1200×630 branded `public/social-card.png` preview. No analytics or paid SEO service
@@ -44,7 +44,7 @@ Unit tests cover safe JSON embedding and accurate structured-data output.
 
 Check `/robots.txt`, `/sitemap.xml`, and page source on the live domain. Use Google
 Search Console to verify a domain or URL-prefix property and submit
-`https://elancabin.com/sitemap.xml`. Inspect the homepage URL and request indexing.
+`https://logcabinscout.com/sitemap.xml`. Inspect the homepage URL and request indexing.
 Domain verification requires access to the domain's DNS settings; a URL-prefix
 property can instead use a supplied verification HTML file or meta tag. Do not
 invent a verification token or add one until Google supplies it.

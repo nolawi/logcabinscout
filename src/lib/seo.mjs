@@ -1,4 +1,4 @@
-export const SITE_URL = 'https://elancabin.com/';
+export const SITE_URL = 'https://logcabinscout.com/';
 export const SITE_TITLE = 'Log Cabins for Sale & Past Listings | Log Cabin Scout';
 export const SITE_DESCRIPTION = 'Browse log cabins for sale and past listings. Compare property photos, last-listed prices, acreage, and status labels, with links to the original sources.';
 

@@ -1,10 +1,11 @@
 # Website deployment
 
-Production URL: https://elancabin.com/
+Production URL: https://logcabinscout.com/
 Application source and GitHub Pages repository: `nolawi/logcabinscout`
 
-GitHub Pages uses **GitHub Actions** as its source, with custom domain
-`elancabin.com` and HTTPS enforced. The domain already points to GitHub Pages.
+GitHub Pages uses **GitHub Actions** as its source. Configure
+`logcabinscout.com` as the custom domain and enforce HTTPS once GitHub provisions
+the certificate. See the [GoDaddy launch checklist](project/godaddy-domain-launch.md).
 The historical placeholder source remains in `asyncdc/elancabin`, whose custom
 domain assignment has been removed. No further writes to that repository are needed.
 

@@ -1,9 +1,10 @@
 import {execFileSync} from 'node:child_process';
 import {readFile,writeFile,mkdir,rm} from 'node:fs/promises';
+import {SITE_URL} from '../src/lib/seo.mjs';
 import {parseListings} from '../src/lib/listings.ts';
 import {prepareSocialDrafts,renderSocialCard} from './lib/social-drafts.mjs';
 const now=new Date();
-const sourceFeed='https://elancabin.com/listings.json';
+const sourceFeed=new URL('listings.json',SITE_URL).href;
 const rows=JSON.parse(execFileSync('curl',['--fail','--silent','--show-error','--max-time','25',sourceFeed],{encoding:'utf8',maxBuffer:5*1024*1024}));
 const drafts=prepareSocialDrafts(parseListings(rows,now.getTime()),now);
 const logo=await readFile(new URL('../public/logo-mark.svg',import.meta.url),'utf8');
