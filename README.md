@@ -2,6 +2,11 @@
 
 A React + TypeScript + Vite website for discovering log cabins for sale.
 
+## Continue in a new chat
+
+Start with [the project handoff](docs/project/HANDOFF.md) for goals, decisions,
+current DNS work, workflow rules, and the latest implemented/released distinction.
+
 ## Project planning
 
 See the [project plan and 20-item backlog](docs/project/backlog.md) for domain,

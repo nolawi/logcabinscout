@@ -284,3 +284,11 @@ records, www CNAME, verification/release order, profile update and old-domain
 transition steps. Next dependency is the owner's DNS change; then Codex can
 verify it and prepare the Pages/domain release. No production or DNS change was
 made in this update.
+
+
+### New-chat continuity — November 28, 2026
+
+[HANDOFF.md](HANDOFF.md) captures long-term goals, channel preferences, code and
+release state, verified tool limits, and the immediate GoDaddy DNS migration.
+A new chat should read it, inspect current DNS/tool access, and resume the domain
+connection rather than repeating finished work or domain purchase.
