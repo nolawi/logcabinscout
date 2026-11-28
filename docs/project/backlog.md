@@ -257,3 +257,15 @@ record; checkout availability is not guaranteed. See the report for conditions.
 01a–01c research is recorded; LCS-01 is not Done. Domain/registrar selection,
 checkout authorization, purchase, dates and renewal reminders remain outstanding.
 The domain register records the recommendation without claiming ownership.
+
+
+### Registrar selected — November 28, 2026
+
+Owner selected **GoDaddy** for the logcabinscout.com target and reported being
+signed into Chrome. The domain register now reflects that preference, replacing
+the earlier Porkbun recommendation. Actual one-year availability, checkout total,
+renewal price, payment and registration are not verified. Browser control is not
+available to this chat, so no cart or purchase was performed. Owner checkout is
+the next dependency; hosting, paid SSL and email add-ons are not needed for the
+existing GitHub Pages site. Record the receipt/dates after purchase, then proceed
+to DNS/HTTPS migration without retiring elancabin.com prematurely.

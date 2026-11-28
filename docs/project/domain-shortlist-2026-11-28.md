@@ -1,6 +1,7 @@
 # Domain shortlist and price check — November 28, 2026
 
-Recommendation: **logcabinscout.com**, registered for one year at **Porkbun** if
+Research recommendation (superseded by owner preference for GoDaddy):
+**logcabinscout.com**, registered for one year at **Porkbun** if
 checkout confirms ordinary availability and the expected total. It matches the
 project name and @logcabinscout, needs no spelling explanation, and fits the
 planned budget without relying on a large first-year discount.
@@ -69,3 +70,6 @@ elancabin.com transition checklist. The temporary domain stays live throughout.
 Research tasks 01a–01c are complete enough for a purchase decision. LCS-01 itself
 remains Ready because checkout, owner selection, registration and tracking are
 not complete. No application changes, deployment, or purchases were made.
+
+Owner decision: use GoDaddy instead. Its live cart and renewal quote have not
+been inspected. Published Porkbun/Namecheap prices above do not apply to GoDaddy.
