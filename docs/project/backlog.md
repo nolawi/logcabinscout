@@ -62,7 +62,7 @@ stable across this file, GitHub issues, and Notion. No arbitrary delivery dates.
 | LCS-10 | P1 | Backlog | Build a private operations dashboard | Secure the operator view; show candidates, stale listings, ready posts, published posts, failures, and last successful jobs. Start read-only; add actions only as needed. | 08 |
 | LCS-11 | P1 | Backlog | Connect Supabase when the dashboard needs it | Review the existing schema, migrate a small sample, apply access rules, keep tokens server-side, and preserve stable IDs/history. Document rollback/export. Stay file-backed until persistence needs justify migration. | 08, 10 |
 | LCS-12 | P1 | Ready | Expand reliable nationwide discovery | Improve free-first state rotation, source coverage, log-home evidence, and deduplication. Review a small new batch across several states; measure candidate quality and requests. Do not introduce paid API usage by default. | — |
-| LCS-13 | P1 | Ready | Maintain listing freshness and accurate facts | Track last successful checks, changed prices/photos, and unavailable sources; never refresh dates without checking. Decide separately whether to adopt the discussed six-month listing-date window. Avoid automatically removing inactive homes until that policy is chosen. | 08 |
+| LCS-13 | P1 | Ready | Keep older cabins and automate on-demand status checks | Retain aging records; build a reusable check-and-apply command with evidence and change history. Label confirmed sold/pending/off-market states; preserve uncertain checks. Replace age-only expiry with honest status labels and correct for-sale counts/SEO when implemented. See listing-lifecycle.md. | 08 |
 | LCS-14 | P1 | Backlog | Streamline photo selection and post preparation | Offer a gallery picker with four distinct images, mostly exterior and one interior; keep source credits/watermarks, material notes, small cover text, and the agreed caption format. Preview quickly before publishing. | 08, 10 |
 | LCS-15 | P1 | Backlog | Add monitoring and a publishing recovery runbook | Surface token expiry, source failures, queue failures, duplicate protection, publishing receipts, and deployment status. Exercise failure/reconciliation paths and retain recoverable backups. | 10 |
 
@@ -133,9 +133,9 @@ Recommended small deliveries, in order:
 3. **LCS-06 / LCS-07:** make a compact shared-brand pass on website colors,
    typography, and social previews. Reuse existing assets; keep a website logo
    replacement as an explicit design choice.
-4. **LCS-13 / LCS-12:** audit stale listings and prepare a small fresh candidate
-   batch. Update check dates only after real source checks; keep the current age
-   and inactive-listing policies until changed deliberately.
+4. **LCS-13 / LCS-12:** retain older records and build on-demand status checking,
+   rather than recurring manual cleanup. Start with photo reliability; source-check
+   new candidates separately. See the lifecycle strategy below.
 5. **LCS-10:** generate a small local read-only operations page/report showing
    current, stale, queued, published, and failed items. Defer hosted dashboard,
    authentication changes, and Supabase until needed.
@@ -168,7 +168,22 @@ filter; keep card links and the existing header link. This supersedes earlier
 “As seen on Instagram” plans and delivery notes. Do not expand the social
 integration into promotional badges or dedicated filtering.
 
-Next recommended task: a listing and photo-health audit (LCS-13), followed by
-small targeted fixes and source-checked additions (LCS-12). Establish the actual
-broken-photo/stale counts before deciding the scope. Keep brand/domain research
-in the backlog; no dashboard or database work is needed for this next step.
+Next recommended task: a photo-health audit and targeted fixes only. Retain older
+listings; do not make routine age-based cleanup the operating workflow. Follow
+with the on-demand status checker (LCS-13) and source-checked additions (LCS-12).
+No dashboard or database migration is needed for the photo audit.
+
+
+### Older-listing strategy — November 28, 2026
+
+The owner prefers keeping older properties and using reusable automation when
+asked to check status. [Listing lifecycle specification](listing-lifecycle.md)
+records the decision, status/evidence rules, future command behavior, and the
+migration away from the current 30-day visibility rule. A missing/blocked source
+is never evidence of a sale. Sold records stay accessible and clearly labeled;
+Instagram history remains intact. No status checker or listing changes shipped
+in this planning update.
+
+**Next:** audit photo reliability and fix affected image references, with no
+age-based pruning. **After that:** implement LCS-13's on-demand status command
+and retained-listing/status presentation together. Notion stays deferred.
