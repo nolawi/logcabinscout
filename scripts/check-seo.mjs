@@ -3,7 +3,7 @@ import {readFile} from 'node:fs/promises';
 import {SITE_URL, SITE_TITLE, SITE_DESCRIPTION} from '../src/lib/seo.mjs';
 const dist=new URL('../dist/',import.meta.url);
 const html=await readFile(new URL('index.html',dist),'utf8');
-assert.ok(html.includes(`<title>${SITE_TITLE}</title>`));
+assert.ok(html.includes(`<title>${SITE_TITLE.replaceAll('&','&amp;')}</title>`));
 assert.ok(html.includes(`name="description" content="${SITE_DESCRIPTION}"`));
 assert.equal((html.match(/rel="canonical"/g)||[]).length,1);
 assert.ok(html.includes(`rel="canonical" href="${SITE_URL}"`));
@@ -11,7 +11,7 @@ const snapshot=JSON.parse(html.match(/<script id="listing-snapshot" type="applic
 const schema=JSON.parse(html.match(/<script id="site-schema" type="application\/ld\+json">(.*?)<\/script>/s)[1]);
 assert.equal((html.match(/<article class="card">/g)||[]).length,snapshot.records.length);
 assert.equal(schema['@graph'][1].mainEntity.numberOfItems,snapshot.records.length);
-assert.ok(html.includes('<h1 class="sr-only">Log cabins for sale</h1>'));
+assert.ok(html.includes('<h1 class="sr-only">Log cabins for sale and past listings</h1>'));
 assert.ok(!/noindex/i.test(html));
 const robots=await readFile(new URL('robots.txt',dist),'utf8');
 assert.ok(robots.includes(`Sitemap: ${SITE_URL}sitemap.xml`));

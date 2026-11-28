@@ -1,7 +1,7 @@
 # Keep older cabins; check their status on demand
 
-Decision recorded November 28, 2026. This is a backlog specification, not an
-implemented status checker. The owner wants older listings retained and less
+Decision recorded November 28, 2026. Implemented on main; see [the command guide](../listing-status.md).
+The remaining text records the product decision and acceptance criteria. The owner wants older listings retained and less
 routine manual maintenance.
 
 ## Product direction
@@ -20,7 +20,7 @@ routine manual maintenance.
 - Existing Instagram posts are historical snapshots. A later website status
   change should not delete, republish, or automatically edit those posts.
 
-## Future command: “Check listing statuses” (LCS-13)
+## Command: “Check listing statuses” (LCS-13)
 
 Build one reusable command so the owner can ask Codex to run a status check on
 all due listings, a state, or a chosen property. It is manual-triggered automation,
@@ -63,6 +63,6 @@ is old or unavailable.
 4. Trial a small mixed batch, inspect the change report, then expand coverage.
    Preserve a rollback/export path and the existing Instagram ledger.
 
-The current application still uses the 30-day rule until that implementation
-ships. No listing data, visibility behavior, or statuses were changed by this
-planning update.
+Implementation replaces the 30-day visibility expiry with status labels. A small
+three-property trial is recorded in the status ledger; the rest of the collection
+has not been bulk reverified. Release to the public website remains manual.

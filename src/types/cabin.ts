@@ -6,6 +6,11 @@ export type Cabin = {
   title: string;
   location: string;
   price: number;
+  saleStatus?: 'active' | 'pending' | 'sold' | 'off_market' | 'unknown';
+  statusLabel?: string;
+  availabilityConfirmed?: boolean;
+  priceIsHistorical?: boolean;
+  statusCheckedAt?: string;
   acreage: number | null;
   bedrooms?: number | null;
   bathrooms?: number | null;

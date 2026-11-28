@@ -23,3 +23,8 @@ test('empty collections produce truthful zero-item structured data',()=>{
   assert.equal(list.numberOfItems,0);
   assert.deepEqual(list.itemListElement,[]);
 });
+
+test('retained collection names distinguish sold homes without inventing sale offers',()=>{
+ const graph=structuredData([{title:'Old cabin',location:'Virginia',statusLabel:'Sold',listingUrl:'https://example.com/old'}]);
+ assert.match(graph['@graph'][1].mainEntity.itemListElement[0].name,/Sold/);assert.equal(JSON.stringify(graph).includes('Offer'),false);
+});

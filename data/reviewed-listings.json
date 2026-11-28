@@ -401,7 +401,7 @@
     "bathrooms": 1,
     "squareFeet": 1300,
     "listingUrl": "https://www.zillow.com/homedetails/416-River-Haven-Dr-Harpers-Ferry-WV-25425/22573204_zpid/",
-    "status": "active",
+    "status": "pending",
     "verified": true,
     "lastCheckedAt": "2026-11-09T03:18:13.646Z",
     "logConstructionEvidence": "Source description identifies the primary residence as a log cabin or log home.",
@@ -414,7 +414,13 @@
       "height": 768,
       "allowCropping": false,
       "variants": []
-    }
+    },
+    "statusCheckAttemptAt": "2026-11-28T06:10:04.791Z",
+    "statusCheckOutcome": "confirmed",
+    "saleStatus": "pending",
+    "statusCheckedAt": "2026-11-28T06:10:04.791Z",
+    "statusSourceUrl": "https://www.zillow.com/homedetails/416-River-Haven-Dr-Harpers-Ferry-WV-25425/22573204_zpid/",
+    "statusEvidence": "homeStatus=PENDING; trueStatus=not supplied"
   },
   {
     "id": "zillow:69901757",
@@ -1183,7 +1189,13 @@
     },
     "discoveryId": "zillow:442542471",
     "status": "active",
-    "verified": true
+    "verified": true,
+    "statusCheckAttemptAt": "2026-11-28T06:10:05.518Z",
+    "statusCheckOutcome": "confirmed",
+    "saleStatus": "active",
+    "statusCheckedAt": "2026-11-28T06:10:05.518Z",
+    "statusSourceUrl": "https://www.zillow.com/homedetails/27-Town-Farm-Rd-Greenbush-ME-04418/442542471_zpid/",
+    "statusEvidence": "homeStatus=FOR_SALE; trueStatus=Active"
   },
   {
     "id": "zillow:335642692",
@@ -1206,6 +1218,12 @@
     },
     "discoveryId": "zillow:335642692",
     "status": "active",
-    "verified": true
+    "verified": true,
+    "statusCheckAttemptAt": "2026-11-28T06:10:06.370Z",
+    "statusCheckOutcome": "confirmed",
+    "saleStatus": "active",
+    "statusCheckedAt": "2026-11-28T06:10:06.370Z",
+    "statusSourceUrl": "https://www.zillow.com/homedetails/183-Pine-Mountain-Rd-NE-Floyd-VA-24091/335642692_zpid/",
+    "statusEvidence": "homeStatus=FOR_SALE; trueStatus=not supplied"
   }
 ]

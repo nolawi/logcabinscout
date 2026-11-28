@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "attempts": [
+    {
+      "id": "zillow:22573204",
+      "status": "pending",
+      "evidence": "homeStatus=PENDING; trueStatus=not supplied",
+      "sourceUrl": "https://www.zillow.com/homedetails/416-River-Haven-Dr-Harpers-Ferry-WV-25425/22573204_zpid/",
+      "checkedAt": "2026-11-28T06:10:04.791Z"
+    },
+    {
+      "id": "zillow:442542471",
+      "status": "active",
+      "evidence": "homeStatus=FOR_SALE; trueStatus=Active",
+      "sourceUrl": "https://www.zillow.com/homedetails/27-Town-Farm-Rd-Greenbush-ME-04418/442542471_zpid/",
+      "checkedAt": "2026-11-28T06:10:05.518Z"
+    },
+    {
+      "id": "zillow:335642692",
+      "status": "active",
+      "evidence": "homeStatus=FOR_SALE; trueStatus=not supplied",
+      "sourceUrl": "https://www.zillow.com/homedetails/183-Pine-Mountain-Rd-NE-Floyd-VA-24091/335642692_zpid/",
+      "checkedAt": "2026-11-28T06:10:06.370Z"
+    }
+  ],
+  "changes": [
+    {
+      "id": "zillow:22573204",
+      "from": "active",
+      "to": "pending",
+      "checkedAt": "2026-11-28T06:10:04.791Z",
+      "sourceUrl": "https://www.zillow.com/homedetails/416-River-Haven-Dr-Harpers-Ferry-WV-25425/22573204_zpid/",
+      "evidence": "homeStatus=PENDING; trueStatus=not supplied"
+    }
+  ]
+}

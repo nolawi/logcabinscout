@@ -20,7 +20,7 @@ to buy domains, incur recurring charges, or turn on unattended publishing.
 - Instagram: https://www.instagram.com/logcabinscout/
 - Repository inventory: 49 reviewed listings and 40 published-property records.
   These are inventory counts, not a claim that all properties remain active or
-  visible today. The website currently expires listings 30 days after checking.
+  visible today. The implemented website retains older homes with status labels (pending manual deployment).
 - Search/filter/sort, saved cabins, prerendered SEO, manual deployments, and
   Instagram publication history already exist. A header link to Instagram exists.
 - Instagram posts: four slides, mostly exterior photos and one interior; location
@@ -62,7 +62,7 @@ stable across this file, GitHub issues, and Notion. No arbitrary delivery dates.
 | LCS-10 | P1 | Backlog | Build a private operations dashboard | Secure the operator view; show candidates, stale listings, ready posts, published posts, failures, and last successful jobs. Start read-only; add actions only as needed. | 08 |
 | LCS-11 | P1 | Backlog | Connect Supabase when the dashboard needs it | Review the existing schema, migrate a small sample, apply access rules, keep tokens server-side, and preserve stable IDs/history. Document rollback/export. Stay file-backed until persistence needs justify migration. | 08, 10 |
 | LCS-12 | P1 | Ready | Expand reliable nationwide discovery | Improve free-first state rotation, source coverage, log-home evidence, and deduplication. Review a small new batch across several states; measure candidate quality and requests. Do not introduce paid API usage by default. | — |
-| LCS-13 | P1 | Ready | Keep older cabins and automate on-demand status checks | Retain aging records; build a reusable check-and-apply command with evidence and change history. Label confirmed sold/pending/off-market states; preserve uncertain checks. Replace age-only expiry with honest status labels and correct for-sale counts/SEO when implemented. See listing-lifecycle.md. | 08 |
+| LCS-13 | P1 | Done | Keep older cabins and automate on-demand status checks | Retain aging records; build a reusable check-and-apply command with evidence and change history. Label confirmed sold/pending/off-market states; preserve uncertain checks. Replace age-only expiry with honest status labels and correct for-sale counts/SEO when implemented. See listing-lifecycle.md. | 08 |
 | LCS-14 | P1 | Backlog | Streamline photo selection and post preparation | Offer a gallery picker with four distinct images, mostly exterior and one interior; keep source credits/watermarks, material notes, small cover text, and the agreed caption format. Preview quickly before publishing. | 08, 10 |
 | LCS-15 | P1 | Backlog | Add monitoring and a publishing recovery runbook | Surface token expiry, source failures, queue failures, duplicate protection, publishing receipts, and deployment status. Exercise failure/reconciliation paths and retain recoverable backups. | 10 |
 
@@ -208,3 +208,19 @@ current sale status.
 presentation from `listing-lifecycle.md`. Preserve old homes and Instagram links;
 label explicit source-confirmed changes and keep failures unconfirmed. The
 photo-cleanup step is complete; do not replace working URLs unnecessarily.
+
+
+### LCS-13 implemented — November 28, 2026
+
+On-demand preview/apply checking, stable property matching, confirmed status
+changes, and durable attempt/change history are implemented. Zillow is supported;
+other source adapters return unconfirmed without inferring a sale. The website
+retains older/pending/sold homes, distinguishes stale facts from fresh status,
+and updates labels, counts, and schema. [Command guide](../listing-status.md).
+
+A live three-home trial confirmed Harpers Ferry pending, Greenbush active, and
+Floyd active. Their prices/fact-review dates and the Instagram ledger were not
+changed. No bulk status run, paid service, automatic schedule, or deployment was
+performed. Tests and browser validation are recorded in the command guide.
+Additional source adapters remain future LCS-12 work. Earlier 30-day-expiry notes
+in the activity log describe historical behavior and are superseded.

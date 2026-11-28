@@ -25,11 +25,12 @@ test('history queues deduplicate candidates and recognize already-reviewed custo
   assert.equal(queue.length,1);assert.equal(queue[0].reviewedId,'mls:123');
   assert.throws(()=>reviewChange(approve().reviewed,{action:'approve',id:candidate.id,candidates,details},now),/already reviewed/);
 });
-test('status changes remove listings without renewing review dates or mutating inputs',()=>{
+test('status changes retain historical listings without renewing review dates or mutating inputs',()=>{
   const rows=approve().reviewed;
   for (const status of ['sold','pending','off_market']) {
     const result=reviewChange(rows,{action:'status',id:'mls:123',status},now);
-    assert.deepEqual(result.feed,[]);
+    assert.equal(result.feed.length,1);
+    assert.equal(result.feed[0].saleStatus,status);
     assert.equal(result.reviewed[0].lastCheckedAt,details.lastCheckedAt);
     assert.equal(rows[0].status,'active');
   }
@@ -54,6 +55,7 @@ test('CLI previews without writing, writes consistent JSON, and rolls back on fe
     await cp(new URL('../',import.meta.url),join(root,'scripts'),{recursive:true});
     await mkdir(join(root,'src/lib'),{recursive:true});
     await cp(new URL('../../src/lib/photo.mjs',import.meta.url),join(root,'src/lib/photo.mjs'));
+    await cp(new URL('../../src/lib/listing-lifecycle.mjs',import.meta.url),join(root,'src/lib/listing-lifecycle.mjs'));
     await mkdir(join(root,'data'));await mkdir(join(root,'public'));
     await writeFile(join(root,'data/reviewed-listings.json'),'[]\n');await writeFile(join(root,'public/listings.json'),'[]\n');
     await writeFile(join(root,'candidates.json'),JSON.stringify(candidates));await writeFile(join(root,'details.json'),JSON.stringify({...details,lastCheckedAt:new Date(Date.now()-60000).toISOString()}));

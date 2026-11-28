@@ -22,5 +22,5 @@ try {
   await writeFile(path, html);
   await writeFile(new URL('../dist/robots.txt', import.meta.url), `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}sitemap.xml\n`);
   await writeFile(new URL('../dist/sitemap.xml', import.meta.url), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${SITE_URL}</loc></url></urlset>\n`);
-  console.log(`Prerendered ${listings.length} current listings: ${SITE_TITLE}`);
+  console.log(`Prerendered ${listings.length} retained listings: ${SITE_TITLE}`);
 } finally { await server.close(); }

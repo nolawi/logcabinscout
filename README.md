@@ -22,8 +22,8 @@ npm run build
 ```
 
 The homepage reads a reviewed JSON feed, initially sourced from three Virginia properties.
-Only listings checked less than 30 days ago are displayed. Loading, unavailable-feed,
-and no-current-listings states never substitute fictional properties. Supabase has a
+Older properties stay visible with sale-status and freshness labels. Loading, unavailable-feed,
+and empty-collection states never substitute fictional properties. Supabase has a
 schema but is not connected to the app.
 
 ## Tests and listing updates
@@ -39,7 +39,7 @@ npm run build
 Update `data/reviewed-listings.json` only after checking the original sale source.
 Never advance `lastCheckedAt` solely to keep a listing visible. Regenerate and commit
 `public/listings.json` when reviewed data changes. Generation is deterministic;
-the browser enforces expiry without a redeployment. See [feed details](docs/listings-feed.md).
+the browser updates freshness labels without removing older homes. See [feed details](docs/listings-feed.md).
 
 The site deploys to **https://elancabin.com/** through GitHub Pages in this
 repository. Pushes to `main` run build checks. Website deployment is manual so design
@@ -51,8 +51,7 @@ See [deployment details](docs/deployment.md).
 Manage candidates, photos, and inactive listings with `npm run review -- --help`.
 See the [local review workflow](docs/review-workflow.md).
 
-The collection now includes 37 sourced properties across Virginia, Tennessee, Colorado, North Carolina,
-Pennsylvania, Montana, West Virginia, Georgia, Kentucky, and Idaho. See [expanded listing sources](docs/expanded-listing-sources.md).
+The collection contains 49 reviewed properties across multiple states, including retained historical listings. See [expanded listing sources](docs/expanded-listing-sources.md).
 
 Production builds prerender the collection and generate crawl metadata for search
 engines. See [SEO and sharing](docs/seo.md).
@@ -74,3 +73,8 @@ see [queue instructions](docs/instagram.md#ready-to-post-queue-fast-path).
 
 Listings with confirmed post links offer a secondary “View on Instagram” link. See
 [website–Instagram integration](docs/website-instagram.md) for mapping and release behavior.
+
+Check sale status on demand with `npm run listings:status` (preview), or
+`npm run listings:status -- --apply --limit 10` to save due checks.
+See [status checking and retention](docs/listing-status.md). No deployment or
+Instagram posting is triggered by this command.

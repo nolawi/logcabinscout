@@ -1,3 +1,4 @@
+import { listingStatusView } from './listing-lifecycle.mjs';
 import { parsePhoto } from './photo.mjs';
 import type { Cabin } from '../types/cabin';
 
@@ -41,7 +42,7 @@ export function parseListings(input: unknown, now = Date.now()): Cabin[] {
     if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z$/.test(lastCheckedAt) ||
         !Number.isFinite(checked) ||
         new Date(checked).toISOString().replace('.000Z', 'Z') !== lastCheckedAt.replace('.000Z', 'Z') ||
-        age < 0 || age >= MAX_LISTING_AGE_MS) continue;
+        age < 0) continue;
 
     // Never publish unverified, unsourced, or duplicate records.
     if (!id || seen.has(id) || !title || !location || price === null ||
@@ -50,6 +51,7 @@ export function parseListings(input: unknown, now = Date.now()): Cabin[] {
     seen.add(id);
     listings.push({
       id, title, location, price,
+      ...listingStatusView(item, now),
       acreage: number(item.acreage),
       bedrooms: Number.isInteger(item.bedrooms) ? number(item.bedrooms) : null,
       bathrooms: number(item.bathrooms),

@@ -6,12 +6,13 @@ const good = {
   price: 200000, acreage: 2, listingUrl: 'https://example.org/listing/123',
   status: 'active', verified: true, lastCheckedAt: '2026-11-06T12:00:00Z',
 };
-test('publishes only reviewed active listings with review dates', () => {
+test('publishes reviewed listings including retained historical homes', () => {
   assert.equal(buildFeed([good]).length, 1);
   assert.equal(buildFeed([{...good, verified: false}]).length, 0);
-  assert.equal(buildFeed([{...good, status: 'sold'}]).length, 0);
+  assert.equal(buildFeed([{...good, status: 'sold'}])[0].saleStatus, 'sold');
+  assert.equal(buildFeed([{...good, status: 'needs-review'}]).length, 0);
 });
-test('retains old review dates for browser expiry and rejects unsourced records', () => {
+test('retains old review dates without inventing fresh checks and rejects unsourced records', () => {
   assert.equal(buildFeed([{...good, lastCheckedAt: '2026-09-01T12:00:00Z'}])[0].lastCheckedAt, '2026-09-01T12:00:00.000Z');
   assert.equal(buildFeed([{...good, listingUrl: 'javascript:alert(1)'}]).length, 0);
 });

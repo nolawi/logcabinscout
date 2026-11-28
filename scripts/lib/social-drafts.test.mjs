@@ -62,3 +62,8 @@ test('material property notes stay above hashtags while credit remains last',()=
  const caption=buildInstagramCaption({...row('1','Fairplay, Colorado'),bathrooms:0,socialNotes:'Off-grid; seasonal road access.'},{headline:'Thirty Acres Beyond The Crowds'});
  assert.ok(caption.includes('0 baths'));assert.ok(caption.includes('Off-grid; seasonal road access.'));assert.ok(caption.indexOf('Off-grid;')<caption.indexOf('#LogCabinScout'));assert.ok(caption.endsWith('Photos: MLS / Listing provider.'));
 });
+
+test('weekly drafts exclude sold, pending and unconfirmed retained homes',()=>{
+ const rows=[{...row('1','Place, Virginia'),saleStatus:'sold'},{...row('2','Place, Virginia'),saleStatus:'pending'},{...row('3','Place, Virginia'),saleStatus:'active',availabilityConfirmed:false},{...row('4','Place, Virginia'),saleStatus:'active',availabilityConfirmed:true}];
+ assert.deepEqual(prepareSocialDrafts(rows,date).map(x=>x.listingId),['4']);
+});

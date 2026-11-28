@@ -26,12 +26,13 @@ export default function CabinCard({ cabin, variant = 1, isSaved, onToggleSaved }
       </div>
       <div className="details">
         <small>{cabin.location}</small>
+        {cabin.statusLabel && <span className={`listing-status status-${cabin.saleStatus}`} title={cabin.statusCheckedAt ? `Last confirmed ${cabin.statusCheckedAt.slice(0, 10)}` : undefined}>{cabin.statusLabel}</span>}
         <h2>{cabin.listingUrl
           ? <a className="card-title-link" href={cabin.listingUrl} target="_blank" rel="noopener noreferrer">{cabin.title}<ArrowIcon /></a>
           : cabin.title}</h2>
         {homeDetails && <p className="home-details">{homeDetails}</p>}
         <div className="card-facts">
-          <strong>{dollars.format(cabin.price)}</strong>
+          <div>{cabin.priceIsHistorical && <span className="price-note">Last listed price</span>}<strong>{dollars.format(cabin.price)}</strong></div>
           {cabin.acreage !== null && <span className="acreage">{cabin.acreage.toLocaleString()} acres</span>}
         </div>
         {cabin.instagramUrl && <a className="card-instagram-link" href={cabin.instagramUrl} target="_blank" rel="noopener noreferrer" aria-label={`View ${cabin.title} on Instagram (opens in a new tab)`}>View on Instagram <ArrowIcon /></a>}

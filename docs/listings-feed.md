@@ -1,56 +1,42 @@
 # Public listing feed
 
-The frontend fetches `public/listings.json` through Vite's `BASE_URL` (so it also
-works under a GitHub Pages project path).
+`public/listings.json` is generated from explicitly reviewed, sourced records.
+The browser fetches it under Vite BASE_URL and uses the same parser for server
+prerendering and live updates. The feed contains real properties, never sample
+fallbacks. A request failure shows a refresh message; an empty feed shows an empty
+collection. Invalid/unverified/duplicate records remain excluded.
 
-The feed initially contains three manually reviewed Virginia listings. Their review
-is not continuous status verification; original listing pages remain authoritative.
+## Retention and status
 
-The generator retains valid review dates, even for old records, so its output and
-CI consistency checks do not change with the build date. The browser rejects
-future dates and hides listings at age **30 days or older**, using the visitor's
-clock. It recalculates every minute and on tab visibility/focus changes, so an open
-page also expires records. Review dates remain in the feed for background expiry checks and are not shown on cards.
+**Older listings are retained.** The former 30-day visibility expiry has been
+replaced with status freshness labels. Valid UTC review dates are required and
+future/invalid dates are rejected, but age alone never deletes a cabin.
+The generator includes reviewed active, pending, sold, off-market, and unknown
+records. Prices are last-known listing prices, not inferred closing prices.
 
-A successful empty feed (including all-expired records) shows “No current listings.”
-A failed request or malformed feed envelope shows a refresh message. Loading never
-shows sample properties. Fictional examples are not used as a production fallback.
+`lastCheckedAt` is the fact-review time and never renewed by a status-only check.
+`saleStatus`, `statusCheckedAt`, `statusCheckOutcome`, `statusCheckAttemptAt`, and
+`statusSourceUrl` carry sale-status observations separately. Legacy rows use their
+original review date until a specific status check is available. Active
+confirmation becomes stale after 30 days; the browser recalculates each minute
+and on focus/visibility changes. See [status command and rules](listing-status.md).
 
-## Feed format
+Cards retain original listing and verified Instagram links. Historical or stale
+price facts are labeled “Last listed price.” Failed checks never mark a home sold.
+No API keys or service credentials belong in the public feed or client bundle.
 
-Only verified, active, authorized listing records should be included:
+## Record requirements
 
-```json
-[
-  {
-    "id": "rentcast:example-id",
-    "title": "Example log cabin",
-    "location": "Example Town, VA",
-    "price": 350000,
-    "acreage": 4.2,
-    "propertyType": "Log cabin",
-    "listingUrl": "https://example.com/original-listing",
-    "verified": true,
-    "lastCheckedAt": "2026-11-07T12:00:00.000Z"
-  }
-]
-```
+Unique `id`, `title`, `location`, a nonnegative numeric `price`, valid HTTPS
+`listingUrl`, `verified: true`, and a real UTC `lastCheckedAt` are required.
+Optional acreage and home facts remain null when unknown. Beds are nonnegative
+integers (zero is a studio), baths may be fractional, and square feet must be a
+positive integer. Unknown values are not fabricated.
 
-The above is **schema documentation only**, not an actual property. An ingest process must
-validate the cabin classification, the property is currently for sale, and that
-original listing links and photo use are permitted.
+Optional `photo` metadata needs a supported URL, source URL, descriptive alt text,
+credit, and valid intrinsic dimensions. Missing photos retain the card fallback;
+they do not remove the listing. See [photo handling](property-photos.md).
 
-The browser-side parser rejects records without `verified: true`, a valid HTTPS
-listing URL, a title, location, nonnegative numeric price, and unique ID.
-A valid UTC ISO `lastCheckedAt` timestamp is required; missing, invalid, future, and expired dates are excluded.
-Optional `photo` metadata must include authorized imagery, descriptive alt text,
-credit, source link, and intrinsic dimensions. Attribution and source links are preserved without asserting that they establish a usage license. Bare `imageUrl` fields are ignored.
-See [photo permissions and responsive assets](property-photos.md).
-Missing/invalid photos do not prevent inclusion. In future, an automated server-side
-job can generate this JSON from Supabase or a licensed source. Do not expose
-RentCast or Supabase service-role credentials in this file or client bundle.
-
-Optional numeric `bedrooms`, `bathrooms`, and `squareFeet` fields are carried
-through the reviewed source, generated feed, and cards. Unknown values stay null
-and are omitted visually; fractional bathroom counts and zero-bedroom studios
-are retained. Square footage must be a positive integer measured in square feet.
+Rebuild with `node scripts/build-listing-feed.mjs`. This deterministic operation
+does not check live sources, reset dates, or deploy the website. Deploy status
+model/client changes and their feed together to keep their behavior consistent.

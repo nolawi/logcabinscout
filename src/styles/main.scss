@@ -104,3 +104,7 @@ footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14
 
 .card-instagram-link { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; margin-top: 10px; color: var(--pine); font-size: 12px; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 .card-instagram-link:hover { color: var(--rust); }
+
+.listing-status { margin-top: 7px; color: var(--ink-soft); font-size: 12px; font-weight: 600; }
+.status-sold, .status-off_market { color: var(--rust); }
+.price-note { display: block; color: var(--ink-soft); font-size: 11px; margin-bottom: 3px; }

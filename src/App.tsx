@@ -51,7 +51,7 @@ export default function App({ initialFeed }: { initialFeed?: ListingSnapshot } =
     <main id="home">
 
       <section className="content" id="cabins">
-        <h1 className="sr-only">Log cabins for sale</h1>
+        <h1 className="sr-only">Log cabins for sale and past listings</h1>
         {isLoading && <p role="status">Loading cabins…</p>}
         {error && <p className="feed-notice" role="status">We couldn’t load the listings. Please refresh the page to try again.</p>}
         {!isLoading && !error && listings.length > 0 && <><div className="listing-filters" role="search" aria-label="Filter cabin listings">
@@ -83,7 +83,7 @@ export default function App({ initialFeed }: { initialFeed?: ListingSnapshot } =
           </label>
         </div>
         <div className="results-bar" aria-live="polite">
-          <span>{visible.length} {visible.length === 1 ? 'cabin' : 'cabins'}</span>
+          <span>{visible.length} {visible.length === 1 ? 'cabin' : 'cabins'} · {visible.filter(cabin => cabin.availabilityConfirmed).length} recently confirmed for sale</span>
           <div className="result-actions">
           <button type="button" className="saved-filter" aria-pressed={savedOnly} onClick={() => setSavedOnly(value => !value)}>Saved only</button>
           {hasFilters && <button type="button" className="reset-filters" onClick={resetFilters}>Clear filters</button>}
@@ -92,7 +92,7 @@ export default function App({ initialFeed }: { initialFeed?: ListingSnapshot } =
         {!canPersist && saved.length > 0 && <p className="saved-notice" role="status">Saved for this visit only. Browser storage is unavailable.</p>}
         <CabinGrid cabins={visible} savedIds={savedIds} onToggleSaved={toggleSaved} emptyMessage={savedOnly && savedAvailable === 0 ? 'No saved cabins in the current collection. Use a heart to save one.' : undefined} />
         </>}
-        {!isLoading && !error && listings.length === 0 && <p className="empty-state" role="status">No current listings. We’re scouting more cabins; check back soon.</p>}
+        {!isLoading && !error && listings.length === 0 && <p className="empty-state" role="status">No listings available to browse. We’re scouting more cabins; check back soon.</p>}
       </section>
 
     </main>

@@ -21,6 +21,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-07T12:00:00.000Z"
   },
   {
@@ -45,6 +46,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-16T21:44:15.755Z"
   },
   {
@@ -69,6 +71,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T01:34:02.000Z"
   },
   {
@@ -93,6 +96,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T02:17:34.520Z"
   },
   {
@@ -117,6 +121,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T02:17:34.538Z"
   },
   {
@@ -141,6 +146,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-10T15:09:51.424Z"
   },
   {
@@ -165,6 +171,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-09T03:18:13.641Z"
   },
   {
@@ -189,6 +196,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-09T03:18:13.657Z"
   },
   {
@@ -213,6 +221,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-09T03:18:13.676Z"
   },
   {
@@ -237,6 +246,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-09T03:18:13.694Z"
   },
   {
@@ -261,6 +271,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-07T12:00:00.000Z"
   },
   {
@@ -285,6 +296,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T01:34:02.000Z"
   },
   {
@@ -309,6 +321,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T01:34:02.000Z"
   },
   {
@@ -333,6 +346,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T02:17:34.530Z"
   },
   {
@@ -357,6 +371,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T02:17:34.542Z"
   },
   {
@@ -381,6 +396,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-16T21:44:15.755Z"
   },
   {
@@ -405,6 +421,11 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "pending",
+    "statusCheckedAt": "2026-11-28T06:10:04.791Z",
+    "statusCheckOutcome": "confirmed",
+    "statusCheckAttemptAt": "2026-11-28T06:10:04.791Z",
+    "statusSourceUrl": "https://www.zillow.com/homedetails/416-River-Haven-Dr-Harpers-Ferry-WV-25425/22573204_zpid/",
     "lastCheckedAt": "2026-11-09T03:18:13.646Z"
   },
   {
@@ -429,6 +450,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-09T03:18:13.663Z"
   },
   {
@@ -453,6 +475,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-09T03:18:13.682Z"
   },
   {
@@ -477,6 +500,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-09T03:18:13.700Z"
   },
   {
@@ -501,6 +525,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-07T12:00:00.000Z"
   },
   {
@@ -525,6 +550,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T01:34:02.000Z"
   },
   {
@@ -549,6 +575,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-16T21:44:15.755Z"
   },
   {
@@ -573,6 +600,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T02:17:34.534Z"
   },
   {
@@ -597,6 +625,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T02:17:34.547Z"
   },
   {
@@ -621,6 +650,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T02:17:34.558Z"
   },
   {
@@ -645,6 +675,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-09T03:18:13.652Z"
   },
   {
@@ -669,6 +700,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-09T03:18:13.668Z"
   },
   {
@@ -693,6 +725,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-09T03:18:13.690Z"
   },
   {
@@ -717,6 +750,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T01:34:02.000Z"
   },
   {
@@ -741,6 +775,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T01:34:02.000Z"
   },
   {
@@ -765,6 +800,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T01:34:02.000Z"
   },
   {
@@ -789,6 +825,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T01:34:02.000Z"
   },
   {
@@ -813,6 +850,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T01:34:02.000Z"
   },
   {
@@ -837,6 +875,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T01:34:02.000Z"
   },
   {
@@ -861,6 +900,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T01:34:02.000Z"
   },
   {
@@ -885,6 +925,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-08T01:34:02.000Z"
   },
   {
@@ -909,6 +950,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-12T16:58:48.696Z"
   },
   {
@@ -933,6 +975,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-12T16:58:48.696Z"
   },
   {
@@ -957,6 +1000,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-12T16:58:48.696Z"
   },
   {
@@ -981,6 +1025,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-12T16:58:48.696Z"
   },
   {
@@ -1005,6 +1050,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-12T16:58:48.696Z"
   },
   {
@@ -1029,6 +1075,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-12T16:58:48.696Z"
   },
   {
@@ -1053,6 +1100,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-12T16:58:48.696Z"
   },
   {
@@ -1077,6 +1125,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-12T16:58:48.696Z"
   },
   {
@@ -1101,6 +1150,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-12T16:58:48.696Z"
   },
   {
@@ -1125,6 +1175,7 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
     "lastCheckedAt": "2026-11-12T16:58:48.696Z"
   },
   {
@@ -1149,6 +1200,11 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
+    "statusCheckedAt": "2026-11-28T06:10:05.518Z",
+    "statusCheckOutcome": "confirmed",
+    "statusCheckAttemptAt": "2026-11-28T06:10:05.518Z",
+    "statusSourceUrl": "https://www.zillow.com/homedetails/27-Town-Farm-Rd-Greenbush-ME-04418/442542471_zpid/",
     "lastCheckedAt": "2026-11-27T23:14:39.007Z"
   },
   {
@@ -1173,6 +1229,11 @@
       "variants": []
     },
     "verified": true,
+    "saleStatus": "active",
+    "statusCheckedAt": "2026-11-28T06:10:06.370Z",
+    "statusCheckOutcome": "confirmed",
+    "statusCheckAttemptAt": "2026-11-28T06:10:06.370Z",
+    "statusSourceUrl": "https://www.zillow.com/homedetails/183-Pine-Mountain-Rd-NE-Floyd-VA-24091/335642692_zpid/",
     "lastCheckedAt": "2026-11-27T23:14:39.007Z"
   }
 ]

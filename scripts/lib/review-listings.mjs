@@ -66,6 +66,11 @@ export function reviewChange(reviewed, command, now = Date.now()) {
     } else if (command.action === 'status') {
       if (!['sold', 'pending', 'off_market'].includes(command.status)) throw new Error('Status must be sold, pending, or off_market');
       rows[index].status = command.status;
+      rows[index].saleStatus = command.status;
+      rows[index].statusCheckedAt = new Date(now).toISOString();
+      rows[index].statusCheckOutcome = 'confirmed';
+      rows[index].statusSourceUrl = rows[index].listingUrl;
+      rows[index].statusEvidence = 'Explicit manual review status command';
     } else throw new Error('Unknown review action');
   }
   validateReviewed(rows);

@@ -13,12 +13,13 @@ test('review date survives generation and parsing', () => {
   assert.equal(parsed.lastCheckedAt, '2026-11-06T12:00:00.000Z');
   assert.equal(parsed.isSample, false);
 });
-test('expires at exactly 30 days, including a previously generated static feed', () => {
+test('retains older homes but stops presenting them as recently confirmed for sale', () => {
   const feed = buildFeed([listing]);
   const checked = Date.parse(listing.lastCheckedAt);
   assert.equal(parseListings(feed, checked + MAX_LISTING_AGE_MS - 1).length, 1);
-  assert.equal(parseListings(feed, checked + MAX_LISTING_AGE_MS).length, 0);
-  assert.equal(parseListings(feed, checked + MAX_LISTING_AGE_MS + 1).length, 0);
+  assert.equal(parseListings(feed, checked + MAX_LISTING_AGE_MS).length, 1);
+  assert.equal(parseListings(feed, checked + MAX_LISTING_AGE_MS)[0].availabilityConfirmed, false);
+  assert.equal(parseListings(feed, checked + MAX_LISTING_AGE_MS + 1).length, 1);
 });
 test('rejects missing, invalid, normalized-invalid, and future review dates', () => {
   for (const lastCheckedAt of [undefined, null, '', 'garbage', '2026-11-06', '2026-02-30T12:00:00Z', '2026-11-08T12:00:00Z']) {

@@ -1,7 +1,8 @@
+import { saleStatus } from '../../src/lib/listing-lifecycle.mjs';
 import { parsePhoto } from '../../src/lib/photo.mjs';
 
 /**
- * Convert explicitly reviewed, sourced active listings into the public feed.
+ * Convert explicitly reviewed, sourced listings including historical homes into the public feed.
  * Does not call RentCast. Do not treat architectural data alone as final review.
  */
 const validHttps = (value) => {
@@ -14,13 +15,13 @@ export function buildFeed(input) {
   const unique = new Map();
   for (const item of input) {
     if (!item || typeof item !== 'object') continue;
-    if (item.verified !== true || item.status !== 'active') continue;
+    if (item.verified !== true || !['active','pending','sold','off_market','unknown'].includes(item.status)) continue;
     if (typeof item.id !== 'string' || !item.id.trim()) continue;
     if (typeof item.title !== 'string' || !item.title.trim()) continue;
     if (typeof item.location !== 'string' || !item.location.trim()) continue;
     if (typeof item.price !== 'number' || !Number.isFinite(item.price) || item.price < 0) continue;
     if (!validHttps(item.listingUrl)) continue;
-    // Generation is deterministic; the browser applies the freshness window.
+    // Generation is deterministic; the browser labels status freshness without discarding old homes.
     if (typeof item.lastCheckedAt !== 'string' ||
         !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z$/.test(item.lastCheckedAt)) continue;
     const checked = new Date(item.lastCheckedAt);
@@ -40,6 +41,11 @@ export function buildFeed(input) {
       listingUrl: item.listingUrl,
       photo: parsePhoto(item.photo),
       verified: true,
+      saleStatus: saleStatus(item.saleStatus ?? item.status),
+      statusCheckedAt: item.statusCheckedAt,
+      statusCheckOutcome: item.statusCheckOutcome,
+      statusCheckAttemptAt: item.statusCheckAttemptAt,
+      statusSourceUrl: item.statusSourceUrl,
       lastCheckedAt: checked.toISOString(),
     });
   }

@@ -83,3 +83,10 @@ is running. Source changes made while a review is preparing are detected.
 Finally run `npm test` and `npm run build`, inspect `git diff`, then commit the
 reviewed source and regenerated feed together. Discovery results remain separate
 from public listings until an explicit approval command is saved.
+
+## Retained sale statuses
+
+Status changes now retain the property in the feed, with explicit status labels,
+rather than removing the card. Manual status commands record a separate status
+check time and preserve the fact-review date and last-known price. Use the
+[on-demand status checker](listing-status.md) for supported public-source checks.

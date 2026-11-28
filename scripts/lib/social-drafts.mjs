@@ -12,7 +12,7 @@ export function buildInstagramCaption(row, { headline = row.socialTitle || `A Ca
 }
 export function prepareSocialDrafts(listings,date=new Date()) {
   if (!Number.isFinite(date.getTime())) throw new Error('Invalid draft date');
-  const available = [...listings].filter(row => !row.isSample && row.price > 0 && row.listingUrl && row.photo?.url).sort((a,b)=>a.id.localeCompare(b.id));
+  const available = [...listings].filter(row => !row.isSample && row.availabilityConfirmed !== false && (!row.saleStatus || row.saleStatus === 'active') && row.price > 0 && row.listingUrl && row.photo?.url).sort((a,b)=>a.id.localeCompare(b.id));
   if (!available.length) return [];
   const week = Math.floor((date.getTime()-4*86400000)/(7*86400000));
   const start = ((week*2)%available.length+available.length)%available.length;
