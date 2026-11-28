@@ -15,7 +15,7 @@ to buy domains, incur recurring charges, or turn on unattended publishing.
 
 ## Current baseline
 
-- Website: https://logcabinscout.com/ on GitHub Pages. The former domain, elancabin.com, is awaiting forwarding.
+- Website: https://logcabinscout.com/ on GitHub Pages.
 - Repository: https://github.com/nolawi/logcabinscout
 - Instagram: https://www.instagram.com/logcabinscout/
 - Repository inventory: 49 reviewed listings and 40 published-property records.
@@ -26,9 +26,7 @@ to buy domains, incur recurring charges, or turn on unattended publishing.
 - Instagram posts: four slides, mostly exterior photos and one interior; location
   and price on the cover; caption order is title, facts, bare listing URL, material
   notes, five hashtags, photo credit. Existing posts keep their historical copy.
-- Profile icon A is saved in `public/brand/instagram-profile-a.png`; manual upload
-  is required. Website artwork still uses the original emblem. A similar cabin /
-  green-background motif was found on @loghomeliving; assess distinction in item 6.
+- The selected cabin and rust door are available as an editable SVG kit. The Instagram profile upload remains manual.
 - Supabase schema exists but is not connected to the app. No admin dashboard yet.
 - Manual post batches check sources and prevent repeats. A weekly draft workflow
   exists; unattended publishing is not enabled. Meta cannot follow accounts or
@@ -47,11 +45,11 @@ stable across this file, GitHub issues, and Notion. No arbitrary delivery dates.
 | ID | Priority | Status | Task | Done when | Depends on |
 |---|---|---|---|---|---|
 | LCS-01 | P0 | In progress | Choose and register an inexpensive branded domain for one year | Complete subtasks 01a–01e in brand-domain-automation.md: live availability and first-year/renewal comparison, owner-selected one-year checkout, and domain register with renewal reminders. Targets are planning budgets, not price or availability claims. Purchase only with explicit domain/cost authorization. | — |
-| LCS-02 | P0 | In progress | Migrate from temporary elancabin.com and track retirement | Configure the selected domain on existing free hosting, DNS/CNAME, HTTPS and apex/www; verify before changing links. Record old-domain redirect/renewal/retirement and rollback decisions in domain-register.csv. Keep elancabin.com live during transition. | 01 |
-| LCS-03 | P0 | In progress | Complete the domain migration for SEO and integrations | Update canonical URLs, sitemap, social previews, repository settings, and any Meta OAuth/privacy URLs actually in use; verify old links and search-console setup. | 02 |
+| LCS-02 | P0 | Done | Connect the permanent website domain | Configure DNS, GitHub Pages, HTTPS and apex/www. See the production launch evidence below. | 01 |
+| LCS-03 | P0 | In progress | Complete the domain migration for SEO and integrations | Update canonical URLs, sitemap, social previews, repository settings, and any Meta OAuth/privacy URLs actually in use; verify public links and search-console setup. | 02 |
 | LCS-04 | P0 | Backlog | Connect the Instagram profile to the website | Set the permanent website in the profile link and a clear bio; upload the selected profile icon manually. Verify the link opens the correct site. | 02, 06 |
 | LCS-05 | P0 | Ready | Make website and Instagram navigation feel connected | Audit the existing header link; add useful Instagram links to footer/about or listing context, and define a simple Instagram landing route. Avoid a heavy embedded feed. Verify each route. | — |
-| LCS-06 | P0 | Ready | Deliver one coherent brand kit across website and Instagram | Complete 06a–06h: positioning, editable logo master, icon/wordmark/favicon/preview exports, existing color/type rules, compact website pass, post templates, profile copy and cross-channel acceptance. Follow brand-domain-automation.md; preserve the selected direction and visual distinction. | — |
+| LCS-06 | P0 | In progress | Deliver one coherent brand kit across website and Instagram | Complete 06a–06h: positioning, editable logo master, icon/wordmark/favicon/preview exports, existing color/type rules, compact website pass, post templates, profile copy and cross-channel acceptance. Follow brand-domain-automation.md; preserve the selected direction and visual distinction. | — |
 | LCS-07 | P1 | Ready | Simplify the website around finding cabins | Review desktop header, cards, photo hierarchy, filters, and original-listing actions; make listings immediately accessible. No new hero, long introductory copy, or dedicated mobile redesign in this phase. | — |
 
 ### Next — manage one operation (8–15)
@@ -79,8 +77,7 @@ stable across this file, GitHub issues, and Notion. No arbitrary delivery dates.
 
 ## Work after the domain launch
 
-1. **Finish the cutover (LCS-01–04).** Verify permanent HTTPS forwarding from
-   the old apex and www, including a representative path. Check Meta URLs
+1. **Finish the cutover (LCS-01–04).** Check Meta URLs
    actually in use, submit the sitemap if Search Console access is available,
    update the Instagram profile link, and capture renewal details.
 2. **Finish the shared brand kit (LCS-06–07).** Build the editable master from
@@ -241,7 +238,6 @@ in the activity log describe historical behavior and are superseded.
 
 Expanded LCS-01/02/06/14/15/16/19 into concrete sub-deliveries in
 [brand-domain-automation.md](brand-domain-automation.md). Added a domain register:
-elancabin.com is explicitly temporary, the permanent domain is unselected, and
 one-year checkout and renewal costs must be recorded separately. The reference
 review of Cheap Old Houses suggests editorial clarity, recurring themes and
 cross-channel continuity, not a copy of its brand, cheap-house positioning or
@@ -275,7 +271,7 @@ renewal price, payment and registration are not verified. Browser control is not
 available to this chat, so no cart or purchase was performed. Owner checkout is
 the next dependency; hosting, paid SSL and email add-ons are not needed for the
 existing GitHub Pages site. Record the receipt/dates after purchase, then proceed
-to DNS/HTTPS migration without retiring elancabin.com prematurely.
+to DNS/HTTPS migration.
 
 
 ### Domain purchased; DNS migration next — November 28, 2026
@@ -284,7 +280,7 @@ Owner reports purchasing the selected logcabinscout.com domain at GoDaddy.
 The domain register reflects the purchase, with cost, actual renewal date/term,
 and auto-renew still unverified. LCS-01 remains In progress until those tracking
 fields are completed; LCS-02 is Ready. Public DNS does not yet point to GitHub
-Pages. Current production is still elancabin.com.
+Pages at that checkpoint.
 
 [GoDaddy launch checklist](godaddy-domain-launch.md) contains the four apex A
 records, www CNAME, verification/release order, profile update and old-domain
@@ -307,6 +303,10 @@ GoDaddy now points the apex and www to GitHub Pages. The
 [production deployment](https://github.com/nolawi/logcabinscout/actions/runs/46149875312)
 passed all 115 tests. HTTPS and www redirect to the new canonical host.
 Verified 49 listing cards, 37 Instagram links, search, saved filtering, and
-HTTP 200 for the feed, sitemap and robots file. The previous apex returned 404
-after the cutover. GoDaddy forwarding for the old domain is available and
-awaits confirmation. Meta account URLs and the Instagram profile remain pending.
+HTTP 200 for the feed, sitemap and robots file. Meta account URLs and the Instagram profile remain pending.
+
+### SVG brand kit prepared — November 28, 2026
+
+The [brand guide](../brand-guide.md) and [exports](../../public/brand/README.md)
+cover the editable cabin mark, horizontal lockup, favicon, circular-crop avatar
+and social preview. Website assets are ready for the next manual release.

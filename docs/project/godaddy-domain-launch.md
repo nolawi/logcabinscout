@@ -6,10 +6,10 @@ registration term, exact cost, renewal date/rate and auto-renew setting have not
 been inspected. Record these from GoDaddy when available; do not infer them from
 the earlier one-year research or Porkbun prices.
 
-Current Pages assignment remains elancabin.com with HTTPS enabled. A public DNS
-check returned apex A records 3.33.130.190 and 15.197.148.33, and www CNAME pointing
-to logcabinscout.com. These do not point at GitHub Pages. No DNS or site
-configuration was changed in this documentation update.
+The production site runs at https://logcabinscout.com/ on GitHub Pages. The
+[launch deployment](https://github.com/nolawi/logcabinscout/actions/runs/46149875312)
+verified HTTPS and the www redirect. The DNS instructions below document the
+configured records for future checks.
 
 ## 1. Owner: change the new domain's DNS at GoDaddy
 
@@ -57,10 +57,4 @@ HTTPS is working. Keep captions linked to original property listings. Record the
 real purchase/renewal dates, costs and auto-renew preference; create reminders
 when the dates/service are known.
 
-Keep elancabin.com's registration and DNS intact during the transition. A Pages
-site has one assigned custom domain; keeping the old registration does not by
-itself preserve its content once that Pages assignment changes. Set up/test a
-registrar or edge redirect separately if available. Agree a rollback approach
-and eventual renewal/retirement before changing the old domain's behavior.
-
-Status: purchased per owner report; DNS update and domain release pending.
+Status: DNS, Pages assignment, deployment and HTTPS verified. Profile URL and renewal tracking remain open.

@@ -65,7 +65,7 @@ After purchase, record registration/renewal dates, the receipt amount, the quote
 renewal rate, the chosen auto-renew setting, and 60-/30-day reminder dates in
 `domain-register.csv`. Never store payment details or registrar credentials here.
 Then follow LCS-02/03's DNS/HTTPS, canonical/Meta URL, profile-link, rollback and
-elancabin.com transition checklist. The temporary domain stays live throughout.
+[domain launch checklist](godaddy-domain-launch.md).
 
 Research tasks 01a–01c are complete enough for a purchase decision. LCS-01 itself
 remains Ready because checkout, owner selection, registration and tracking are

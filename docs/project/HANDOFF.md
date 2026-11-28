@@ -14,54 +14,20 @@ simple and the operating cost low. Automate repeatable discovery, photo/caption
 preparation, status checks, queueing, publishing verification and monitoring as
 much as practical. Handle uncertain cases explicitly instead of guessing.
 
-elancabin.com was only temporary hosting. The owner has reported buying
-**logcabinscout.com at GoDaddy** and wants to connect it to the existing website.
-Do not research/buy another domain or repeat the domain-purchase step.
-The exact receipt amount, term, renewal date/rate and auto-renew decision remain
-unverified; record them later without inventing them.
+The site is live at **https://logcabinscout.com/** on GitHub Pages. The domain
+was purchased at GoDaddy. Receipt amount, renewal date/rate and auto-renew
+decision remain unverified.
 
-## Immediate task: finish DNS, then migrate the website
+## Current work
 
-The owner was editing GoDaddy DNS and asked for step-by-step assistance. They are
-moving chats because this chat receives the right-hand browser tab URL but has no
-browser-control tools. The environment reports desktop support and its runtime
-is installed, but the browser controls are absent from the active tool list.
-There was no GoDaddy login failure. Do not keep asking them to sign in to solve
-missing chat capabilities. A fresh chat may expose browser tools but this is not
-guaranteed. Verify before promising to click or read the page.
+The [domain launch checklist](godaddy-domain-launch.md) records the verified
+cutover. Public DNS, apex HTTPS and the www redirect are complete. The latest
+verified production release is [run 46149875312](https://github.com/nolawi/logcabinscout/actions/runs/46149875312).
+Check Meta settings actually in use before changing any integration URLs.
 
-At the last public DNS check on November 28:
-
-- Nameservers: ns37.domaincontrol.com and ns38.domaincontrol.com. Leave them alone.
-- Correct apex A records: 185.199.108.153, 185.199.109.153, 185.199.110.153.
-- Incorrect remaining apex A: **185.230.63.107** (Wix); edit it to **185.199.111.153**.
-- Existing www CNAME: **pointing.wixdns.net**; edit its target to **nolawi.github.io**.
-- GoDaddy previously displayed “Template Applied: Wix”. Check whether it controls
-  edits if needed, but do not remove unrelated DNS or email records blindly.
-- The user got “www conflicts with another record” by adding a second www entry.
-  Edit the existing row, not Add New Record. Other domains' www records are separate.
-- Leave NS, SOA, _domainconnect, MX and unrelated TXT/_dmarc records alone.
-
-**Recheck public DNS first**: these observations may already have changed.
-GoDaddy page the user was on:
-https://dcc.godaddy.com/control/portfolio/logcabinscout.com/settings?tab=dns
-
-Then follow [the launch checklist](godaddy-domain-launch.md). Once new-domain DNS
-is correct, prepare and test matching CNAME/canonical/preview/sitemap configuration,
-change this repository's Pages custom domain, deploy, and verify HTTPS/assets,
-listing/source/Instagram links and search. Check existing Meta redirect/privacy
-URLs before changing anything they actually depend on. A static site root is
-not automatically an OAuth callback handler.
-
-Current active GitHub Pages custom domain is still **elancabin.com**, HTTPS on.
-Last checked successful website deployment: run **44150005236**, source commit
-**386aab6f6ef1b6d2ea041870e103f70de3a8d8c9**. Main is significantly newer. Deploying
-main will release all accumulated website changes; inspect and communicate that.
-Do not claim the new website is live merely because main was pushed.
-
-Keep the old domain registered and plan its redirect separately. GitHub Pages
-has one assigned custom domain; it cannot guarantee both domains continue serving
-the same site after reassignment. Document/test redirect or rollback behavior.
+The editable SVG kit and profile PNG are in [the brand assets](../../public/brand/README.md).
+The website brand assets ship through the manual Pages workflow. The Instagram
+avatar and profile website are account-level updates.
 
 ## Repo, tools and operating rules
 
@@ -89,7 +55,7 @@ the same site after reassignment. Document/test redirect or rollback behavior.
   owner picks cadence/timezone/start/eligible queue and stop conditions.
 - Dedicated mobile redesign is out of scope for now.
 
-## Completed on main (awaiting website release)
+## Completed and released
 
 - 49 reviewed property records; 40 published-property records, 37 with confirmed
   permalinks. Counts are repository inventory, not proof every home is for sale.
@@ -115,8 +81,7 @@ the same site after reassignment. Document/test redirect or rollback behavior.
 - Latest implementation validation: **115 tests passed**, production/SEO build
   passed, desktop real and synthetic retained-status scenarios passed.
 - Saved logo option A: public/brand/instagram-profile-a.png. It is a generated PNG,
-  not yet an editable master. Instagram upload is manual. Website uses the old
-  emblem until an explicit brand pass. Similarity to @loghomeliving's white cabin
+  not yet an editable master. Instagram upload is manual. The SVG kit follows that selected direction. Similarity to @loghomeliving's white cabin
   on green was disclosed; owner still chose A. Keep rust door/heavy log styling.
 
 ## Brand and Instagram preferences
@@ -138,7 +103,7 @@ subtle shadow, no border/logo/website. Preserve photo source watermarks.
 Caption order: short unique factual title; blank line; address/location,
 price/acreage and known beds/baths/area; blank line; bare original listing URL;
 material notes (TLC/off-grid/access/uncertain figures); five relevant hashtags;
-photo credit last. No “Full listing:” label, “link in bio”, elancabin promotion,
+photo credit last. No “Full listing:” label, “link in bio”, domain promotion,
 or boilerplate availability disclaimer. Owner reports MLS licenses; retain source
 credits/provenance and do not interrogate permission on every batch.
 

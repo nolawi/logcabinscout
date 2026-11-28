@@ -6,8 +6,6 @@ Application source and GitHub Pages repository: `nolawi/logcabinscout`
 GitHub Pages uses **GitHub Actions** as its source. Configure
 `logcabinscout.com` as the custom domain and enforce HTTPS once GitHub provisions
 the certificate. See the [GoDaddy launch checklist](project/godaddy-domain-launch.md).
-The historical placeholder source remains in `asyncdc/elancabin`, whose custom
-domain assignment has been removed. No further writes to that repository are needed.
 
 ## Deploy
 
@@ -30,7 +28,6 @@ unmerged local changes are not included in that deployment.
 
 Vite's base is `/` because the app is hosted at the domain root. `public/CNAME`
 records the domain; the repository's Pages settings control the active assignment.
-Do not restore the domain assignment on the old placeholder repository.
 
 ## Verify and roll back
 

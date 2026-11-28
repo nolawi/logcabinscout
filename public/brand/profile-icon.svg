@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-labelledby="title">
+  <title id="title">Log Cabin Scout profile icon</title>
+  <rect id="pine-background" width="128" height="128" rx="0" fill="#243E32"/>
+  <g id="cabin" transform="translate(18 18) scale(.71875)" fill="#F6F0E4">
+    <path id="roof-and-gable" fill-rule="evenodd" d="M5 57 22 42V19q0-3 3-3h9q3 0 3 3v10L62 8a3 3 0 0 1 4 0l57 49a3 3 0 0 1 .5 4l-5 7a3 3 0 0 1-4 .5L107 62v8a4 4 0 0 1-4 4H25a4 4 0 0 1-4-4v-8l-7 6a3 3 0 0 1-4-.5l-5-7a3 3 0 0 1 0-3.5ZM31 60h66L64 32Z"/>
+    <rect id="middle-log" x="21" y="79" width="86" height="14" rx="3"/>
+    <rect id="bottom-log" x="21" y="98" width="86" height="14" rx="3"/>
+    <path id="door-frame" d="M48 84h32v34H48z"/>
+    <path id="rust-door" fill="#A75139" d="M52 88h24v30H52z"/>
+  </g>
+</svg>

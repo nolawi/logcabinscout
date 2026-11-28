@@ -11,10 +11,7 @@ interesting real log homes across budgets, shares original property photography,
 and links to the source listings. It is not limited to cheap houses or renovation
 projects. Older cabins stay available with honest status labels.
 
-**elancabin.com is temporary hosting, not our lasting name.** Keep it running until
-the new branded domain is tested. Do not promote it in Instagram captions or art.
-Track the replacement and eventual redirect/retirement instead of leaving the
-migration unfinished. See [domain register](domain-register.csv).
+The permanent website is live at **logcabinscout.com**. Keep purchase and renewal details in the [domain register](domain-register.csv).
 
 Keep the existing compact website, pine/parchment/rust palette, serif/sans pairing,
 selected Instagram icon A, four-photo post format, and simple Instagram links.
@@ -30,14 +27,12 @@ subscription funnel, or dedicated mobile redesign in this phase.
 | 01c — Set a one-year budget | Target recorded | Aim for roughly US$10–20 for year one and standard renewal around US$25 or less as a planning target, not a quoted offer. If a .com costs more, surface the tradeoff rather than chasing a misleading $1 promotion. |
 | 01d — Select and register | Purchased per owner report | Owner chooses the exact domain and authorizes the checkout total; register one year in the owner's registrar account. Keep payment/account recovery private. Do not buy a name without authorization. |
 | 01e — Record ownership and renewal | Backlog | Fill domain-register.csv with registrar, dates, renewal total, auto-renew decision, and reminder dates. Keep account IDs, passwords, and payment information out of Git. Set renewal reminders 60 and 30 days ahead; create actual reminders only when dates/service are known. |
-| 02a — Keep free hosting | Backlog | Continue GitHub Pages initially. Connect the domain through DNS/CNAME and HTTPS; verify apex/www behavior and certificate before switching public links. A registrar change does not require moving the repository or buying hosting. |
-| 03a — Remove temporary-domain dependencies | Backlog | Inventory canonical URLs, sitemap, previews, Meta redirect/privacy/deletion URLs actually used, docs and workflow inputs. Update only verified dependencies; test login callbacks and production links. |
-| 02b — Redirect and retire deliberately | Backlog | Use registrar/edge redirects for elancabin.com if available; GitHub Pages alone does not guarantee a second custom-domain redirect. Keep old URLs reachable during transition; decide later whether to renew or release the old domain. Record the decision and rollback path. |
+| 02a — Keep free hosting | Done | Continue GitHub Pages initially. Connect the domain through DNS/CNAME and HTTPS; verify apex/www behavior and certificate before switching public links. A registrar change does not require moving the repository or buying hosting. |
+| 03a — Verify site and integration URLs | Backlog | Inventory canonical URLs, sitemap, previews, Meta redirect/privacy/deletion URLs actually used, docs and workflow inputs. Update only verified dependencies; test login callbacks and production links. |
 | 04a — Update Instagram profile | Backlog | Manually set the branded profile URL and concise bio, upload the saved icon if still needed, and verify the website/profile links. Existing captions keep original listing URLs. |
 
 Deliverable: one owned, tracked branded domain; HTTPS website; working source and
-profile links; no dependency on elancabin.com for brand recognition. Domain cost
-and hosting cost stay separate. No domain has been selected or registered yet.
+profile links. Domain cost and hosting cost stay separate.
 
 ## Alongside domain selection — branding in usable pieces (LCS-06–07)
 

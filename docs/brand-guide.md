@@ -1,4 +1,4 @@
-# Log Cabin Scout — Brand Guide v1
+# Log Cabin Scout — Brand Guide
 
 ## Creative direction
 An independent American cabin-scouting field guide: warm, considered,
@@ -6,10 +6,16 @@ slightly nostalgic and editorial. Inspired by vintage nature guides and
 historic real-estate publications, not a reproduction of another site's branding.
 
 ## Brand assets
-- `public/logo-mark.svg` — illustrated circular log cabin / forest emblem.
-- `public/favicon.svg` — simplified, high-contrast mark for small tabs.
-- `public/hero-landscape.svg` — original mountain-and-pine illustration.
-- These are original vector assets; no stock listing photos are included.
+
+The [SVG kit and upload exports](../public/brand/README.md) follow the selected
+profile design: a parchment cabin with heavy log courses, a chimney and a rust
+door on pine. Use the square avatar for the Instagram profile, the horizontal
+lockup for standalone placements, and the tight favicon for browser tabs.
+Keep the mark clear of the edge when cropping the avatar to a circle.
+
+The site header uses the mark with live Playfair Display text. The standalone
+lockup and social preview use outlined Georgia lettering for portability across
+SVG editors and browsers. The social preview is exported as a PNG for sharing.
 
 ## Palette
 | Token | HEX | Usage |
@@ -25,7 +31,12 @@ historic real-estate publications, not a reproduction of another site's branding
 - UI and body: DM Sans, with Arial/system fallback.
 - Fonts load from Google Fonts when online; app remains readable when offline.
 
-## Voice
+## Positioning and voice
+Discover distinctive log cabins and log homes across the United States, with
+original listing links.
+
+Suggested Instagram bio: Log cabins & log homes across the U.S. · Original listing links.
+
 Grounded, warm, curated. Use “Cabins worth the hunt,” “The scouted collection,”
 and “Find your place in the woods.” Avoid claiming nationwide completeness.
 
@@ -45,7 +56,7 @@ are preserved. GitHub Pages base URL is respected for brand assets.
 
 ## Card presentation and accessibility
 
-- Muted parchment, sage, and pine-tinted photo panels reuse the original logo.
+- Muted parchment, sage, and pine-tinted photo panels reuse the cabin mark.
   Visible text identifies missing or unavailable photos; artwork never depicts a property.
 - Loading photos keep the panel in place. Failed images are removed and replaced
   with the branded fallback. Changing the image URL resets photo loading.
@@ -53,8 +64,7 @@ are preserved. GitHub Pages base URL is respected for brand assets.
   technology; link text supplies their accessible names.
 - Secondary text uses darker ink for contrast. Filter-reset controls have a 44px minimum height;
   card photos and addresses provide direct links to the property.
-- The compact header uses a small emblem and single-line wordmark without
-  navigation links. Heading wrapping and reduced-motion support remain available.
+- The compact header uses a small emblem, single-line wordmark and Instagram link. Heading wrapping and reduced-motion support remain available.
 
 ## Minimal browsing layout
 

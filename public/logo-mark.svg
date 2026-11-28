@@ -1,13 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Log Cabin Scout illustrated emblem">
-  <circle cx="64" cy="64" r="61" fill="#f6f0e4" stroke="#243e32" stroke-width="5"/>
-  <circle cx="64" cy="64" r="54" fill="none" stroke="#243e32" stroke-width="1.5"/>
-  <circle cx="87" cy="38" r="17" fill="#c7a86b"/>
-  <path d="M11 76 40 35 64 76 84 51 116 90" fill="#d3d7c8" stroke="#243e32" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M19 89V53m-7 21 7-13 7 13m-16 7 9-13 9 13m-18 6 9-13 9 13" stroke="#243e32" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <path d="M31 79V44m-8 22 8-15 8 15m-16 9 8-15 8 15m-17 8 9-16 9 16" stroke="#243e32" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <path d="m44 73 27-22 29 22" stroke="#243e32" stroke-width="6" stroke-linejoin="round" fill="none"/>
-  <path d="M49 73h46v32H49z" fill="#a75139" stroke="#243e32" stroke-width="3"/>
-  <path d="M50 80h44M50 87h44M50 94h44" stroke="#e4bd81" stroke-width="3"/>
-  <path d="M66 105V84h15v21" fill="#243e32" stroke="#f6f0e4" stroke-width="2"/>
-  <path d="M18 108Q64 101 110 108" stroke="#243e32" stroke-width="3" fill="none" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-labelledby="title">
+  <title id="title">Log Cabin Scout cabin mark</title>
+  <rect id="pine-background" width="128" height="128" rx="23" fill="#243E32"/>
+  <g id="cabin" transform="translate(11 11) scale(.828125)" fill="#F6F0E4">
+    <path id="roof-and-gable" fill-rule="evenodd" d="M5 57 22 42V19q0-3 3-3h9q3 0 3 3v10L62 8a3 3 0 0 1 4 0l57 49a3 3 0 0 1 .5 4l-5 7a3 3 0 0 1-4 .5L107 62v8a4 4 0 0 1-4 4H25a4 4 0 0 1-4-4v-8l-7 6a3 3 0 0 1-4-.5l-5-7a3 3 0 0 1 0-3.5ZM31 60h66L64 32Z"/>
+    <rect id="middle-log" x="21" y="79" width="86" height="14" rx="3"/>
+    <rect id="bottom-log" x="21" y="98" width="86" height="14" rx="3"/>
+    <path id="door-frame" d="M48 84h32v34H48z"/>
+    <path id="rust-door" fill="#A75139" d="M52 88h24v30H52z"/>
+  </g>
 </svg>

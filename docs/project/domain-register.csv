@@ -1,3 +1,2 @@
 Role,Domain,State,Registrar,Registered date,Renewal date,First-year total USD,Renewal total USD,Auto-renew decision,Hosting,DNS access,Next action
-Temporary website,elancabin.com,Former website; HTTPS returns 404,GoDaddy,Unknown,Unknown,Unknown,Unknown,Not recorded,Former GitHub Pages custom domain,GoDaddy UI verified,Set and verify HTTPS forwarding for apex and www; record renewal and retirement decision
 Permanent brand domain,logcabinscout.com,Live; HTTPS and www redirect verified,GoDaddy,Purchase reported 2026-11-28; receipt date unverified,Unknown; verify in GoDaddy,Not provided; record from receipt,Not provided; verify in GoDaddy,Not confirmed,GitHub Pages,GoDaddy UI verified,Record receipt and renewal details; update public profile URL

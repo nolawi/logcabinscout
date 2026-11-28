@@ -10,7 +10,7 @@ test('default mode only reads identity and quota', async () => {
  assert.equal(result.published,false); assert.equal(calls.length,2); assert.ok(calls.every(c=>c.method==='GET'));
 });
 test('publishing waits for readiness and publishes exactly once', async () => {
- const calls=[]; const result=await publishInstagram({token:'secret',publish:true,imageUrl:'https://elancabin.com/card.jpg',caption:'Cabin spotlight'},fake([identity,quota,{id:'123'},{status_code:'IN_PROGRESS'},{status_code:'FINISHED'},{id:'456'}],calls),async()=>{});
+ const calls=[]; const result=await publishInstagram({token:'secret',publish:true,imageUrl:'https://example.com/card.jpg',caption:'Cabin spotlight'},fake([identity,quota,{id:'123'},{status_code:'IN_PROGRESS'},{status_code:'FINISHED'},{id:'456'}],calls),async()=>{});
  assert.equal(result.mediaId,'456'); assert.equal(calls.filter(c=>c.url.endsWith('/media_publish')).length,1);
  assert.equal(calls[2].body.get('caption'),'Cabin spotlight');
 });
@@ -23,7 +23,7 @@ test('invalid image URL prevents container creation', async () => {
  const calls=[]; await assert.rejects(publishInstagram({token:'secret',publish:true,imageUrl:'http://example.com/a.jpg',caption:'test'},fake([identity,quota],calls)),/HTTPS/); assert.equal(calls.length,2);
 });
 test('failed container prevents publishing', async () => {
- const calls=[]; await assert.rejects(publishInstagram({token:'secret',publish:true,imageUrl:'https://elancabin.com/a.jpg',caption:'test'},fake([identity,quota,{id:'123'},{status_code:'ERROR'}],calls)),/not available/); assert.ok(!calls.some(c=>c.url.endsWith('/media_publish')));
+ const calls=[]; await assert.rejects(publishInstagram({token:'secret',publish:true,imageUrl:'https://example.com/a.jpg',caption:'test'},fake([identity,quota,{id:'123'},{status_code:'ERROR'}],calls)),/not available/); assert.ok(!calls.some(c=>c.url.endsWith('/media_publish')));
 });
 test('prepare mode processes the image without publishing a post', async () => {
  const calls=[];
