@@ -1,0 +1,505 @@
+{
+  "checkedAt": "2026-11-28T06:04:08.440Z",
+  "scope": "All 49 current feed photo URLs; no listing sale-status checks",
+  "total": 49,
+  "validImages": 49,
+  "browser": {
+    "cards": 49,
+    "loaded": 49,
+    "fallbacks": 0,
+    "pageErrors": [],
+    "environmentNote": "HTTPS errors ignored only in audit browser context to accommodate cloud proxy CA; curl independently validated URLs using default certificate checks."
+  },
+  "images": [
+    {
+      "id": "mls:VALA2010884",
+      "url": "https://feed-images.rewhosting.com/bright/Full/Property/805568839012/1-65084bdb4a77153d57a20fa0289b3c59-o.webp",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 683,
+      "format": "WEBP"
+    },
+    {
+      "id": "zillow:215443044",
+      "url": "https://photos.zillowstatic.com/fp/b78eacfcb4db5ab0305167f3c2555ba3-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 682,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:13853194",
+      "url": "https://photos.zillowstatic.com/fp/9b9f7d2610116d0fe59ca37372e8a8f4-cc_ft_960.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 960,
+      "height": 716,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:106956353",
+      "url": "https://photos.zillowstatic.com/fp/f5f2075220cbf7a4a0d3c0f31311d5a3-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 576,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:337980259",
+      "url": "https://photos.zillowstatic.com/fp/c5b7699660fd6f90dc9d96fe0bd1c031-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 576,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:209613753",
+      "url": "https://photos.zillowstatic.com/fp/18695fd3c55d193a9144d61cfb360965-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 683,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:23114144",
+      "url": "https://photos.zillowstatic.com/fp/89cafe211d45c217e863ff09de7f401c-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 766,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:76520841",
+      "url": "https://photos.zillowstatic.com/fp/8e10848fecaad1fec6841df63b8fed17-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 768,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:465929418",
+      "url": "https://photos.zillowstatic.com/fp/c0617e53c5823b7b1fcd467fd3708bef-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 682,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:89895546",
+      "url": "https://photos.zillowstatic.com/fp/7deb7d33fc9dc23cb1f141d4438ac18b-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 683,
+      "format": "JPEG"
+    },
+    {
+      "id": "mls:10001316",
+      "url": "https://feed-images.rewhosting.com/tnvamls/Photo/Property/20260924142814694105000000/1-65261dde74c58e3b7d973b3dc46d641e-l.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 768,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:66567412",
+      "url": "https://photos.zillowstatic.com/fp/811f6a51b39f7eab804e24c5fa55919b-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 576,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:235403768",
+      "url": "https://photos.zillowstatic.com/fp/20b5ce851490d69ee9162fa7957098ce-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 767,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:102193906",
+      "url": "https://photos.zillowstatic.com/fp/fc2988e1bb09bfaee97e4e2d2644c6ab-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 768,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:78722169",
+      "url": "https://photos.zillowstatic.com/fp/31a269fa114ee5d162a8ecb566826d89-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 629,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:250239028",
+      "url": "https://photos.zillowstatic.com/fp/a0d3883c6500175e1b78a018a8e3c63b-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 768,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:22573204",
+      "url": "https://photos.zillowstatic.com/fp/15bf0e14ad199a987ee6afeeebf37798-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 576,
+      "height": 768,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:69901757",
+      "url": "https://photos.zillowstatic.com/fp/2a71ba4314d549b6be792373edd01caa-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 768,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:234267648",
+      "url": "https://photos.zillowstatic.com/fp/bb05d9a3fdaf40cba37184c24ea61569-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 767,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:113286835",
+      "url": "https://photos.zillowstatic.com/fp/f43383f030be07b60eaea5bc854ca635-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 685,
+      "format": "JPEG"
+    },
+    {
+      "id": "mls:112401",
+      "url": "https://photos.zillowstatic.com/fp/893a1a62882461e84195b1751977e367-cc_ft_1536.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 767,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:63630108",
+      "url": "https://photos.zillowstatic.com/fp/ccdf17f4dc4bfc79049ad2934691780b-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 682,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:13991629",
+      "url": "https://photos.zillowstatic.com/fp/d5d42103e0a4d58e7777e0e61de8ea38-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 682,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:74984195",
+      "url": "https://photos.zillowstatic.com/fp/c09af4fcbf35433f1307f05d4363c09d-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 682,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:8932507",
+      "url": "https://photos.zillowstatic.com/fp/ad4353b73c8fb34680640b4259919845-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 474,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:3145082",
+      "url": "https://photos.zillowstatic.com/fp/56c703996f68e1275d420d75570a8524-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 683,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:337621252",
+      "url": "https://photos.zillowstatic.com/fp/c01011fb6169a2d9070d7c27a5f85b55-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1020,
+      "height": 768,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:105425238",
+      "url": "https://photos.zillowstatic.com/fp/24d4aeedc64a59afc09adbc433c12988-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 682,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:2100313441",
+      "url": "https://photos.zillowstatic.com/fp/545b04dcd41d91a6437e20f8e9010366-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 682,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:81214974",
+      "url": "https://photos.zillowstatic.com/fp/e951350c96160ee7ebfbb7a37262f700-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 683,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:463356865",
+      "url": "https://photos.zillowstatic.com/fp/62cc7e4f19371c1cbe303cd64129bcee-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 768,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:41290091",
+      "url": "https://photos.zillowstatic.com/fp/6a8c1957b1096a935f2f54c38c5887b6-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 767,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:128492323",
+      "url": "https://photos.zillowstatic.com/fp/a8e282cd513db612f48a9fffd624b285-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 576,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:42504621",
+      "url": "https://photos.zillowstatic.com/fp/2f7bbc6a1f21493dbaf01249e8433133-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 683,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:2075700125",
+      "url": "https://photos.zillowstatic.com/fp/8d665d3449cfa685cc42d143a5b320d9-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 768,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:334055567",
+      "url": "https://photos.zillowstatic.com/fp/3043f23cd1f12d7460e1456ecfef8101-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 768,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:235401431",
+      "url": "https://photos.zillowstatic.com/fp/08c56331234cdacd1a3b84c15d884838-o_a.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1024,
+      "height": 698,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:109035928",
+      "url": "https://photos.zillowstatic.com/fp/e9f84ebd1631c07ba94afe7991198999-uncropped_scaled_within_1344_1008.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1344,
+      "height": 756,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:466222304",
+      "url": "https://photos.zillowstatic.com/fp/cb825c950c93831d9f9d9cc980f29b01-uncropped_scaled_within_1344_1008.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1344,
+      "height": 1008,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:73858654",
+      "url": "https://photos.zillowstatic.com/fp/ffaa1a495640b3be34dbd39d8941a1e2-uncropped_scaled_within_1344_1008.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1344,
+      "height": 896,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:303995838",
+      "url": "https://photos.zillowstatic.com/fp/ef92ab90bb873b95ebcc649f516a3e8c-uncropped_scaled_within_1344_1008.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1200,
+      "height": 795,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:119288800",
+      "url": "https://photos.zillowstatic.com/fp/36f1876ebb93e0342bbd67ed5de1d139-uncropped_scaled_within_1344_1008.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1280,
+      "height": 853,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:86747950",
+      "url": "https://photos.zillowstatic.com/fp/a5d29b192dc26098ad83a41dea68f6f2-uncropped_scaled_within_1344_1008.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1344,
+      "height": 1008,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:32570401",
+      "url": "https://photos.zillowstatic.com/fp/37051707af0b6d2b602683c2ac4b2a57-uncropped_scaled_within_1344_1008.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1182,
+      "height": 664,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:60593818",
+      "url": "https://photos.zillowstatic.com/fp/aa7f742ab1b1c0b94b280c9955cfa714-cc_ft_1344.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1344,
+      "height": 1008,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:61002180",
+      "url": "https://photos.zillowstatic.com/fp/39685a994b32d08022487e471b867edd-uncropped_scaled_within_1344_1008.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1344,
+      "height": 1008,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:40527145",
+      "url": "https://photos.zillowstatic.com/fp/10856058507f01b586ec53c1662a462f-uncropped_scaled_within_1344_1008.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1344,
+      "height": 1008,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:442542471",
+      "url": "https://photos.zillowstatic.com/fp/88a075bb5e9d7c83a96ae11f9cad101c-uncropped_scaled_within_1536_1152.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1536,
+      "height": 1152,
+      "format": "JPEG"
+    },
+    {
+      "id": "zillow:335642692",
+      "url": "https://photos.zillowstatic.com/fp/519ba8e1265adfa1cf75192b1a09026c-uncropped_scaled_within_1536_1152.jpg",
+      "http": "200",
+      "status": "ok",
+      "error": "",
+      "width": 1536,
+      "height": 1022,
+      "format": "JPEG"
+    }
+  ]
+}

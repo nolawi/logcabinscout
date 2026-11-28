@@ -72,3 +72,12 @@ and regenerate the feed when needed.
 The expanded Tennessee and Colorado collection also uses source-linked photos
 from the corresponding Zillow listing galleries, with measured dimensions and
 MLS/provider credits. See [expanded listing sources](expanded-listing-sources.md).
+
+
+## Latest reliability audit
+
+On November 28, 2026, all 49 current image URLs returned valid images and all 49
+loaded after scrolling the desktop grid. No URL replacements were needed.
+See [the recorded audit](project/photo-audit-2026-11-28.json). A prior headless
+preview's certificate-trust error was specific to the cloud test environment;
+application certificate handling and listing data remain unchanged.

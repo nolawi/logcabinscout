@@ -187,3 +187,24 @@ in this planning update.
 **Next:** audit photo reliability and fix affected image references, with no
 age-based pruning. **After that:** implement LCS-13's on-demand status command
 and retained-listing/status presentation together. Notion stays deferred.
+
+
+### Photo reliability audit complete — November 28, 2026
+
+All 49 current feed photo URLs returned HTTP 200 and decoded as valid images.
+A desktop browser scrolled the full grid and decoded all 49 photos: zero photo
+fallbacks and zero page errors. The production build and SEO checks passed.
+[Audit evidence](photo-audit-2026-11-28.json) records URLs, dimensions, and results.
+
+Earlier automated previews showed unavailable photos because the cloud browser
+reported `ERR_CERT_AUTHORITY_INVALID` for the external image CDN. The audit's
+browser context accommodated the environment certificate; independent curl
+requests validated the same URLs with normal certificate verification. No TLS
+setting, image URL, review date, property status, or listing record was changed.
+No website deployment was performed. An image loading does not confirm a home's
+current sale status.
+
+**Next:** implement LCS-13's reusable on-demand status check and retained-listing
+presentation from `listing-lifecycle.md`. Preserve old homes and Instagram links;
+label explicit source-confirmed changes and keep failures unconfirmed. The
+photo-cleanup step is complete; do not replace working URLs unnecessarily.
