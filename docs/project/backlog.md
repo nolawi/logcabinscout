@@ -74,7 +74,7 @@ stable across this file, GitHub issues, and Notion. No arbitrary delivery dates.
 | LCS-17 | P2 | Backlog | Measure useful growth | Choose low-cost analytics; track Instagram-to-site visits, original-listing clicks, saves, and state interest. Use tagged profile links; establish a baseline before claiming improvements. | 02, 04 |
 | LCS-18 | P2 | Backlog | Expand useful SEO content | Add state/location pages only where inventory supports them, strengthen listing metadata/internal links, and verify search indexing on the permanent domain. Avoid thin mass-generated pages. | 03, 12, 13 |
 | LCS-19 | P2 | Backlog | Create a practical marketing program | Define a short editorial calendar mixing affordable cabins, distinctive exteriors, and regional finds. Keep a shortlist of Virginia architects/builders/designers, draft collaboration ideas, and test themes against measured results. Following and outreach remain manual unless specifically authorized and supported. | 06, 17 |
-| LCS-20 | P2 | Ready | Run a weekly project and backlog review | Review inventory, published content, failures, spend, and results; select the next item; update statuses and evidence; synchronize the master Notion project. Consider alerts, email digests, or advanced filters only after core usage supports them. | — |
+| LCS-20 | P2 | Ready | Run a weekly project and backlog review | Review inventory, published content, failures, spend, and results; select the next item; update statuses and evidence; maintain this repository backlog. Consider alerts, email digests, or advanced filters only after core usage supports them. | — |
 
 ## Recommended starting order
 
@@ -97,11 +97,50 @@ summary linked to this canonical GitHub backlog. `backlog-notion-import.csv`
 contains the same 20 IDs for initial import; use IDs to update existing tasks
 instead of importing duplicates. Refresh the export when statuses change.
 
-Notion sync status: pending connection. No master-list destination has been
-verified and no Notion page or tasks have been created in this session.
+Notion sync status: deferred at the owner’s request. The repository backlog is
+sufficient for tracking; Notion is not a dependency for any current work. The CSV
+remains available as an optional export. No Notion pages or tasks were created.
 
 ## Activity log
 
 - 2026-11-28: Created the 20-item backlog and initial Notion import; recorded the
   existing website/Instagram baseline. No domain purchase, website deployment,
   dashboard implementation, or new automatic publishing was performed.
+
+
+## Access check and quick wins — November 28, 2026
+
+Verified: local checkout/files, repository read/push permissions, Actions workflow
+listing and dispatch, live website HTTPS, Pages custom-domain configuration,
+public listing-source HTTP access, and the existing Meta token's account read
+access (Check Meta connection run 46113481163). No post or deployment was sent.
+Publishing worked in prior batches; this check did not create media or test a new
+publish. The current header already links to @logcabinscout.
+
+Unavailable or unverified: registrar/DNS controls, direct Supabase connection,
+Instagram profile-photo/bio editing, and analytics/search-console accounts.
+The GitHub integration returns 403 when listing repository Actions secrets; it
+can run workflows that use existing secrets, but secret management is not
+verified. No credential values were requested or printed.
+
+Recommended small deliveries, in order:
+
+1. **LCS-09 + minimum LCS-08:** join committed publication history to listings by
+   existing IDs and add “View on Instagram” links only where verified permalinks
+   exist. Use the current JSON files; no database migration needed.
+2. **LCS-05 / LCS-09:** add an “As seen on Instagram” collection view and a useful
+   footer Instagram link; build on the existing header link.
+3. **LCS-06 / LCS-07:** make a compact shared-brand pass on website colors,
+   typography, and social previews. Reuse existing assets; keep a website logo
+   replacement as an explicit design choice.
+4. **LCS-13 / LCS-12:** audit stale listings and prepare a small fresh candidate
+   batch. Update check dates only after real source checks; keep the current age
+   and inactive-listing policies until changed deliberately.
+5. **LCS-10:** generate a small local read-only operations page/report showing
+   current, stale, queued, published, and failed items. Defer hosted dashboard,
+   authentication changes, and Supabase until needed.
+
+The domain shortlist (LCS-01) can be researched alongside these; buying and DNS
+changes need the owner's selected domain and registrar access. No paid services,
+automatic publishing, website deployment, or implementation of these five items
+was performed in this access/planning pass.
