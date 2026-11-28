@@ -58,7 +58,7 @@ stable across this file, GitHub issues, and Notion. No arbitrary delivery dates.
 | ID | Priority | Status | Task | Done when | Depends on |
 |---|---|---|---|---|---|
 | LCS-08 | P1 | Ready | Define one shared listing and content model | Document stable property IDs, source facts, review dates, photo provenance, captions, slide selections, queue states, and published Instagram IDs/links. Decide which fields remain file-backed initially. | — |
-| LCS-09 | P1 | Backlog | Link published Instagram posts to website listings | Join publication history to property IDs; show verified post links on relevant cards/detail views and offer an “As seen on Instagram” view. No guessed links or browser-only API secrets. | 05, 08 |
+| LCS-09 | P1 | Done | Link published Instagram posts to website listings | Join publication history to property IDs; show verified post links on relevant cards/detail views and offer an “As seen on Instagram” view. No guessed links or browser-only API secrets. | 05, 08 |
 | LCS-10 | P1 | Backlog | Build a private operations dashboard | Secure the operator view; show candidates, stale listings, ready posts, published posts, failures, and last successful jobs. Start read-only; add actions only as needed. | 08 |
 | LCS-11 | P1 | Backlog | Connect Supabase when the dashboard needs it | Review the existing schema, migrate a small sample, apply access rules, keep tokens server-side, and preserve stable IDs/history. Document rollback/export. Stay file-backed until persistence needs justify migration. | 08, 10 |
 | LCS-12 | P1 | Ready | Expand reliable nationwide discovery | Improve free-first state rotation, source coverage, log-home evidence, and deduplication. Review a small new batch across several states; measure candidate quality and requests. Do not introduce paid API usage by default. | — |
@@ -144,3 +144,18 @@ The domain shortlist (LCS-01) can be researched alongside these; buying and DNS
 changes need the owner's selected domain and registrar access. No paid services,
 automatic publishing, website deployment, or implementation of these five items
 was performed in this access/planning pass.
+
+
+### Website–Instagram links delivered — November 28, 2026
+
+LCS-09 is implemented and locally verified, pending the next manual website
+release. Cards show confirmed Instagram permalinks and an “As seen on Instagram”
+filter combines with existing search/state/price/sort/saved controls. The minimal
+LCS-08 mapping uses exact listing IDs and validated published ledger URLs; no
+schema migration was needed. LCS-08 remains open for the broader content model.
+LCS-05 remains open for the footer/landing-route follow-up.
+
+Evidence: `docs/website-instagram.md`, `src/lib/instagram.ts` and its tests;
+104 tests passing, production build/SEO checks passing, desktop interactions
+verified with 49 current cards and 37 linked properties. No guessed links for
+three legacy records without permalinks. No website deployment performed.

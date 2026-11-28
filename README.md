@@ -71,3 +71,7 @@ Prepared Instagram posts can be listed with `npm run instagram:post -- --list`
 and published by queue ID with `npm run instagram:post -- <id>`. The publishing
 command rechecks listing facts, and the workflow records history to prevent repeats;
 see [queue instructions](docs/instagram.md#ready-to-post-queue-fast-path).
+
+Listings with confirmed post links offer “View on Instagram”; the “As seen on
+Instagram” filter combines with the existing search and saved cabins. See
+[website–Instagram integration](docs/website-instagram.md) for mapping and release behavior.

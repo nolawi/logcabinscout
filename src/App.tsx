@@ -3,6 +3,11 @@ import { useSavedCabins } from './hooks/useSavedCabins';
 import CabinGrid from './components/CabinGrid';
 import { useListings, type ListingSnapshot } from './hooks/useListings';
 
+import postHistory from '../data/instagram-post-history.json';
+import { publishedInstagramLinks, withInstagramLinks } from './lib/instagram';
+
+const instagramLinks = publishedInstagramLinks(postHistory);
+
 type SortOrder = 'featured' | 'price-asc' | 'price-desc' | 'acreage-desc';
 
 export default function App({ initialFeed }: { initialFeed?: ListingSnapshot } = {}) {
@@ -15,8 +20,9 @@ export default function App({ initialFeed }: { initialFeed?: ListingSnapshot } =
   const { saved, toggle: toggleSaved, canPersist } = useSavedCabins();
   const savedIds = useMemo(() => new Set(saved), [saved]);
   const [savedOnly, setSavedOnly] = useState(false);
+  const [instagramOnly, setInstagramOnly] = useState(false);
   const savedAvailable = listings.filter(cabin => savedIds.has(cabin.id)).length;
-  const source = listings;
+  const source = useMemo(() => withInstagramLinks(listings, instagramLinks), [listings]);
   const states = useMemo(() => [...new Set(source.map(cabin => cabin.location.split(',').at(-1)?.trim()).filter((value): value is string => Boolean(value)))].sort(), [source]);
   const visible = useMemo(() => {
     const search = query.trim().toLowerCase();
@@ -24,16 +30,16 @@ export default function App({ initialFeed }: { initialFeed?: ListingSnapshot } =
       const matchesSearch = `${cabin.title} ${cabin.location}`.toLowerCase().includes(search);
       const matchesState = state === 'all' || !states.includes(state) || cabin.location.split(',').at(-1)?.trim() === state;
       const matchesPrice = maxPrice === 'all' || cabin.price <= Number(maxPrice);
-      return matchesSearch && matchesState && matchesPrice && (!savedOnly || savedIds.has(cabin.id));
+      return matchesSearch && matchesState && matchesPrice && (!savedOnly || savedIds.has(cabin.id)) && (!instagramOnly || Boolean(cabin.instagramUrl));
     });
     if (sortBy === 'price-asc') return filtered.sort((a, b) => a.price - b.price);
     if (sortBy === 'price-desc') return filtered.sort((a, b) => b.price - a.price);
     if (sortBy === 'acreage-desc') return filtered.sort((a, b) => (b.acreage ?? -1) - (a.acreage ?? -1));
     return filtered;
-  }, [source, query, state, maxPrice, sortBy, states, savedOnly, savedIds]);
+  }, [source, query, state, maxPrice, sortBy, states, savedOnly, savedIds, instagramOnly]);
 
-  const resetFilters = () => { setQuery(''); setState('all'); setMaxPrice('all'); setSortBy('featured'); setSavedOnly(false); };
-  const hasFilters = query !== '' || state !== 'all' || maxPrice !== 'all' || sortBy !== 'featured' || savedOnly;
+  const resetFilters = () => { setQuery(''); setState('all'); setMaxPrice('all'); setSortBy('featured'); setSavedOnly(false); setInstagramOnly(false); };
+  const hasFilters = query !== '' || state !== 'all' || maxPrice !== 'all' || sortBy !== 'featured' || savedOnly || instagramOnly;
 
   return <>
     <header className="header">
@@ -80,12 +86,13 @@ export default function App({ initialFeed }: { initialFeed?: ListingSnapshot } =
         <div className="results-bar" aria-live="polite">
           <span>{visible.length} {visible.length === 1 ? 'cabin' : 'cabins'}</span>
           <div className="result-actions">
+          <button type="button" className="saved-filter" aria-pressed={instagramOnly} onClick={() => setInstagramOnly(value => !value)}>As seen on Instagram</button>
           <button type="button" className="saved-filter" aria-pressed={savedOnly} onClick={() => setSavedOnly(value => !value)}>Saved only</button>
           {hasFilters && <button type="button" className="reset-filters" onClick={resetFilters}>Clear filters</button>}
           </div>
         </div>
         {!canPersist && saved.length > 0 && <p className="saved-notice" role="status">Saved for this visit only. Browser storage is unavailable.</p>}
-        <CabinGrid cabins={visible} savedIds={savedIds} onToggleSaved={toggleSaved} emptyMessage={savedOnly && savedAvailable === 0 ? 'No saved cabins in the current collection. Use a heart to save one.' : undefined} />
+        <CabinGrid cabins={visible} savedIds={savedIds} onToggleSaved={toggleSaved} emptyMessage={savedOnly && savedAvailable === 0 ? 'No saved cabins in the current collection. Use a heart to save one.' : instagramOnly ? 'No cabins match your Instagram and search filters. Try clearing the filters.' : undefined} />
         </>}
         {!isLoading && !error && listings.length === 0 && <p className="empty-state" role="status">No current listings. We’re scouting more cabins; check back soon.</p>}
       </section>

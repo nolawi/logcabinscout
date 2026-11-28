@@ -95,9 +95,12 @@ footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14
 .card-media { position: relative; }
 .save-button { position: absolute; top: 12px; right: 12px; width: 40px; height: 40px; display: grid; place-items: center; padding: 0; border: 1px solid var(--line); border-radius: 50%; color: var(--pine); background: #fffaf0; box-shadow: 0 2px 5px #0002; }
 .save-button:hover, .save-button[aria-pressed="true"] { color: var(--rust); }
-.result-actions { display: flex; align-items: center; gap: 20px; }
+.result-actions { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 8px 16px; }
 .saved-filter { min-height: 40px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 4px; color: var(--pine); background: transparent; font-size: 13px; }
 .saved-filter[aria-pressed="true"] { background: var(--pine); color: var(--paper); border-color: var(--pine); }
 .saved-notice { color: var(--ink-soft); font-size: 12px; margin: 0 0 16px; }
 
 .home-details { margin: 0 0 12px; color: var(--ink-soft); font-size: 13px; line-height: 1.5; }
+
+.card-instagram-link { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; margin-top: 10px; color: var(--pine); font-size: 12px; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.card-instagram-link:hover { color: var(--rust); }

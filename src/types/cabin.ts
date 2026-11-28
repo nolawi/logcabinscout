@@ -14,6 +14,8 @@ export type Cabin = {
   lastCheckedAt?: string;
   photo?: PropertyPhoto;
   listingUrl?: string;
+  /** Derived from confirmed publication history, never from listing-provider input. */
+  instagramUrl?: string;
   /** Preview records must never be represented as real for-sale listings. */
   isSample?: boolean;
 };

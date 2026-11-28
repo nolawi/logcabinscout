@@ -34,6 +34,7 @@ export default function CabinCard({ cabin, variant = 1, isSaved, onToggleSaved }
           <strong>{dollars.format(cabin.price)}</strong>
           {cabin.acreage !== null && <span className="acreage">{cabin.acreage.toLocaleString()} acres</span>}
         </div>
+        {cabin.instagramUrl && <a className="card-instagram-link" href={cabin.instagramUrl} target="_blank" rel="noopener noreferrer" aria-label={`View ${cabin.title} on Instagram (opens in a new tab)`}>View on Instagram <ArrowIcon /></a>}
       </div>
     </article>
   );
