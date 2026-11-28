@@ -2,6 +2,12 @@
 
 A React + TypeScript + Vite website for discovering log cabins for sale.
 
+## Project planning
+
+See the [project plan and 20-item backlog](docs/project/backlog.md) for domain,
+website/Instagram integration, brand, dashboard, automation, and marketing work.
+A [Notion import CSV](docs/project/backlog-notion-import.csv) uses matching task IDs.
+
 ## Run locally
 
 ```bash
