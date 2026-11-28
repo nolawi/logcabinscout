@@ -15,12 +15,12 @@ to buy domains, incur recurring charges, or turn on unattended publishing.
 
 ## Current baseline
 
-- Website: https://elancabin.com/ on GitHub Pages; temporary brand/domain relationship.
+- Website: https://logcabinscout.com/ on GitHub Pages. The former domain, elancabin.com, is awaiting forwarding.
 - Repository: https://github.com/nolawi/logcabinscout
 - Instagram: https://www.instagram.com/logcabinscout/
 - Repository inventory: 49 reviewed listings and 40 published-property records.
   These are inventory counts, not a claim that all properties remain active or
-  visible today. The implemented website retains older homes with status labels (pending manual deployment).
+  visible today. The implemented website retains older homes with status labels.
 - Search/filter/sort, saved cabins, prerendered SEO, manual deployments, and
   Instagram publication history already exist. A header link to Instagram exists.
 - Instagram posts: four slides, mostly exterior photos and one interior; location
@@ -47,8 +47,8 @@ stable across this file, GitHub issues, and Notion. No arbitrary delivery dates.
 | ID | Priority | Status | Task | Done when | Depends on |
 |---|---|---|---|---|---|
 | LCS-01 | P0 | In progress | Choose and register an inexpensive branded domain for one year | Complete subtasks 01a–01e in brand-domain-automation.md: live availability and first-year/renewal comparison, owner-selected one-year checkout, and domain register with renewal reminders. Targets are planning budgets, not price or availability claims. Purchase only with explicit domain/cost authorization. | — |
-| LCS-02 | P0 | Ready | Migrate from temporary elancabin.com and track retirement | Configure the selected domain on existing free hosting, DNS/CNAME, HTTPS and apex/www; verify before changing links. Record old-domain redirect/renewal/retirement and rollback decisions in domain-register.csv. Keep elancabin.com live during transition. | 01 |
-| LCS-03 | P0 | Backlog | Complete the domain migration for SEO and integrations | Update canonical URLs, sitemap, social previews, repository settings, and any Meta OAuth/privacy URLs actually in use; verify old links and search-console setup. | 02 |
+| LCS-02 | P0 | In progress | Migrate from temporary elancabin.com and track retirement | Configure the selected domain on existing free hosting, DNS/CNAME, HTTPS and apex/www; verify before changing links. Record old-domain redirect/renewal/retirement and rollback decisions in domain-register.csv. Keep elancabin.com live during transition. | 01 |
+| LCS-03 | P0 | In progress | Complete the domain migration for SEO and integrations | Update canonical URLs, sitemap, social previews, repository settings, and any Meta OAuth/privacy URLs actually in use; verify old links and search-console setup. | 02 |
 | LCS-04 | P0 | Backlog | Connect the Instagram profile to the website | Set the permanent website in the profile link and a clear bio; upload the selected profile icon manually. Verify the link opens the correct site. | 02, 06 |
 | LCS-05 | P0 | Ready | Make website and Instagram navigation feel connected | Audit the existing header link; add useful Instagram links to footer/about or listing context, and define a simple Instagram landing route. Avoid a heavy embedded feed. Verify each route. | — |
 | LCS-06 | P0 | Ready | Deliver one coherent brand kit across website and Instagram | Complete 06a–06h: positioning, editable logo master, icon/wordmark/favicon/preview exports, existing color/type rules, compact website pass, post templates, profile copy and cross-channel acceptance. Follow brand-domain-automation.md; preserve the selected direction and visual distinction. | — |
@@ -77,16 +77,23 @@ stable across this file, GitHub issues, and Notion. No arbitrary delivery dates.
 | LCS-19 | P2 | Backlog | Test log-home editorial themes and light audience growth | Use the reference review without copying Cheap Old Houses: test affordable/wooded/waterfront/mountain themes, keep source links, measure outcomes and consider a quiet opt-in digest or submitted cabins later. No subscription-heavy homepage, invented success stories or unauthorized outreach. | 06, 17 |
 | LCS-20 | P2 | Ready | Run a weekly project and backlog review | Review inventory, published content, failures, spend, and results; select the next item; update statuses and evidence; maintain this repository backlog. Consider alerts, email digests, or advanced filters only after core usage supports them. | — |
 
-## Recommended starting order
+## Work after the domain launch
 
-Next: domain shortlist and actual first-year/renewal comparisons (01a–01c), plus
-positioning and brand asset audit (06a–06d). Keep elancabin.com as temporary hosting.
-Then register one year after owner selection, migrate DNS/HTTPS and profile/site
-references, and track old-domain retirement. Build one preparation run and a
-seven-post buffer using existing files before a hosted dashboard. Add monitoring,
-then enable a posting schedule only after explicit cadence selection and reliable
-source checks. See the [detailed breakdown and reference review](brand-domain-automation.md)
-and [domain register](domain-register.csv).
+1. **Finish the cutover (LCS-01–04).** Verify permanent HTTPS forwarding from
+   the old apex and www, including a representative path. Check Meta URLs
+   actually in use, submit the sitemap if Search Console access is available,
+   update the Instagram profile link, and capture renewal details.
+2. **Finish the shared brand kit (LCS-06–07).** Build the editable master from
+   the selected direction, export the icon, wordmark, favicon and social preview,
+   then verify them in the compact site header and Instagram profile.
+3. **Make preparation repeatable (LCS-08, 12, 14).** Run one batch through
+   existing discovery, source checks, photo selection and caption preparation.
+   Verify that rerunning does not duplicate work, and build a seven-post buffer.
+4. **Make the operation observable (LCS-13, 15, 20).** Reuse the status checker
+   and report stale items, queue depth, failures and the last successful run.
+5. **Choose a cadence and measure results (LCS-16–19).** Enable scheduled
+   publishing after source checks work in the runner and the owner selects a
+   cadence. Track site visits from Instagram and original-listing clicks.
 
 ## Master Notion project
 
@@ -292,3 +299,14 @@ made in this update.
 release state, verified tool limits, and the immediate GoDaddy DNS migration.
 A new chat should read it, inspect current DNS/tool access, and resume the domain
 connection rather than repeating finished work or domain purchase.
+
+
+### Permanent site launched — November 28, 2026
+
+GoDaddy now points the apex and www to GitHub Pages. The
+[production deployment](https://github.com/nolawi/logcabinscout/actions/runs/46149875312)
+passed all 115 tests. HTTPS and www redirect to the new canonical host.
+Verified 49 listing cards, 37 Instagram links, search, saved filtering, and
+HTTP 200 for the feed, sitemap and robots file. The previous apex returned 404
+after the cutover. GoDaddy forwarding for the old domain is available and
+awaits confirmation. Meta account URLs and the Instagram profile remain pending.
