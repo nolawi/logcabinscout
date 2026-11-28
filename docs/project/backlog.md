@@ -46,8 +46,8 @@ stable across this file, GitHub issues, and Notion. No arbitrary delivery dates.
 
 | ID | Priority | Status | Task | Done when | Depends on |
 |---|---|---|---|---|---|
-| LCS-01 | P0 | Ready | Choose and register an inexpensive branded domain for one year | Complete subtasks 01a–01e in brand-domain-automation.md: live availability and first-year/renewal comparison, owner-selected one-year checkout, and domain register with renewal reminders. Targets are planning budgets, not price or availability claims. Purchase only with explicit domain/cost authorization. | — |
-| LCS-02 | P0 | Backlog | Migrate from temporary elancabin.com and track retirement | Configure the selected domain on existing free hosting, DNS/CNAME, HTTPS and apex/www; verify before changing links. Record old-domain redirect/renewal/retirement and rollback decisions in domain-register.csv. Keep elancabin.com live during transition. | 01 |
+| LCS-01 | P0 | In progress | Choose and register an inexpensive branded domain for one year | Complete subtasks 01a–01e in brand-domain-automation.md: live availability and first-year/renewal comparison, owner-selected one-year checkout, and domain register with renewal reminders. Targets are planning budgets, not price or availability claims. Purchase only with explicit domain/cost authorization. | — |
+| LCS-02 | P0 | Ready | Migrate from temporary elancabin.com and track retirement | Configure the selected domain on existing free hosting, DNS/CNAME, HTTPS and apex/www; verify before changing links. Record old-domain redirect/renewal/retirement and rollback decisions in domain-register.csv. Keep elancabin.com live during transition. | 01 |
 | LCS-03 | P0 | Backlog | Complete the domain migration for SEO and integrations | Update canonical URLs, sitemap, social previews, repository settings, and any Meta OAuth/privacy URLs actually in use; verify old links and search-console setup. | 02 |
 | LCS-04 | P0 | Backlog | Connect the Instagram profile to the website | Set the permanent website in the profile link and a clear bio; upload the selected profile icon manually. Verify the link opens the correct site. | 02, 06 |
 | LCS-05 | P0 | Ready | Make website and Instagram navigation feel connected | Audit the existing header link; add useful Instagram links to footer/about or listing context, and define a simple Instagram landing route. Avoid a heavy embedded feed. Verify each route. | — |
@@ -269,3 +269,18 @@ available to this chat, so no cart or purchase was performed. Owner checkout is
 the next dependency; hosting, paid SSL and email add-ons are not needed for the
 existing GitHub Pages site. Record the receipt/dates after purchase, then proceed
 to DNS/HTTPS migration without retiring elancabin.com prematurely.
+
+
+### Domain purchased; DNS migration next — November 28, 2026
+
+Owner reports purchasing the selected logcabinscout.com domain at GoDaddy.
+The domain register reflects the purchase, with cost, actual renewal date/term,
+and auto-renew still unverified. LCS-01 remains In progress until those tracking
+fields are completed; LCS-02 is Ready. Public DNS does not yet point to GitHub
+Pages. Current production is still elancabin.com.
+
+[GoDaddy launch checklist](godaddy-domain-launch.md) contains the four apex A
+records, www CNAME, verification/release order, profile update and old-domain
+transition steps. Next dependency is the owner's DNS change; then Codex can
+verify it and prepare the Pages/domain release. No production or DNS change was
+made in this update.
